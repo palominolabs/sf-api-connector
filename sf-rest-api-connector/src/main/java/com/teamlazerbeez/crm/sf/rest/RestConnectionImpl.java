@@ -175,7 +175,7 @@ final class RestConnectionImpl implements RestConnection {
         boolean success = objectNode.get("success").getBooleanValue();
 
         List<ApiError> errors = this.objectMapper
-                .readValue(objectNode.get("errors"), TypeFactory.collectionType(List.class, ApiErrorImpl.class));
+                .readValue(objectNode.get("errors"), HttpApiClient.API_ERRORS_TYPE);
 
         return new SaveResultImpl(new Id(id), success, errors);
     }
@@ -211,7 +211,7 @@ final class RestConnectionImpl implements RestConnection {
                 sObject.setField(fieldName, null);
                 continue;
             } else if (fieldValueNode.isValueNode()) {
-                sObject.setField(fieldName, fieldValueNode.getValueAsText());
+                sObject.setField(fieldName, fieldValueNode.asText());
                 continue;
             } else if (fieldValueNode.isObject()) {
                 sObject.setRelationshipQueryResult(fieldName, getQueryResult(fieldValueNode));

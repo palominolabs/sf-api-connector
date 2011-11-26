@@ -66,7 +66,7 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpdateResponse;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Upsert;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResponse;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResultType;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.TestOnly;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;

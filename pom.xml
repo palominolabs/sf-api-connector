@@ -10,12 +10,12 @@
 
   <properties>
     <!-- dependency versions -->
-    <dep.slf4j.version>1.6.1</dep.slf4j.version>
-    <dep.logback.version>0.9.28</dep.logback.version>
-    <dep.junit.version>4.8.2</dep.junit.version>
+    <dep.slf4j.version>1.6.4</dep.slf4j.version>
+    <dep.logback.version>1.0.0</dep.logback.version>
+    <dep.junit.version>4.10</dep.junit.version>
 
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
-    <dep.jackson.version>1.8.3</dep.jackson.version>
+    <dep.jackson.version>1.9.2</dep.jackson.version>
 
     <plugin.jaxws-maven-plugin.version>1.12</plugin.jaxws-maven-plugin.version>
 
@@ -128,19 +128,21 @@
         <artifactId>log4j-over-slf4j</artifactId>
         <version>${dep.slf4j.version}</version>
         <scope>runtime</scope>
+        <optional>true</optional>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>jcl-over-slf4j</artifactId>
         <version>${dep.slf4j.version}</version>
         <scope>runtime</scope>
+        <optional>true</optional>
       </dependency>
 
 
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.4</version>
+        <version>1.5</version>
       </dependency>
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
@@ -152,7 +154,7 @@
       <dependency>
         <groupId>joda-time</groupId>
         <artifactId>joda-time</artifactId>
-        <version>1.6.2</version>
+        <version>2.0</version>
       </dependency>
 
       <dependency>
@@ -169,21 +171,20 @@
       </dependency>
 
       <dependency>
-        <groupId>commons-lang</groupId>
-        <artifactId>commons-lang</artifactId>
-        <version>2.6</version>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-lang3</artifactId>
+          <version>3.1</version>
       </dependency>
-
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>r09</version>
+        <version>10.0.1</version>
       </dependency>
 
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
-        <version>4.1</version>
+        <version>4.1.2</version>
       </dependency>
 
       <dependency>

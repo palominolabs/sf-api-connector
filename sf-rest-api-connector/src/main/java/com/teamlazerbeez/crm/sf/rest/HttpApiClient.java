@@ -18,7 +18,7 @@ package com.teamlazerbeez.crm.sf.rest;
 
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -37,8 +37,7 @@ import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.JsonParseException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.type.TypeFactory;
-import org.codehaus.jackson.type.JavaType;
+import org.codehaus.jackson.type.TypeReference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -62,7 +61,7 @@ import java.util.Map;
 final class HttpApiClient {
 
     private static final String API_VERSION = "21.0";
-    private static final JavaType API_ERRORS_TYPE = TypeFactory.collectionType(List.class, ApiErrorImpl.class);
+    static final TypeReference<List<ApiErrorImpl>> API_ERRORS_TYPE = new TypeReference<List<ApiErrorImpl>>() {};
     private static final String UPLOAD_CONTENT_TYPE = "application/json";
 
     private static final Logger logger = LoggerFactory.getLogger(HttpApiClient.class);
