@@ -62,11 +62,6 @@
       <field>ParentId</field>
     </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
     <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-      <cascadeDelete>false</cascadeDelete>
-      <childSObject>FeedPost</childSObject>
-      <field>ParentId</field>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>LeadFeed</childSObject>
       <field>ParentId</field>

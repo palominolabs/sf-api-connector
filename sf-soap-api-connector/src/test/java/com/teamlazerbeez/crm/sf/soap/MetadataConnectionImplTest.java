@@ -88,7 +88,7 @@ public class MetadataConnectionImplTest {
         deleteAllOfType("WorkflowRule", WorkflowRule.class);
 
         WorkflowOutboundMessage message = new WorkflowOutboundMessage();
-        message.setApiVersion(18.0D);
+        message.setApiVersion(ApiVersion.API_VERSION_DOUBLE);
         message.setDescription("test-action-desc");
         message.setEndpointUrl("http://foo.com/bar");
         message.getFields().addAll(Arrays.asList("FirstName", "LastName"));

@@ -277,6 +277,17 @@
           <c class="list"/>
           <list reference="../c"/>
         </childXmlNames>
+        <directoryName>permissionsets</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>permissionset</suffix>
+        <xmlName>PermissionSet</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
         <directoryName>datacategorygroups</directoryName>
         <inFolder>false</inFolder>
         <metaFile>false</metaFile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Salesforce.com Apex API version 21.0
+Salesforce.com Apex API version 23.0
 
 Copyright 2006-2011 Salesforce.com, inc. All Rights Reserved
 -->
@@ -158,6 +158,7 @@ Copyright 2006-2011 Salesforce.com, inc. All Rights Reserved
      <xsd:enumeration value="Apex_code"/>
      <xsd:enumeration value="Apex_profiling"/>
      <xsd:enumeration value="Visualforce"/>
+     <xsd:enumeration value="System"/>
      <xsd:enumeration value="All"/>
     </xsd:restriction>
    </xsd:simpleType>
@@ -513,7 +514,7 @@ Copyright 2006-2011 Salesforce.com, inc. All Rights Reserved
  <service name="ApexService">
   <documentation>Manage your Salesforce.com Apex classes and triggers</documentation>
   <port binding="tns:ApexBinding" name="Apex">
-   <soap:address location="https://na3-api.salesforce.com/services/Soap/s/21.0"/>
+   <soap:address location="https://na3-api.salesforce.com/services/Soap/s/23.0"/>
   </port>
  </service>
 </definitions>
