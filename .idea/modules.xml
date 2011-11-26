@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sf-apex-api-binding/sf-apex-api-binding.iml" filepath="$PROJECT_DIR$/sf-apex-api-binding/sf-apex-api-binding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sf-api-core/sf-api-core.iml" filepath="$PROJECT_DIR$/sf-api-core/sf-api-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sf-api-parent.iml" filepath="$PROJECT_DIR$/sf-api-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sf-metadata-api-binding/sf-metadata-api-binding.iml" filepath="$PROJECT_DIR$/sf-metadata-api-binding/sf-metadata-api-binding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sf-partner-api-binding/sf-partner-api-binding.iml" filepath="$PROJECT_DIR$/sf-partner-api-binding/sf-partner-api-binding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sf-rest-api-connector/sf-rest-api-connector.iml" filepath="$PROJECT_DIR$/sf-rest-api-connector/sf-rest-api-connector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sf-soap-api-connector/sf-soap-api-connector.iml" filepath="$PROJECT_DIR$/sf-soap-api-connector/sf-soap-api-connector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-logging-config/test-logging-config.iml" filepath="$PROJECT_DIR$/test-logging-config/test-logging-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-util/test-util.iml" filepath="$PROJECT_DIR$/test-util/test-util.iml" />
+    </modules>
+  </component>
+</project>
+

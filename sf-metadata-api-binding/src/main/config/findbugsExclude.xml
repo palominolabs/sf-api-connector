@@ -1,0 +1,5 @@
+<FindBugsFilter>
+  <Match>
+    <Package name="~com\.teamlazerbeez\.crm\.sf\.metadata\.jaxwsstub"/>
+  </Match>
+</FindBugsFilter>

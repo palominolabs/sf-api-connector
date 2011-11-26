@@ -1,0 +1,46 @@
+<com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadataResult>
+  <metadata>
+    <name>Account</name>
+    <label>Account</label>
+    <custom>false</custom>
+    <keyPrefix>001</keyPrefix>
+    <labelPlural>Accounts</labelPlural>
+    <layoutable>true</layoutable>
+    <activateable>false</activateable>
+    <updateable>true</updateable>
+    <sObjectUrls>
+      <sobjectUrlPath>/services/data/v21.0/sobjects/Account</sobjectUrlPath>
+      <describeUrlPath>/services/data/v21.0/sobjects/Account/describe</describeUrlPath>
+      <rowTemplateUrlPath>/services/data/v21.0/sobjects/Account/{ID}</rowTemplateUrlPath>
+    </sObjectUrls>
+    <searchable>true</searchable>
+    <createable>true</createable>
+    <customSetting>false</customSetting>
+    <deletable>true</deletable>
+    <deprecatedAndHidden>false</deprecatedAndHidden>
+    <feedEnabled>true</feedEnabled>
+    <mergeable>true</mergeable>
+    <queryable>true</queryable>
+    <replicateable>true</replicateable>
+    <retrieveable>true</retrieveable>
+    <undeletable>true</undeletable>
+    <triggerable>true</triggerable>
+  </metadata>
+  <recentItems class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
+    <elements>
+      <com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+        <id>
+          <idStr>0015000000WWD7b</idStr>
+        </id>
+        <fields>
+          <entry>
+            <string>Name</string>
+            <string>United Oil &amp; Gas, Singapore</string>
+          </entry>
+        </fields>
+        <type>Account</type>
+        <relationshipQueryResults/>
+      </com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+    </elements>
+  </recentItems>
+</com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadataResult>

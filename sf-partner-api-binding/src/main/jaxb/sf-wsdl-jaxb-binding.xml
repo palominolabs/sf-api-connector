@@ -1,0 +1,19 @@
+<bindings
+  xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns="http://java.sun.com/xml/ns/jaxws">
+  <bindings
+    node="//xsd:schema[@targetNamespace='urn:partner.soap.sforce.com']">
+    <jaxb:globalBindings
+      underscoreBinding="asCharInWord"/>
+    <jaxb:schemaBindings>
+      <jaxb:nameXmlTransform>
+        <jaxb:typeName
+          suffix="Type"/>
+      </jaxb:nameXmlTransform>
+    </jaxb:schemaBindings>
+  </bindings>
+  <enableWrapperStyle>false</enableWrapperStyle>
+  <enableAsyncMapping>false</enableAsyncMapping>
+</bindings>

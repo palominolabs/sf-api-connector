@@ -1,0 +1,27 @@
+<list>
+  <com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+    <id>
+      <idStr>0035000000km1ol</idStr>
+    </id>
+    <fields>
+      <entry>
+        <string>Phone</string>
+        <string>(785) 241-6200</string>
+      </entry>
+      <entry>
+        <string>Email</string>
+        <string>a_young@dickenson.com</string>
+      </entry>
+      <entry>
+        <string>FirstName</string>
+        <string>Andy</string>
+      </entry>
+      <entry>
+        <string>LastName</string>
+        <string>Young</string>
+      </entry>
+    </fields>
+    <type>Contact</type>
+    <relationshipQueryResults/>
+  </com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+</list>

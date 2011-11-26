@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <artifactId>sf-api-parent</artifactId>
+    <groupId>com.teamlazerbeez</groupId>
+    <version>trunk-SNAPSHOT</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+
+  <name>sf-apex-api-binding</name>
+  <artifactId>sf-apex-api-binding</artifactId>
+
+  <properties>
+    <jaxws.stub.apex-api.package>com.teamlazerbeez.crm.sf.soap.jaxwsstub.apex</jaxws.stub.apex-api.package>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.codehaus.woodstox</groupId>
+      <artifactId>woodstox-core-asl</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-rt</artifactId>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <configuration>
+          <packageName>${jaxws.stub.apex-api.package}</packageName>
+          <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
+          <wsdlFiles>
+            <wsdlFile>apex-21.0.wsdl</wsdlFile>
+          </wsdlFiles>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <configuration>
+          <instrumentation>
+            <excludes>
+              <exclude>${jaxws.stub.apex-api.directory}/*.class</exclude>
+            </excludes>
+            <ignores>
+              <ignore>${jaxws.stub.apex-api.package}.*</ignore>
+            </ignores>
+          </instrumentation>
+          <quiet>true</quiet>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${plugin.javadoc.version}</version>
+        <configuration>
+          <quiet>true</quiet>
+          <excludePackageNames>${jaxws.stub.apex-api.package}</excludePackageNames>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <configuration>
+          <excludeFilterFile>${basedir}/src/main/config/findbugsExclude.xml</excludeFilterFile>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </reporting>
+
+</project>

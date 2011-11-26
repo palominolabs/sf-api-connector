@@ -1,0 +1,761 @@
+<list>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Account.object</fileName>
+      <fullName>Account.UpsellOpportunity__c</fullName>
+      <id>00N50000002GwxrEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Account.object</fileName>
+      <fullName>Account.SLAExpirationDate__c</fullName>
+      <id>00N50000002GwxpEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Opportunity.object</fileName>
+      <fullName>Opportunity.DeliveryInstallationStatus__c</fullName>
+      <id>00N50000002Gwy4EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Opportunity.object</fileName>
+      <fullName>Opportunity.OrderNumber__c</fullName>
+      <id>00N50000002Gwy6EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Contact.object</fileName>
+      <fullName>Contact.Languages__c</fullName>
+      <id>00N50000002GwxwEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Case.object</fileName>
+      <fullName>Case.PotentialLiability__c</fullName>
+      <id>00N50000002GwxtEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Opportunity.object</fileName>
+      <fullName>Opportunity.TrackingNumber__c</fullName>
+      <id>00N50000002Gwy7EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Lead.object</fileName>
+      <fullName>Lead.ProductInterest__c</fullName>
+      <id>00N50000002Gwy1EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Account.object</fileName>
+      <fullName>Account.SLA__c</fullName>
+      <id>00N50000002GwxoEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Contact.object</fileName>
+      <fullName>Contact.Level__c</fullName>
+      <id>00N50000002GwxxEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Lead.object</fileName>
+      <fullName>Lead.CurrentGenerators__c</fullName>
+      <id>00N50000002GwxyEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Account.object</fileName>
+      <fullName>Account.NumberofLocations__c</fullName>
+      <id>00N50000002GwxnEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Lead.object</fileName>
+      <fullName>Lead.SICCode__c</fullName>
+      <id>00N50000002Gwy2EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Account.object</fileName>
+      <fullName>Account.SLASerialNumber__c</fullName>
+      <id>00N50000002GwxqEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Lead.object</fileName>
+      <fullName>Lead.NumberofLocations__c</fullName>
+      <id>00N50000002GwxzEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Case.object</fileName>
+      <fullName>Case.Product__c</fullName>
+      <id>00N50000002GwxuEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Lead.object</fileName>
+      <fullName>Lead.Primary__c</fullName>
+      <id>00N50000002Gwy0EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Account.object</fileName>
+      <fullName>Account.Active__c</fullName>
+      <id>00N50000002GwxlEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Case.object</fileName>
+      <fullName>Case.SLAViolation__c</fullName>
+      <id>00N50000002GwxvEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Account.object</fileName>
+      <fullName>Account.CustomerPriority__c</fullName>
+      <id>00N50000002GwxmEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Opportunity.object</fileName>
+      <fullName>Opportunity.CurrentGenerators__c</fullName>
+      <id>00N50000002Gwy3EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Opportunity.object</fileName>
+      <fullName>Opportunity.MainCompetitors__c</fullName>
+      <id>00N50000002Gwy5EAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+  <com.teamlazerbeez.crm.sf.soap.FileProperties>
+    <stub>
+      <createdById>00550000001gvBdAAI</createdById>
+      <createdByName>sftestorg5 mpierce</createdByName>
+      <createdDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </createdDate>
+      <fileName>objects/Case.object</fileName>
+      <fullName>Case.EngineeringReqNumber__c</fullName>
+      <id>00N50000002GwxsEAC</id>
+      <lastModifiedById>00550000001gvBdAAI</lastModifiedById>
+      <lastModifiedByName>sftestorg5 mpierce</lastModifiedByName>
+      <lastModifiedDate class="com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl">
+        <year>2010</year>
+        <month>11</month>
+        <day>15</day>
+        <timezone>0</timezone>
+        <hour>18</hour>
+        <minute>22</minute>
+        <second>18</second>
+        <fractionalSecond>0.000</fractionalSecond>
+      </lastModifiedDate>
+      <manageableState>UNMANAGED</manageableState>
+      <type>CustomField</type>
+    </stub>
+  </com.teamlazerbeez.crm.sf.soap.FileProperties>
+</list>

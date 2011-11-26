@@ -1,0 +1,39 @@
+<java.util.Collections_-UnmodifiableRandomAccessList resolves-to="java.util.Collections$UnmodifiableList">
+  <c class="list">
+    <com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl>
+      <id>
+        <idStr>0035000000km1ov</idStr>
+      </id>
+      <fields>
+        <entry>
+          <string>Email</string>
+          <string>tripley@uog.com</string>
+        </entry>
+        <entry>
+          <string>FirstName</string>
+          <string>Tom</string>
+        </entry>
+      </fields>
+      <relationshipQueryResults/>
+      <type>Contact</type>
+    </com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl>
+    <com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl>
+      <id>
+        <idStr>0035000000km1ow</idStr>
+      </id>
+      <fields>
+        <entry>
+          <string>Email</string>
+          <string>ldcruz@uog.com</string>
+        </entry>
+        <entry>
+          <string>FirstName</string>
+          <string>Liz</string>
+        </entry>
+      </fields>
+      <relationshipQueryResults/>
+      <type>Contact</type>
+    </com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl>
+  </c>
+  <list reference="../c"/>
+</java.util.Collections_-UnmodifiableRandomAccessList>
