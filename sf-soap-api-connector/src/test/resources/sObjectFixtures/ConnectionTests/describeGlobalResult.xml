@@ -1910,9 +1910,9 @@
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>FeedComment</name>
-          <queryable>false</queryable>
+          <queryable>true</queryable>
           <replicateable>false</replicateable>
-          <retrieveable>false</retrieveable>
+          <retrieveable>true</retrieveable>
           <searchable>true</searchable>
           <triggerable>true</triggerable>
           <undeletable>false</undeletable>

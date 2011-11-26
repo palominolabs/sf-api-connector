@@ -171,17 +171,6 @@
           <c class="list"/>
           <list reference="../c"/>
         </childXmlNames>
-        <directoryName>sites</directoryName>
-        <inFolder>false</inFolder>
-        <metaFile>false</metaFile>
-        <suffix>site</suffix>
-        <xmlName>CustomSite</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
-          <c class="list"/>
-          <list reference="../c"/>
-        </childXmlNames>
         <directoryName>letterhead</directoryName>
         <inFolder>false</inFolder>
         <metaFile>false</metaFile>
@@ -315,6 +304,17 @@
         <metaFile>false</metaFile>
         <suffix>remoteSite</suffix>
         <xmlName>RemoteSiteSetting</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>sites</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>site</suffix>
+        <xmlName>CustomSite</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
     </c>
     <list reference="../c"/>
