@@ -2156,9 +2156,9 @@
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <feedEnabled>false</feedEnabled>
         <mergeable>false</mergeable>
-        <queryable>false</queryable>
+        <queryable>true</queryable>
         <replicateable>false</replicateable>
-        <retrieveable>false</retrieveable>
+        <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
