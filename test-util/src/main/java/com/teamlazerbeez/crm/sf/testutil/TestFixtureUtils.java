@@ -17,6 +17,7 @@
 package com.teamlazerbeez.crm.sf.testutil;
 
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider;
 
 import java.io.InputStream;
 
@@ -39,7 +40,9 @@ public class TestFixtureUtils {
             throw new IllegalArgumentException("Bad filename: " + fname);
         }
 
-        XStream xStream = new XStream();
+        // sorry... plain ol' java reflection requires no-args ctor.
+        // TODO find a way that doesn't require sun code -- perhaps private no-args ctors for the affected classes?
+        XStream xStream = new XStream(new Sun14ReflectionProvider());
         return xStream.fromXML(stream);
     }
 

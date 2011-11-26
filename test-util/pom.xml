@@ -27,6 +27,7 @@
     <dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
+      <scope>compile</scope>
     </dependency>
 
     <dependency>
