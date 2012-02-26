@@ -7,7 +7,7 @@
       <relationshipName>ActivityHistories</relationshipName>
     </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
     <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-      <cascadeDelete>false</cascadeDelete>
+      <cascadeDelete>true</cascadeDelete>
       <childSObject>Attachment</childSObject>
       <field>ParentId</field>
       <relationshipName>Attachments</relationshipName>

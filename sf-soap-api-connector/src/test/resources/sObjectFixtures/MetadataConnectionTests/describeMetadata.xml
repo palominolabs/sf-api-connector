@@ -191,10 +191,10 @@
       <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
-            <string>WorkflowAlert</string>
-            <string>WorkflowTask</string>
-            <string>WorkflowOutboundMessage</string>
             <string>WorkflowFieldUpdate</string>
+            <string>WorkflowTask</string>
+            <string>WorkflowAlert</string>
+            <string>WorkflowOutboundMessage</string>
             <string>WorkflowRule</string>
             <null/>
           </c>

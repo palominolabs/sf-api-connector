@@ -1183,7 +1183,7 @@
           <searchable>false</searchable>
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>
-          <updateable>false</updateable>
+          <updateable>true</updateable>
         </stubResult>
       </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
@@ -1213,10 +1213,10 @@
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
-          <createable>false</createable>
+          <createable>true</createable>
           <custom>false</custom>
           <customSetting>false</customSetting>
-          <deletable>false</deletable>
+          <deletable>true</deletable>
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>0H1</keyPrefix>
@@ -1371,9 +1371,9 @@
           <replicateable>false</replicateable>
           <retrieveable>true</retrieveable>
           <searchable>false</searchable>
-          <triggerable>false</triggerable>
+          <triggerable>true</triggerable>
           <undeletable>true</undeletable>
-          <updateable>false</updateable>
+          <updateable>true</updateable>
         </stubResult>
       </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
@@ -3147,6 +3147,30 @@
           <name>Profile</name>
           <queryable>true</queryable>
           <replicateable>true</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>true</updateable>
+        </stubResult>
+      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
+          <createable>true</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>true</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <keyPrefix>0IF</keyPrefix>
+          <label>Push Topic</label>
+          <labelPlural>Push Topics</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>PushTopic</name>
+          <queryable>true</queryable>
+          <replicateable>false</replicateable>
           <retrieveable>true</retrieveable>
           <searchable>false</searchable>
           <triggerable>false</triggerable>
