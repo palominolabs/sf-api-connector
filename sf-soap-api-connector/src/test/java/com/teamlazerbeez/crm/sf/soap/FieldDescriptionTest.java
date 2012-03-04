@@ -80,6 +80,7 @@ public class FieldDescriptionTest {
         assertFalse(field.isUnique());
         assertFalse(field.isUpdateable());
         assertNull(field.isWriteRequiresMasterRead());
+        assertFalse(field.isPermissionable());
     }
 
     @SuppressWarnings({"unchecked"})
@@ -140,6 +141,7 @@ public class FieldDescriptionTest {
         assertFalse(field.isUnique());
         assertTrue(field.isUpdateable());
         assertNull(field.isWriteRequiresMasterRead());
+        assertTrue(field.isPermissionable());
     }
 
     @Test
@@ -212,6 +214,7 @@ public class FieldDescriptionTest {
         assertFalse(field.isUnique());
         assertTrue(field.isUpdateable());
         assertNull(field.isWriteRequiresMasterRead());
+        assertTrue(field.isPermissionable());
     }
 
     private FieldDescription getDescription(String object, String fieldName) throws ApiException {

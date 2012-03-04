@@ -2066,6 +2066,30 @@
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
+          <createable>true</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>true</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <keyPrefix>01k</keyPrefix>
+          <label>Field Permissions</label>
+          <labelPlural>Field Permissions</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>FieldPermissions</name>
+          <queryable>true</queryable>
+          <replicateable>false</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>true</updateable>
+        </stubResult>
+      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
           <createable>false</createable>
           <custom>false</custom>
           <customSetting>false</customSetting>
@@ -2512,6 +2536,30 @@
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>
           <updateable>false</updateable>
+        </stubResult>
+      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
+          <createable>true</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>true</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <keyPrefix>110</keyPrefix>
+          <label>Object Permissions</label>
+          <labelPlural>Object Permissions</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>ObjectPermissions</name>
+          <queryable>true</queryable>
+          <replicateable>false</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>true</updateable>
         </stubResult>
       </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
@@ -3714,6 +3762,29 @@
           <queryable>true</queryable>
           <replicateable>false</replicateable>
           <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>false</updateable>
+        </stubResult>
+      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
+          <createable>false</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>false</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <label>User Record Access</label>
+          <labelPlural>User Record Access</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>UserRecordAccess</name>
+          <queryable>true</queryable>
+          <replicateable>false</replicateable>
+          <retrieveable>false</retrieveable>
           <searchable>false</searchable>
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>

@@ -468,4 +468,11 @@ public final class FieldDescription {
     public Boolean isWriteRequiresMasterRead() {
         return this.stubField.isWriteRequiresMasterRead();
     }
+
+    /**
+     * @return true if FieldPermissions can be spcified for the field.
+     */
+    public boolean isPermissionable() {
+        return stubField.isPermissionable();
+    }
 }

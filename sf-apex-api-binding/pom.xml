@@ -38,7 +38,7 @@
           <packageName>${jaxws.stub.apex-api.package}</packageName>
           <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
           <wsdlFiles>
-            <wsdlFile>apex-23.0.wsdl</wsdlFile>
+            <wsdlFile>apex-24.0.wsdl</wsdlFile>
           </wsdlFiles>
         </configuration>
       </plugin>

@@ -60,6 +60,17 @@
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
       <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>queues</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>queue</suffix>
+        <xmlName>Queue</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>CustomField</string>
             <string>BusinessProcess</string>
@@ -192,6 +203,7 @@
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>WorkflowFieldUpdate</string>
+            <string>WorkflowKnowledgePublish</string>
             <string>WorkflowTask</string>
             <string>WorkflowAlert</string>
             <string>WorkflowOutboundMessage</string>
@@ -205,6 +217,28 @@
         <metaFile>false</metaFile>
         <suffix>workflow</suffix>
         <xmlName>Workflow</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>roles</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>role</suffix>
+        <xmlName>Role</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>groups</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>group</suffix>
+        <xmlName>Group</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
       <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
@@ -238,6 +272,17 @@
         <metaFile>false</metaFile>
         <suffix>objectTranslation</suffix>
         <xmlName>CustomObjectTranslation</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>flows</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>flow</suffix>
+        <xmlName>Flow</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
       <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
@@ -326,6 +371,104 @@
         <metaFile>false</metaFile>
         <suffix>site</suffix>
         <xmlName>CustomSite</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>LeadOwnerSharingRule</string>
+            <string>LeadCriteriaBasedSharingRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>leadSharingRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>sharingRules</suffix>
+        <xmlName>LeadSharingRules</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>CampaignOwnerSharingRule</string>
+            <string>CampaignCriteriaBasedSharingRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>campaignSharingRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>sharingRules</suffix>
+        <xmlName>CampaignSharingRules</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>CaseOwnerSharingRule</string>
+            <string>CaseCriteriaBasedSharingRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>caseSharingRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>sharingRules</suffix>
+        <xmlName>CaseSharingRules</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>ContactOwnerSharingRule</string>
+            <string>ContactCriteriaBasedSharingRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>contactSharingRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>sharingRules</suffix>
+        <xmlName>ContactSharingRules</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>OpportunityOwnerSharingRule</string>
+            <string>OpportunityCriteriaBasedSharingRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>opportunitySharingRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>sharingRules</suffix>
+        <xmlName>OpportunitySharingRules</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>AccountOwnerSharingRule</string>
+            <string>AccountCriteriaBasedSharingRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>accountSharingRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>sharingRules</suffix>
+        <xmlName>AccountSharingRules</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>CustomObjectOwnerSharingRule</string>
+            <string>CustomObjectCriteriaBasedSharingRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>customObjectSharingRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>sharingRules</suffix>
+        <xmlName>CustomObjectSharingRules</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
     </c>
     <list reference="../c"/>
