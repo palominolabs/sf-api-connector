@@ -1236,7 +1236,7 @@
         <labelPlural>Chatter Group Members</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
-        <updateable>false</updateable>
+        <updateable>true</updateable>
         <sObjectUrls>
           <sobjectUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMember</sobjectUrlPath>
           <describeUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMember/describe</describeUrlPath>
@@ -1297,9 +1297,9 @@
           <rowTemplateUrlPath>/services/data/v21.0/sobjects/CollaborationInvitation/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
-        <createable>false</createable>
+        <createable>true</createable>
         <customSetting>false</customSetting>
-        <deletable>false</deletable>
+        <deletable>true</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <feedEnabled>false</feedEnabled>
         <mergeable>false</mergeable>
@@ -1450,7 +1450,7 @@
         <labelPlural>Content</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
-        <updateable>false</updateable>
+        <updateable>true</updateable>
         <sObjectUrls>
           <sobjectUrlPath>/services/data/v21.0/sobjects/ContentDocument</sobjectUrlPath>
           <describeUrlPath>/services/data/v21.0/sobjects/ContentDocument/describe</describeUrlPath>
@@ -1467,7 +1467,7 @@
         <replicateable>false</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
-        <triggerable>false</triggerable>
+        <triggerable>true</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>ContentDocumentFeed</name>
@@ -3446,6 +3446,33 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>PushTopic</name>
+        <label>Push Topic</label>
+        <custom>false</custom>
+        <keyPrefix>0IF</keyPrefix>
+        <labelPlural>Push Topics</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v21.0/sobjects/PushTopic</sobjectUrlPath>
+          <describeUrlPath>/services/data/v21.0/sobjects/PushTopic/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v21.0/sobjects/PushTopic/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>QueueSobject</name>
         <label>Queue Sobject</label>
         <custom>false</custom>
@@ -3592,6 +3619,7 @@
           <sobjectUrlPath>/services/data/v21.0/sobjects/SelfServiceUser</sobjectUrlPath>
           <describeUrlPath>/services/data/v21.0/sobjects/SelfServiceUser/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v21.0/sobjects/SelfServiceUser/{ID}</rowTemplateUrlPath>
+          <passwordUtilities>/services/data/v21.0/sobjects/SelfServiceUser/{ID}/password</passwordUtilities>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3962,6 +3990,7 @@
           <sobjectUrlPath>/services/data/v21.0/sobjects/User</sobjectUrlPath>
           <describeUrlPath>/services/data/v21.0/sobjects/User/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v21.0/sobjects/User/{ID}</rowTemplateUrlPath>
+          <passwordUtilities>/services/data/v21.0/sobjects/User/{ID}/password</passwordUtilities>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>

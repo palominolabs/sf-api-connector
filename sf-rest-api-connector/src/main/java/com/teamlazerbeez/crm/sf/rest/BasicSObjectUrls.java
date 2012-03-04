@@ -20,15 +20,31 @@ import org.codehaus.jackson.annotate.JsonCreator;
 import org.codehaus.jackson.annotate.JsonProperty;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
 @Immutable
 public final class BasicSObjectUrls extends AbstractSObjectUrls {
 
+    @Nullable
+    private final String passwordUtilities;
+
     @JsonCreator
     BasicSObjectUrls(@Nonnull @JsonProperty("sobject") String sobjectUrlPath,
             @Nonnull @JsonProperty("describe") String describeUrlPath,
-            @Nonnull @JsonProperty("rowTemplate") String rowTemplateUrlPath) {
+            @Nonnull @JsonProperty("rowTemplate") String rowTemplateUrlPath,
+            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities) {
         super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath);
+        this.passwordUtilities = passwordUtilities;
+    }
+
+    /**
+     * Only seems to be present on User and SelfServiceUser as of 2012-03-04
+     *
+     * @return url for password stuff
+     */
+    @Nullable
+    public String getPasswordUtilities() {
+        return passwordUtilities;
     }
 }

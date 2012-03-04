@@ -77,14 +77,14 @@
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Assets</relationshipName>
-        <cascadeDelete>false</cascadeDelete>
+        <cascadeDelete>true</cascadeDelete>
         <childSObject>Asset</childSObject>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Attachments</relationshipName>
-        <cascadeDelete>false</cascadeDelete>
+        <cascadeDelete>true</cascadeDelete>
         <childSObject>Attachment</childSObject>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
@@ -155,7 +155,7 @@
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
-        <cascadeDelete>false</cascadeDelete>
+        <cascadeDelete>true</cascadeDelete>
         <childSObject>FeedPost</childSObject>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
@@ -195,7 +195,7 @@
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Opportunities</relationshipName>
-        <cascadeDelete>false</cascadeDelete>
+        <cascadeDelete>true</cascadeDelete>
         <childSObject>Opportunity</childSObject>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
