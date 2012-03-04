@@ -342,6 +342,13 @@ public class PartnerConnectionImplTest {
     }
 
     @Test
+    public void testQuerySite() throws ApiException {
+        PartnerQueryResult query = this.conn.query("SELECT Id FROM Site");
+        assertEquals(1, query.getTotalSize());
+        assertEquals(new Id("0DM50000000PBBU"), query.getSObjects().get(0).getId());
+    }
+
+    @Test
     @SuppressWarnings("unchecked")
     public void testQueryWithSubquery() throws ApiException {
         PartnerQueryResult relQR = conn.query(
