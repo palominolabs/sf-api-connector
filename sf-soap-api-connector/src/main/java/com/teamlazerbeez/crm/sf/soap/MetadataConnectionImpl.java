@@ -19,6 +19,7 @@ package com.teamlazerbeez.crm.sf.soap;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.Metadata;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
+import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.UpdateMetadata;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 
@@ -106,26 +107,25 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
             idStrList.add(id.toString());
         }
 
-        List<com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.AsyncResult> stubAsyncResults =
-                new CheckStatusOp().execute(idStrList);
-
-        return convertStubAsyncResultList(stubAsyncResults);
+        return convertStubAsyncResultList(new CheckStatusOp().execute(idStrList));
     }
 
     @Override
     @Nonnull
     public synchronized List<AsyncResult> create(@Nonnull List<Metadata> metadataList) throws ApiException {
-        List<com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.AsyncResult> stubAsyncResults =
-                new CreateOp().execute(metadataList);
-        return convertStubAsyncResultList(stubAsyncResults);
+        return convertStubAsyncResultList(new CreateOp().execute(metadataList));
     }
 
     @Override
     @Nonnull
     public synchronized List<AsyncResult> delete(@Nonnull List<Metadata> metadataList) throws ApiException {
-        List<com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.AsyncResult> stubAsyncResults =
-                new DeleteOp().execute(metadataList);
-        return convertStubAsyncResultList(stubAsyncResults);
+        return convertStubAsyncResultList(new DeleteOp().execute(metadataList));
+    }
+
+    @Override
+    @Nonnull
+    public synchronized List<AsyncResult> update(@Nonnull List<UpdateMetadata> metadataList) throws ApiException {
+        return convertStubAsyncResultList(new UpdateOp().execute(metadataList));
     }
 
     @Override
@@ -261,6 +261,16 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
         List<com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.AsyncResult> executeOp(@Nonnull MetadataPortType binding,
                 @Nonnull List<Metadata> param) {
             return binding.delete(param);
+        }
+    }
+
+    private class UpdateOp extends MetadataApiOperation<List<UpdateMetadata>, List<com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.AsyncResult>> {
+
+        @Nonnull
+        @Override
+        List<com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.AsyncResult> executeOp(@Nonnull MetadataPortType binding,
+                @Nonnull List<UpdateMetadata> param) {
+            return binding.update(param);
         }
     }
 

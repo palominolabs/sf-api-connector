@@ -24,6 +24,7 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.FolderAccessTypes;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.Metadata;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.StaticResource;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.StaticResourceCacheControl;
+import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.UpdateMetadata;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.WorkflowActionReference;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.WorkflowActionType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.WorkflowOutboundMessage;
@@ -142,6 +143,37 @@ public class MetadataConnectionImplTest {
     }
 
     @Test
+    public void testUpdateAndDeleteFolder() throws ApiException, InterruptedException {
+        List<Metadata> mdList = new ArrayList<Metadata>();
+        DocumentFolder folder = new DocumentFolder();
+        mdList.add(folder);
+
+        folder.setFullName("testFolderFullName");
+        folder.setAccessType(FolderAccessTypes.PUBLIC);
+        folder.setName("testFolderName");
+
+        try {
+            createMetadata(mdList);
+
+            UpdateMetadata updateMetadata = new UpdateMetadata();
+            updateMetadata.setMetadata(folder);
+            folder.setFullName(folder.getFullName() + "updated");
+            updateMetadata.setCurrentName("testFolderFullName");
+
+            checkResults(mdconn.update(Arrays.asList(updateMetadata)));
+
+            List<FileProperties> propsList =
+                    mdconn.listMetadata(Arrays.asList(new ListMetadataQuery("DocumentFolder")));
+
+            FileProperties props = propsList.get(0);
+            assertEquals(folder.getFullName(), props.getFullName());
+        } finally {
+            // delete will use the updated folder name
+            deleteMetadata(mdList);
+        }
+    }
+
+    @Test
     public void testCreateAndDeleteStaticResource() throws ApiException, InterruptedException {
         List<Metadata> mdList = new ArrayList<Metadata>();
         StaticResource metadata = new StaticResource();
@@ -158,7 +190,7 @@ public class MetadataConnectionImplTest {
 
     @Test
     @SuppressWarnings("unchecked")
-    public void testGetCustomFieldMetadata() throws ApiException {
+    public void testListMetadataGetCustomFieldMetadata() throws ApiException {
         ListMetadataQuery query = new ListMetadataQuery("CustomField");
         List<FileProperties> actual = this.mdconn.listMetadata(Collections.singletonList(query));
 
@@ -223,7 +255,7 @@ public class MetadataConnectionImplTest {
         }
     }
 
-    @SuppressWarnings({"unchecked"})
+    @SuppressWarnings("unchecked")
     @Test
     public void testRetrieve() throws ApiException, InterruptedException, IOException {
 
@@ -304,7 +336,7 @@ public class MetadataConnectionImplTest {
      * @throws IllegalAccessException
      * @throws InstantiationException
      */
-    @SuppressWarnings({"JavaDoc"})
+    @SuppressWarnings("JavaDoc")
     private void deleteAllOfType(String type, Class<? extends Metadata> typeClass)
             throws ApiException, InterruptedException, NoSuchMethodException, InvocationTargetException,
             IllegalAccessException, InstantiationException {
@@ -330,7 +362,7 @@ public class MetadataConnectionImplTest {
         deleteMetadata(toDelete);
     }
 
-    private void assertInvalidSession(ApiException e) {
+    private static void assertInvalidSession(ApiException e) {
         assertEquals("Call failed", e.getMessage());
         Throwable cause = e.getCause();
         assertTrue(cause instanceof SOAPFaultException);
@@ -368,13 +400,17 @@ public class MetadataConnectionImplTest {
     }
 
     private void createMetadata(List<Metadata> mdList) throws ApiException, InterruptedException {
-        List<AsyncResult> asyncResults = mdconn.create(mdList);
+        checkResults(mdconn.create(mdList));
+    }
+
+    private void checkResults(List<AsyncResult> asyncResults)
+            throws ApiException, InterruptedException {
         WaitForAsyncResult newResults = mdconn.waitForAsyncResults(asyncResults, 10000);
         List<AsyncResult> resultList = newResults.getAll();
 
-        assertEquals(mdList.size(), resultList.size());
+        assertEquals(asyncResults.size(), resultList.size());
 
-        for (int i = 0; i < mdList.size(); i++) {
+        for (int i = 0; i < asyncResults.size(); i++) {
             AsyncResult result = resultList.get(i);
             assertTrue(result.isDone());
             assertEquals(result.getMessage(), AsyncRequestState.COMPLETED, result.getState());
@@ -390,13 +426,6 @@ public class MetadataConnectionImplTest {
     }
 
     private void deleteMetadata(List<Metadata> mdList) throws ApiException, InterruptedException {
-        List<AsyncResult> deleteResults = mdconn.delete(mdList);
-        WaitForAsyncResult deleteFinalResults = mdconn.waitForAsyncResults(deleteResults, 10000);
-
-        for (int i = 0; i < mdList.size(); i++) {
-            AsyncResult deleteResult = deleteFinalResults.getAll().get(i);
-            assertTrue(deleteResult.isDone());
-            assertEquals(deleteResult.getMessage(), AsyncRequestState.COMPLETED, deleteResult.getState());
-        }
+        checkResults(mdconn.delete(mdList));
     }
 }

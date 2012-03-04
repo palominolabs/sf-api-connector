@@ -18,6 +18,7 @@ package com.teamlazerbeez.crm.sf.soap;
 
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.Metadata;
+import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.UpdateMetadata;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.ThreadSafe;
@@ -52,6 +53,9 @@ public interface MetadataConnection {
     List<AsyncResult> delete(@Nonnull List<Metadata> metadataList) throws ApiException;
 
     @Nonnull
+    List<AsyncResult> update(@Nonnull List<UpdateMetadata> metadataList) throws ApiException;
+
+    @Nonnull
     List<FileProperties> listMetadata(@Nonnull List<ListMetadataQuery> queries)
             throws ApiException;
 
@@ -83,4 +87,5 @@ public interface MetadataConnection {
 
     @Nonnull
     DescribeMetadataResult describeMetadata(double apiVersion) throws ApiException;
+
 }
