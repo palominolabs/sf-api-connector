@@ -212,6 +212,20 @@ public class MetadataConnectionImplTest {
     }
 
     @Test
+    public void testGetFilePropertiesIdMayBeNull() throws ApiException {
+        /* WSDL declares FileProperties.id as required and non-null but sometimes it shows up as "" over the wire.
+           This should be exposed as a null id. Unfortunately I cannot repro on my data set but Edwin's email of 2012-03-04 contains
+           a demonstration that the problem is real. All I can do is check that getting FP's id doesn't crash.
+        */
+        List<FileProperties> fpList = mdconn.listMetadata(Arrays.asList(new ListMetadataQuery("CustomField")));
+
+        for (FileProperties fileProperties : fpList) {
+            // doesn't crash
+            fileProperties.getId();
+        }
+    }
+
+    @Test
     public void testListMetadataWithInvalidSessionId()
             throws NoSuchFieldException, UnexpectedErrorFault_Exception, IllegalAccessException, ApiException {
 

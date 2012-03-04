@@ -67,9 +67,20 @@ public final class FileProperties {
         return stub.getFullName();
     }
 
-    @Nonnull
+    /**
+     * This is documented as non-null in the WSDL but does show up as "" (empty string) sometimes. This is exposed as a
+     * null id.
+     *
+     * @return an id, if one was specified
+     */
+    @Nullable
     public Id getId() {
-        return new Id(stub.getId());
+        String stubId = stub.getId();
+        if (stubId != null && !stubId.isEmpty()) {
+            return new Id(stubId);
+        }
+
+        return null;
     }
 
     @Nonnull
