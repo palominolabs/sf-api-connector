@@ -1425,7 +1425,7 @@
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
-          <createable>false</createable>
+          <createable>true</createable>
           <custom>false</custom>
           <customSetting>false</customSetting>
           <deletable>true</deletable>
@@ -1443,7 +1443,7 @@
           <searchable>false</searchable>
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>
-          <updateable>false</updateable>
+          <updateable>true</updateable>
         </stubResult>
       </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>

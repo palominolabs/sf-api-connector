@@ -1486,7 +1486,7 @@
     }, {
         "name" : "ContentDocumentLink",
         "label" : "Content Document Link",
-        "updateable" : false,
+        "updateable" : true,
         "keyPrefix" : "06A",
         "custom" : false,
         "urls" : {
@@ -1498,7 +1498,7 @@
         "labelPlural" : "Content Document Link",
         "layoutable" : false,
         "activateable" : false,
-        "createable" : false,
+        "createable" : true,
         "deprecatedAndHidden" : false,
         "deletable" : true,
         "customSetting" : false,

@@ -1529,14 +1529,14 @@
         <labelPlural>Content Document Link</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
-        <updateable>false</updateable>
+        <updateable>true</updateable>
         <sObjectUrls>
           <sobjectUrlPath>/services/data/v21.0/sobjects/ContentDocumentLink</sobjectUrlPath>
           <describeUrlPath>/services/data/v21.0/sobjects/ContentDocumentLink/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContentDocumentLink/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
-        <createable>false</createable>
+        <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
