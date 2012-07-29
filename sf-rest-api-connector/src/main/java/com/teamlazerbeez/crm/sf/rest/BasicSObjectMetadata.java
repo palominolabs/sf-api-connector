@@ -49,17 +49,26 @@ public final class BasicSObjectMetadata implements GlobalSObjectDescription {
     private final boolean triggerable;
 
     @JsonCreator
-    BasicSObjectMetadata(@JsonProperty("name") String name, @JsonProperty("label") String label,
-            @JsonProperty("custom") boolean custom, @JsonProperty("keyPrefix") String keyPrefix,
-            @JsonProperty("labelPlural") String labelPlural, @JsonProperty("layoutable") boolean layoutable,
-            @JsonProperty("activateable") boolean activateable, @JsonProperty("updateable") boolean updateable,
-            @JsonProperty("urls") BasicSObjectUrls SObjectUrls, @JsonProperty("searchable") boolean searchable,
-            @JsonProperty("createable") boolean createable, @JsonProperty("customSetting") boolean customSetting,
+    BasicSObjectMetadata(@JsonProperty("name") String name,
+            @JsonProperty("label") String label,
+            @JsonProperty("custom") boolean custom,
+            @JsonProperty("keyPrefix") String keyPrefix,
+            @JsonProperty("labelPlural") String labelPlural,
+            @JsonProperty("layoutable") boolean layoutable,
+            @JsonProperty("activateable") boolean activateable,
+            @JsonProperty("updateable") boolean updateable,
+            @JsonProperty("urls") BasicSObjectUrls SObjectUrls,
+            @JsonProperty("searchable") boolean searchable,
+            @JsonProperty("createable") boolean createable,
+            @JsonProperty("customSetting") boolean customSetting,
             @JsonProperty("deletable") boolean deletable,
             @JsonProperty("deprecatedAndHidden") boolean deprecatedAndHidden,
-            @JsonProperty("feedEnabled") boolean feedEnabled, @JsonProperty("mergeable") boolean mergeable,
-            @JsonProperty("queryable") boolean queryable, @JsonProperty("replicateable") boolean replicateable,
-            @JsonProperty("retrieveable") boolean retrieveable, @JsonProperty("undeletable") boolean undeletable,
+            @JsonProperty("feedEnabled") boolean feedEnabled,
+            @JsonProperty("mergeable") boolean mergeable,
+            @JsonProperty("queryable") boolean queryable,
+            @JsonProperty("replicateable") boolean replicateable,
+            @JsonProperty("retrieveable") boolean retrieveable,
+            @JsonProperty("undeletable") boolean undeletable,
             @JsonProperty("triggerable") boolean triggerable) {
         this.name = name;
         this.label = label;

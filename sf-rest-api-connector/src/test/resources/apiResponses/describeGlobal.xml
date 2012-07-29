@@ -13,9 +13,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Account</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Account/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Account/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Account</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Account/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Account/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -40,9 +40,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AccountContactRole</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AccountContactRole/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AccountContactRole/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AccountContactRole</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AccountContactRole/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AccountContactRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -66,9 +66,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AccountFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AccountFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AccountFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AccountFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AccountFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AccountFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -92,9 +92,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AccountHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AccountHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AccountHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AccountHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AccountHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AccountHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -118,9 +118,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AccountPartner</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AccountPartner/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AccountPartner/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AccountPartner</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AccountPartner/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AccountPartner/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -145,9 +145,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AccountShare</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AccountShare/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AccountShare/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AccountShare</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AccountShare/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AccountShare/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -171,9 +171,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ActivityHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ActivityHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ActivityHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ActivityHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ActivityHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ActivityHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -198,9 +198,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AdditionalNumber</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AdditionalNumber/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AdditionalNumber/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AdditionalNumber</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AdditionalNumber/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AdditionalNumber/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -224,9 +224,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AggregateResult</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AggregateResult/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AggregateResult/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AggregateResult</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AggregateResult/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AggregateResult/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -251,9 +251,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ApexClass</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ApexClass/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ApexClass/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexClass</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexClass/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexClass/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -278,9 +278,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ApexComponent</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ApexComponent/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ApexComponent/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexComponent</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexComponent/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexComponent/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -296,6 +296,33 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>ApexExecutionOverlayAction</name>
+        <label>Apex Execution Overlay Action</label>
+        <custom>false</custom>
+        <keyPrefix>1do</keyPrefix>
+        <labelPlural>Apex Execution Overlay Actions</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexExecutionOverlayAction</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexExecutionOverlayAction/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexExecutionOverlayAction/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexLog</name>
         <label>Apex Debug Log</label>
         <custom>false</custom>
@@ -305,9 +332,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ApexLog</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ApexLog/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ApexLog/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexLog</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexLog/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexLog/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -332,9 +359,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ApexPage</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ApexPage/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ApexPage/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexPage</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexPage/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexPage/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -350,6 +377,60 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>ApexTestQueueItem</name>
+        <label>Apex Test Queue Item</label>
+        <custom>false</custom>
+        <keyPrefix>709</keyPrefix>
+        <labelPlural>Apex Test Queue Items</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexTestQueueItem</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexTestQueueItem/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexTestQueueItem/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>ApexTestResult</name>
+        <label>Apex Test Result</label>
+        <custom>false</custom>
+        <keyPrefix>07M</keyPrefix>
+        <labelPlural>Apex Test Results</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexTestResult</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexTestResult/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexTestResult/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexTrigger</name>
         <label>Apex Trigger</label>
         <custom>false</custom>
@@ -359,9 +440,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ApexTrigger</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ApexTrigger/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ApexTrigger/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ApexTrigger</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ApexTrigger/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ApexTrigger/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -386,9 +467,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Approval</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Approval/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Approval/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Approval</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Approval/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Approval/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -413,9 +494,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Asset</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Asset/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Asset/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Asset</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Asset/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Asset/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -439,9 +520,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AssetFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AssetFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AssetFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AssetFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AssetFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AssetFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -465,9 +546,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AssignmentRule</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AssignmentRule/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AssignmentRule/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AssignmentRule</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AssignmentRule/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AssignmentRule/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -492,9 +573,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/AsyncApexJob</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/AsyncApexJob/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/AsyncApexJob/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/AsyncApexJob</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/AsyncApexJob/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/AsyncApexJob/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -519,9 +600,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Attachment</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Attachment/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Attachment/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Attachment</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Attachment/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Attachment/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -546,9 +627,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/BrandTemplate</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/BrandTemplate/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/BrandTemplate/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/BrandTemplate</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/BrandTemplate/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/BrandTemplate/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -573,9 +654,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/BusinessHours</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/BusinessHours/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/BusinessHours/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/BusinessHours</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/BusinessHours/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/BusinessHours/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -600,9 +681,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/BusinessProcess</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/BusinessProcess/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/BusinessProcess/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/BusinessProcess</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/BusinessProcess/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/BusinessProcess/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -627,9 +708,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CallCenter</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CallCenter/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CallCenter/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CallCenter</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CallCenter/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CallCenter/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -654,9 +735,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Campaign</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Campaign/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Campaign/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Campaign</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Campaign/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Campaign/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -680,9 +761,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CampaignFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CampaignFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CampaignFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CampaignFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CampaignFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CampaignFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -707,9 +788,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CampaignMember</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CampaignMember/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CampaignMember/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CampaignMember</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CampaignMember/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CampaignMember/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -734,9 +815,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CampaignMemberStatus</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CampaignMemberStatus/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CampaignMemberStatus/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CampaignMemberStatus</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CampaignMemberStatus/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CampaignMemberStatus/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -761,9 +842,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CampaignShare</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CampaignShare/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CampaignShare/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CampaignShare</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CampaignShare/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CampaignShare/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -788,9 +869,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Case</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Case/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Case/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Case</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Case/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Case/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -815,9 +896,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseComment</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseComment/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseComment/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseComment</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseComment/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseComment/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -842,9 +923,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseContactRole</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseContactRole/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseContactRole/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseContactRole</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseContactRole/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseContactRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -868,9 +949,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -894,9 +975,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -921,9 +1002,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseShare</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseShare/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseShare/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseShare</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseShare/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseShare/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -948,9 +1029,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseSolution</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseSolution/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseSolution/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseSolution</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseSolution/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseSolution/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -974,9 +1055,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseStatus</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseStatus/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseStatus/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseStatus</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseStatus/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseStatus/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1000,9 +1081,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseTeamMember</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseTeamMember/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseTeamMember/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseTeamMember</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseTeamMember/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseTeamMember/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1026,9 +1107,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseTeamRole</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseTeamRole/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseTeamRole/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseTeamRole</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseTeamRole/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseTeamRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1052,9 +1133,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplate</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplate/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplate/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplate</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplate/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplate/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1078,9 +1159,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplateMember</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplateMember/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplateMember/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplateMember</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplateMember/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplateMember/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1104,9 +1185,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplateRecord</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplateRecord/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CaseTeamTemplateRecord/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplateRecord</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplateRecord/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CaseTeamTemplateRecord/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1131,9 +1212,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CategoryData</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CategoryData/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CategoryData/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CategoryData</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CategoryData/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CategoryData/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1158,9 +1239,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CategoryNode</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CategoryNode/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CategoryNode/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CategoryNode</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CategoryNode/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CategoryNode/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1176,6 +1257,33 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>ChatterActivity</name>
+        <label>Chatter Activity</label>
+        <custom>false</custom>
+        <keyPrefix>0ca</keyPrefix>
+        <labelPlural>Chatter Activities</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ChatterActivity</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ChatterActivity/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ChatterActivity/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroup</name>
         <label>Chatter Group</label>
         <custom>false</custom>
@@ -1185,9 +1293,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CollaborationGroup</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CollaborationGroup/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CollaborationGroup/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CollaborationGroup</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CollaborationGroup/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CollaborationGroup/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -1211,9 +1319,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CollaborationGroupFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CollaborationGroupFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CollaborationGroupFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CollaborationGroupFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CollaborationGroupFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CollaborationGroupFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1238,9 +1346,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMember</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMember/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMember/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CollaborationGroupMember</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CollaborationGroupMember/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CollaborationGroupMember/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1265,9 +1373,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMemberRequest</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMemberRequest/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CollaborationGroupMemberRequest/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CollaborationGroupMemberRequest</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CollaborationGroupMemberRequest/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CollaborationGroupMemberRequest/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1292,9 +1400,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CollaborationInvitation</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CollaborationInvitation/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CollaborationInvitation/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CollaborationInvitation</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CollaborationInvitation/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CollaborationInvitation/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1319,9 +1427,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Community</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Community/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Community/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Community</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Community/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Community/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1346,9 +1454,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Contact</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Contact/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Contact/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Contact</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Contact/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Contact/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -1372,9 +1480,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContactFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContactFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContactFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContactFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContactFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContactFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1398,9 +1506,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContactHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContactHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContactHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContactHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContactHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContactHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1425,9 +1533,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContactShare</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContactShare/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContactShare/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContactShare</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContactShare/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContactShare/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1452,9 +1560,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContentDocument</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContentDocument/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContentDocument/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContentDocument</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContentDocument/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContentDocument/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1478,9 +1586,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContentDocumentFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContentDocumentFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContentDocumentFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContentDocumentFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContentDocumentFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContentDocumentFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1504,9 +1612,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContentDocumentHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContentDocumentHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContentDocumentHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContentDocumentHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContentDocumentHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContentDocumentHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1531,9 +1639,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContentDocumentLink</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContentDocumentLink/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContentDocumentLink/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContentDocumentLink</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContentDocumentLink/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContentDocumentLink/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1558,9 +1666,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContentVersion</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContentVersion/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContentVersion/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContentVersion</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContentVersion/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContentVersion/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -1584,9 +1692,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContentVersionHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContentVersionHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContentVersionHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContentVersionHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContentVersionHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContentVersionHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1611,9 +1719,9 @@
         <activateable>true</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Contract</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Contract/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Contract/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Contract</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Contract/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Contract/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -1638,9 +1746,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContractContactRole</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContractContactRole/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContractContactRole/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContractContactRole</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContractContactRole/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContractContactRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1664,9 +1772,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContractFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContractFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContractFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContractFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContractFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContractFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1690,9 +1798,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContractHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContractHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContractHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContractHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContractHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContractHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1716,9 +1824,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ContractStatus</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ContractStatus/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ContractStatus/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ContractStatus</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ContractStatus/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ContractStatus/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1743,14 +1851,41 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/CronTrigger</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/CronTrigger/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/CronTrigger/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CronTrigger</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CronTrigger/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CronTrigger/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
         <customSetting>false</customSetting>
         <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>CustomConsoleComponent</name>
+        <label>Custom Console Component</label>
+        <custom>false</custom>
+        <keyPrefix>06G</keyPrefix>
+        <labelPlural>Custom Console Components</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/CustomConsoleComponent</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/CustomConsoleComponent/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/CustomConsoleComponent/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <feedEnabled>false</feedEnabled>
         <mergeable>false</mergeable>
@@ -1770,9 +1905,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Dashboard</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Dashboard/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Dashboard/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Dashboard</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Dashboard/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Dashboard/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1797,9 +1932,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/DashboardComponent</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/DashboardComponent/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/DashboardComponent/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/DashboardComponent</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/DashboardComponent/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/DashboardComponent/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1823,9 +1958,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/DashboardComponentFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/DashboardComponentFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/DashboardComponentFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/DashboardComponentFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/DashboardComponentFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/DashboardComponentFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1849,9 +1984,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/DashboardFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/DashboardFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/DashboardFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/DashboardFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/DashboardFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/DashboardFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -1876,9 +2011,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Document</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Document/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Document/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Document</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Document/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Document/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -1903,9 +2038,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/DocumentAttachmentMap</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/DocumentAttachmentMap/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/DocumentAttachmentMap/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/DocumentAttachmentMap</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/DocumentAttachmentMap/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/DocumentAttachmentMap/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1930,9 +2065,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/EmailServicesAddress</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/EmailServicesAddress/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/EmailServicesAddress/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/EmailServicesAddress</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/EmailServicesAddress/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/EmailServicesAddress/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1957,9 +2092,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/EmailServicesFunction</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/EmailServicesFunction/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/EmailServicesFunction/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/EmailServicesFunction</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/EmailServicesFunction/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/EmailServicesFunction/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -1984,9 +2119,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/EmailStatus</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/EmailStatus/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/EmailStatus/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/EmailStatus</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/EmailStatus/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/EmailStatus/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2011,9 +2146,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/EmailTemplate</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/EmailTemplate/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/EmailTemplate/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/EmailTemplate</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/EmailTemplate/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/EmailTemplate/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2038,9 +2173,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/EntitySubscription</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/EntitySubscription/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/EntitySubscription/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/EntitySubscription</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/EntitySubscription/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/EntitySubscription/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2065,9 +2200,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Event</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Event/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Event/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Event</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Event/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Event/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2092,9 +2227,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/EventAttendee</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/EventAttendee/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/EventAttendee/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/EventAttendee</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/EventAttendee/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/EventAttendee/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2118,9 +2253,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/EventFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/EventFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/EventFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/EventFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/EventFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/EventFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2145,9 +2280,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/FeedComment</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/FeedComment/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/FeedComment/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/FeedComment</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/FeedComment/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/FeedComment/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2172,9 +2307,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/FeedItem</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/FeedItem/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/FeedItem/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/FeedItem</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/FeedItem/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/FeedItem/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2199,38 +2334,11 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/FeedLike</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/FeedLike/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/FeedLike/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/FeedLike</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/FeedLike/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/FeedLike/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
-        <createable>true</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>false</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>false</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>FeedPost</name>
-        <label>Feed Post</label>
-        <custom>false</custom>
-        <keyPrefix>0F7</keyPrefix>
-        <labelPlural>Feed Posts</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>false</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/FeedPost</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/FeedPost/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/FeedPost/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -2253,9 +2361,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/FeedTrackedChange</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/FeedTrackedChange/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/FeedTrackedChange/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/FeedTrackedChange</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/FeedTrackedChange/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/FeedTrackedChange/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2271,6 +2379,33 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>FieldPermissions</name>
+        <label>Field Permissions</label>
+        <custom>false</custom>
+        <keyPrefix>01k</keyPrefix>
+        <labelPlural>Field Permissions</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/FieldPermissions</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/FieldPermissions/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/FieldPermissions/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>FiscalYearSettings</name>
         <label>Fiscal Year Settings</label>
         <custom>false</custom>
@@ -2280,9 +2415,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/FiscalYearSettings</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/FiscalYearSettings/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/FiscalYearSettings/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/FiscalYearSettings</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/FiscalYearSettings/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/FiscalYearSettings/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2307,9 +2442,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Folder</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Folder/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Folder/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Folder</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Folder/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Folder/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2334,9 +2469,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ForecastShare</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ForecastShare/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ForecastShare/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ForecastShare</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ForecastShare/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ForecastShare/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2361,9 +2496,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Group</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Group/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Group/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Group</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Group/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Group/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2388,9 +2523,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/GroupMember</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/GroupMember/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/GroupMember/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/GroupMember</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/GroupMember/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/GroupMember/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2415,9 +2550,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Holiday</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Holiday/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Holiday/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Holiday</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Holiday/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Holiday/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2433,6 +2568,60 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>IDEPerspective</name>
+        <label>IDE Perspective</label>
+        <custom>false</custom>
+        <keyPrefix>1dp</keyPrefix>
+        <labelPlural>IDE Perspectives</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/IDEPerspective</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/IDEPerspective/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/IDEPerspective/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>IDEWorkspace</name>
+        <label>IDE Workspace</label>
+        <custom>false</custom>
+        <keyPrefix>1de</keyPrefix>
+        <labelPlural>IDE Workspaces</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/IDEWorkspace</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/IDEWorkspace/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/IDEWorkspace/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>Idea</name>
         <label>Idea</label>
         <custom>false</custom>
@@ -2442,9 +2631,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Idea</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Idea/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Idea/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Idea</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Idea/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Idea/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2469,9 +2658,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/IdeaComment</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/IdeaComment/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/IdeaComment/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/IdeaComment</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/IdeaComment/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/IdeaComment/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2496,9 +2685,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Lead</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Lead/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Lead/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Lead</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Lead/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Lead/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2522,9 +2711,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/LeadFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/LeadFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/LeadFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/LeadFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/LeadFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/LeadFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2548,9 +2737,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/LeadHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/LeadHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/LeadHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/LeadHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/LeadHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/LeadHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2575,9 +2764,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/LeadShare</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/LeadShare/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/LeadShare/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/LeadShare</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/LeadShare/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/LeadShare/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2601,9 +2790,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/LeadStatus</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/LeadStatus/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/LeadStatus/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/LeadStatus</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/LeadStatus/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/LeadStatus/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2628,9 +2817,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/LoginHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/LoginHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/LoginHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/LoginHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/LoginHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/LoginHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2655,9 +2844,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/MailmergeTemplate</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/MailmergeTemplate/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/MailmergeTemplate/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/MailmergeTemplate</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/MailmergeTemplate/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/MailmergeTemplate/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2681,9 +2870,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Name</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Name/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Name/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Name</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Name/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Name/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2708,9 +2897,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/NewsFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/NewsFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/NewsFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/NewsFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/NewsFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/NewsFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2735,9 +2924,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Note</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Note/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Note/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Note</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Note/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Note/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2761,9 +2950,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/NoteAndAttachment</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/NoteAndAttachment/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/NoteAndAttachment/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/NoteAndAttachment</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/NoteAndAttachment/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/NoteAndAttachment/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2779,6 +2968,33 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>ObjectPermissions</name>
+        <label>Object Permissions</label>
+        <custom>false</custom>
+        <keyPrefix>110</keyPrefix>
+        <labelPlural>Object Permissions</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ObjectPermissions</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ObjectPermissions/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ObjectPermissions/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>OpenActivity</name>
         <label>Open Activity</label>
         <custom>false</custom>
@@ -2787,9 +3003,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpenActivity</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpenActivity/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpenActivity/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpenActivity</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpenActivity/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpenActivity/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2814,9 +3030,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Opportunity</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Opportunity/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Opportunity/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Opportunity</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Opportunity/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Opportunity/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -2841,9 +3057,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityCompetitor</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityCompetitor/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityCompetitor/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityCompetitor</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityCompetitor/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityCompetitor/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2868,9 +3084,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityContactRole</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityContactRole/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityContactRole/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityContactRole</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityContactRole/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityContactRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -2894,9 +3110,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2920,9 +3136,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityFieldHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityFieldHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityFieldHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityFieldHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityFieldHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityFieldHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2947,9 +3163,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -2974,9 +3190,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityLineItem</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityLineItem/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityLineItem/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityLineItem</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityLineItem/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityLineItem/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3000,9 +3216,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityPartner</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityPartner/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityPartner/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityPartner</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityPartner/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityPartner/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3027,9 +3243,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityShare</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityShare/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityShare/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityShare</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityShare/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityShare/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3053,9 +3269,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OpportunityStage</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OpportunityStage/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OpportunityStage/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OpportunityStage</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OpportunityStage/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OpportunityStage/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3080,9 +3296,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/OrgWideEmailAddress</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/OrgWideEmailAddress/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/OrgWideEmailAddress/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/OrgWideEmailAddress</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/OrgWideEmailAddress/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/OrgWideEmailAddress/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3107,9 +3323,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Organization</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Organization/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Organization/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Organization</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Organization/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Organization/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3134,9 +3350,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Partner</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Partner/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Partner/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Partner</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Partner/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Partner/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3160,9 +3376,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/PartnerRole</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/PartnerRole/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/PartnerRole/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/PartnerRole</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/PartnerRole/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/PartnerRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3187,9 +3403,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Period</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Period/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Period/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Period</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Period/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Period/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3205,6 +3421,60 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>PermissionSet</name>
+        <label>Permission Set</label>
+        <custom>false</custom>
+        <keyPrefix>0PS</keyPrefix>
+        <labelPlural>Permission Sets</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/PermissionSet</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/PermissionSet/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/PermissionSet/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>PermissionSetAssignment</name>
+        <label>Permission Set Assignment</label>
+        <custom>false</custom>
+        <keyPrefix>0Pa</keyPrefix>
+        <labelPlural>Permission Set Assignments</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/PermissionSetAssignment</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/PermissionSetAssignment/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/PermissionSetAssignment/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>Pricebook2</name>
         <label>Price Book</label>
         <custom>false</custom>
@@ -3214,9 +3484,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Pricebook2</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Pricebook2/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Pricebook2/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Pricebook2</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Pricebook2/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Pricebook2/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3241,9 +3511,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/PricebookEntry</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/PricebookEntry/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/PricebookEntry/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/PricebookEntry</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/PricebookEntry/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/PricebookEntry/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3268,9 +3538,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ProcessInstance</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ProcessInstance/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ProcessInstance/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ProcessInstance</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ProcessInstance/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ProcessInstance/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3294,9 +3564,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ProcessInstanceHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ProcessInstanceHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ProcessInstanceHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ProcessInstanceHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ProcessInstanceHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ProcessInstanceHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3321,9 +3591,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ProcessInstanceStep</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ProcessInstanceStep/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ProcessInstanceStep/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ProcessInstanceStep</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ProcessInstanceStep/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ProcessInstanceStep/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3348,9 +3618,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ProcessInstanceWorkitem</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ProcessInstanceWorkitem/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ProcessInstanceWorkitem/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ProcessInstanceWorkitem</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ProcessInstanceWorkitem/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ProcessInstanceWorkitem/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3375,9 +3645,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Product2</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Product2/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Product2/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Product2</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Product2/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Product2/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -3401,9 +3671,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Product2Feed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Product2Feed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Product2Feed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Product2Feed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Product2Feed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Product2Feed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3428,9 +3698,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Profile</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Profile/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Profile/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Profile</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Profile/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Profile/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3455,9 +3725,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/PushTopic</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/PushTopic/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/PushTopic/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/PushTopic</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/PushTopic/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/PushTopic/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3482,9 +3752,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/QueueSobject</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/QueueSobject/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/QueueSobject/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/QueueSobject</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/QueueSobject/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/QueueSobject/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3509,9 +3779,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/RecordType</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/RecordType/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/RecordType/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/RecordType</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/RecordType/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/RecordType/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3536,9 +3806,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Report</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Report/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Report/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Report</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Report/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Report/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>false</createable>
@@ -3562,36 +3832,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/ReportFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/ReportFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/ReportFeed/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>false</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>true</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>Scontrol</name>
-        <label>Custom S-Control</label>
-        <custom>false</custom>
-        <keyPrefix>01N</keyPrefix>
-        <labelPlural>Custom S-Controls</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Scontrol</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Scontrol/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Scontrol/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/ReportFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/ReportFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/ReportFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3616,10 +3859,10 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/SelfServiceUser</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/SelfServiceUser/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/SelfServiceUser/{ID}</rowTemplateUrlPath>
-          <passwordUtilities>/services/data/v21.0/sobjects/SelfServiceUser/{ID}/password</passwordUtilities>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SelfServiceUser</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SelfServiceUser/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SelfServiceUser/{ID}</rowTemplateUrlPath>
+          <passwordUtilities>/services/data/v25.0/sobjects/SelfServiceUser/{ID}/password</passwordUtilities>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3635,6 +3878,33 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>SetupEntityAccess</name>
+        <label>Setup Entity Access</label>
+        <custom>false</custom>
+        <keyPrefix>0J0</keyPrefix>
+        <labelPlural>Setup Entity Access</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SetupEntityAccess</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SetupEntityAccess/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SetupEntityAccess/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>Site</name>
         <label>Site</label>
         <custom>false</custom>
@@ -3644,9 +3914,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Site</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Site/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Site/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Site</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Site/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Site/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3671,9 +3941,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/SiteDomain</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/SiteDomain/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/SiteDomain/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SiteDomain</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SiteDomain/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SiteDomain/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3697,9 +3967,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/SiteFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/SiteFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/SiteFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SiteFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SiteFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SiteFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3723,9 +3993,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/SiteHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/SiteHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/SiteHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SiteHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SiteHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SiteHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3750,9 +4020,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Solution</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Solution/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Solution/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Solution</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Solution/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Solution/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -3776,9 +4046,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/SolutionFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/SolutionFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/SolutionFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SolutionFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SolutionFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SolutionFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3802,9 +4072,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/SolutionHistory</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/SolutionHistory/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/SolutionHistory/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SolutionHistory</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SolutionHistory/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SolutionHistory/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3828,9 +4098,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/SolutionStatus</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/SolutionStatus/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/SolutionStatus/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/SolutionStatus</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/SolutionStatus/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/SolutionStatus/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3855,9 +4125,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/StaticResource</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/StaticResource/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/StaticResource/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/StaticResource</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/StaticResource/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/StaticResource/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -3882,9 +4152,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Task</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Task/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Task/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Task</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Task/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Task/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -3908,9 +4178,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/TaskFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/TaskFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/TaskFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/TaskFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/TaskFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/TaskFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3934,9 +4204,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/TaskPriority</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/TaskPriority/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/TaskPriority/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/TaskPriority</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/TaskPriority/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/TaskPriority/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -3960,14 +4230,41 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/TaskStatus</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/TaskStatus/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/TaskStatus/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/TaskStatus</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/TaskStatus/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/TaskStatus/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
         <customSetting>false</customSetting>
         <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>TraceFlag</name>
+        <label>Trace Flag</label>
+        <custom>false</custom>
+        <keyPrefix>7tf</keyPrefix>
+        <labelPlural>Trace Flags</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/TraceFlag</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/TraceFlag/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/TraceFlag/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>true</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <feedEnabled>false</feedEnabled>
         <mergeable>false</mergeable>
@@ -3987,10 +4284,10 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/User</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/User/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/User/{ID}</rowTemplateUrlPath>
-          <passwordUtilities>/services/data/v21.0/sobjects/User/{ID}/password</passwordUtilities>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/User</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/User/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/User/{ID}</rowTemplateUrlPath>
+          <passwordUtilities>/services/data/v25.0/sobjects/User/{ID}/password</passwordUtilities>
         </sObjectUrls>
         <searchable>true</searchable>
         <createable>true</createable>
@@ -4014,9 +4311,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/UserFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/UserFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/UserFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/UserFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/UserFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/UserFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -4041,9 +4338,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/UserLicense</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/UserLicense/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/UserLicense/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/UserLicense</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/UserLicense/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/UserLicense/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -4068,9 +4365,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/UserPreference</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/UserPreference/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/UserPreference/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/UserPreference</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/UserPreference/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/UserPreference/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -4095,9 +4392,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/UserProfileFeed</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/UserProfileFeed/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/UserProfileFeed/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/UserProfileFeed</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/UserProfileFeed/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/UserProfileFeed/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
@@ -4113,6 +4410,32 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+        <name>UserRecordAccess</name>
+        <label>User Record Access</label>
+        <custom>false</custom>
+        <labelPlural>User Record Access</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/UserRecordAccess</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/UserRecordAccess/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/UserRecordAccess/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>false</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>UserRole</name>
         <label>Role</label>
         <custom>false</custom>
@@ -4122,9 +4445,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/UserRole</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/UserRole/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/UserRole/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/UserRole</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/UserRole/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/UserRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -4149,9 +4472,9 @@
         <activateable>false</activateable>
         <updateable>false</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/Vote</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/Vote/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/Vote/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/Vote</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/Vote/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/Vote/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>
@@ -4176,9 +4499,9 @@
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
-          <sobjectUrlPath>/services/data/v21.0/sobjects/WebLink</sobjectUrlPath>
-          <describeUrlPath>/services/data/v21.0/sobjects/WebLink/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v21.0/sobjects/WebLink/{ID}</rowTemplateUrlPath>
+          <sobjectUrlPath>/services/data/v25.0/sobjects/WebLink</sobjectUrlPath>
+          <describeUrlPath>/services/data/v25.0/sobjects/WebLink/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v25.0/sobjects/WebLink/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>true</createable>

@@ -9,9 +9,9 @@
     <activateable>false</activateable>
     <updateable>true</updateable>
     <sObjectUrls>
-      <sobjectUrlPath>/services/data/v21.0/sobjects/Account</sobjectUrlPath>
-      <describeUrlPath>/services/data/v21.0/sobjects/Account/describe</describeUrlPath>
-      <rowTemplateUrlPath>/services/data/v21.0/sobjects/Account/{ID}</rowTemplateUrlPath>
+      <sobjectUrlPath>/services/data/v25.0/sobjects/Account</sobjectUrlPath>
+      <describeUrlPath>/services/data/v25.0/sobjects/Account/describe</describeUrlPath>
+      <rowTemplateUrlPath>/services/data/v25.0/sobjects/Account/{ID}</rowTemplateUrlPath>
     </sObjectUrls>
     <searchable>true</searchable>
     <createable>true</createable>

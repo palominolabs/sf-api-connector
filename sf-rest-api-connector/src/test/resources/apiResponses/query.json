@@ -1,13 +1,13 @@
 {
-  "totalSize" : 1,
-  "done" : true,
-  "records" : [ {
-    "attributes" : {
-      "type" : "Product2",
-      "url" : "/services/data/v21.0/sobjects/Product2/01t50000001L5cTAAS"
-    },
-    "Id" : "01t50000001L5cTAAS",
-    "Name" : "GenWatt Diesel 200kW",
-    "Description" : null
-  } ]
+    "totalSize" : 1,
+    "done" : true,
+    "records" : [ {
+        "attributes" : {
+            "type" : "Product2",
+            "url" : "/services/data/v25.0/sobjects/Product2/01t50000001L5cTAAS"
+        },
+        "Id" : "01t50000001L5cTAAS",
+        "Name" : "GenWatt Diesel 200kW",
+        "Description" : null
+    } ]
 }

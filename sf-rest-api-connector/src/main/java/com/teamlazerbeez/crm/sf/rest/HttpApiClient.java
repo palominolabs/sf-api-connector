@@ -60,7 +60,7 @@ import java.util.Map;
 @ThreadSafe
 final class HttpApiClient {
 
-    private static final String API_VERSION = "21.0";
+    private static final String API_VERSION = "25.0";
     static final TypeReference<List<ApiErrorImpl>> API_ERRORS_TYPE = new TypeReference<List<ApiErrorImpl>>() {};
     private static final String UPLOAD_CONTENT_TYPE = "application/json";
 

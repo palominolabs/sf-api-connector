@@ -28,6 +28,7 @@ final class ApiVersion {
     * WHEN UPDATING THE WSDL VERSION:
     * - Change the constants in this class
     * - Change the references to the wsdls in the poms that generate the stubs
+    * - Consider changing HttpApiClient's API_VERSION
     */
 
     /**

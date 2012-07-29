@@ -8,9 +8,9 @@
   <activateable>false</activateable>
   <updateable>true</updateable>
   <sObjectUrls>
-    <sobjectUrlPath>/services/data/v21.0/sobjects/Account</sobjectUrlPath>
-    <describeUrlPath>/services/data/v21.0/sobjects/Account/describe</describeUrlPath>
-    <rowTemplateUrlPath>/services/data/v21.0/sobjects/Account/{ID}</rowTemplateUrlPath>
+    <sobjectUrlPath>/services/data/v25.0/sobjects/Account</sobjectUrlPath>
+    <describeUrlPath>/services/data/v25.0/sobjects/Account/describe</describeUrlPath>
+    <rowTemplateUrlPath>/services/data/v25.0/sobjects/Account/{ID}</rowTemplateUrlPath>
     <uiEditTemplate>https://na3.salesforce.com/{ID}/e</uiEditTemplate>
     <uiDetailTemplate>https://na3.salesforce.com/{ID}</uiDetailTemplate>
     <uiNewRecord>https://na3.salesforce.com/001/e</uiNewRecord>
@@ -23,6 +23,7 @@
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Account</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -30,6 +31,7 @@
         <relationshipName>AccountContactRoles</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountContactRole</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
@@ -37,6 +39,7 @@
         <relationshipName>Feeds</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountFeed</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -44,6 +47,7 @@
         <relationshipName>Histories</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountHistory</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountFromId</field>
@@ -51,6 +55,7 @@
         <relationshipName>AccountPartnersFrom</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountPartner</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountToId</field>
@@ -58,6 +63,7 @@
         <relationshipName>AccountPartnersTo</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountPartner</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -65,6 +71,7 @@
         <relationshipName>Shares</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountShare</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -72,6 +79,7 @@
         <relationshipName>ActivityHistories</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>ActivityHistory</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -79,6 +87,7 @@
         <relationshipName>Assets</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Asset</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
@@ -86,6 +95,7 @@
         <relationshipName>Attachments</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Attachment</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -93,6 +103,7 @@
         <relationshipName>Cases</relationshipName>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Case</childSObject>
+        <restrictedDelete>true</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -100,18 +111,21 @@
         <relationshipName>Contacts</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Contact</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>LinkedEntityId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>ContentDocumentLink</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>FirstPublishLocationId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>ContentVersion</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -119,6 +133,7 @@
         <relationshipName>Contracts</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Contract</childSObject>
+        <restrictedDelete>true</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
@@ -126,12 +141,14 @@
         <relationshipName>FeedSubscriptionsForEntity</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>EntitySubscription</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Event</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>WhatId</field>
@@ -139,36 +156,35 @@
         <relationshipName>Events</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Event</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>FeedComment</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>FeedItem</childSObject>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-        <field>ParentId</field>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <cascadeDelete>true</cascadeDelete>
-        <childSObject>FeedPost</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ConvertedAccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Lead</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>NewsFeed</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
@@ -176,6 +192,7 @@
         <relationshipName>Notes</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Note</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
@@ -183,6 +200,7 @@
         <relationshipName>NotesAndAttachments</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>NoteAndAttachment</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -190,6 +208,7 @@
         <relationshipName>OpenActivities</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>OpenActivity</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
@@ -197,6 +216,7 @@
         <relationshipName>Opportunities</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Opportunity</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountToId</field>
@@ -204,6 +224,7 @@
         <relationshipName>OpportunityPartnersTo</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>OpportunityPartner</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountFromId</field>
@@ -211,6 +232,7 @@
         <relationshipName>PartnersFrom</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Partner</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountToId</field>
@@ -218,6 +240,7 @@
         <relationshipName>PartnersTo</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Partner</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>TargetObjectId</field>
@@ -225,6 +248,7 @@
         <relationshipName>ProcessInstances</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>ProcessInstance</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>TargetObjectId</field>
@@ -232,12 +256,14 @@
         <relationshipName>ProcessSteps</relationshipName>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>ProcessInstanceHistory</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Task</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>WhatId</field>
@@ -245,24 +271,28 @@
         <relationshipName>Tasks</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Task</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>User</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>UserProfileFeed</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
       <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
         <field>PortalAccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>UserRole</childSObject>
+        <restrictedDelete>false</restrictedDelete>
       </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
     </elements>
   </childRelationships>
@@ -303,6 +333,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -337,6 +371,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>18</length>
@@ -376,6 +414,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -410,6 +452,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -510,6 +556,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>18</length>
@@ -549,6 +599,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -583,6 +637,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -617,6 +675,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>20</length>
@@ -651,6 +713,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>20</length>
@@ -685,6 +751,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -719,6 +789,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -753,6 +827,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -787,6 +865,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>20</length>
@@ -821,6 +903,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>20</length>
@@ -855,6 +941,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -889,6 +979,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -923,6 +1017,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -957,6 +1055,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -991,6 +1093,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -1025,6 +1131,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>20</length>
@@ -1059,6 +1169,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>80</length>
@@ -1384,6 +1498,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -1418,6 +1536,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -1452,6 +1574,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -1525,6 +1651,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>20</length>
@@ -1559,6 +1689,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>32000</length>
@@ -1572,7 +1706,7 @@
         <precision>0</precision>
         <scale>0</scale>
         <caseSensitive>false</caseSensitive>
-        <byteLength>32000</byteLength>
+        <byteLength>96000</byteLength>
         <nameField>false</nameField>
         <externalId>false</externalId>
         <idLookup>false</idLookup>
@@ -1593,6 +1727,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>false</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>40</length>
@@ -1657,6 +1795,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>80</length>
@@ -1691,6 +1833,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>18</length>
@@ -1730,6 +1876,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -1764,6 +1914,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>18</length>
@@ -1803,6 +1957,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -1837,6 +1995,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>18</length>
@@ -1876,6 +2038,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -1910,6 +2076,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -1944,6 +2114,211 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+        <length>20</length>
+        <name>Jigsaw</name>
+        <type>string</type>
+        <label>Data.com Key</label>
+        <updateable>true</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>0</precision>
+        <scale>0</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>60</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:string</soapType>
+        <createable>true</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>true</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+        <length>20</length>
+        <name>JigsawCompanyId</name>
+        <type>string</type>
+        <label>Jigsaw Company ID</label>
+        <updateable>false</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>0</precision>
+        <scale>0</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>60</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:string</soapType>
+        <createable>false</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>true</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <relationshipName>JigsawCompany</relationshipName>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+        <length>40</length>
+        <name>AccountSource</name>
+        <type>picklist</type>
+        <label>Account Source</label>
+        <updateable>true</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>0</precision>
+        <scale>0</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>120</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:string</soapType>
+        <createable>true</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>true</groupable>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
+          <elements>
+            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+              <value>Web</value>
+              <active>true</active>
+              <label>Web</label>
+              <defaultValue>false</defaultValue>
+              <validFor>
+                <bitSet></bitSet>
+              </validFor>
+            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+              <value>Phone Inquiry</value>
+              <active>true</active>
+              <label>Phone Inquiry</label>
+              <defaultValue>false</defaultValue>
+              <validFor>
+                <bitSet></bitSet>
+              </validFor>
+            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+              <value>Partner Referral</value>
+              <active>true</active>
+              <label>Partner Referral</label>
+              <defaultValue>false</defaultValue>
+              <validFor>
+                <bitSet></bitSet>
+              </validFor>
+            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+              <value>Purchased List</value>
+              <active>true</active>
+              <label>Purchased List</label>
+              <defaultValue>false</defaultValue>
+              <validFor>
+                <bitSet></bitSet>
+              </validFor>
+            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+              <value>Other</value>
+              <active>true</active>
+              <label>Other</label>
+              <defaultValue>false</defaultValue>
+              <validFor>
+                <bitSet></bitSet>
+              </validFor>
+            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+          </elements>
+        </picklistValues>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+        <length>80</length>
+        <name>SicDesc</name>
+        <type>string</type>
+        <label>SIC Description</label>
+        <updateable>true</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>0</precision>
+        <scale>0</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>240</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:string</soapType>
+        <createable>true</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>true</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -2008,6 +2383,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -2081,6 +2460,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -2136,6 +2519,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -2170,6 +2557,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>255</length>
@@ -2234,6 +2625,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>10</length>
@@ -2268,6 +2663,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
         <length>0</length>
@@ -2302,6 +2701,10 @@
         <dependentPicklist>false</dependentPicklist>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
         <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
     </elements>
   </fields>

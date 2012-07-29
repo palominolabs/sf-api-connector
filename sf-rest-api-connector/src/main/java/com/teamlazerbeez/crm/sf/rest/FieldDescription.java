@@ -67,6 +67,10 @@ public final class FieldDescription {
     private final boolean dependentPicklist;
     private final boolean writeRequiresMasterRead;
     private final boolean sortable;
+    private final boolean cascadeDelete;
+    private final boolean restrictedDelete;
+    private final boolean permissionable;
+    private final boolean displayLocationInDecimal;
 
     @JsonCreator
     FieldDescription(
@@ -108,7 +112,12 @@ public final class FieldDescription {
             @JsonProperty("htmlFormatted") boolean htmlFormatted,
             @JsonProperty("dependentPicklist") boolean dependentPicklist,
             @JsonProperty("writeRequiresMasterRead") boolean writeRequiresMasterRead,
-            @JsonProperty("sortable") boolean sortable) {
+            @JsonProperty("sortable") boolean sortable,
+            @JsonProperty("cascadeDelete") boolean cascadeDelete,
+            @JsonProperty("restrictedDelete") boolean restrictedDelete,
+            @JsonProperty("permissionable") boolean permissionable,
+            @JsonProperty("displayLocationInDecimal") boolean displayLocationInDecimal
+            ) {
 
         this.length = length;
         this.name = name;
@@ -138,6 +147,10 @@ public final class FieldDescription {
         this.defaultedOnCreate = defaultedOnCreate;
         this.digits = digits;
         this.groupable = groupable;
+        this.cascadeDelete = cascadeDelete;
+        this.restrictedDelete = restrictedDelete;
+        this.permissionable = permissionable;
+        this.displayLocationInDecimal = displayLocationInDecimal;
         this.picklistValues = ImmutableList.copyOf(picklistValues);
         this.referenceTo = ImmutableList.copyOf(referenceTo);
         this.relationshipName = relationshipName;
@@ -313,6 +326,22 @@ public final class FieldDescription {
 
     public boolean isSortable() {
         return sortable;
+    }
+
+    public boolean isCascadeDelete() {
+        return cascadeDelete;
+    }
+
+    public boolean isRestrictedDelete() {
+        return restrictedDelete;
+    }
+
+    public boolean isPermissionable() {
+        return permissionable;
+    }
+
+    public boolean isDisplayLocationInDecimal() {
+        return displayLocationInDecimal;
     }
 
     /**

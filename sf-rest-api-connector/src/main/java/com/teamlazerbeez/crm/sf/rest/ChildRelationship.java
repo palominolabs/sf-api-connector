@@ -34,6 +34,7 @@ public class ChildRelationship {
     private final String relationshipName;
     private final boolean cascadeDelete;
     private final String childSObject;
+    private final boolean restrictedDelete;
 
     @JsonCreator
     ChildRelationship(
@@ -41,12 +42,14 @@ public class ChildRelationship {
             @JsonProperty("deprecatedAndHidden") boolean deprecatedAndHidden,
             @Nullable @JsonProperty("relationshipName") String relationshipName,
             @JsonProperty("cascadeDelete") boolean cascadeDelete,
-            @JsonProperty("childSObject") String childSObject) {
+            @JsonProperty("childSObject") String childSObject,
+            @JsonProperty("restrictedDelete") boolean restrictedDelete) {
         this.field = field;
         this.deprecatedAndHidden = deprecatedAndHidden;
         this.relationshipName = relationshipName;
         this.cascadeDelete = cascadeDelete;
         this.childSObject = childSObject;
+        this.restrictedDelete = restrictedDelete;
     }
 
     @Nonnull
@@ -70,5 +73,9 @@ public class ChildRelationship {
     @Nonnull
     public String getChildSObject() {
         return childSObject;
+    }
+
+    public boolean isRestrictedDelete() {
+        return restrictedDelete;
     }
 }

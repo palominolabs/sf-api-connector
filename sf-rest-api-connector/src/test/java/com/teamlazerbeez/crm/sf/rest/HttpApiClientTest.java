@@ -76,7 +76,7 @@ public class HttpApiClientTest {
             client.create(sObj);
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v21.0/sobjects/Contact/", e.getUrl());
+            assertEquals("https://na3-api.salesforce.com:443/services/data/v25.0/sobjects/Contact/", e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
             assertEquals(
                     "[{\"fields\":[\"LastName\"],\"message\":\"Required fields are missing: [LastName]\"," +
@@ -115,7 +115,7 @@ public class HttpApiClientTest {
             client.delete("Lead", new Id("00Q7zzz000Kj4Jn"));
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v21.0/sobjects/Lead/00Q7zzz000Kj4Jn",
+            assertEquals("https://na3-api.salesforce.com:443/services/data/v25.0/sobjects/Lead/00Q7zzz000Kj4Jn",
                     e.getUrl());
             assertEquals("Not Found", e.getHttpReason());
             assertEquals(
@@ -198,15 +198,16 @@ public class HttpApiClientTest {
 
     @Test
     public void testSearch() throws IOException {
-        assertJsonStringEquals(ResourceUtil.readResource("/apiResponses/search.json"), reformatJson(
-                client.search("FIND {dickenson.com} returning contact(id, phone, firstname, lastname, email)")));
+        String actualJsonStr = reformatJson(
+                client.search("FIND {dickenson.com} returning contact(id, phone, firstname, lastname, email)"));
+        assertJsonStringEquals(ResourceUtil.readResource("/apiResponses/search.json"), actualJsonStr);
     }
 
     @Test
     public void testRetrieve() throws IOException {
-        assertJsonStringEquals(ResourceUtil.readResource("/apiResponses/retrieve.json"),
-                reformatJson(client.retrieve("Contact", new Id("0035000000km1oh"),
-                        Arrays.asList("FirstName", "LastName"))));
+        String actualJsonStr = reformatJson(client.retrieve("Contact", new Id("0035000000km1oh"),
+                Arrays.asList("FirstName", "LastName")));
+        assertJsonStringEquals(ResourceUtil.readResource("/apiResponses/retrieve.json"), actualJsonStr);
     }
 
     private static String createTask() throws IOException {
