@@ -16,11 +16,12 @@
 
 package com.teamlazerbeez.testutil;
 
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.node.ArrayNode;
-import org.codehaus.jackson.node.NullNode;
-import org.codehaus.jackson.node.ObjectNode;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.NullNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -82,13 +83,13 @@ public final class JsonAssert {
     private static void assertJsonNodeEquals(String msg, JsonNode expected, JsonNode actual) {
         if (expected.isTextual()) {
             if (actual.isTextual()) {
-                assertEquals(msg, expected.getTextValue(), actual.getTextValue());
+                assertEquals(msg, expected.textValue(), actual.textValue());
             } else {
                 nonMatchingClasses(msg, expected, actual);
             }
         } else if (expected.isInt()) {
             if (actual.isInt()) {
-                assertEquals(msg, expected.getIntValue(), actual.getIntValue());
+                assertEquals(msg, expected.intValue(), actual.intValue());
             } else {
                 nonMatchingClasses(msg, expected, actual);
             }
@@ -111,7 +112,7 @@ public final class JsonAssert {
             nonMatchingClasses(msg, expected, actual);
         } else if (expected.isBoolean()) {
             if (actual.isBoolean()) {
-                assertEquals(msg, expected.getBooleanValue(), actual.getBooleanValue());
+                assertEquals(msg, expected.booleanValue(), actual.booleanValue());
             } else {
                 nonMatchingClasses(msg, expected, actual);
             }
@@ -135,7 +136,7 @@ public final class JsonAssert {
      */
     @SuppressWarnings("unchecked")
     private static Set<String> getKeySet(ObjectNode json) {
-        Iterator<String> keyIter = json.getFieldNames();
+        Iterator<String> keyIter = json.fieldNames();
 
         Set<String> keySet = new HashSet<String>();
 

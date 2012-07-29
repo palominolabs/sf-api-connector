@@ -16,6 +16,11 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
 import com.teamlazerbeez.crm.sf.soap.BindingConfig;
@@ -25,11 +30,6 @@ import com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl;
 import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.teamlazerbeez.testutil.ResourceUtil;
 import org.apache.http.impl.client.ContentEncodingHttpClient;
-import org.codehaus.jackson.JsonFactory;
-import org.codehaus.jackson.JsonGenerator;
-import org.codehaus.jackson.JsonParser;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.node.ObjectNode;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -44,7 +44,7 @@ import static com.teamlazerbeez.testutil.JsonAssert.assertJsonStringEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-@SuppressWarnings({"StaticNonFinalField"})
+@SuppressWarnings("StaticNonFinalField")
 public class HttpApiClientTest {
 
     static final String USER =
@@ -100,7 +100,7 @@ public class HttpApiClientTest {
         ObjectNode expected =
                 MAPPER.readValue(ResourceUtil.readResource("/apiResponses/create.json"), ObjectNode.class);
 
-        String id = actual.get("id").getTextValue();
+        String id = actual.get("id").textValue();
 
         // id changes every time
         expected.put("id", id);

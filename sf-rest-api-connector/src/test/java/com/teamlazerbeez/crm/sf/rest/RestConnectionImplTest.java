@@ -16,6 +16,7 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
 import com.teamlazerbeez.crm.sf.soap.BindingConfig;
@@ -25,7 +26,6 @@ import com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl;
 import com.teamlazerbeez.crm.sf.testutil.SObjectUtil;
 import com.teamlazerbeez.crm.sf.testutil.TestFixtureUtils;
 import org.apache.http.impl.client.ContentEncodingHttpClient;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -57,7 +57,7 @@ public class RestConnectionImplTest {
 
         BindingConfig bindingConfig = repository.getConnectionBundle(1).getBindingConfig();
         ObjectMapper objectMapper = new ObjectMapper();
-        conn = new RestConnectionImpl(objectMapper,
+        conn = new RestConnectionImpl(objectMapper.reader(),
                 new FixedHttpApiClientProvider(new HttpApiClient(new URL(bindingConfig.getPartnerServerUrl()).getHost(),
                         bindingConfig.getSessionId(), objectMapper, new ContentEncodingHttpClient())));
     }

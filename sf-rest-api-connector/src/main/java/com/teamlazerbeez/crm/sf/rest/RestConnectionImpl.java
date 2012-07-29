@@ -15,15 +15,15 @@
  */
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectReader;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.NullNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.common.collect.Lists;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
-import org.codehaus.jackson.JsonNode;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.map.type.TypeFactory;
-import org.codehaus.jackson.node.ArrayNode;
-import org.codehaus.jackson.node.NullNode;
-import org.codehaus.jackson.node.ObjectNode;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.ThreadSafe;
@@ -36,12 +36,12 @@ final class RestConnectionImpl implements RestConnection {
     private static final String ID_KEY = "Id";
     private static final String ATTRIBUTES_KEY = "attributes";
 
-    private final ObjectMapper objectMapper;
+    private final ObjectReader objectReader;
 
     private final HttpApiClientProvider httpApiClientProvider;
 
-    RestConnectionImpl(ObjectMapper objectMapper, HttpApiClientProvider httpApiClientProvider) {
-        this.objectMapper = objectMapper;
+    RestConnectionImpl(ObjectReader objectReader, HttpApiClientProvider httpApiClientProvider) {
+        this.objectReader = objectReader;
         this.httpApiClientProvider = httpApiClientProvider;
     }
 
@@ -61,19 +61,19 @@ final class RestConnectionImpl implements RestConnection {
     public DescribeGlobalResult describeGlobal() throws IOException {
         String describeGlobalJson = this.getHttpApiClient().describeGlobal();
 
-        ObjectNode objectNode = this.objectMapper.readValue(describeGlobalJson, ObjectNode.class);
-        String encoding = objectNode.get("encoding").getTextValue();
-        int maxBatchSize = objectNode.get("maxBatchSize").getIntValue();
+        ObjectNode objectNode = this.objectReader.withType(ObjectNode.class).readValue(describeGlobalJson);
+        String encoding = objectNode.get("encoding").textValue();
+        int maxBatchSize = objectNode.get("maxBatchSize").intValue();
 
-        ArrayNode descriptionsNode = this.objectMapper.readValue(objectNode.get("sobjects"), ArrayNode.class);
+        ArrayNode descriptionsNode = this.objectReader.withType(ArrayNode.class).readValue(objectNode.get("sobjects"));
 
-        Iterator<JsonNode> elements = descriptionsNode.getElements();
+        Iterator<JsonNode> elements = descriptionsNode.elements();
 
         List<GlobalSObjectDescription> descriptions = Lists.newArrayList();
         while (elements.hasNext()) {
             JsonNode node = elements.next();
 
-            descriptions.add(this.objectMapper.readValue(node, BasicSObjectMetadata.class));
+            descriptions.add(this.objectReader.readValue(node.traverse(), BasicSObjectMetadata.class));
         }
 
         return new DescribeGlobalResult(encoding, maxBatchSize, descriptions);
@@ -83,21 +83,21 @@ final class RestConnectionImpl implements RestConnection {
     @Nonnull
     public SObjectDescription describeSObject(String sObjectType) throws IOException {
         String descrJson = this.getHttpApiClient().describeSObject(sObjectType);
-        return this.objectMapper.readValue(descrJson, SObjectDescription.class);
+        return this.objectReader.withType(SObjectDescription.class).readValue(descrJson);
     }
 
     @Override
     @Nonnull
     public BasicSObjectMetadataResult getBasicObjectInfo(String sObjectType) throws IOException {
         String jsonStr = this.getHttpApiClient().basicSObjectInfo(sObjectType);
-        ObjectNode objectNode = this.objectMapper.readValue(jsonStr, ObjectNode.class);
+        ObjectNode objectNode = this.objectReader.withType(ObjectNode.class).readValue(jsonStr);
 
         BasicSObjectMetadata metadata =
-                this.objectMapper.readValue(objectNode.get("objectDescribe"), BasicSObjectMetadata.class);
+                this.objectReader.withType(BasicSObjectMetadata.class).readValue(objectNode.get("objectDescribe"));
 
-        ArrayNode recentItems = this.objectMapper.readValue(objectNode.get("recentItems"), ArrayNode.class);
+        ArrayNode recentItems = this.objectReader.withType(ArrayNode.class).readValue(objectNode.get("recentItems"));
 
-        List<SObject> sObjects = getSObjects(recentItems.getElements());
+        List<SObject> sObjects = getSObjects(recentItems.elements());
 
         return new BasicSObjectMetadataResult(metadata, sObjects);
     }
@@ -105,28 +105,28 @@ final class RestConnectionImpl implements RestConnection {
     @Override
     @Nonnull
     public RestQueryResult query(String soql) throws IOException {
-        return getQueryResult(this.objectMapper.readValue(this.getHttpApiClient().query(soql), JsonNode.class));
+        return getQueryResult(this.objectReader.readValue(parse(this.getHttpApiClient().query(soql)), JsonNode.class));
     }
 
     @Override
     @Nonnull
     public RestQueryResult queryMore(RestQueryLocator queryLocator) throws IOException {
         return getQueryResult(
-                this.objectMapper.readValue(this.getHttpApiClient().queryMore(queryLocator), JsonNode.class));
+                this.objectReader.readValue(parse(this.getHttpApiClient().queryMore(queryLocator)), JsonNode.class));
     }
 
     @Override
     @Nonnull
     public SObject retrieve(String sObjectType, Id id, List<String> fields) throws IOException {
         String json = this.getHttpApiClient().retrieve(sObjectType, id, fields);
-        return getSObject(this.objectMapper.readValue(json, JsonNode.class));
+        return getSObject(this.objectReader.readValue(parse(json), JsonNode.class));
     }
 
     @Override
     @Nonnull
     public List<SObject> search(String sosl) throws IOException {
         String json = this.getHttpApiClient().search(sosl);
-        return getSObjects(this.objectMapper.readValue(json, ArrayNode.class).getElements());
+        return getSObjects(this.objectReader.readValue(parse(json), ArrayNode.class).elements());
     }
 
     @Override
@@ -143,6 +143,11 @@ final class RestConnectionImpl implements RestConnection {
             return UpsertResult.UPDATED;
         }
         return UpsertResult.CREATED;
+    }
+
+    @Nonnull
+    private JsonParser parse(String str) throws IOException {
+        return objectReader.getJsonFactory().createJsonParser(str);
     }
 
     @Nonnull
@@ -170,12 +175,12 @@ final class RestConnectionImpl implements RestConnection {
 
     @Nonnull
     private SaveResult getSaveResult(String saveResultJson) throws IOException {
-        ObjectNode objectNode = this.objectMapper.readValue(saveResultJson, ObjectNode.class);
-        String id = objectNode.get("id").getTextValue();
-        boolean success = objectNode.get("success").getBooleanValue();
+        ObjectNode objectNode = this.objectReader.withType(ObjectNode.class).readValue(parse(saveResultJson));
+        String id = objectNode.get("id").textValue();
+        boolean success = objectNode.get("success").booleanValue();
 
-        List<ApiError> errors = this.objectMapper
-                .readValue(objectNode.get("errors"), HttpApiClient.API_ERRORS_TYPE);
+        List<ApiError> errors = this.objectReader.withType(HttpApiClient.API_ERRORS_TYPE).readValue(
+                objectNode.get("errors"));
 
         return new SaveResultImpl(new Id(id), success, errors);
     }
@@ -195,13 +200,13 @@ final class RestConnectionImpl implements RestConnection {
             if (!idNode.isTextual()) {
                 throw new ResponseParseException("Id node <" + idNode + "> wasn't textual");
             }
-            sObject = RestSObjectImpl.getNewWithId(type, new Id(idNode.getTextValue()));
+            sObject = RestSObjectImpl.getNewWithId(type, new Id(idNode.textValue()));
         }
 
         jsonNode.remove(ID_KEY);
         jsonNode.remove(ATTRIBUTES_KEY);
 
-        Iterator<String> fieldNames = jsonNode.getFieldNames();
+        Iterator<String> fieldNames = jsonNode.fieldNames();
         while (fieldNames.hasNext()) {
             String fieldName = fieldNames.next();
             JsonNode fieldValueNode = jsonNode.get(fieldName);
@@ -234,7 +239,7 @@ final class RestConnectionImpl implements RestConnection {
 
         List<RestSObject> sObjects = Lists.newArrayList();
 
-        Iterator<JsonNode> elements = records.getElements();
+        Iterator<JsonNode> elements = records.elements();
 
         while (elements.hasNext()) {
             JsonNode recordNode = elements.next();
@@ -269,7 +274,7 @@ final class RestConnectionImpl implements RestConnection {
         if (!node.isTextual()) {
             throw new ResponseParseException("Node <" + node + "> isn't text for key <" + key + ">");
         }
-        return node.getTextValue();
+        return node.textValue();
     }
 
     private static int getInt(ObjectNode jsonNode, String key) throws ResponseParseException {
@@ -277,7 +282,7 @@ final class RestConnectionImpl implements RestConnection {
         if (!node.isInt()) {
             throw new ResponseParseException("Node <" + node + "> isn't int for key <" + key + ">");
         }
-        return node.getIntValue();
+        return node.intValue();
     }
 
     private static boolean getBoolean(ObjectNode jsonNode, String key) throws ResponseParseException {
@@ -285,7 +290,7 @@ final class RestConnectionImpl implements RestConnection {
         if (!node.isBoolean()) {
             throw new ResponseParseException("Node <" + node + "> isn't boolean for key <" + key + ">");
         }
-        return node.getBooleanValue();
+        return node.booleanValue();
     }
 
     @Nonnull

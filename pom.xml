@@ -15,7 +15,7 @@
     <dep.junit.version>4.10</dep.junit.version>
 
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
-    <dep.jackson.version>1.9.2</dep.jackson.version>
+    <dep.jackson.version>2.0.5</dep.jackson.version>
 
     <plugin.jaxws-maven-plugin.version>1.12</plugin.jaxws-maven-plugin.version>
     <plugin.cobertura-maven-plugin.version>2.5.1</plugin.cobertura-maven-plugin.version>
@@ -188,14 +188,14 @@
       </dependency>
 
       <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-core-asl</artifactId>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
         <version>${dep.jackson.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>org.codehaus.jackson</groupId>
-        <artifactId>jackson-mapper-asl</artifactId>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
         <version>${dep.jackson.version}</version>
       </dependency>
 

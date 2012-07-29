@@ -16,10 +16,10 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.ContentEncodingHttpClient;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-import org.codehaus.jackson.map.ObjectMapper;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.GuardedBy;
@@ -66,9 +66,10 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
         this.idleConnTimeout = idleConnTimeout;
     }
 
+    @Nonnull
     @Override
     public synchronized RestConnection getRestConnection(@Nonnull T orgId) {
-        return new RestConnectionImpl(objectMapper, new PoolHttpApiClientProvider(orgId));
+        return new RestConnectionImpl(objectMapper.reader(), new PoolHttpApiClientProvider(orgId));
     }
 
     @Override
@@ -76,6 +77,7 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
         this.configMap.put(orgId, new ConnectionConfig(host, token));
     }
 
+    @Nonnull
     @Override
     public Runnable getExpiredConnectionTask() {
         return new HttpExpiredConnManager();
@@ -101,6 +103,7 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
             this.orgId = orgId;
         }
 
+        @Nonnull
         @Override
         public HttpApiClient getClient() {
             return getClientForOrg(orgId);

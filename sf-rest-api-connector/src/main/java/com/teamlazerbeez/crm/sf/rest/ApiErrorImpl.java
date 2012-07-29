@@ -16,9 +16,9 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.common.collect.ImmutableList;
-import org.codehaus.jackson.annotate.JsonCreator;
-import org.codehaus.jackson.annotate.JsonProperty;
 
 import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;

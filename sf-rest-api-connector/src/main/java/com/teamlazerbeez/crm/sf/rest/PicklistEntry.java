@@ -16,11 +16,11 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.teamlazerbeez.crm.sf.core.ImmutableBitSet;
 import com.teamlazerbeez.crm.sf.core.ImmutableBitSets;
 import org.apache.commons.codec.binary.Base64;
-import org.codehaus.jackson.annotate.JsonCreator;
-import org.codehaus.jackson.annotate.JsonProperty;
 
 import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;
