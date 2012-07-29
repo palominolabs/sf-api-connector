@@ -81,6 +81,7 @@
             <string>SharingReason</string>
             <string>ListView</string>
             <string>FieldSet</string>
+            <string>ApexTriggerCoupling</string>
           </c>
           <list reference="../c"/>
         </childXmlNames>
@@ -165,6 +166,17 @@
         <metaFile>false</metaFile>
         <suffix>tab</suffix>
         <xmlName>CustomTab</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>customApplicationComponents</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>customApplicationComponent</suffix>
+        <xmlName>CustomApplicationComponent</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
       <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
@@ -469,6 +481,17 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>CustomObjectSharingRules</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>orgsettings</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>settings</suffix>
+        <xmlName>SecuritySettings</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
     </c>
     <list reference="../c"/>
