@@ -16,6 +16,7 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.google.common.annotations.VisibleForTesting;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.ApiQueryFault;
@@ -67,7 +68,6 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Upsert;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResponse;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResultType;
 import org.apache.commons.lang3.StringUtils;
-import org.jetbrains.annotations.TestOnly;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 import org.slf4j.ext.XLogger;
@@ -559,8 +559,9 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
      *
      * @throws ApiException if logout fails
      */
-    @TestOnly
+    @VisibleForTesting
     synchronized void logout() throws ApiException {
+
         final LogoutOp op = new LogoutOp();
         op.execute(new Logout());
     }

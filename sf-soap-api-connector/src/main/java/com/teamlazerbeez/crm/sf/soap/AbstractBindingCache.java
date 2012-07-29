@@ -16,7 +16,7 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
-import org.jetbrains.annotations.TestOnly;
+import com.google.common.annotations.VisibleForTesting;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -89,12 +89,12 @@ abstract class AbstractBindingCache<T> {
         }
     }
 
-    @TestOnly
+    @VisibleForTesting
     final synchronized Set<T> getCachedBindings() {
         return Collections.unmodifiableSet(new HashSet<T>(this.cachedBindings));
     }
 
-    @TestOnly
+    @VisibleForTesting
     final synchronized Set<T> getExtant() {
         return Collections.unmodifiableSet(new HashSet<T>(this.extantBindings));
     }
