@@ -27,7 +27,7 @@ import javax.annotation.concurrent.Immutable;
  *
  * @author Marshall Pierce <marshall@teamlazerbeez.com>
  */
-@SuppressWarnings({"WeakerAccess"})
+@SuppressWarnings("WeakerAccess")
 @Immutable
 public final class ChildRelationship {
 
@@ -39,6 +39,8 @@ public final class ChildRelationship {
 
     @Nullable
     private final String relationshipName;
+    @Nullable
+    private final Boolean restrictedDelete;
 
     /**
      * Defensive copies are made of all necessary data, so passing in the apiChildRelationship does not constitute an
@@ -58,6 +60,8 @@ public final class ChildRelationship {
 
         // relationship name can be null
         this.relationshipName = stubChildRelationship.getRelationshipName();
+
+        restrictedDelete = stubChildRelationship.isRestrictedDelete();
     }
 
     /**
@@ -97,5 +101,15 @@ public final class ChildRelationship {
     @Nullable
     public String getRelationshipName() {
         return this.relationshipName;
+    }
+
+    /**
+     * Undocumented.
+     *
+     * @return null or a Boolean
+     */
+    @Nullable
+    public Boolean isRestrictedDelete() {
+        return restrictedDelete;
     }
 }

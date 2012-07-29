@@ -937,7 +937,8 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
 
         @Override
         QueryMoreResponse executeOp(@Nonnull Soap binding, @Nonnull QueryMore param)
-                throws InvalidFieldFault_Exception, InvalidQueryLocatorFault_Exception, UnexpectedErrorFault_Exception {
+                throws InvalidFieldFault_Exception, InvalidQueryLocatorFault_Exception, UnexpectedErrorFault_Exception,
+                MalformedQueryFault_Exception {
             return binding.queryMore(param);
         }
     }

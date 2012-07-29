@@ -23,6 +23,7 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.SoapTypeType;
 
 import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -474,5 +475,35 @@ public final class FieldDescription {
      */
     public boolean isPermissionable() {
         return stubField.isPermissionable();
+    }
+
+    /**
+     * Undocumented
+     *
+     * @return a Boolean or null
+     */
+    @Nullable
+    public Boolean isCascadeDelete() {
+        return stubField.isCascadeDelete();
+    }
+
+    /**
+     * Undocumented
+     *
+     * @return a Boolean or null
+     */
+    @Nullable
+    public Boolean isDisplayLocationInDecimal() {
+        return stubField.isDisplayLocationInDecimal();
+    }
+
+    /**
+     * Undocumented
+     *
+     * @return a Boolean or null
+     */
+    @Nullable
+    public Boolean isRestrictedDelete() {
+        return stubField.isRestrictedDelete();
     }
 }
