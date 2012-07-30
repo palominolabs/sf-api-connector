@@ -42,7 +42,16 @@ public final class Id {
             throw new NullPointerException("An Id must have a non-null string");
         }
 
+        if (id.length() != 15 && id.length() != 18) {
+            throw new IllegalArgumentException(
+                    "Salesforce Ids must be either 15 or 18 characters, was <" + id + "> (" + id.length() + ")");
+        }
+
         this.idStr = id.substring(0, 15);
+    }
+
+    public String getKeyPrefix() {
+        return idStr.substring(0, 3);
     }
 
     /**

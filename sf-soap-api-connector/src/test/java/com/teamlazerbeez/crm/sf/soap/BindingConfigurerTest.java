@@ -112,7 +112,7 @@ public class BindingConfigurerTest {
 
         final String mdEndpt = "http://metadata.com";
         this.configurer.configureMetadataBinding(binding,
-                new BindingConfig(new Id("xxxxxxxxxxxxxxxxxxxxxxxxx"), "session", "endpt", mdEndpt, "user"));
+                new BindingConfig(new Id("012345678901234"), "session", "endpt", mdEndpt, "user"));
 
         assertEquals(mdEndpt, getEndpoint(binding));
     }
@@ -125,7 +125,7 @@ public class BindingConfigurerTest {
 
         final String partnerServerUrl = "http://partner.com";
         this.configurer.configurePartnerBinding(binding,
-                new BindingConfig(new Id("xxxxxxxxxxxxxxxxxxxxxxxxx"), "session", partnerServerUrl,
+                new BindingConfig(new Id("012345678901234"), "session", partnerServerUrl,
                         "http://metadata.com", "user"));
 
         assertEquals(partnerServerUrl, getEndpoint(binding));
@@ -138,7 +138,7 @@ public class BindingConfigurerTest {
                 getEndpoint(binding));
 
         this.configurer.configureApexBinding(binding,
-                new BindingConfig(new Id("xxxxxxxxxxxxxxxxxxxxxxxxx"), "session", "http://partner.com",
+                new BindingConfig(new Id("012345678901234"), "session", "http://partner.com",
                         "http://metadata.com", "user"));
 
         assertEquals("https://metadata.com/services/Soap/s/" + ApiVersion.API_VERSION_STRING, getEndpoint(binding));

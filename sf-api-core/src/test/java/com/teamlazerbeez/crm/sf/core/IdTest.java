@@ -1,5 +1,5 @@
 /*
- * Copyright © 2010. Team Lazer Beez (http://teamlazerbeez.com)
+ * Copyright © 2012. Team Lazer Beez (http://teamlazerbeez.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +14,48 @@
  * limitations under the License.
  */
 
-package com.teamlazerbeez.crm.sf.soap;
+package com.teamlazerbeez.crm.sf.core;
 
-import com.teamlazerbeez.crm.sf.core.Id;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
-/**
- * @author Marshall Pierce <marshall@teamlazerbeez.com>
- */
-public class IdTest {
+public final class IdTest {
 
-    @SuppressWarnings({"SimplifiableJUnitAssertion"})
+    @Test
+    public void testCtorAccepts15() {
+        new Id("012345678901234");
+    }
+
+    @Test
+    public void testCtorAccepts18() {
+        new Id("012345678901234567");
+    }
+
+    @Test
+    public void testCtorRejects17() {
+        try {
+            new Id("01234567890123456");
+            fail();
+        } catch (IllegalArgumentException e) {
+            assertEquals("Salesforce Ids must be either 15 or 18 characters, was <01234567890123456> (17)",
+                    e.getMessage());
+        }
+    }
+
+    @Test
+    public void testGetKeyPrefix() {
+        assertEquals("003", new Id("0035000000km1ov").getKeyPrefix());
+    }
+
+    @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
     public void testEquals() {
-        Id id1 = new Id("asdffffffffffffffffff");
-        Id id2 = new Id("asdfffffffffffffffffffff");
+        Id id1 = new Id("012345678901234");
+        Id id2 = new Id("012345678901234567");
 
         assertTrue(id1.equals(id2));
         assertTrue(id2.equals(id1));
@@ -40,7 +63,7 @@ public class IdTest {
 
     @Test
     public void testNotEqualsNull() {
-        Id id1 = new Id("asdfeeeeeeeeeeeeeeeeeeeee");
+        Id id1 = new Id("012345678901234");
 
         //noinspection ObjectEqualsNull
         assertFalse(id1.equals(null));
@@ -48,8 +71,8 @@ public class IdTest {
 
     @Test
     public void testNotEquals() {
-        Id id1 = new Id("asdfxxxxxxxxxxxxxxxxxxx");
-        Id id2 = new Id("asdfqwertyzzzzzzzzzzz");
+        Id id1 = new Id("012345678901234");
+        Id id2 = new Id("012345678901230");
 
         assertFalse(id1.equals(id2));
         assertFalse(id2.equals(id1));
@@ -57,9 +80,10 @@ public class IdTest {
 
     @Test
     public void testTruncateLongId() {
-        String longId = "qwertyuiopasdfggggjklzxcvbmn";
+        String longId = "012345678901234567";
         Id id = new Id(longId);
         assertEquals(longId.substring(0, 15), id.toString());
         assertEquals(15, id.toString().length());
     }
 }
+
