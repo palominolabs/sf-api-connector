@@ -21,6 +21,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 
 @Immutable
@@ -30,6 +31,7 @@ public final class SObjectUrls extends AbstractSObjectUrls {
 
     private final String uiDetailTemplate;
     private final String uiNewRecord;
+    private final String passwordUtilities;
 
     @JsonCreator
     SObjectUrls(
@@ -38,11 +40,13 @@ public final class SObjectUrls extends AbstractSObjectUrls {
             @Nonnull @JsonProperty("uiDetailTemplate") String uiDetailTemplate,
             @Nonnull @JsonProperty("describe") String describeUrlPath,
             @Nonnull @JsonProperty("rowTemplate") String rowTemplateUrlPath,
-            @Nonnull @JsonProperty("uiNewRecord") String uiNewRecord) {
+            @Nonnull @JsonProperty("uiNewRecord") String uiNewRecord,
+            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities) {
         super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath);
         this.uiEditTemplate = uiEditTemplate;
         this.uiDetailTemplate = uiDetailTemplate;
         this.uiNewRecord = uiNewRecord;
+        this.passwordUtilities = passwordUtilities;
     }
 
     @Nonnull
@@ -58,5 +62,10 @@ public final class SObjectUrls extends AbstractSObjectUrls {
     @Nonnull
     public String getUiNewRecord() {
         return uiNewRecord;
+    }
+
+    @Nullable
+    public String getPasswordUtilities() {
+        return passwordUtilities;
     }
 }

@@ -119,6 +119,23 @@ public class RestConnectionImplTest {
         SObjectDescription actual = conn.describeSObject("Account");
 
         assertEquals(readResource("/apiResponses/describeSObject.xml"), TestFixtureUtils.dumpFixture(actual));
+        assertNull(actual.getsObjectUrls().getPasswordUtilities());
+    }
+
+    @Test
+    public void testDescribeUser() throws IOException {
+        // user has a "passwordUtilities" field that other objects do not
+        SObjectDescription userDesc = conn.describeSObject("User");
+        SObjectUrls sObjectUrls = userDesc.getsObjectUrls();
+        assertEquals("/services/data/v25.0/sobjects/User/{ID}/password", sObjectUrls.getPasswordUtilities());
+    }
+
+    @Test
+    public void testDescribeAllSObjects() throws IOException {
+        // make sure none of them have issues
+        for (GlobalSObjectDescription globalSObjectDescription : conn.describeGlobal().getBasicSObjectMetadatas()) {
+            conn.describeSObject(globalSObjectDescription.getName());
+        }
     }
 
     @Test
