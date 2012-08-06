@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <groupId>com.teamlazerbeez.salesforce</groupId>
-    <artifactId>sf-api-parent</artifactId>
+    <artifactId>api-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -15,7 +15,7 @@
 
     <dependency>
       <groupId>com.teamlazerbeez.salesforce</groupId>
-      <artifactId>sf-api-core</artifactId>
+      <artifactId>api-core</artifactId>
     </dependency>
 
     <dependency>

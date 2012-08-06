@@ -4,12 +4,12 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
     <groupId>com.teamlazerbeez.salesforce</groupId>
-    <artifactId>sf-api-parent</artifactId>
+    <artifactId>api-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <name>${project.artifactId}</name>
-  <artifactId>sf-rest-api-connector</artifactId>
+  <artifactId>soap-api-connector</artifactId>
 
   <dependencies>
     <dependency>
@@ -22,23 +22,43 @@
     </dependency>
     <dependency>
       <groupId>com.teamlazerbeez.salesforce</groupId>
-      <artifactId>sf-api-core</artifactId>
+      <artifactId>metadata-api-binding</artifactId>
     </dependency>
     <dependency>
       <groupId>com.teamlazerbeez.salesforce</groupId>
-      <artifactId>sf-soap-api-connector</artifactId>
-      <scope>test</scope>
+      <artifactId>apex-api-binding</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.teamlazerbeez.salesforce</groupId>
+      <artifactId>partner-api-binding</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.teamlazerbeez.salesforce</groupId>
+      <artifactId>api-core</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
       <scope>test</scope>
       <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-ext</artifactId>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -52,46 +72,32 @@
       <optional>true</optional>
       <scope>test</scope>
     </dependency>
-
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
     </dependency>
-
     <dependency>
-      <groupId>com.google.code.findbugs</groupId>
-      <artifactId>jsr305</artifactId>
+      <groupId>org.codehaus.woodstox</groupId>
+      <artifactId>woodstox-core-asl</artifactId>
     </dependency>
-
     <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-rt</artifactId>
     </dependency>
-
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-core</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.fasterxml.jackson.core</groupId>
-      <artifactId>jackson-databind</artifactId>
-    </dependency>
-
-    <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+
   </dependencies>
 
 </project>

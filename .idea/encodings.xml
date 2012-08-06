@@ -2,12 +2,18 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apex-api-binding" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/metadata-api-binding" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/partner-api-binding" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-api-connector" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sf-apex-api-binding" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sf-api-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sf-metadata-api-binding" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sf-partner-api-binding" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sf-rest-api-connector" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sf-soap-api-connector" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/soap-api-connector" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-logging-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-util" charset="UTF-8" />
   </component>
