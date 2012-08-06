@@ -227,11 +227,14 @@ public class MetadataConnectionImplTest {
 
     @Test
     public void testListMetadataWithInvalidSessionId()
-            throws NoSuchFieldException, UnexpectedErrorFault_Exception, IllegalAccessException, ApiException {
+            throws NoSuchFieldException, UnexpectedErrorFault_Exception, IllegalAccessException, ApiException,
+            InterruptedException {
 
         // this should be the connection that was used to make the metadata connection
 
         logout();
+
+        Thread.sleep(1000);
 
         // the session is now dead
 
@@ -250,6 +253,8 @@ public class MetadataConnectionImplTest {
             throws NoSuchFieldException, UnexpectedErrorFault_Exception, IllegalAccessException, InterruptedException,
             ApiException {
         logout();
+
+        Thread.sleep(1000);
 
         List<Metadata> mdList = new ArrayList<Metadata>();
         StaticResource metadata = new StaticResource();
