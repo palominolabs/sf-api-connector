@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <name>sf-rest-api-connector</name>
+  <name>${project.artifactId}</name>
   <artifactId>sf-rest-api-connector</artifactId>
 
   <dependencies>

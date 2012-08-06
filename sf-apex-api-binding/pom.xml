@@ -9,7 +9,7 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <name>sf-apex-api-binding</name>
+  <name>${project.artifactId}</name>
   <artifactId>sf-apex-api-binding</artifactId>
 
   <properties>
