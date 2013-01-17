@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<!--
-Salesforce.com Partner Web Services API Version 25.0
-Generated on 2012-07-29 19:30:24 +0000.
 
-Copyright 1999-2012 salesforce.com, inc.
+<!--
+Salesforce.com Partner Web Services API Version 26.0
+Generated on 2013-01-17 23:11:20 +0000.
+
+Copyright 1999-2013 salesforce.com, inc.
 All Rights Reserved
 -->
 
@@ -177,6 +178,7 @@ All Rights Reserved
                     <enumeration value="BCC_NOT_ALLOWED_IF_BCC_COMPLIANCE_ENABLED"/>
                     <enumeration value="CANNOT_CASCADE_PRODUCT_ACTIVE"/>
                     <enumeration value="CANNOT_CHANGE_FIELD_TYPE_OF_APEX_REFERENCED_FIELD"/>
+                    <enumeration value="CANNOT_CHANGE_FIELD_TYPE_OF_REFERENCED_FIELD"/>
                     <enumeration value="CANNOT_CREATE_ANOTHER_MANAGED_PACKAGE"/>
                     <enumeration value="CANNOT_DEACTIVATE_DIVISION"/>
                     <enumeration value="CANNOT_DELETE_LAST_DATED_CONVERSION_RATE"/>
@@ -187,6 +189,8 @@ All Rights Reserved
                     <enumeration value="CANNOT_MODIFY_MANAGED_OBJECT"/>
                     <enumeration value="CANNOT_RENAME_APEX_REFERENCED_FIELD"/>
                     <enumeration value="CANNOT_RENAME_APEX_REFERENCED_OBJECT"/>
+                    <enumeration value="CANNOT_RENAME_REFERENCED_FIELD"/>
+                    <enumeration value="CANNOT_RENAME_REFERENCED_OBJECT"/>
                     <enumeration value="CANNOT_REPARENT_RECORD"/>
                     <enumeration value="CANNOT_UPDATE_CONVERTED_LEAD"/>
                     <enumeration value="CANT_DISABLE_CORP_CURRENCY"/>
@@ -220,11 +224,8 @@ All Rights Reserved
                     <enumeration value="ENTITY_IS_ARCHIVED"/>
                     <enumeration value="ENTITY_IS_DELETED"/>
                     <enumeration value="ENTITY_IS_LOCKED"/>
+                    <enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"/>
                     <enumeration value="ERROR_IN_MAILER"/>
-                    <enumeration value="EXTERNAL_OBJECT_AUTHENTICATION_EXCEPTION"/>
-                    <enumeration value="EXTERNAL_OBJECT_CONNECTION_EXCEPTION"/>
-                    <enumeration value="EXTERNAL_OBJECT_EXCEPTION"/>
-                    <enumeration value="EXTERNAL_OBJECT_UNSUPPORTED_EXCEPTION"/>
                     <enumeration value="FAILED_ACTIVATION"/>
                     <enumeration value="FIELD_CUSTOM_VALIDATION_EXCEPTION"/>
                     <enumeration value="FIELD_FILTER_VALIDATION_EXCEPTION"/>
@@ -962,6 +963,15 @@ All Rights Reserved
 
 
 
+
+            <complexType name="DescribeSearchScopeOrderResult">
+                <sequence>
+                    <element name="keyPrefix"       type="xsd:string" />
+                    <element name="name"            type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+
             <complexType name="DescribeTabSetResult">
                 <sequence>
                     <element name="label"           type="xsd:string" />
@@ -1110,6 +1120,22 @@ All Rights Reserved
             </element>
 
 
+
+
+            <element name="describeSearchScopeOrder">
+                <complexType>
+                    <sequence/>
+                </complexType>
+            </element>
+            <element name="describeSearchScopeOrderResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeSearchScopeOrderResult" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+
             <element name="describeTabs">
                 <complexType>
                     <sequence/>
@@ -1150,6 +1176,22 @@ All Rights Reserved
                 </complexType>
             </element>
             <element name="sendEmailResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" minOccurs="0" maxOccurs="10" type="tns:SendEmailResult"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <!-- Send Email Message Types -->
+            <element name="sendEmailMessage">
+                <complexType>
+                    <sequence>
+                        <element name="ids" type="tns:ID" minOccurs="0" maxOccurs="10"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="sendEmailMessageResponse">
                 <complexType>
                     <sequence>
                         <element name="result" minOccurs="0" maxOccurs="10" type="tns:SendEmailResult"/>
@@ -1687,11 +1729,16 @@ All Rights Reserved
                     <enumeration value="EMAIL_TO_CASE_INVALID_ROUTING"/>
                     <enumeration value="EMAIL_TO_CASE_LIMIT_EXCEEDED"/>
                     <enumeration value="EMAIL_TO_CASE_NOT_ENABLED"/>
+                    <enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"/>
                     <enumeration value="EXCEEDED_ID_LIMIT"/>
                     <enumeration value="EXCEEDED_LEAD_CONVERT_LIMIT"/>
                     <enumeration value="EXCEEDED_MAX_SIZE_REQUEST"/>
                     <enumeration value="EXCEEDED_MAX_TYPES_LIMIT"/>
                     <enumeration value="EXCEEDED_QUOTA"/>
+                    <enumeration value="EXTERNAL_OBJECT_AUTHENTICATION_EXCEPTION"/>
+                    <enumeration value="EXTERNAL_OBJECT_CONNECTION_EXCEPTION"/>
+                    <enumeration value="EXTERNAL_OBJECT_EXCEPTION"/>
+                    <enumeration value="EXTERNAL_OBJECT_UNSUPPORTED_EXCEPTION"/>
                     <enumeration value="FEDERATED_SEARCH_ERROR"/>
                     <enumeration value="FEED_NOT_ENABLED_FOR_OBJECT"/>
                     <enumeration value="FUNCTIONALITY_NOT_ENABLED"/>
@@ -1799,11 +1846,16 @@ All Rights Reserved
                     <enumeration value="fns:EMAIL_TO_CASE_INVALID_ROUTING"/>
                     <enumeration value="fns:EMAIL_TO_CASE_LIMIT_EXCEEDED"/>
                     <enumeration value="fns:EMAIL_TO_CASE_NOT_ENABLED"/>
+                    <enumeration value="fns:ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"/>
                     <enumeration value="fns:EXCEEDED_ID_LIMIT"/>
                     <enumeration value="fns:EXCEEDED_LEAD_CONVERT_LIMIT"/>
                     <enumeration value="fns:EXCEEDED_MAX_SIZE_REQUEST"/>
                     <enumeration value="fns:EXCEEDED_MAX_TYPES_LIMIT"/>
                     <enumeration value="fns:EXCEEDED_QUOTA"/>
+                    <enumeration value="fns:EXTERNAL_OBJECT_AUTHENTICATION_EXCEPTION"/>
+                    <enumeration value="fns:EXTERNAL_OBJECT_CONNECTION_EXCEPTION"/>
+                    <enumeration value="fns:EXTERNAL_OBJECT_EXCEPTION"/>
+                    <enumeration value="fns:EXTERNAL_OBJECT_UNSUPPORTED_EXCEPTION"/>
                     <enumeration value="fns:FEDERATED_SEARCH_ERROR"/>
                     <enumeration value="fns:FEED_NOT_ENABLED_FOR_OBJECT"/>
                     <enumeration value="fns:FUNCTIONALITY_NOT_ENABLED"/>
@@ -2100,6 +2152,13 @@ All Rights Reserved
         <part element="tns:describeSoftphoneLayoutResponse" name="parameters"/>
     </message>
 
+    <message name="describeSearchScopeOrderRequest">
+        <part element="tns:describeSearchScopeOrder" name="parameters"/>
+    </message>
+    <message name="describeSearchScopeOrderResponse">
+        <part element="tns:describeSearchScopeOrderResponse" name="parameters"/>
+    </message>
+
     <message name="describeTabsRequest">
         <part element="tns:describeTabs" name="parameters"/>
     </message>
@@ -2261,6 +2320,13 @@ All Rights Reserved
         <part element="tns:getUserInfoResponse" name="parameters"/>
     </message>
 
+    <message name="sendEmailMessageRequest">
+        <part element="tns:sendEmailMessage" name="parameters"/>
+    </message>
+    <message name="sendEmailMessageResponse">
+        <part element="tns:sendEmailMessageResponse" name="parameters"/>
+    </message>
+
     <message name="sendEmailRequest">
         <part element="tns:sendEmail" name="parameters"/>
     </message>
@@ -2334,6 +2400,12 @@ All Rights Reserved
             <input  message="tns:describeSoftphoneLayoutRequest"/>
             <output message="tns:describeSoftphoneLayoutResponse"/>
             <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
+        </operation>
+
+        <operation name="describeSearchScopeOrder">
+            <documentation>Describe a list of objects representing the order and scope of objects on a users search result page</documentation>
+            <input  message="tns:describeSearchScopeOrderRequest"/>
+            <output message="tns:describeSearchScopeOrderResponse"/>
         </operation>
 
         <operation name="describeTabs">
@@ -2535,6 +2607,13 @@ All Rights Reserved
             <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
         </operation>
 
+        <operation name="sendEmailMessage">
+            <documentation>Send existing draft EmailMessage</documentation>
+            <input  message="tns:sendEmailMessageRequest"/>
+            <output message="tns:sendEmailMessageResponse"/>
+            <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
+        </operation>
+
         <operation name="sendEmail">
             <documentation>Send outbound email</documentation>
             <input  message="tns:sendEmailRequest"/>
@@ -2693,6 +2772,18 @@ All Rights Reserved
             <fault name="UnexpectedErrorFault">
                 <soap:fault name="UnexpectedErrorFault" use="literal"/>
             </fault>
+        </operation>
+        <operation name="describeSearchScopeOrder">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
         </operation>
         <operation name="describeTabs">
             <soap:operation soapAction=""/>
@@ -3208,6 +3299,20 @@ All Rights Reserved
                 <soap:fault name="UnexpectedErrorFault" use="literal"/>
             </fault>
         </operation>
+        <operation name="sendEmailMessage">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
         <operation name="sendEmail">
             <soap:operation soapAction=""/>
             <input>
@@ -3229,7 +3334,7 @@ All Rights Reserved
     <service name="SforceService">
         <documentation>Sforce SOAP API</documentation>
         <port binding="tns:SoapBinding" name="Soap">
-            <soap:address location="https://login.salesforce.com/services/Soap/u/25.0"/>
+            <soap:address location="https://login.salesforce.com/services/Soap/u/26.0"/>
         </port>
     </service>
 </definitions>

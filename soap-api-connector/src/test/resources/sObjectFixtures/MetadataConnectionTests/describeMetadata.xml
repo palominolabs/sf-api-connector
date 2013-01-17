@@ -218,6 +218,7 @@
             <string>WorkflowKnowledgePublish</string>
             <string>WorkflowTask</string>
             <string>WorkflowAlert</string>
+            <string>WorkflowSend</string>
             <string>WorkflowOutboundMessage</string>
             <string>WorkflowRule</string>
             <null/>
@@ -492,6 +493,17 @@
         <metaFile>false</metaFile>
         <suffix>settings</suffix>
         <xmlName>SecuritySettings</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>orgsettings</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>settings</suffix>
+        <xmlName>MobileSettings</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
     </c>
     <list reference="../c"/>

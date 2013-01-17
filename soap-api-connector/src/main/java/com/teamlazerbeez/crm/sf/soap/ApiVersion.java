@@ -34,12 +34,12 @@ final class ApiVersion {
     /**
      * Used to construct the endpoint URL. Must match the version of the wsdl.
      */
-    public static final String API_VERSION_STRING = "25.0";
+    public static final String API_VERSION_STRING = "26.0";
 
     /**
      * Used in the metadata api.
      */
-    public static final double API_VERSION_DOUBLE = 25.0;
+    public static final double API_VERSION_DOUBLE = 26.0;
 
     private ApiVersion() {
     }
