@@ -36,23 +36,23 @@
 
   <properties>
     <!-- dependency versions -->
-    <dep.slf4j.version>1.6.6</dep.slf4j.version>
-    <dep.logback.version>1.0.6</dep.logback.version>
+    <dep.slf4j.version>1.7.2</dep.slf4j.version>
+    <dep.logback.version>1.0.9</dep.logback.version>
     <dep.junit.version>4.10</dep.junit.version>
 
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
     <dep.jackson.version>2.0.5</dep.jackson.version>
 
     <plugin.jaxws-maven-plugin.version>1.12</plugin.jaxws-maven-plugin.version>
-    <plugin.cobertura-maven-plugin.version>2.5.1</plugin.cobertura-maven-plugin.version>
-    <plugin.maven-javadoc-plugin.version>2.8.1</plugin.maven-javadoc-plugin.version>
+    <plugin.cobertura-maven-plugin.version>2.5.2</plugin.cobertura-maven-plugin.version>
+    <plugin.maven-javadoc-plugin.version>2.9</plugin.maven-javadoc-plugin.version>
 
     <!-- other config -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <prerequisites>
-    <maven>2.2.1</maven>
+    <maven>3.0.3</maven>
   </prerequisites>
 
 
@@ -266,7 +266,7 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>2.2.1</version>
+                  <version>3.0.3</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
                   <version>1.6</version>
