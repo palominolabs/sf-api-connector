@@ -344,6 +344,9 @@
               </goals>
             </execution>
           </executions>
+          <configuration>
+            <sourceDestDir>${project.build.directory}/generated-sources/jaxws-wsimport</sourceDestDir>
+          </configuration>
           <dependencies>
             <dependency>
               <groupId>com.sun.xml.ws</groupId>
