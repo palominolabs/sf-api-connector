@@ -304,6 +304,7 @@
         <configuration>
           <show>private</show>
           <quiet>true</quiet>
+          <maxmemory>512m</maxmemory>
         </configuration>
         <executions>
           <execution>
