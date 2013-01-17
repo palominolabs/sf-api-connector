@@ -100,7 +100,6 @@ public class BindingConfigurerTest {
         assertEquals("https://na3-api.salesforce.com/services/Soap/s/" + ApiVersion.API_VERSION_STRING,
                 data.getApexServerUrl());
         assertNotNull(data.getSessionId());
-        System.out.println(data.getSessionId());
         assertEquals(DEFAULT_USER, data.getUsername());
     }
 
