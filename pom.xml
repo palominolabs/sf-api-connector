@@ -38,7 +38,7 @@
     <!-- dependency versions -->
     <dep.slf4j.version>1.7.2</dep.slf4j.version>
     <dep.logback.version>1.0.9</dep.logback.version>
-    <dep.junit.version>4.10</dep.junit.version>
+    <dep.junit.version>4.11</dep.junit.version>
 
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
     <dep.jackson.version>2.1.2</dep.jackson.version>
@@ -139,11 +139,6 @@
       </dependency>
 
       <dependency>
-        <groupId>commons-configuration</groupId>
-        <artifactId>commons-configuration</artifactId>
-        <version>1.8</version>
-      </dependency>
-      <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-core</artifactId>
         <version>${dep.logback.version}</version>
@@ -168,7 +163,7 @@
       <dependency>
         <groupId>commons-codec</groupId>
         <artifactId>commons-codec</artifactId>
-        <version>1.6</version>
+        <version>1.7</version>
       </dependency>
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
@@ -204,7 +199,7 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>12.0.1</version>
+        <version>13.0.1</version>
       </dependency>
 
       <dependency>
@@ -228,7 +223,7 @@
       <dependency>
         <groupId>com.google.code.findbugs</groupId>
         <artifactId>jsr305</artifactId>
-        <version>1.3.9</version>
+        <version>2.0.1</version>
       </dependency>
 
     </dependencies>
