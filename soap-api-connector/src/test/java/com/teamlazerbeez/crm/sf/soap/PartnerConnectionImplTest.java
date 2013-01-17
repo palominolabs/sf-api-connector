@@ -47,6 +47,7 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
+@SuppressWarnings("ConstantConditions")
 public class PartnerConnectionImplTest {
 
     private static final String USER =
@@ -227,7 +228,7 @@ public class PartnerConnectionImplTest {
         }
     }
 
-    @SuppressWarnings({"ReuseOfLocalVariable"})
+    @SuppressWarnings("ReuseOfLocalVariable")
     @Test
     public void testCreateThenDeleteThenEmptyRecycleBin() throws ApiException {
         // get a count before creation
@@ -502,7 +503,7 @@ public class PartnerConnectionImplTest {
         assertEquals(0, results.size());
     }
 
-    @SuppressWarnings({"ReuseOfLocalVariable"})
+    @SuppressWarnings("ReuseOfLocalVariable")
     @Test
     public void testRetrieveExtended() throws ApiException {
         List<Id> ids = new ArrayList<Id>();
@@ -591,7 +592,7 @@ public class PartnerConnectionImplTest {
         }
     }
 
-    @SuppressWarnings({"ReuseOfLocalVariable"})
+    @SuppressWarnings("ReuseOfLocalVariable")
     @Test
     public void testUpdate() throws ApiException {
 
@@ -621,7 +622,7 @@ public class PartnerConnectionImplTest {
         assertEquals(0, result.getErrors().size());
         assertEquals(id, result.getId());
 
-        @SuppressWarnings({"ConstantConditions"}) List<PartnerSObject> postUpdateQueryResults =
+        List<PartnerSObject> postUpdateQueryResults =
                 this.conn.query("Select Name, Id from Opportunity WHERE Id = '" + id.toString() + "'").getSObjects();
 
         assertEquals(1, postUpdateQueryResults.size());
@@ -696,7 +697,7 @@ public class PartnerConnectionImplTest {
         }
     }
 
-    @SuppressWarnings({"ReuseOfLocalVariable"})
+    @SuppressWarnings("ReuseOfLocalVariable")
     @Test
     public void testUpdateWithInvalidXmlInValue() throws ApiException {
         List<PartnerSObject> initialQueryResults =
@@ -728,7 +729,7 @@ public class PartnerConnectionImplTest {
         assertEquals(id, result.getId());
 
         // check that a query returns the new value
-        @SuppressWarnings({"ConstantConditions"}) List<PartnerSObject> postUpdateQueryResults =
+        List<PartnerSObject> postUpdateQueryResults =
                 this.conn.query("Select Name, Id from Opportunity WHERE Id = '" + id.toString() + "'").getSObjects();
 
         assertEquals(1, postUpdateQueryResults.size());
@@ -799,8 +800,7 @@ public class PartnerConnectionImplTest {
 
         try {
             // null it
-            @SuppressWarnings({"ConstantConditions"}) SObject nullBirthday =
-                    PartnerSObjectImpl.getNewWithId("Opportunity", sObj.getId());
+            SObject nullBirthday = PartnerSObjectImpl.getNewWithId("Opportunity", sObj.getId());
             nullBirthday.setField(fname, null);
 
             List<SaveResult> resultList = this.conn.update(Collections.singletonList(nullBirthday));
