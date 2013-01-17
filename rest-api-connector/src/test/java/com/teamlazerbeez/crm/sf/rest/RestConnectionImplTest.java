@@ -36,6 +36,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import static com.teamlazerbeez.crm.sf.rest.HttpApiClient.API_VERSION;
 import static com.teamlazerbeez.testutil.ResourceUtil.readResource;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -78,7 +79,7 @@ public class RestConnectionImplTest {
             conn.create(sObj);
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v25.0/sobjects/Contact/",
+            assertEquals("https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
             assertEquals(
@@ -127,7 +128,7 @@ public class RestConnectionImplTest {
         // user has a "passwordUtilities" field that other objects do not
         SObjectDescription userDesc = conn.describeSObject("User");
         SObjectUrls sObjectUrls = userDesc.getsObjectUrls();
-        assertEquals("/services/data/v25.0/sobjects/User/{ID}/password", sObjectUrls.getPasswordUtilities());
+        assertEquals("/services/data/v" + API_VERSION + "/sobjects/User/{ID}/password", sObjectUrls.getPasswordUtilities());
     }
 
     @Test
@@ -222,7 +223,7 @@ public class RestConnectionImplTest {
             fail();
         } catch (ApiException e) {
             assertEquals(
-                    "https://na3-api.salesforce.com:443/services/data/v25.0/sobjects/Contact/0035000000kmzzz?fields=FirstName%2CLastName",
+                    "https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/0035000000kmzzz?fields=FirstName%2CLastName",
                     e.getUrl());
             assertEquals("Not Found", e.getHttpReason());
             assertEquals(
@@ -305,7 +306,7 @@ public class RestConnectionImplTest {
             conn.update(sObj);
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v25.0/sobjects/Opportunity/0065000000FgGSn",
+            assertEquals("https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Opportunity/0065000000FgGSn",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
             assertEquals(

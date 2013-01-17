@@ -2455,10 +2455,10 @@
     "activateable" : false,
     "urls" : {
         "uiEditTemplate" : "https://na3.salesforce.com/{ID}/e",
-        "sobject" : "/services/data/v25.0/sobjects/Account",
+        "sobject" : "/services/data/v26.0/sobjects/Account",
         "uiDetailTemplate" : "https://na3.salesforce.com/{ID}",
-        "describe" : "/services/data/v25.0/sobjects/Account/describe",
-        "rowTemplate" : "/services/data/v25.0/sobjects/Account/{ID}",
+        "describe" : "/services/data/v26.0/sobjects/Account/describe",
+        "rowTemplate" : "/services/data/v26.0/sobjects/Account/{ID}",
         "uiNewRecord" : "https://na3.salesforce.com/001/e"
     },
     "searchable" : true,

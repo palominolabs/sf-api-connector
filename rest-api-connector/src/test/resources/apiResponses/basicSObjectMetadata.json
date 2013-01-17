@@ -6,9 +6,9 @@
         "keyPrefix" : "001",
         "custom" : false,
         "urls" : {
-            "sobject" : "/services/data/v25.0/sobjects/Account",
-            "describe" : "/services/data/v25.0/sobjects/Account/describe",
-            "rowTemplate" : "/services/data/v25.0/sobjects/Account/{ID}"
+            "sobject" : "/services/data/v26.0/sobjects/Account",
+            "describe" : "/services/data/v26.0/sobjects/Account/describe",
+            "rowTemplate" : "/services/data/v26.0/sobjects/Account/{ID}"
         },
         "searchable" : true,
         "labelPlural" : "Accounts",
@@ -29,7 +29,7 @@
     "recentItems" : [ {
         "attributes" : {
             "type" : "Account",
-            "url" : "/services/data/v25.0/sobjects/Account/0015000000WWD7bAAH"
+            "url" : "/services/data/v26.0/sobjects/Account/0015000000WWD7bAAH"
         },
         "Id" : "0015000000WWD7bAAH",
         "Name" : "United Oil & Gas, Singapore"

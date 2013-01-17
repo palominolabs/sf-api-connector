@@ -8,9 +8,9 @@
   <activateable>false</activateable>
   <updateable>true</updateable>
   <sObjectUrls>
-    <sobjectUrlPath>/services/data/v25.0/sobjects/Account</sobjectUrlPath>
-    <describeUrlPath>/services/data/v25.0/sobjects/Account/describe</describeUrlPath>
-    <rowTemplateUrlPath>/services/data/v25.0/sobjects/Account/{ID}</rowTemplateUrlPath>
+    <sobjectUrlPath>/services/data/v26.0/sobjects/Account</sobjectUrlPath>
+    <describeUrlPath>/services/data/v26.0/sobjects/Account/describe</describeUrlPath>
+    <rowTemplateUrlPath>/services/data/v26.0/sobjects/Account/{ID}</rowTemplateUrlPath>
     <uiEditTemplate>https://na3.salesforce.com/{ID}/e</uiEditTemplate>
     <uiDetailTemplate>https://na3.salesforce.com/{ID}</uiDetailTemplate>
     <uiNewRecord>https://na3.salesforce.com/001/e</uiNewRecord>
