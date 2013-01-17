@@ -32,10 +32,10 @@
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>AccountContactRole</name>
-        <label>Contact Role</label>
+        <label>Account Contact Role</label>
         <custom>false</custom>
         <keyPrefix>02Z</keyPrefix>
-        <labelPlural>Contact Role</labelPlural>
+        <labelPlural>Account Contact Role</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
@@ -915,10 +915,10 @@
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseContactRole</name>
-        <label>Contact Role</label>
+        <label>Case Contact Role</label>
         <custom>false</custom>
         <keyPrefix>03j</keyPrefix>
-        <labelPlural>Contact Role</labelPlural>
+        <labelPlural>Case Contact Role</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
@@ -1261,7 +1261,7 @@
         <label>Chatter Activity</label>
         <custom>false</custom>
         <keyPrefix>0ca</keyPrefix>
-        <labelPlural>Chatter Activities</labelPlural>
+        <labelPlural>Chatter Activity</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>false</updateable>
@@ -1738,10 +1738,10 @@
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>ContractContactRole</name>
-        <label>Contact Role</label>
+        <label>Contract Contact Role</label>
         <custom>false</custom>
         <keyPrefix>02a</keyPrefix>
-        <labelPlural>Contact Role</labelPlural>
+        <labelPlural>Contract Contact Role</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
@@ -2221,7 +2221,6 @@
         <name>EventAttendee</name>
         <label>Event Attendee</label>
         <custom>false</custom>
-        <keyPrefix>020</keyPrefix>
         <labelPlural>Event Attendee</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
@@ -3076,10 +3075,10 @@
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityContactRole</name>
-        <label>Contact Role</label>
+        <label>Opportunity Contact Role</label>
         <custom>false</custom>
         <keyPrefix>00K</keyPrefix>
-        <labelPlural>Contact Role</labelPlural>
+        <labelPlural>Opportunity Contact Role</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>

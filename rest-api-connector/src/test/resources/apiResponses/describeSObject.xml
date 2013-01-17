@@ -1175,7 +1175,7 @@
         <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
-        <length>80</length>
+        <length>40</length>
         <name>Industry</name>
         <type>picklist</type>
         <label>Industry</label>
@@ -1186,7 +1186,7 @@
         <precision>0</precision>
         <scale>0</scale>
         <caseSensitive>false</caseSensitive>
-        <byteLength>240</byteLength>
+        <byteLength>120</byteLength>
         <nameField>false</nameField>
         <externalId>false</externalId>
         <idLookup>false</idLookup>
