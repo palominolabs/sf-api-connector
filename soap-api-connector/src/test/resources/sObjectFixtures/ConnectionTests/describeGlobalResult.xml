@@ -37,8 +37,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>02Z</keyPrefix>
-          <label>Contact Role</label>
-          <labelPlural>Contact Role</labelPlural>
+          <label>Account Contact Role</label>
+          <labelPlural>Account Contact Role</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>AccountContactRole</name>
@@ -821,8 +821,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>03j</keyPrefix>
-          <label>Contact Role</label>
-          <labelPlural>Contact Role</labelPlural>
+          <label>Case Contact Role</label>
+          <labelPlural>Case Contact Role</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>CaseContactRole</name>
@@ -1126,7 +1126,7 @@
           <feedEnabled>false</feedEnabled>
           <keyPrefix>0ca</keyPrefix>
           <label>Chatter Activity</label>
-          <labelPlural>Chatter Activities</labelPlural>
+          <labelPlural>Chatter Activity</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>ChatterActivity</name>
@@ -1551,8 +1551,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>02a</keyPrefix>
-          <label>Contact Role</label>
-          <labelPlural>Contact Role</labelPlural>
+          <label>Contract Contact Role</label>
+          <labelPlural>Contract Contact Role</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>ContractContactRole</name>
@@ -1977,7 +1977,6 @@
           <deletable>false</deletable>
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
-          <keyPrefix>020</keyPrefix>
           <label>Event Attendee</label>
           <labelPlural>Event Attendee</labelPlural>
           <layoutable>false</layoutable>
@@ -2739,8 +2738,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>00K</keyPrefix>
-          <label>Contact Role</label>
-          <labelPlural>Contact Role</labelPlural>
+          <label>Opportunity Contact Role</label>
+          <labelPlural>Opportunity Contact Role</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>OpportunityContactRole</name>
