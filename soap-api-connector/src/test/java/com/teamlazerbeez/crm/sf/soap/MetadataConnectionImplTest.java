@@ -424,7 +424,7 @@ public class MetadataConnectionImplTest {
 
     private void checkResults(List<AsyncResult> asyncResults)
             throws ApiException, InterruptedException {
-        WaitForAsyncResult newResults = mdconn.waitForAsyncResults(asyncResults, 10000);
+        WaitForAsyncResult newResults = mdconn.waitForAsyncResults(asyncResults, 20000);
         List<AsyncResult> resultList = newResults.getAll();
 
         assertEquals(asyncResults.size(), resultList.size());
