@@ -43,6 +43,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import javax.annotation.concurrent.NotThreadSafe;
 import javax.annotation.concurrent.ThreadSafe;
 import java.io.IOException;
@@ -61,7 +62,7 @@ import java.util.Map;
 final class HttpApiClient {
 
     static final String API_VERSION = "26.0";
-    static final TypeReference<List<ApiErrorImpl>> API_ERRORS_TYPE = new TypeReference<List<ApiErrorImpl>>() {};
+    static final TypeReference<List<ApiErrorImpl>> API_ERRORS_TYPE = new TypeReference<List<ApiErrorImpl>>() { };
     private static final String UPLOAD_CONTENT_TYPE = "application/json";
 
     private static final Logger logger = LoggerFactory.getLogger(HttpApiClient.class);
@@ -79,25 +80,29 @@ final class HttpApiClient {
     private final HttpClient client;
 
     HttpApiClient(@Nonnull String host, @Nonnull String oauthToken, @Nonnull ObjectMapper objectMapper,
-            HttpClient client) {
+            @Nonnull HttpClient client) {
         this.host = host;
         this.oauthToken = oauthToken;
         this.objectMapper = objectMapper;
         this.client = client;
     }
 
+    @CheckForNull
     String describeGlobal() throws IOException {
         return executeGet("/sobjects/");
     }
 
+    @CheckForNull
     String describeSObject(String sObjectType) throws IOException {
         return executeGet("/sobjects/" + sObjectType + "/describe");
     }
 
+    @CheckForNull
     String basicSObjectInfo(String sObjectType) throws IOException {
         return executeGet("/sobjects/" + sObjectType);
     }
 
+    @CheckForNull
     String create(SObject sObject) throws IOException {
         HttpPost post = new HttpPost(getUri("/sobjects/" + sObject.getType() + "/"));
         post.setEntity(getEntityForSObjectFieldsJson(sObject));
@@ -110,18 +115,22 @@ final class HttpApiClient {
         executeRequestForString(new HttpDelete(getUri("/sobjects/" + sObjectType + "/" + id)));
     }
 
+    @CheckForNull
     String query(String soql) throws IOException {
         return executeGet("/query", new BasicNameValuePair("q", soql));
     }
 
+    @CheckForNull
     String queryMore(RestQueryLocator queryLocator) throws IOException {
         return executeGetForUri(getUriForPath(queryLocator.getContents()));
     }
 
+    @CheckForNull
     String search(String sosl) throws IOException {
         return executeGet("/search", new BasicNameValuePair("q", sosl));
     }
 
+    @CheckForNull
     String retrieve(String sObjectType, Id id, List<String> fields) throws IOException {
         return executeGet("/sobjects/" + sObjectType + "/" + id,
                 new BasicNameValuePair("fields", StringUtils.join(fields, ",")));
@@ -267,7 +276,7 @@ final class HttpApiClient {
     }
 
     private void throwApiExceptionIfInvalid(@Nonnull String url, @Nonnull HttpResponse response,
-            @CheckForNull String responseBody) throws IOException {
+            @Nullable String responseBody) throws IOException {
         StatusLine statusLine = response.getStatusLine();
         int statusCode = statusLine.getStatusCode();
 
@@ -340,7 +349,7 @@ final class HttpApiClient {
         @CheckForNull
         private final String responseBody;
 
-        private ProcessedResponse(HttpResponse httpResponse, String responseBody) {
+        private ProcessedResponse(@Nonnull HttpResponse httpResponse, @Nullable String responseBody) {
             this.httpResponse = httpResponse;
             this.responseBody = responseBody;
         }
