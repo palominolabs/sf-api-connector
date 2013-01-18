@@ -18,8 +18,9 @@ package com.teamlazerbeez.crm.sf.rest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.HttpClient;
-import org.apache.http.impl.client.ContentEncodingHttpClient;
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.http.impl.client.DecompressingHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.conn.PoolingClientConnectionManager;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.GuardedBy;
@@ -41,7 +42,7 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
 
     @GuardedBy("this")
     private final Map<T, ConnectionConfig> configMap = new HashMap<T, ConnectionConfig>();
-    private final ThreadSafeClientConnManager clientConnManager;
+    private final PoolingClientConnectionManager clientConnManager;
 
     /**
      * Create a new pool with the default idle connection timeout.
@@ -58,11 +59,11 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
      */
     public RestConnectionPoolImpl(int idleConnTimeout) {
         // defaults are too low for these out of the box
-        clientConnManager = new ThreadSafeClientConnManager();
+        clientConnManager = new PoolingClientConnectionManager();
         clientConnManager.setDefaultMaxPerRoute(20);
         clientConnManager.setMaxTotal(60);
 
-        this.httpClient = new ContentEncodingHttpClient(clientConnManager, null);
+        this.httpClient = new DecompressingHttpClient(new DefaultHttpClient(clientConnManager, null));
         this.idleConnTimeout = idleConnTimeout;
     }
 
