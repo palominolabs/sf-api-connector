@@ -87,7 +87,7 @@ import java.util.Map;
  * logger is static but is used inside instance-synchronized methods
  */
 
-@SuppressWarnings({"AccessToStaticFieldLockedOnInstance"})
+@SuppressWarnings("AccessToStaticFieldLockedOnInstance")
 @ThreadSafe
 final class PartnerConnectionImpl extends AbstractSalesforceConnection implements PartnerConnection {
 
@@ -378,7 +378,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
         retrieveParam.setSObjectType(sObjectType);
 
         // suppress warning: order is important 
-        @SuppressWarnings({"TypeMayBeWeakened"}) List<String> idStrings = new ArrayList<String>();
+        @SuppressWarnings("TypeMayBeWeakened") List<String> idStrings = new ArrayList<String>();
         for (Id id : ids) {
             idStrings.add(id.toString());
         }
@@ -788,7 +788,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
          *
          * @return a call exception object
          */
-        @SuppressWarnings({"UnnecessaryFullyQualifiedName"})
+        @SuppressWarnings("UnnecessaryFullyQualifiedName")
         private ApiException getApiExceptionWithCauseAndFault(String message, Throwable cause,
                 com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.ApiFault f) {
 
@@ -827,7 +827,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
          * @throws MalformedQueryFault_Exception
          * @throws UnexpectedErrorFault_Exception
          */
-        @SuppressWarnings({"JavaDoc"})
+        @SuppressWarnings("JavaDoc")
         abstract Tout executeOp(@Nonnull Soap binding, @Nonnull Tin param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidQueryLocatorFault_Exception,
                 InvalidSObjectFault_Exception, MalformedQueryFault_Exception, UnexpectedErrorFault_Exception;

@@ -77,7 +77,7 @@ public final class RetrieveResult {
         this.retrieveMessages = Collections.unmodifiableList(rmList);
     }
 
-    @SuppressWarnings({"ReturnOfCollectionOrArrayField"})
+    @SuppressWarnings("ReturnOfCollectionOrArrayField")
     @Nonnull
     public List<FileProperties> getFileProperties() {
         return this.fileProperties;
@@ -88,7 +88,7 @@ public final class RetrieveResult {
         return this.id;
     }
 
-    @SuppressWarnings({"ReturnOfCollectionOrArrayField"})
+    @SuppressWarnings("ReturnOfCollectionOrArrayField")
     @Nonnull
     public List<RetrieveMessage> getRetrieveMessages() {
         return this.retrieveMessages;

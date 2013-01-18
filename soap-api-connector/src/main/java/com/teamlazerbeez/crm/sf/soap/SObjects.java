@@ -389,7 +389,7 @@ final class SObjects {
      *
      * @throws SObjectConversionException if the facade sobjects can't be extracted
      */
-    @SuppressWarnings({"TypeMayBeWeakened"})
+    @SuppressWarnings("TypeMayBeWeakened")
     static List<PartnerSObject> convertStubListToSObjectList(
             List<com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.SObject> stubSObjects)
             throws SObjectConversionException {

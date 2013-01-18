@@ -29,7 +29,7 @@ import java.util.List;
 /**
  * Common logic for many different types of results used in the partner api.
  */
-@SuppressWarnings({"AbstractClassWithoutAbstractMethods"})
+@SuppressWarnings("AbstractClassWithoutAbstractMethods")
 @Immutable
 abstract class AbstractCallResult {
 
@@ -51,7 +51,7 @@ abstract class AbstractCallResult {
      * @param success    true if the specific result was a success
      * @param stubErrors list of stub-provided errors
      */
-    @SuppressWarnings({"TypeMayBeWeakened"})
+    @SuppressWarnings("TypeMayBeWeakened")
     AbstractCallResult(@Nullable String idStr, boolean success, @Nonnull List<ErrorType> stubErrors) {
 
         if (idStr == null) {

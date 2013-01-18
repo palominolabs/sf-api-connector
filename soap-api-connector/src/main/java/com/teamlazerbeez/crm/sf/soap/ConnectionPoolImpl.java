@@ -28,7 +28,7 @@ import java.util.Map;
 /*
 * silence complaints about the static logger
 */
-@SuppressWarnings({"AccessToStaticFieldLockedOnInstance"})
+@SuppressWarnings("AccessToStaticFieldLockedOnInstance")
 @ThreadSafe
 public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
 

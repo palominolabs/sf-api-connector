@@ -20,7 +20,7 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UndeleteResultType;
 
 import javax.annotation.concurrent.Immutable;
 
-@SuppressWarnings({"WeakerAccess"})
+@SuppressWarnings("WeakerAccess")
 @Immutable
 public final class UndeleteResult extends AbstractCallResult {
 

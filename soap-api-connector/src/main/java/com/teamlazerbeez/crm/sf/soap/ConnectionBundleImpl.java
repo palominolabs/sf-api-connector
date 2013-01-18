@@ -28,7 +28,7 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.GuardedBy;
 import javax.annotation.concurrent.ThreadSafe;
 
-@SuppressWarnings({"AccessToStaticFieldLockedOnInstance"})
+@SuppressWarnings("AccessToStaticFieldLockedOnInstance")
 @ThreadSafe
 final class ConnectionBundleImpl implements ConnectionBundle {
 

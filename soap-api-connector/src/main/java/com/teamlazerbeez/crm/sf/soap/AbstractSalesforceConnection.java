@@ -37,7 +37,7 @@ abstract class AbstractSalesforceConnection {
     /**
      * the ConnectionBundleImpl that this connection is a part of
      */
-    @SuppressWarnings({"PackageVisibleField"})
+    @SuppressWarnings("PackageVisibleField")
     final ConnectionBundleImpl connBundle;
 
     AbstractSalesforceConnection(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl connBundle) {
@@ -93,7 +93,7 @@ abstract class AbstractSalesforceConnection {
      * @param <Tout> the type of the output of the api call
      * @param <B>    the type of the binding
      */
-    @SuppressWarnings({"PackageVisibleInnerClass"})
+    @SuppressWarnings("PackageVisibleInnerClass")
     abstract class ApiOperation<Tin, Tout, B> {
 
         /**

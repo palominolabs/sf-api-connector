@@ -390,7 +390,7 @@ public final class SObjectDescription {
      *
      * @return list of field names
      */
-    @SuppressWarnings({"TypeMayBeWeakened"})
+    @SuppressWarnings("TypeMayBeWeakened")
     private List<String> getNamesForFieldList(List<FieldDescription> fieldList) {
         List<String> fieldNames = new ArrayList<String>();
 

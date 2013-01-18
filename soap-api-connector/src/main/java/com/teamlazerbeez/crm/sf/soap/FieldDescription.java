@@ -181,7 +181,7 @@ public final class FieldDescription {
      *
      * @return list of object types=.
      */
-    @SuppressWarnings({"TypeMayBeWeakened"})
+    @SuppressWarnings("TypeMayBeWeakened")
     @Nonnull
     public List<String> getReferenceTo() {
         // the stub returns an empty list if the underlying value is null, so no null check

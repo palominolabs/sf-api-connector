@@ -25,7 +25,7 @@ import javax.annotation.concurrent.Immutable;
  *
  * @author Marshall Pierce <marshall@teamlazerbeez.com>
  */
-@SuppressWarnings({"WeakerAccess"})
+@SuppressWarnings("WeakerAccess")
 @Immutable
 public final class GlobalSObjectDescription {
 

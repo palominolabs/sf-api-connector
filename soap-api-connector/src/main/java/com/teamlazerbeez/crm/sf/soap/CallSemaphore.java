@@ -38,7 +38,7 @@ import java.util.concurrent.Semaphore;
  *
  * @author Marshall Pierce <marshall@teamlazerbeez.com>
  */
-@SuppressWarnings({"AccessToStaticFieldLockedOnInstance"})
+@SuppressWarnings("AccessToStaticFieldLockedOnInstance")
 @ThreadSafe
 final class CallSemaphore {
 
@@ -131,7 +131,7 @@ final class CallSemaphore {
          * expose the method to the parent class
          */
 
-        @SuppressWarnings({"EmptyMethod"})
+        @SuppressWarnings("EmptyMethod")
         @Override
         protected void reducePermits(int reduction) {
             super.reducePermits(reduction);
