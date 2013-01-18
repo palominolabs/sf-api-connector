@@ -44,7 +44,6 @@ public final class DescribeGlobalResult {
         return encoding;
     }
 
-    @Nonnull
     public int getMaxBatchSize() {
         return maxBatchSize;
     }

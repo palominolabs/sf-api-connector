@@ -64,7 +64,6 @@ public class ApiException extends IOException {
         return url;
     }
 
-    @Nonnull
     public int getHttpResponseCode() {
         return httpResponseCode;
     }
