@@ -827,7 +827,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
          * @throws MalformedQueryFault_Exception
          * @throws UnexpectedErrorFault_Exception
          */
-        @SuppressWarnings("JavaDoc")
         abstract Tout executeOp(@Nonnull Soap binding, @Nonnull Tin param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidQueryLocatorFault_Exception,
                 InvalidSObjectFault_Exception, MalformedQueryFault_Exception, UnexpectedErrorFault_Exception;

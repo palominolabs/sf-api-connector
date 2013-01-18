@@ -44,7 +44,6 @@ public final class ListMetadataQuery {
      */
     public ListMetadataQuery(@Nonnull String type) {
         this.type = type;
-        //noinspection AssignmentToNull
         this.folder = null;
     }
 
