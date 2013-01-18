@@ -16,6 +16,8 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
+import javax.annotation.Nonnull;
+
 public class FixedHttpApiClientProvider implements HttpApiClientProvider {
 
     private final HttpApiClient httpApiClient;
@@ -24,6 +26,7 @@ public class FixedHttpApiClientProvider implements HttpApiClientProvider {
         this.httpApiClient = httpApiClient;
     }
 
+    @Nonnull
     @Override
     public HttpApiClient getClient() {
         return this.httpApiClient;
