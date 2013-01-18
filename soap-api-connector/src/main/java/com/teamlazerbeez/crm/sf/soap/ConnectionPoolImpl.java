@@ -48,11 +48,13 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
         this.bindingRepository = new BindingRepository(partnerKey);
     }
 
+    @Nonnull
     @Override
-    public synchronized ConnectionBundle getConnectionBundle(T orgIdentifier) {
+    public synchronized ConnectionBundle getConnectionBundle(@Nonnull T orgIdentifier) {
         return getConnectionBundleImpl(this.orgIdToBundleMap, orgIdentifier);
     }
 
+    @Nonnull
     @Override
     public synchronized ConnectionBundle getSandboxConnectionBundle(@Nonnull T orgIdentifier) {
         return getConnectionBundleImpl(this.orgIdToSandboxBundleMap, orgIdentifier);
@@ -70,14 +72,14 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
     }
 
     @Override
-    public synchronized void configureOrg(T orgId, String username, String password,
+    public synchronized void configureOrg(@Nonnull T orgId, @Nonnull String username, @Nonnull String password,
             int maxConcurrentApiCalls) {
         configureOrgImpl(orgId, username, password, maxConcurrentApiCalls, this.orgIdToBundleMap,
                 NORMAL_BUNDLE_FACTORY);
     }
 
     @Override
-    public synchronized void configureSandboxOrg(T orgId, String username, String password,
+    public synchronized void configureSandboxOrg(@Nonnull T orgId, @Nonnull String username, @Nonnull String password,
             int maxConcurrentApiCalls) {
         configureOrgImpl(orgId, username, password, maxConcurrentApiCalls, this.orgIdToSandboxBundleMap,
                 SANDBOX_BUNDLE_FACTORY);
@@ -108,6 +110,7 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
 
     @Immutable
     private static class NormalBundleFactory implements BundleFactory {
+        @Nonnull
         @Override
         public ConnectionBundleImpl getBundle(@Nonnull BindingRepository bindingRepository, @Nonnull String username,
                 @Nonnull String password, int maxConcurrentApiCalls) {
@@ -117,6 +120,7 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
 
     @Immutable
     private static class SandboxBundleFactory implements BundleFactory {
+        @Nonnull
         @Override
         public ConnectionBundleImpl getBundle(@Nonnull BindingRepository bindingRepository, @Nonnull String username,
                 @Nonnull String password, int maxConcurrentApiCalls) {

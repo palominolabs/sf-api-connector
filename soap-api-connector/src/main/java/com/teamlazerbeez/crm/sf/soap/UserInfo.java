@@ -19,6 +19,7 @@ package com.teamlazerbeez.crm.sf.soap;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.GetUserInfoResultType;
 
+import javax.annotation.CheckForNull;
 import javax.annotation.concurrent.Immutable;
 
 /**
@@ -235,7 +236,8 @@ public final class UserInfo {
      *
      * @return null if input string was null, or an id
      */
-    private Id getPossiblyNullId(String idStr) {
+    @CheckForNull
+    private static Id getPossiblyNullId(String idStr) {
         if (idStr == null) {
             return null;
         }
