@@ -6,7 +6,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class RestQueryResultImpl extends AbstractQueryResult<RestSObject, RestQueryLocator> implements RestQueryResult {
+class RestQueryResultImpl extends AbstractQueryResult<RestSObject, RestQueryLocator> implements RestQueryResult {
     private RestQueryResultImpl(boolean isDone, @Nonnull List<RestSObject> sObjects,
             @Nullable RestQueryLocator qLocator, int totalSize) {
         super(isDone, sObjects, qLocator, totalSize);
