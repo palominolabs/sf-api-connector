@@ -48,8 +48,9 @@
     </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
     <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
-      <childSObject>EventAttendee</childSObject>
-      <field>AttendeeId</field>
+      <childSObject>EventRelation</childSObject>
+      <field>RelationId</field>
+      <relationshipName>EventRelations</relationshipName>
     </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
     <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
       <cascadeDelete>false</cascadeDelete>
