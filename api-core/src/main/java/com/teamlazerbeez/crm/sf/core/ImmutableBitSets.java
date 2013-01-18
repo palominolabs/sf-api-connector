@@ -23,7 +23,7 @@ public class ImmutableBitSets {
     }
 
     /**
-     * Decodes the 'validFor' bitstring used by Saleforce dependent picklist fields.
+     * Decodes the 'validFor' bitstring used by Salesforce dependent picklist fields.
      *
      * The encoding used is strange: it is as if they created a stream of bits by iterating over each of the controlling
      * picklist options and writing a 1 if this entry is valid and a 0 otherwise. This has the effect of making the
