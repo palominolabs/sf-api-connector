@@ -32,7 +32,7 @@ public class AbstractSObject<T> implements SObject {
     /**
      * id of the object. May be null.
      */
-    protected final Id id;
+    private final Id id;
     /**
      * name => value map.
      */
@@ -41,7 +41,7 @@ public class AbstractSObject<T> implements SObject {
     /**
      * The SF type of the object
      */
-    protected final String type;
+    private final String type;
     /**
      * Map of relationship query names (e.g. "Contacts") to their query results
      */
