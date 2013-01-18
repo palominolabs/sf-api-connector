@@ -147,7 +147,7 @@ final class RestConnectionImpl implements RestConnection {
 
     @Nonnull
     private JsonParser parse(String str) throws IOException {
-        return objectReader.getJsonFactory().createJsonParser(str);
+        return objectReader.getFactory().createParser(str);
     }
 
     @Nonnull
