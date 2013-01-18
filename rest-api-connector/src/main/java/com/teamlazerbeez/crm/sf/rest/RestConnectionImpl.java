@@ -26,6 +26,7 @@ import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import javax.annotation.concurrent.ThreadSafe;
 import java.io.IOException;
 import java.util.Iterator;
@@ -146,7 +147,7 @@ final class RestConnectionImpl implements RestConnection {
     }
 
     @Nonnull
-    private JsonParser parse(String str) throws IOException {
+    private JsonParser parse(@Nullable String str) throws IOException {
         return objectReader.getFactory().createParser(str);
     }
 
@@ -174,7 +175,7 @@ final class RestConnectionImpl implements RestConnection {
     }
 
     @Nonnull
-    private SaveResult getSaveResult(String saveResultJson) throws IOException {
+    private SaveResult getSaveResult(@Nullable String saveResultJson) throws IOException {
         ObjectNode objectNode = this.objectReader.withType(ObjectNode.class).readValue(parse(saveResultJson));
         String id = objectNode.get("id").textValue();
         boolean success = objectNode.get("success").booleanValue();
