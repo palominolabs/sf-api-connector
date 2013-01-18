@@ -57,7 +57,7 @@ public final class ImmutableBitSet {
      *
      * @return true if the bit at position i is set
      */
-    @SuppressWarnings({"BooleanMethodNameMustStartWithQuestion"})
+    @SuppressWarnings("BooleanMethodNameMustStartWithQuestion")
     public boolean get(int i) {
         return this.bitSet.get(i);
     }
