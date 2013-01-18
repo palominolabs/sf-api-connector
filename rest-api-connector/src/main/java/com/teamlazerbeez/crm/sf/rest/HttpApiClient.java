@@ -171,7 +171,7 @@ final class HttpApiClient {
     @Nonnull
     private String getSObjectFieldsAsJson(@Nonnull SObject sObject) throws IOException {
         StringWriter writer = new StringWriter();
-        JsonGenerator jsonGenerator = this.objectMapper.getJsonFactory().createJsonGenerator(writer);
+        JsonGenerator jsonGenerator = this.objectMapper.getFactory().createGenerator(writer);
 
         jsonGenerator.writeStartObject();
 
