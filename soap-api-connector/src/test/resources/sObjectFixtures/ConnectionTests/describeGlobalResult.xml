@@ -265,30 +265,6 @@
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
-          <createable>true</createable>
-          <custom>false</custom>
-          <customSetting>false</customSetting>
-          <deletable>true</deletable>
-          <deprecatedAndHidden>false</deprecatedAndHidden>
-          <feedEnabled>false</feedEnabled>
-          <keyPrefix>1do</keyPrefix>
-          <label>Apex Execution Overlay Action</label>
-          <labelPlural>Apex Execution Overlay Actions</labelPlural>
-          <layoutable>false</layoutable>
-          <mergeable>false</mergeable>
-          <name>ApexExecutionOverlayAction</name>
-          <queryable>true</queryable>
-          <replicateable>false</replicateable>
-          <retrieveable>true</retrieveable>
-          <searchable>false</searchable>
-          <triggerable>false</triggerable>
-          <undeletable>false</undeletable>
-          <updateable>true</updateable>
-        </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-        <stubResult>
-          <activateable>false</activateable>
           <createable>false</createable>
           <custom>false</custom>
           <customSetting>false</customSetting>
@@ -1158,7 +1134,7 @@
           <replicateable>false</replicateable>
           <retrieveable>true</retrieveable>
           <searchable>true</searchable>
-          <triggerable>false</triggerable>
+          <triggerable>true</triggerable>
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
@@ -1205,7 +1181,7 @@
           <replicateable>false</replicateable>
           <retrieveable>true</retrieveable>
           <searchable>false</searchable>
-          <triggerable>false</triggerable>
+          <triggerable>true</triggerable>
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
@@ -1374,30 +1350,6 @@
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>
           <updateable>false</updateable>
-        </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-        <stubResult>
-          <activateable>false</activateable>
-          <createable>true</createable>
-          <custom>false</custom>
-          <customSetting>false</customSetting>
-          <deletable>false</deletable>
-          <deprecatedAndHidden>false</deprecatedAndHidden>
-          <feedEnabled>false</feedEnabled>
-          <keyPrefix>1dr</keyPrefix>
-          <label>Container Async Request</label>
-          <labelPlural>Container Async Request</labelPlural>
-          <layoutable>false</layoutable>
-          <mergeable>false</mergeable>
-          <name>ContainerAsyncRequest</name>
-          <queryable>true</queryable>
-          <replicateable>false</replicateable>
-          <retrieveable>true</retrieveable>
-          <searchable>false</searchable>
-          <triggerable>false</triggerable>
-          <undeletable>false</undeletable>
-          <updateable>true</updateable>
         </stubResult>
       </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
@@ -2384,54 +2336,6 @@
           <deletable>true</deletable>
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
-          <keyPrefix>1dp</keyPrefix>
-          <label>IDE Perspective</label>
-          <labelPlural>IDE Perspectives</labelPlural>
-          <layoutable>false</layoutable>
-          <mergeable>false</mergeable>
-          <name>IDEPerspective</name>
-          <queryable>true</queryable>
-          <replicateable>false</replicateable>
-          <retrieveable>true</retrieveable>
-          <searchable>false</searchable>
-          <triggerable>false</triggerable>
-          <undeletable>false</undeletable>
-          <updateable>true</updateable>
-        </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-        <stubResult>
-          <activateable>false</activateable>
-          <createable>true</createable>
-          <custom>false</custom>
-          <customSetting>false</customSetting>
-          <deletable>true</deletable>
-          <deprecatedAndHidden>false</deprecatedAndHidden>
-          <feedEnabled>false</feedEnabled>
-          <keyPrefix>1de</keyPrefix>
-          <label>IDE Workspace</label>
-          <labelPlural>IDE Workspaces</labelPlural>
-          <layoutable>false</layoutable>
-          <mergeable>false</mergeable>
-          <name>IDEWorkspace</name>
-          <queryable>true</queryable>
-          <replicateable>false</replicateable>
-          <retrieveable>true</retrieveable>
-          <searchable>false</searchable>
-          <triggerable>false</triggerable>
-          <undeletable>false</undeletable>
-          <updateable>true</updateable>
-        </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-        <stubResult>
-          <activateable>false</activateable>
-          <createable>true</createable>
-          <custom>false</custom>
-          <customSetting>false</customSetting>
-          <deletable>true</deletable>
-          <deprecatedAndHidden>false</deprecatedAndHidden>
-          <feedEnabled>false</feedEnabled>
           <keyPrefix>087</keyPrefix>
           <label>Idea</label>
           <labelPlural>Ideas</labelPlural>
@@ -2633,54 +2537,6 @@
           <searchable>false</searchable>
           <triggerable>false</triggerable>
           <undeletable>true</undeletable>
-          <updateable>true</updateable>
-        </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-        <stubResult>
-          <activateable>false</activateable>
-          <createable>true</createable>
-          <custom>false</custom>
-          <customSetting>false</customSetting>
-          <deletable>true</deletable>
-          <deprecatedAndHidden>false</deprecatedAndHidden>
-          <feedEnabled>false</feedEnabled>
-          <keyPrefix>1dc</keyPrefix>
-          <label>Metadata Container</label>
-          <labelPlural>Metadata Container</labelPlural>
-          <layoutable>false</layoutable>
-          <mergeable>false</mergeable>
-          <name>MetadataContainer</name>
-          <queryable>true</queryable>
-          <replicateable>false</replicateable>
-          <retrieveable>true</retrieveable>
-          <searchable>false</searchable>
-          <triggerable>false</triggerable>
-          <undeletable>false</undeletable>
-          <updateable>true</updateable>
-        </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-        <stubResult>
-          <activateable>false</activateable>
-          <createable>true</createable>
-          <custom>false</custom>
-          <customSetting>false</customSetting>
-          <deletable>true</deletable>
-          <deprecatedAndHidden>false</deprecatedAndHidden>
-          <feedEnabled>false</feedEnabled>
-          <keyPrefix>1dm</keyPrefix>
-          <label>Metadata Container Member</label>
-          <labelPlural>Metadata Container Member</labelPlural>
-          <layoutable>false</layoutable>
-          <mergeable>false</mergeable>
-          <name>MetadataContainerMember</name>
-          <queryable>true</queryable>
-          <replicateable>false</replicateable>
-          <retrieveable>true</retrieveable>
-          <searchable>false</searchable>
-          <triggerable>false</triggerable>
-          <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
       </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
@@ -3887,30 +3743,6 @@
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>
           <updateable>false</updateable>
-        </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-        <stubResult>
-          <activateable>false</activateable>
-          <createable>true</createable>
-          <custom>false</custom>
-          <customSetting>false</customSetting>
-          <deletable>true</deletable>
-          <deprecatedAndHidden>false</deprecatedAndHidden>
-          <feedEnabled>false</feedEnabled>
-          <keyPrefix>7tf</keyPrefix>
-          <label>Trace Flag</label>
-          <labelPlural>Trace Flags</labelPlural>
-          <layoutable>false</layoutable>
-          <mergeable>false</mergeable>
-          <name>TraceFlag</name>
-          <queryable>true</queryable>
-          <replicateable>false</replicateable>
-          <retrieveable>true</retrieveable>
-          <searchable>false</searchable>
-          <triggerable>false</triggerable>
-          <undeletable>false</undeletable>
-          <updateable>true</updateable>
         </stubResult>
       </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
       <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
