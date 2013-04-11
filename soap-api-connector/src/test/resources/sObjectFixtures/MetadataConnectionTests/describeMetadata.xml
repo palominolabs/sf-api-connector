@@ -129,6 +129,17 @@
           <c class="list"/>
           <list reference="../c"/>
         </childXmlNames>
+        <directoryName>analyticSnapshots</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>snapshot</suffix>
+        <xmlName>AnalyticSnapshot</xmlName>
+      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
         <directoryName>layouts</directoryName>
         <inFolder>false</inFolder>
         <metaFile>false</metaFile>
@@ -357,17 +368,6 @@
           <c class="list"/>
           <list reference="../c"/>
         </childXmlNames>
-        <directoryName>analyticSnapshots</directoryName>
-        <inFolder>false</inFolder>
-        <metaFile>false</metaFile>
-        <suffix>snapshot</suffix>
-        <xmlName>AnalyticSnapshot</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
-          <c class="list"/>
-          <list reference="../c"/>
-        </childXmlNames>
         <directoryName>remoteSiteSettings</directoryName>
         <inFolder>false</inFolder>
         <metaFile>false</metaFile>
@@ -482,28 +482,6 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>CustomObjectSharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
-          <c class="list"/>
-          <list reference="../c"/>
-        </childXmlNames>
-        <directoryName>orgsettings</directoryName>
-        <inFolder>false</inFolder>
-        <metaFile>false</metaFile>
-        <suffix>settings</suffix>
-        <xmlName>SecuritySettings</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
-          <c class="list"/>
-          <list reference="../c"/>
-        </childXmlNames>
-        <directoryName>orgsettings</directoryName>
-        <inFolder>false</inFolder>
-        <metaFile>false</metaFile>
-        <suffix>settings</suffix>
-        <xmlName>MobileSettings</xmlName>
       </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
     </c>
     <list reference="../c"/>
