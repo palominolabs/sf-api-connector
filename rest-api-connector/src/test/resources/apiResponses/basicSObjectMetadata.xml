@@ -40,6 +40,7 @@
         </fields>
         <type>Account</type>
         <relationshipQueryResults/>
+        <relationshipSubObjects/>
       </com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
     </elements>
   </recentItems>

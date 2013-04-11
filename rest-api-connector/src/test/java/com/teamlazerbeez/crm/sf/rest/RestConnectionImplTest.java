@@ -204,6 +204,26 @@ public class RestConnectionImplTest {
     }
 
     @Test
+    public void testQueryWithRelationship() throws IOException {
+        RestQueryResult result = conn.query("SELECT Id, Name, Owner.Name, Owner.Id FROM Account WHERE Id='0015000000WWD7b'");
+
+        RestSObject account = result.getSObjects().get(0);
+
+        assertEquals(1, account.getRelationshipSubObjects().size());
+
+        assertEquals("United Oil & Gas, Singapore", account.getField("Name"));
+        assertEquals(new Id("0015000000WWD7b"), account.getId());
+
+        RestSObject owner = account.getRelationshipSubObjects().get("Owner");
+        assertNotNull(owner);
+
+        assertEquals("User", owner.getType());
+
+        assertEquals("sftestorg3 mpierce", owner.getField("Name"));
+        assertEquals(new Id("00550000001gvBO"), owner.getId());
+    }
+
+    @Test
     public void testRetrieve() throws IOException {
         SObject contact = conn.retrieve("Contact", new Id("0035000000km1oh"), Arrays.asList("FirstName", "LastName"));
 

@@ -24,7 +24,7 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.ThreadSafe;
 
 @ThreadSafe
-public class RestSObjectImpl extends AbstractSObject<RestQueryResult> implements RestSObject {
+public class RestSObjectImpl extends AbstractSObject<RestQueryResult, RestSObject> implements RestSObject {
     private RestSObjectImpl(@Nonnull String type, @Nullable Id id) {
         super(type, id);
     }
@@ -53,5 +53,10 @@ public class RestSObjectImpl extends AbstractSObject<RestQueryResult> implements
     // expose superclass method
     void setRelationshipQueryResult(@Nonnull String relationshipName, @Nonnull RestQueryResult queryResult) {
         super.setRelationshipQueryResultInner(relationshipName, queryResult);
+    }
+
+    // expose superclass method
+    void setRelationshipSubObject(@Nonnull String relationshipName, @Nonnull RestSObject subObject) {
+        setRelationshipSubObjectInner(relationshipName, subObject);
     }
 }

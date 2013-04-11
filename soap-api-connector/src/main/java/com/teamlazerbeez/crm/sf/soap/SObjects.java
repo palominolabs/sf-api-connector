@@ -83,6 +83,29 @@ final class SObjects {
 
         // see http://wiki.apexdevnet.com/index.php/PartnerQuery
 
+
+        /*
+
+         For dot-syntax relationship queries:
+
+        <queryResponse>
+          <result xsi:type="QueryResult">
+            <done>true</done>
+            <queryLocator xsi:nil="true"/>
+            <records xsi:type="sf:sObject">
+              <sf:type>Account</sf:type>
+              <sf:Id xsi:nil="true"/>
+              <sf:Owner xsi:type="sf:sObject">
+                <sf:type>User</sf:type>
+                <sf:Id xsi:nil="true"/>
+                <sf:Name>sftestorg3 mpierce</sf:Name>
+              </sf:Owner>
+            </records>
+            <size>1</size>
+          </result>
+        </queryResponse>
+         */
+
         for (Object fieldObj : fields) {
             Element xmlElt = (Element) fieldObj;
 
@@ -93,6 +116,9 @@ final class SObjects {
             if ("QueryResult".equals(xsiTypeValue)) {
                 PartnerQueryResult subqueryResult = parseQueryResult(xmlElt);
                 newSObject.setRelationshipQueryResult(fieldName, subqueryResult);
+            } else if ("sf:sObject".equals(xsiTypeValue)) {
+                PartnerSObject subObj = parseSObject(xmlElt, fieldName);
+                newSObject.setRelationshipSubObject(fieldName, subObj);
             } else {
                 String fieldValue = extractFieldValue(xmlElt);
 
@@ -149,7 +175,8 @@ final class SObjects {
        </simpleType>
         */
 
-        /*
+        /* For subqueries:
+
         <queryResponse>
           <result xsi:type="QueryResult">
             <done>true</done>
@@ -180,6 +207,29 @@ final class SObjects {
                 <size>2</size>
               </sf:Contacts>                                    <!-- end of sub query result -->
               <sf:Tasks xsi:nil="true"/>                        <!-- empty sub query result -->
+              <sf:Cases xsi:type="QueryResult">
+                <done>true</done>
+                <queryLocator xsi:nil="true"/>
+                <records xsi:type="sf:sObject">
+                  <sf:type>Case</sf:type>
+                  <sf:Id>5005000000AaQxoAAF</sf:Id>
+                  <sf:Id>5005000000AaQxoAAF</sf:Id>
+                  <sf:Subject>Maintenance guidelines for generator unclear</sf:Subject>
+                </records>
+                <records xsi:type="sf:sObject">
+                  <sf:type>Case</sf:type>
+                  <sf:Id>5005000000AaQxtAAF</sf:Id>
+                  <sf:Id>5005000000AaQxtAAF</sf:Id>
+                  <sf:Subject>Frequent mechanical breakdown</sf:Subject>
+                </records>
+                <records xsi:type="sf:sObject">
+                  <sf:type>Case</sf:type>
+                  <sf:Id>5005000000AaQxpAAF</sf:Id>
+                  <sf:Id>5005000000AaQxpAAF</sf:Id>
+                  <sf:Subject>Electronic panel fitting loose</sf:Subject>
+                </records>
+                <size>3</size>
+              </sf:Cases>
             </records>                                          <!-- bottom of one sobject that contained subqueries -->
             <size>1</size>
           </result>
@@ -201,7 +251,7 @@ final class SObjects {
 
         // the last node is "size", not an SObject
         for (int i = 2; i < childNodes.getLength() - 1; i++) {
-            sObjects.add(parseSObject(childNodes.item(i)));
+            sObjects.add(parseSObject(childNodes.item(i), "records"));
         }
 
         Node sizeNode = childNodes.item(childNodes.getLength() - 1);
@@ -258,8 +308,8 @@ final class SObjects {
         return (Element) node;
     }
 
-    private static PartnerSObject parseSObject(@Nonnull Node sObjectNode) throws SObjectConversionException {
-        Element sObjElt = checkNodeIsElement(sObjectNode, "records");
+    private static PartnerSObject parseSObject(@Nonnull Node sObjectNode, String expectedNodeLocalName) throws SObjectConversionException {
+        Element sObjElt = checkNodeIsElement(sObjectNode, expectedNodeLocalName);
 
         String parentNodeTypeStr = sObjElt.getAttribute("xsi:type");
         if (!"sf:sObject".equals(parentNodeTypeStr)) {

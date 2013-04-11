@@ -25,4 +25,7 @@ public interface PartnerSObject extends SObject {
 
     @Nonnull
     public Map<String, PartnerQueryResult> getRelationshipQueryResults();
+
+    @Nonnull
+    public Map<String, PartnerSObject> getRelationshipSubObjects();
 }

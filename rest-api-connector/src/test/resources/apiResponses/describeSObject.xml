@@ -681,7 +681,7 @@
         <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
-        <length>20</length>
+        <length>80</length>
         <name>BillingState</name>
         <type>string</type>
         <label>Billing State/Province</label>
@@ -692,7 +692,7 @@
         <precision>0</precision>
         <scale>0</scale>
         <caseSensitive>false</caseSensitive>
-        <byteLength>60</byteLength>
+        <byteLength>240</byteLength>
         <nameField>false</nameField>
         <externalId>false</externalId>
         <idLookup>false</idLookup>
@@ -757,7 +757,7 @@
         <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
-        <length>40</length>
+        <length>80</length>
         <name>BillingCountry</name>
         <type>string</type>
         <label>Billing Country</label>
@@ -768,7 +768,7 @@
         <precision>0</precision>
         <scale>0</scale>
         <caseSensitive>false</caseSensitive>
-        <byteLength>120</byteLength>
+        <byteLength>240</byteLength>
         <nameField>false</nameField>
         <externalId>false</externalId>
         <idLookup>false</idLookup>
@@ -871,7 +871,7 @@
         <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
-        <length>20</length>
+        <length>80</length>
         <name>ShippingState</name>
         <type>string</type>
         <label>Shipping State/Province</label>
@@ -882,7 +882,7 @@
         <precision>0</precision>
         <scale>0</scale>
         <caseSensitive>false</caseSensitive>
-        <byteLength>60</byteLength>
+        <byteLength>240</byteLength>
         <nameField>false</nameField>
         <externalId>false</externalId>
         <idLookup>false</idLookup>
@@ -947,7 +947,7 @@
         <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.teamlazerbeez.crm.sf.rest.FieldDescription>
       <com.teamlazerbeez.crm.sf.rest.FieldDescription>
-        <length>40</length>
+        <length>80</length>
         <name>ShippingCountry</name>
         <type>string</type>
         <label>Shipping Country</label>
@@ -958,7 +958,7 @@
         <precision>0</precision>
         <scale>0</scale>
         <caseSensitive>false</caseSensitive>
-        <byteLength>120</byteLength>
+        <byteLength>240</byteLength>
         <nameField>false</nameField>
         <externalId>false</externalId>
         <idLookup>false</idLookup>

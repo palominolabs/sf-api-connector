@@ -33,6 +33,7 @@ import org.apache.http.impl.client.ContentEncodingHttpClient;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import javax.annotation.Nullable;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.net.MalformedURLException;
@@ -40,6 +41,7 @@ import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.google.common.base.Preconditions.checkNotNull;
 import static com.teamlazerbeez.crm.sf.rest.HttpApiClient.API_VERSION;
 import static com.teamlazerbeez.testutil.JsonAssert.assertJsonStringEquals;
 import static org.junit.Assert.assertEquals;
@@ -173,6 +175,13 @@ public class HttpApiClientTest {
     }
 
     @Test
+    public void testQueryWithRelationship() throws IOException {
+        String actualJsonStr = reformatJson(
+                client.query("SELECT Id, Name, Owner.Name, Owner.Id FROM Account WHERE Id='0015000000WWD7b'"));
+        assertJsonStringEquals(ResourceUtil.readResource("/apiResponses/queryWithSubObject.json"), actualJsonStr);
+    }
+
+    @Test
     public void testQueryMoreBadQueryLocator() throws IOException {
 
         try {
@@ -216,10 +225,12 @@ public class HttpApiClientTest {
         sObj.setField("Priority", "High");
         sObj.setField("Status", "In Progress");
 
-        return client.create(sObj);
+        return checkNotNull(client.create(sObj));
     }
 
-    private static String reformatJson(String input) throws IOException {
+    private static String reformatJson(@Nullable String input) throws IOException {
+        checkNotNull(input);
+
         JsonFactory jsonFactory = new JsonFactory();
 
         JsonParser parser = jsonFactory.createJsonParser(input);

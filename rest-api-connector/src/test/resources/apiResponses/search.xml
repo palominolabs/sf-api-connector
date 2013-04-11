@@ -23,5 +23,6 @@
     </fields>
     <type>Contact</type>
     <relationshipQueryResults/>
+    <relationshipSubObjects/>
   </com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
 </list>

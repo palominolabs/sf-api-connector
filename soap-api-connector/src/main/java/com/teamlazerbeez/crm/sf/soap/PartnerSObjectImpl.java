@@ -24,7 +24,7 @@ import javax.annotation.Nullable;
 import javax.annotation.concurrent.ThreadSafe;
 
 @ThreadSafe
-public final class PartnerSObjectImpl extends AbstractSObject<PartnerQueryResult> implements PartnerSObject {
+public final class PartnerSObjectImpl extends AbstractSObject<PartnerQueryResult, PartnerSObject> implements PartnerSObject {
 
     /**
      * @param type sf type string
@@ -57,6 +57,11 @@ public final class PartnerSObjectImpl extends AbstractSObject<PartnerQueryResult
 
     // expose superclass method
     void setRelationshipQueryResult(@Nonnull String relationshipName, @Nonnull PartnerQueryResult queryResult) {
-        super.setRelationshipQueryResultInner(relationshipName, queryResult);
+        setRelationshipQueryResultInner(relationshipName, queryResult);
+    }
+
+    // expose superclass method
+    void setRelationshipSubObject(@Nonnull String relationshipName, @Nonnull PartnerSObject subObject) {
+        setRelationshipSubObjectInner(relationshipName, subObject);
     }
 }

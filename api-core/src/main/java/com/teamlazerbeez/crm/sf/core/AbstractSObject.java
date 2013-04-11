@@ -20,15 +20,17 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.GuardedBy;
 import javax.annotation.concurrent.ThreadSafe;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.util.Collections.unmodifiableMap;
+
 /**
- * @param <T> the type of query result
+ * @param <T> the type of relationship query result
+ * @param <U> the type to expose for sub objects
  */
 @ThreadSafe
-public class AbstractSObject<T> implements SObject {
+public abstract class AbstractSObject<T, U extends SObject> implements SObject {
     /**
      * id of the object. May be null.
      */
@@ -48,7 +50,10 @@ public class AbstractSObject<T> implements SObject {
     @GuardedBy("this")
     private final Map<String, T> relationshipQueryResults = new HashMap<String, T>();
 
-    public AbstractSObject(@Nonnull String type, @Nullable Id id) {
+    @GuardedBy("this")
+    private final Map<String, U> relationshipSubObjects = new HashMap<String, U>();
+
+    protected AbstractSObject(@Nonnull String type, @Nullable Id id) {
         this.type = type;
         this.id = id;
     }
@@ -100,9 +105,15 @@ public class AbstractSObject<T> implements SObject {
         return this.fields.remove(key);
     }
 
+    /**
+     * Represents sub-query results like the Contacts in this parent-to-child query:
+     * <code>"SELECT Id, Name, AnnualRevenue, (SELECT Id, FirstName, Email FROM Contacts) FROM Account</code>
+     *
+     * @return map of relationship names to query results (which may need queryMore(), etc)
+     */
     @Nonnull
     public synchronized Map<String, T> getRelationshipQueryResults() {
-        return Collections.unmodifiableMap(relationshipQueryResults);
+        return unmodifiableMap(relationshipQueryResults);
     }
 
     /**
@@ -114,5 +125,26 @@ public class AbstractSObject<T> implements SObject {
     protected synchronized void setRelationshipQueryResultInner(@Nonnull String relationshipName,
             @Nonnull T queryResult) {
         this.relationshipQueryResults.put(relationshipName, queryResult);
+    }
+
+    /**
+     * Represents sub-objects like the Owner object (of type User) in this child-to-parent query:
+     *
+     * <code>SELECT Owner.Name FROM Account</code>
+     *
+     * @return map of relationship names to sub objects.
+     */
+    @Nonnull
+    public synchronized Map<String, U> getRelationshipSubObjects() {
+        return unmodifiableMap(relationshipSubObjects);
+    }
+
+    /**
+     * @param relationshipName relationship name
+     * @param subObject the sub-object to add
+     */
+    protected synchronized void setRelationshipSubObjectInner(@Nonnull String relationshipName,
+            @Nonnull U subObject) {
+        relationshipSubObjects.put(relationshipName, subObject);
     }
 }

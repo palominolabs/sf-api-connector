@@ -27,4 +27,7 @@ public interface RestSObject extends SObject {
 
     @Nonnull
     public Map<String, RestQueryResult> getRelationshipQueryResults();
+
+    @Nonnull
+    public Map<String, RestSObject> getRelationshipSubObjects();
 }

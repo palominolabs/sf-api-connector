@@ -220,7 +220,15 @@ final class RestConnectionImpl implements RestConnection {
                 sObject.setField(fieldName, fieldValueNode.asText());
                 continue;
             } else if (fieldValueNode.isObject()) {
-                sObject.setRelationshipQueryResult(fieldName, getQueryResult(fieldValueNode));
+                // it could either be a subquery or a sub object at this point.
+                if (fieldValueNode.path("attributes").isObject()) {
+                    sObject.setRelationshipSubObject(fieldName, getSObject(fieldValueNode));
+                } else if (fieldValueNode.path("records").isArray()) {
+                    sObject.setRelationshipQueryResult(fieldName, getQueryResult(fieldValueNode));
+                } else {
+                    throw new ResponseParseException("Could not understand field value node: " + fieldValueNode);
+                }
+
                 continue;
             }
 

@@ -296,33 +296,6 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>ApexExecutionOverlayAction</name>
-        <label>Apex Execution Overlay Action</label>
-        <custom>false</custom>
-        <keyPrefix>1do</keyPrefix>
-        <labelPlural>Apex Execution Overlay Actions</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v26.0/sobjects/ApexExecutionOverlayAction</sobjectUrlPath>
-          <describeUrlPath>/services/data/v26.0/sobjects/ApexExecutionOverlayAction/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v26.0/sobjects/ApexExecutionOverlayAction/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>true</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexLog</name>
         <label>Apex Debug Log</label>
         <custom>false</custom>
@@ -1308,7 +1281,7 @@
         <replicateable>false</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
+        <triggerable>true</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupFeed</name>
@@ -1361,7 +1334,7 @@
         <replicateable>false</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
+        <triggerable>true</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupMemberRequest</name>
@@ -1539,33 +1512,6 @@
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>
-        <customSetting>false</customSetting>
-        <deletable>false</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>ContainerAsyncRequest</name>
-        <label>Container Async Request</label>
-        <custom>false</custom>
-        <keyPrefix>1dr</keyPrefix>
-        <labelPlural>Container Async Request</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v26.0/sobjects/ContainerAsyncRequest</sobjectUrlPath>
-          <describeUrlPath>/services/data/v26.0/sobjects/ContainerAsyncRequest/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v26.0/sobjects/ContainerAsyncRequest/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>false</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
@@ -2676,60 +2622,6 @@
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>IDEPerspective</name>
-        <label>IDE Perspective</label>
-        <custom>false</custom>
-        <keyPrefix>1dp</keyPrefix>
-        <labelPlural>IDE Perspectives</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v26.0/sobjects/IDEPerspective</sobjectUrlPath>
-          <describeUrlPath>/services/data/v26.0/sobjects/IDEPerspective/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v26.0/sobjects/IDEPerspective/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>true</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>IDEWorkspace</name>
-        <label>IDE Workspace</label>
-        <custom>false</custom>
-        <keyPrefix>1de</keyPrefix>
-        <labelPlural>IDE Workspaces</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v26.0/sobjects/IDEWorkspace</sobjectUrlPath>
-          <describeUrlPath>/services/data/v26.0/sobjects/IDEWorkspace/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v26.0/sobjects/IDEWorkspace/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>true</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
         <name>Idea</name>
         <label>Idea</label>
         <custom>false</custom>
@@ -2967,60 +2859,6 @@
         <replicateable>true</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>MetadataContainer</name>
-        <label>Metadata Container</label>
-        <custom>false</custom>
-        <keyPrefix>1dc</keyPrefix>
-        <labelPlural>Metadata Container</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v26.0/sobjects/MetadataContainer</sobjectUrlPath>
-          <describeUrlPath>/services/data/v26.0/sobjects/MetadataContainer/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v26.0/sobjects/MetadataContainer/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>true</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>MetadataContainerMember</name>
-        <label>Metadata Container Member</label>
-        <custom>false</custom>
-        <keyPrefix>1dm</keyPrefix>
-        <labelPlural>Metadata Container Member</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v26.0/sobjects/MetadataContainerMember</sobjectUrlPath>
-          <describeUrlPath>/services/data/v26.0/sobjects/MetadataContainerMember/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v26.0/sobjects/MetadataContainerMember/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>true</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
         <triggerable>false</triggerable>
       </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
       <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
@@ -4373,33 +4211,6 @@
         <createable>false</createable>
         <customSetting>false</customSetting>
         <deletable>false</deletable>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
-        <mergeable>false</mergeable>
-        <queryable>true</queryable>
-        <replicateable>false</replicateable>
-        <retrieveable>true</retrieveable>
-        <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-        <name>TraceFlag</name>
-        <label>Trace Flag</label>
-        <custom>false</custom>
-        <keyPrefix>7tf</keyPrefix>
-        <labelPlural>Trace Flags</labelPlural>
-        <layoutable>false</layoutable>
-        <activateable>false</activateable>
-        <updateable>true</updateable>
-        <sObjectUrls>
-          <sobjectUrlPath>/services/data/v26.0/sobjects/TraceFlag</sobjectUrlPath>
-          <describeUrlPath>/services/data/v26.0/sobjects/TraceFlag/describe</describeUrlPath>
-          <rowTemplateUrlPath>/services/data/v26.0/sobjects/TraceFlag/{ID}</rowTemplateUrlPath>
-        </sObjectUrls>
-        <searchable>false</searchable>
-        <createable>true</createable>
-        <customSetting>false</customSetting>
-        <deletable>true</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <feedEnabled>false</feedEnabled>
         <mergeable>false</mergeable>

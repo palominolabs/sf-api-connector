@@ -16,6 +16,8 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.google.common.base.Function;
+import com.google.common.collect.Collections2;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.ExceptionCode;
@@ -31,12 +33,15 @@ import org.joda.time.ReadableDuration;
 import org.junit.Before;
 import org.junit.Test;
 
+import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+import static com.google.common.collect.Lists.newArrayList;
 import static com.teamlazerbeez.testutil.BooleanAssert.assertBooleanEquals;
 import static com.teamlazerbeez.testutil.CollectionAssert.assertSetEquals;
 import static org.junit.Assert.assertEquals;
@@ -354,7 +359,7 @@ public class PartnerConnectionImplTest {
     public void testQueryWithSubquery() throws ApiException {
         PartnerQueryResult relQR = conn.query(
                 "SELECT Id, Name, AnnualRevenue, (SELECT Id, FirstName, Email FROM Contacts), " +
-                        " (Select Id, Subject from Tasks) FROM Account WHERE Id='0015000000WWD7b'");
+                        " (Select Id, Subject from Tasks), (Select Id, Subject from Cases) FROM Account WHERE Id='0015000000WWD7b'");
 
         assertTrue(relQR.isDone());
         assertNull(relQR.getQueryLocator());
@@ -362,12 +367,12 @@ public class PartnerConnectionImplTest {
 
         PartnerSObject account = relQR.getSObjects().get(0);
 
+        assertEquals(2, account.getRelationshipQueryResults().size());
+
         PartnerQueryResult subqueryResult = account.getRelationshipQueryResults().get("Contacts");
         assertTrue(subqueryResult.isDone());
         assertNull(subqueryResult.getQueryLocator());
         assertEquals(2, subqueryResult.getTotalSize());
-
-        assertEquals(1, account.getRelationshipQueryResults().size());
 
         List<PartnerSObject> expectedContacts =
                 (List<PartnerSObject>) TestFixtureUtils
@@ -392,6 +397,49 @@ public class PartnerConnectionImplTest {
 
             assertEquals(expected.getType(), actual.getType());
         }
+
+        // There are no tasks for this account, and unfortunately SF exposes this as a null field called Tasks.
+        assertFalse(account.getRelationshipQueryResults().containsKey("Tasks"));
+
+        // there should be 3 cases
+        PartnerQueryResult cases = account.getRelationshipQueryResults().get("Cases");
+        assertNotNull(cases);
+
+        assertTrue(cases.isDone());
+        assertNull(cases.getQueryLocator());
+        assertEquals(3, cases.getTotalSize());
+
+        Collection<String> subjects =
+                Collections2.transform(cases.getSObjects(), new Function<PartnerSObject, String>() {
+                    @Nullable
+                    @Override
+                    public String apply(@Nullable PartnerSObject partnerSObject) {
+                        return partnerSObject.getField("Subject");
+                    }
+                });
+
+        assertEquals(newArrayList("Maintenance guidelines for generator unclear",
+                "Frequent mechanical breakdown", "Electronic panel fitting loose"), newArrayList(subjects));
+    }
+
+    @Test
+    public void testQueryWithDotRelationship() throws ApiException {
+        PartnerQueryResult result = conn.query("SELECT Id, Name, Owner.Name, Owner.Id FROM Account WHERE Id='0015000000WWD7b'");
+
+        PartnerSObject account = result.getSObjects().get(0);
+
+        assertEquals(1, account.getRelationshipSubObjects().size());
+
+        assertEquals("United Oil & Gas, Singapore", account.getField("Name"));
+        assertEquals(new Id("0015000000WWD7b"), account.getId());
+
+        PartnerSObject owner = account.getRelationshipSubObjects().get("Owner");
+        assertNotNull(owner);
+
+        assertEquals("User", owner.getType());
+
+        assertEquals("sftestorg3 mpierce", owner.getField("Name"));
+        assertEquals(new Id("00550000001gvBO"), owner.getId());
     }
 
     @Test
