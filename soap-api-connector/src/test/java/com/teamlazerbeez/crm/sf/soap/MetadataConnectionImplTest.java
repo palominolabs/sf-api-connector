@@ -62,15 +62,13 @@ public class MetadataConnectionImplTest {
     private MetadataConnection mdconn;
     private ConnectionBundleImpl bundle;
     private String username;
-    private final BindingRepository bindingRepository =
-            new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY);
 
     @Before
     public void setUp() throws ApiException {
         this.username = ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.metadata.user");
         String password = ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.metadata.password");
 
-        this.bundle = ConnectionBundleImpl.getNew(this.bindingRepository, this.username, password, 3);
+        this.bundle = TestConnectionUtils.getConnectionBundle(username, password);
 
         this.mdconn = bundle.getMetadataConnection();
 //        com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump = true;

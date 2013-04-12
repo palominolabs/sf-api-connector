@@ -28,6 +28,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import static com.teamlazerbeez.crm.sf.soap.TestConnectionUtils.getConnectionBundle;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -45,17 +46,10 @@ public class CampaignWeirdnessTest {
             ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.upsertUser");
     private static final String PASSWORD =
             ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.upsertPassword");
-    private ConnectionBundle connBundle;
-    private final BindingRepository bindingRepository =
-            new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY);
 
     @Before
     public void setUp() throws ApiException {
-
-        this.connBundle =
-                ConnectionBundleImpl.getNew(this.bindingRepository, USER, PASSWORD,
-                        PartnerConnectionImplTest.MAX_API_CALLS);
-        this.conn = this.connBundle.getPartnerConnection();
+        this.conn = getConnectionBundle(USER, PASSWORD).getPartnerConnection();
         deleteMembersForCampaign(CAMPAIGN_ID_FOR_CAMPAIGN_MEMBER_TESTS, this.conn);
     }
 

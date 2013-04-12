@@ -19,18 +19,12 @@ package com.teamlazerbeez.crm.sf.rest;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
-import com.teamlazerbeez.crm.sf.soap.BindingConfig;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPool;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPoolImpl;
 import com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl;
 import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.teamlazerbeez.testutil.ResourceUtil;
-import org.apache.http.impl.client.DecompressingHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -38,12 +32,13 @@ import javax.annotation.Nullable;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 import static com.teamlazerbeez.crm.sf.rest.HttpApiClient.API_VERSION;
+import static com.teamlazerbeez.crm.sf.rest.TestConnections.MAPPER;
+import static com.teamlazerbeez.crm.sf.rest.TestConnections.getHttpApiClient;
 import static com.teamlazerbeez.testutil.JsonAssert.assertJsonStringEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
@@ -57,19 +52,12 @@ public class HttpApiClientTest {
     static final String PASSWORD =
             ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.org2MainUser.sfPassword");
 
-    private static final ObjectMapper MAPPER = new ObjectMapper();
 
     private static HttpApiClient client = null;
 
     @BeforeClass
     public static void setUpClass() throws com.teamlazerbeez.crm.sf.soap.ApiException, MalformedURLException {
-        ConnectionPool<Integer> repository =
-                new ConnectionPoolImpl<Integer>("testPartnerKey");
-        repository.configureOrg(1, USER, PASSWORD, 1);
-
-        BindingConfig bindingConfig = repository.getConnectionBundle(1).getBindingConfig();
-        String host = new URL(bindingConfig.getPartnerServerUrl()).getHost();
-        client = new HttpApiClient(host, bindingConfig.getSessionId(), MAPPER, new DecompressingHttpClient(new DefaultHttpClient()));
+        client = getHttpApiClient(USER, PASSWORD);
     }
 
     @Test

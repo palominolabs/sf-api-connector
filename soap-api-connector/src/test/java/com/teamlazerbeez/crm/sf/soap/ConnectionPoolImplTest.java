@@ -20,6 +20,8 @@ import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import org.junit.Before;
 import org.junit.Test;
 
+import static com.teamlazerbeez.crm.sf.soap.PartnerConnectionImplTest.TEST_PARTNER_KEY;
+import static com.teamlazerbeez.crm.sf.testutil.TestMetricRegistry.METRIC_REGISTRY;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
@@ -40,7 +42,7 @@ public class ConnectionPoolImplTest {
 
     @Before
     public void setUp() {
-        this.r = new ConnectionPoolImpl<Integer>(PartnerConnectionImplTest.TEST_PARTNER_KEY);
+        this.r = new ConnectionPoolImpl<Integer>(TEST_PARTNER_KEY, METRIC_REGISTRY);
     }
 
     @Test

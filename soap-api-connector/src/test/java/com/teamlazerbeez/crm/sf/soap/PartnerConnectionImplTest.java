@@ -42,6 +42,9 @@ import java.util.List;
 import java.util.Map;
 
 import static com.google.common.collect.Lists.newArrayList;
+import static com.teamlazerbeez.crm.sf.soap.TestConnectionUtils.getConnectionBundle;
+import static com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps.getPropVal;
+import static com.teamlazerbeez.crm.sf.testutil.TestMetricRegistry.METRIC_REGISTRY;
 import static com.teamlazerbeez.testutil.BooleanAssert.assertBooleanEquals;
 import static com.teamlazerbeez.testutil.CollectionAssert.assertSetEquals;
 import static org.junit.Assert.assertEquals;
@@ -56,10 +59,10 @@ import static org.junit.Assert.fail;
 public class PartnerConnectionImplTest {
 
     private static final String USER =
-            ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.org2MainUser.sfLogin");
+            getPropVal("com.teamlazerbeez.test.crm.sf.conn.org2MainUser.sfLogin");
 
     private static final String PASSWORD =
-            ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.org2MainUser.sfPassword");
+            getPropVal("com.teamlazerbeez.test.crm.sf.conn.org2MainUser.sfPassword");
 
     static final String TEST_PARTNER_KEY = "testPartnerKey";
     private static final BindingRepository BINDING_REPOSITORY = new BindingRepository(TEST_PARTNER_KEY);
@@ -71,15 +74,14 @@ public class PartnerConnectionImplTest {
 
     @Before
     public void setUp() throws SecurityException, IllegalArgumentException, NoSuchFieldException {
-        this.bundle = ConnectionBundleImpl.getNew(BINDING_REPOSITORY, USER, PASSWORD, MAX_API_CALLS);
+        this.bundle = getConnectionBundle(USER, PASSWORD);
         this.conn = (PartnerConnectionImpl) bundle.getPartnerConnection();
 //        com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump = true;
     }
 
     @Test
     public void testBadLogin() {
-        final PartnerConnection badConn =
-                ConnectionBundleImpl.getNew(BINDING_REPOSITORY, USER, PASSWORD + "x", 1).getPartnerConnection();
+        final PartnerConnection badConn = getConnectionBundle(USER, PASSWORD + "x").getPartnerConnection();
         try {
             badConn.getServerTimestamp();
             fail();
@@ -101,7 +103,7 @@ public class PartnerConnectionImplTest {
     }
 
     @Test
-    public void testCountWithConstraint() throws ApiException {
+    public void testCountWithConstraint() throws ApiException, InterruptedException {
         assertEquals(8, this.conn.count("Account", "AnnualRevenue > 100000"));
     }
 
@@ -944,12 +946,9 @@ public class PartnerConnectionImplTest {
     @Test
     public void testCreateWithHiddenFields_ReturnsUnsuccessfulSaveResult() throws ApiException {
 
-        ConnectionBundle connectionBundle = ConnectionBundleImpl.getNew(BINDING_REPOSITORY,
-                ConnectionTestSfUserProps
-                        .getPropVal("com.teamlazerbeez.test.w2l.sf.upload.limitedVisibilityUser.sfLogin"),
-                ConnectionTestSfUserProps
-                        .getPropVal("com.teamlazerbeez.test.w2l.sf.upload.limitedVisibilityUser.sfPassword"),
-                10);
+        ConnectionBundle connectionBundle = getConnectionBundle(
+                getPropVal("com.teamlazerbeez.test.w2l.sf.upload.limitedVisibilityUser.sfLogin"),
+                getPropVal("com.teamlazerbeez.test.w2l.sf.upload.limitedVisibilityUser.sfPassword"));
 
         PartnerConnection partnerConnection = connectionBundle.getPartnerConnection();
 

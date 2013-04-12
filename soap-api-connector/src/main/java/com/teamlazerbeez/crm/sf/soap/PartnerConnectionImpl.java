@@ -67,9 +67,10 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpdateResponse;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Upsert;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResponse;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResultType;
+import com.yammer.metrics.MetricRegistry;
+import com.yammer.metrics.Timer;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
-import org.joda.time.Duration;
 import org.slf4j.ext.XLogger;
 import org.slf4j.ext.XLoggerFactory;
 
@@ -93,17 +94,23 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
 
     private static final XLogger logger = XLoggerFactory.getXLogger(PartnerConnectionImpl.class);
 
+    private final MetricRegistry metricRegistry;
+
     /**
-     * @param semaphore the semaphore to use to limit the number of concurrent calls
-     * @param bundle    the ConnectionBundleImpl that this connection is a part of
+     * @param semaphore       the semaphore to use to limit the number of concurrent calls
+     * @param bundle          the ConnectionBundleImpl that this connection is a part of
+     * @param metricRegistry metrics registry to use for api call timing
      */
-    private PartnerConnectionImpl(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle) {
+    private PartnerConnectionImpl(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle,
+            MetricRegistry metricRegistry) {
         super(semaphore, bundle);
+        this.metricRegistry = metricRegistry;
     }
 
     @Nonnull
-    static PartnerConnectionImpl getNew(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle) {
-        return new PartnerConnectionImpl(semaphore, bundle);
+    static PartnerConnectionImpl getNew(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle,
+            MetricRegistry metricRegistry) {
+        return new PartnerConnectionImpl(semaphore, bundle, metricRegistry);
     }
 
     @Override
@@ -111,7 +118,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
 
         String queryStr = "SELECT count() FROM " + sObjectType + " WHERE " + condition;
 
-        QueryResultType qResultStub = this.queryImpl(queryStr, true);
+        QueryResultType qResultStub = this.queryImpl(queryStr);
 
         return qResultStub.getSize();
     }
@@ -120,7 +127,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     public synchronized int count(@Nonnull String sObjectType) throws ApiException {
         String queryStr = "SELECT count() FROM " + sObjectType;
 
-        QueryResultType qResultStub = this.queryImpl(queryStr, true);
+        QueryResultType qResultStub = this.queryImpl(queryStr);
 
         return qResultStub.getSize();
     }
@@ -131,7 +138,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
 
         String queryStr = "SELECT count() FROM " + sObjectType + " WHERE " + condition;
 
-        QueryResultType qResultStub = this.queryAllImpl(queryStr, true);
+        QueryResultType qResultStub = this.queryAllImpl(queryStr);
 
         int size = qResultStub.getSize();
         logger.exit(size);
@@ -143,7 +150,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
         logger.entry(sObjectType);
         String queryStr = "SELECT count() FROM " + sObjectType;
 
-        QueryResultType qResultStub = this.queryAllImpl(queryStr, true);
+        QueryResultType qResultStub = this.queryAllImpl(queryStr);
 
         int size = qResultStub.getSize();
         logger.exit(size);
@@ -339,13 +346,13 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     @Nonnull
     @Override
     public synchronized PartnerQueryResult query(@Nonnull String queryStr) throws ApiException {
-        return getQueryResultForStub(this.queryImpl(queryStr, false));
+        return getQueryResultForStub(this.queryImpl(queryStr));
     }
 
     @Nonnull
     @Override
     public synchronized PartnerQueryResult queryAll(@Nonnull String queryStr) throws ApiException {
-        return getQueryResultForStub(this.queryAllImpl(queryStr, false));
+        return getQueryResultForStub(this.queryAllImpl(queryStr));
     }
 
     @Nonnull
@@ -622,20 +629,19 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
      * Do the exception handling on the underlying stub query call since we need it for both the external query() and
      * count()
      *
-     * @param queryStr the SOQL query
-     * @param forCount true if this is for a count()
      *
+     * @param queryStr the SOQL query
      * @return the stub result type obj
      *
      * @throws ApiException on failure
      */
-    private QueryResultType queryImpl(String queryStr, boolean forCount) throws ApiException {
+    private QueryResultType queryImpl(String queryStr) throws ApiException {
         logger.entry(queryStr);
 
         Query queryParam = new Query();
         queryParam.setQueryString(queryStr);
 
-        QueryOp op = this.new QueryOp(forCount);
+        QueryOp op = this.new QueryOp();
 
         QueryResponse qResponse = op.execute(queryParam);
 
@@ -648,20 +654,19 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     /**
      * Used by queryAll() and countAll()
      *
-     * @param queryStr the SOQL query
-     * @param forCount true if this is for a count()
      *
+     * @param queryStr the SOQL query
      * @return stub result type
      *
      * @throws ApiException on failure
      */
-    private QueryResultType queryAllImpl(String queryStr, boolean forCount) throws ApiException {
+    private QueryResultType queryAllImpl(String queryStr) throws ApiException {
         logger.entry(queryStr);
 
         QueryAll queryParam = new QueryAll();
         queryParam.setQueryString(queryStr);
 
-        QueryAllOp op = this.new QueryAllOp(forCount);
+        QueryAllOp op = this.new QueryAllOp();
 
         QueryAllResponse qResponse = op.execute(queryParam);
 
@@ -673,13 +678,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
 
     private abstract class PartnerApiOperation<Tin, Tout> extends ApiOperation<Tin, Tout, Soap> {
 
-        private final XLogger opLogger = XLoggerFactory.getXLogger(this.getClass());
-
-        private final int maxMillis;
-
-        PartnerApiOperation(int maxMillis) {
-            this.maxMillis = maxMillis;
-        }
+        private final Timer timer = metricRegistry.timer(MetricRegistry.name(getClass(), "request"));
 
         @Override
         void releaseBinding(@Nonnull Soap binding) {
@@ -729,7 +728,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
         }
 
         private Tout executeOpWrapper(ConfiguredBinding<Soap> configuredBinding, Tin param) throws ApiException {
-            DateTime start = new DateTime();
+            Timer.Context context = timer.time();
 
             Tout out;
 
@@ -756,19 +755,7 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
             } catch (WebServiceException e) {
                 throw PartnerConnectionImpl.this.getApiExceptionWithCause("Web Service exception", e);
             } finally {
-                DateTime finish = new DateTime();
-
-                Duration duration = new Duration(start, finish);
-
-                long actualDuration = duration.getMillis();
-                if (actualDuration > this.maxMillis) {
-                    final BindingConfig config = configuredBinding.getBindingConfig();
-                    this.opLogger.warn("Operation took " + actualDuration + "ms, expected to take no more than " +
-                            this.maxMillis + "ms, org id = " + config.getOrgId() + ", partner endpoint = " +
-                            config.getPartnerServerUrl());
-                } else {
-                    this.opLogger.trace("Operation took " + actualDuration);
-                }
+                context.stop();
             }
             return out;
         }
@@ -833,9 +820,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class CreateOp extends PartnerApiOperation<Create, CreateResponse> {
-        CreateOp() {
-            super(1000);
-        }
 
         @Override
         CreateResponse executeOp(@Nonnull Soap binding, @Nonnull Create param)
@@ -846,9 +830,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class DeleteOp extends PartnerApiOperation<Delete, DeleteResponse> {
-        DeleteOp() {
-            super(1000);
-        }
 
         @Override
         DeleteResponse executeOp(@Nonnull Soap binding, @Nonnull Delete param) throws UnexpectedErrorFault_Exception {
@@ -857,9 +838,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class DescribeGlobalOp extends PartnerApiOperation<DescribeGlobal, DescribeGlobalResponse> {
-        DescribeGlobalOp() {
-            super(4000);
-        }
 
         @Override
         DescribeGlobalResponse executeOp(@Nonnull Soap binding, @Nonnull DescribeGlobal param)
@@ -869,10 +847,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class DescribeSObjectsOp extends PartnerApiOperation<DescribeSObjects, DescribeSObjectsResponse> {
-        DescribeSObjectsOp() {
-            super(2000);
-        }
-
         @Override
         DescribeSObjectsResponse executeOp(@Nonnull Soap binding, @Nonnull DescribeSObjects param)
                 throws InvalidSObjectFault_Exception, UnexpectedErrorFault_Exception {
@@ -881,10 +855,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class EmptyRecycleBinOp extends PartnerApiOperation<EmptyRecycleBin, EmptyRecycleBinResponse> {
-        EmptyRecycleBinOp() {
-            super(1000);
-        }
-
         @Override
         EmptyRecycleBinResponse executeOp(@Nonnull Soap binding, @Nonnull EmptyRecycleBin param)
                 throws UnexpectedErrorFault_Exception {
@@ -893,10 +863,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class GetServerTimestampOp extends PartnerApiOperation<GetServerTimestamp, GetServerTimestampResponse> {
-        GetServerTimestampOp() {
-            super(300);
-        }
-
         @Override
         GetServerTimestampResponse executeOp(@Nonnull Soap binding, @Nonnull GetServerTimestamp param)
                 throws UnexpectedErrorFault_Exception {
@@ -905,10 +871,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class GetUserInfoOp extends PartnerApiOperation<GetUserInfo, GetUserInfoResponse> {
-        GetUserInfoOp() {
-            super(500);
-        }
-
         @Override
         GetUserInfoResponse executeOp(@Nonnull Soap binding, @Nonnull GetUserInfo param)
                 throws UnexpectedErrorFault_Exception {
@@ -917,10 +879,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class QueryAllOp extends PartnerApiOperation<QueryAll, QueryAllResponse> {
-        QueryAllOp(boolean forCount) {
-            super(forCount ? 15000 : 2000);
-        }
-
         @Override
         QueryAllResponse executeOp(@Nonnull Soap binding, @Nonnull QueryAll param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidQueryLocatorFault_Exception,
@@ -930,10 +888,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class QueryMoreOp extends PartnerApiOperation<QueryMore, QueryMoreResponse> {
-        QueryMoreOp() {
-            super(2000);
-        }
-
         @Override
         QueryMoreResponse executeOp(@Nonnull Soap binding, @Nonnull QueryMore param)
                 throws InvalidFieldFault_Exception, InvalidQueryLocatorFault_Exception, UnexpectedErrorFault_Exception,
@@ -943,10 +897,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class QueryOp extends PartnerApiOperation<Query, QueryResponse> {
-        QueryOp(boolean forCount) {
-            super(forCount ? 15000 : 2000);
-        }
-
         @Override
         QueryResponse executeOp(@Nonnull Soap binding, @Nonnull Query param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidQueryLocatorFault_Exception,
@@ -956,10 +906,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class RetrieveOp extends PartnerApiOperation<Retrieve, RetrieveResponse> {
-        RetrieveOp() {
-            super(5000);
-        }
-
         @Override
         RetrieveResponse executeOp(@Nonnull Soap binding, @Nonnull Retrieve param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidSObjectFault_Exception,
@@ -969,10 +915,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class UpdateOp extends PartnerApiOperation<Update, UpdateResponse> {
-        UpdateOp() {
-            super(2000);
-        }
-
         @Override
         UpdateResponse executeOp(@Nonnull Soap binding, @Nonnull Update param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidSObjectFault_Exception,
@@ -982,10 +924,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class UpsertOp extends PartnerApiOperation<Upsert, UpsertResponse> {
-        UpsertOp() {
-            super(1000);
-        }
-
         @Override
         UpsertResponse executeOp(@Nonnull Soap binding, @Nonnull Upsert param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidQueryLocatorFault_Exception,
@@ -995,10 +933,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class LogoutOp extends PartnerApiOperation<Logout, LogoutResponse> {
-        LogoutOp() {
-            super(500);
-        }
-
         @Override
         LogoutResponse executeOp(@Nonnull Soap binding, @Nonnull Logout param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidQueryLocatorFault_Exception,
@@ -1008,10 +942,6 @@ final class PartnerConnectionImpl extends AbstractSalesforceConnection implement
     }
 
     private class UndeleteOp extends PartnerApiOperation<Undelete, UndeleteResponse> {
-        UndeleteOp() {
-            super(1000);
-        }
-
         @Override
         UndeleteResponse executeOp(@Nonnull Soap binding, @Nonnull Undelete param)
                 throws InvalidFieldFault_Exception, InvalidIdFault_Exception, InvalidQueryLocatorFault_Exception,

@@ -19,8 +19,6 @@ package com.teamlazerbeez.crm.sf.rest;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
 import com.teamlazerbeez.crm.sf.soap.BindingConfig;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPool;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPoolImpl;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -28,6 +26,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Arrays;
 
+import static com.teamlazerbeez.crm.sf.rest.HttpApiClientTest.PASSWORD;
+import static com.teamlazerbeez.crm.sf.rest.HttpApiClientTest.USER;
+import static com.teamlazerbeez.crm.sf.rest.TestConnections.getBindingConfig;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -53,12 +54,7 @@ public class RestConnectionPoolImplTest {
     @Test
     public void testCanUseConfiguredPool() throws com.teamlazerbeez.crm.sf.soap.ApiException, IOException {
 
-        ConnectionPool<Integer> soapPool =
-                new ConnectionPoolImpl<Integer>("testPartnerKey");
-        soapPool.configureOrg(1, HttpApiClientTest.USER,
-                HttpApiClientTest.PASSWORD, 1);
-
-        BindingConfig bindingConfig = soapPool.getConnectionBundle(1).getBindingConfig();
+        BindingConfig bindingConfig = getBindingConfig(USER, PASSWORD);
 
         this.pool.configureOrg(3, new URL(bindingConfig.getPartnerServerUrl()).getHost(), bindingConfig.getSessionId());
 

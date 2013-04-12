@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import static com.teamlazerbeez.crm.sf.soap.TestConnectionUtils.getConnectionBundle;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertSame;
@@ -44,10 +45,8 @@ public class SObjectDescriptionTest {
 
         // all org types support at least 4 concurrent api calls
 
-        this.conn =
-                ConnectionBundleImpl.getNew(new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY), user,
-                        passwd, 4)
-                        .getPartnerConnection();
+        this.conn = getConnectionBundle(user, passwd).getPartnerConnection();
+
     }
 
     @SuppressWarnings("unchecked")

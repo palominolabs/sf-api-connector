@@ -16,6 +16,7 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.yammer.metrics.MetricRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -44,7 +45,14 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
 
     private final BindingRepository bindingRepository;
 
-    public ConnectionPoolImpl(@Nonnull String partnerKey) {
+    private final MetricRegistry metricRegistry;
+
+    /**
+     * @param partnerKey     Your partner key assigned to you by Salesforce.
+     * @param metricRegistry The metric registry that the SF classes should use for metrics.
+     */
+    public ConnectionPoolImpl(@Nonnull String partnerKey, MetricRegistry metricRegistry) {
+        this.metricRegistry = metricRegistry;
         this.bindingRepository = new BindingRepository(partnerKey);
     }
 
@@ -93,7 +101,7 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
             logger.debug("Initial configuration for org " + orgId);
 
             bundles.put(orgId,
-                    bundleFactory.getBundle(this.bindingRepository, username, password, maxConcurrentApiCalls));
+                    bundleFactory.getBundle(this.bindingRepository, username, password, maxConcurrentApiCalls, metricRegistry));
         } else {
             logger.debug("Updating existing configuration for org " + orgId);
 
@@ -105,7 +113,7 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
     private static interface BundleFactory {
         @Nonnull
         ConnectionBundleImpl getBundle(@Nonnull BindingRepository bindingRepository, @Nonnull String username,
-                @Nonnull String password, int maxConcurrentApiCalls);
+                @Nonnull String password, int maxConcurrentApiCalls, MetricRegistry metricRegistry);
     }
 
     @Immutable
@@ -113,8 +121,9 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
         @Nonnull
         @Override
         public ConnectionBundleImpl getBundle(@Nonnull BindingRepository bindingRepository, @Nonnull String username,
-                @Nonnull String password, int maxConcurrentApiCalls) {
-            return ConnectionBundleImpl.getNew(bindingRepository, username, password, maxConcurrentApiCalls);
+                @Nonnull String password, int maxConcurrentApiCalls, MetricRegistry metricRegistry) {
+            return ConnectionBundleImpl
+                    .getNew(bindingRepository, username, password, maxConcurrentApiCalls, metricRegistry);
         }
     }
 
@@ -123,8 +132,9 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
         @Nonnull
         @Override
         public ConnectionBundleImpl getBundle(@Nonnull BindingRepository bindingRepository, @Nonnull String username,
-                @Nonnull String password, int maxConcurrentApiCalls) {
-            return ConnectionBundleImpl.getNewForSandbox(bindingRepository, username, password, maxConcurrentApiCalls);
+                @Nonnull String password, int maxConcurrentApiCalls, MetricRegistry metricRegistry) {
+            return ConnectionBundleImpl
+                    .getNewForSandbox(bindingRepository, username, password, maxConcurrentApiCalls, metricRegistry);
         }
     }
 }

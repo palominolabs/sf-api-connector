@@ -20,6 +20,7 @@ import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import org.junit.Before;
 import org.junit.Test;
 
+import static com.teamlazerbeez.crm.sf.soap.TestConnectionUtils.getConnectionBundle;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -32,8 +33,7 @@ public class ApexConnectionImplTest {
         String user = ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.apex.user");
         String passwd = ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.apex.password");
 
-        conn = ConnectionBundleImpl.getNew(new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY), user,
-                passwd, 5).getApexConnection();
+        conn = getConnectionBundle(user, passwd).getApexConnection();
     }
 
     @Test

@@ -19,12 +19,12 @@ package com.teamlazerbeez.crm.sf.soap;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.FieldType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.FieldTypeType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.SoapTypeType;
-import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.teamlazerbeez.crm.sf.testutil.TestFixtureUtils;
 import org.junit.Test;
 
 import java.util.List;
 
+import static com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps.getPropVal;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
@@ -33,8 +33,6 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 public class FieldDescriptionTest {
-    private final BindingRepository bindingRepository =
-            new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY);
 
     @Test
     public void testBlankApiField() {
@@ -218,12 +216,10 @@ public class FieldDescriptionTest {
     }
 
     private FieldDescription getDescription(String object, String fieldName) throws ApiException {
-        String user =
-                ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.dependentPicklist.sfLogin");
-        String passwd =
-                ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.dependentPicklist.sfPassword");
+        String user = getPropVal("com.teamlazerbeez.test.crm.sf.conn.dependentPicklist.sfLogin");
+        String passwd = getPropVal("com.teamlazerbeez.test.crm.sf.conn.dependentPicklist.sfPassword");
 
-        ConnectionBundle bundle = ConnectionBundleImpl.getNew(this.bindingRepository, user, passwd, 4);
+        ConnectionBundle bundle = TestConnectionUtils.getConnectionBundle(user, passwd);
 
         PartnerConnection conn = bundle.getPartnerConnection();
 

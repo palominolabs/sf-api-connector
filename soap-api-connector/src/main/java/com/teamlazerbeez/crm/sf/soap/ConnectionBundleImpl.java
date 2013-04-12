@@ -20,6 +20,7 @@ import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.apex.ApexPortType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Soap;
+import com.yammer.metrics.MetricRegistry;
 import org.slf4j.ext.XLogger;
 import org.slf4j.ext.XLoggerFactory;
 
@@ -74,10 +75,13 @@ final class ConnectionBundleImpl implements ConnectionBundle {
     @GuardedBy("this")
     private BindingConfig bindingConfig = null;
 
+    private final MetricRegistry metricRegistry;
+
     private ConnectionBundleImpl(@Nonnull String username, @Nonnull String password, int maxConcurrentApiCalls,
-            @Nonnull BindingRepository bindingRepository, boolean sandboxOrg) {
+            @Nonnull BindingRepository bindingRepository, boolean sandboxOrg, MetricRegistry metricRegistry) {
         this.sandboxOrg = sandboxOrg;
         this.bindingRepository = bindingRepository;
+        this.metricRegistry = metricRegistry;
         this.callSemaphore = new CallSemaphore();
 
         this.updateCredentials(username, password, maxConcurrentApiCalls);
@@ -90,14 +94,15 @@ final class ConnectionBundleImpl implements ConnectionBundle {
      * @param username              the username to log in with
      * @param password              the password to log in with
      * @param maxConcurrentApiCalls the maximum number of api calls that can be made concurrently
+     * @param metricRegistry        metric registry
      *
      * @return a fully configured ConnectionBundle
      */
     static ConnectionBundleImpl getNew(@Nonnull BindingRepository bindingRepository, @Nonnull String username,
-            @Nonnull String password, int maxConcurrentApiCalls) {
+            @Nonnull String password, int maxConcurrentApiCalls, MetricRegistry metricRegistry) {
 
-        return new ConnectionBundleImpl(username, password, maxConcurrentApiCalls,
-                bindingRepository, false);
+        return new ConnectionBundleImpl(username, password, maxConcurrentApiCalls, bindingRepository, false,
+                metricRegistry);
     }
 
     /**
@@ -107,16 +112,18 @@ final class ConnectionBundleImpl implements ConnectionBundle {
      * @param username              the username to log in with
      * @param password              the password to log in with
      * @param maxConcurrentApiCalls the maximum number of api calls that can be made concurrently
+     * @param metricRegistry        metric registry
      *
      * @return a new ConnectionBundle for a sandbox org
      *
-     * @see ConnectionBundleImpl#ConnectionBundleImpl(String, String, int, BindingRepository, boolean)
+     * @see ConnectionBundleImpl#ConnectionBundleImpl(String, String, int, BindingRepository, boolean, MetricRegistry)
      */
     static ConnectionBundleImpl getNewForSandbox(@Nonnull BindingRepository bindingRepository,
-            @Nonnull String username, @Nonnull String password, int maxConcurrentApiCalls) {
+            @Nonnull String username, @Nonnull String password, int maxConcurrentApiCalls,
+            MetricRegistry metricRegistry) {
 
-        return new ConnectionBundleImpl(username, password, maxConcurrentApiCalls, bindingRepository,
-                true);
+        return new ConnectionBundleImpl(username, password, maxConcurrentApiCalls, bindingRepository, true,
+                metricRegistry);
     }
 
     synchronized void updateCredentials(@Nonnull String newUsername, @Nonnull String newPassword,
@@ -148,7 +155,7 @@ final class ConnectionBundleImpl implements ConnectionBundle {
     @Override
     public synchronized PartnerConnection getPartnerConnection() {
         // com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump = true;
-        return PartnerConnectionImpl.getNew(this.callSemaphore, this);
+        return PartnerConnectionImpl.getNew(this.callSemaphore, this, metricRegistry);
     }
 
     @Nonnull

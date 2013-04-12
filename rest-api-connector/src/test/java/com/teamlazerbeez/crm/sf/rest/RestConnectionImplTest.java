@@ -16,28 +16,24 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
-import com.teamlazerbeez.crm.sf.soap.BindingConfig;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPool;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPoolImpl;
 import com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl;
 import com.teamlazerbeez.crm.sf.testutil.SObjectUtil;
 import com.teamlazerbeez.crm.sf.testutil.TestFixtureUtils;
-import org.apache.http.impl.client.DecompressingHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
 import static com.teamlazerbeez.crm.sf.rest.HttpApiClient.API_VERSION;
+import static com.teamlazerbeez.crm.sf.rest.HttpApiClientTest.PASSWORD;
+import static com.teamlazerbeez.crm.sf.rest.HttpApiClientTest.USER;
+import static com.teamlazerbeez.crm.sf.rest.TestConnections.getRestConnection;
 import static com.teamlazerbeez.testutil.ResourceUtil.readResource;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -52,16 +48,7 @@ public class RestConnectionImplTest {
 
     @BeforeClass
     public static void setUpClass() throws com.teamlazerbeez.crm.sf.soap.ApiException, MalformedURLException {
-
-        ConnectionPool<Integer> repository =
-                new ConnectionPoolImpl<Integer>("testPartnerKey");
-        repository.configureOrg(1, HttpApiClientTest.USER, HttpApiClientTest.PASSWORD, 1);
-
-        BindingConfig bindingConfig = repository.getConnectionBundle(1).getBindingConfig();
-        ObjectMapper objectMapper = new ObjectMapper();
-        conn = new RestConnectionImpl(objectMapper.reader(),
-                new FixedHttpApiClientProvider(new HttpApiClient(new URL(bindingConfig.getPartnerServerUrl()).getHost(),
-                        bindingConfig.getSessionId(), objectMapper, new DecompressingHttpClient(new DefaultHttpClient()))));
+        conn = getRestConnection(USER, PASSWORD);
     }
 
     @Test

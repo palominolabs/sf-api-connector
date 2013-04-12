@@ -28,6 +28,8 @@ import org.junit.Test;
 
 import java.lang.reflect.InvocationTargetException;
 
+import static com.teamlazerbeez.crm.sf.soap.TestConnectionUtils.getConnectionBundle;
+import static com.teamlazerbeez.crm.sf.testutil.TestMetricRegistry.METRIC_REGISTRY;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotSame;
@@ -37,8 +39,6 @@ import static org.junit.Assert.fail;
 public class ConnectionBundleImplTest {
 
     private ConnectionBundleImpl bundle;
-    private final BindingRepository bindingRepository =
-            new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY);
     private static final String USER =
             ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.org1MainUser.sfLogin");
     private static final String PASSWD =
@@ -47,7 +47,7 @@ public class ConnectionBundleImplTest {
     @Before
     public void setUp() {
         // all org types support at least 4 concurrent api calls
-        this.bundle = ConnectionBundleImpl.getNew(this.bindingRepository, USER, PASSWD, 4);
+        this.bundle = getConnectionBundle(USER, PASSWD);
     }
 
     @After
@@ -185,15 +185,17 @@ public class ConnectionBundleImplTest {
     public void testTwoBundlesSharingTheSameReposBothWork()
             throws InvocationTargetException, NoSuchMethodException, IllegalAccessException, ApiException {
 
-        final ConnectionBundleImpl p1 = ConnectionBundleImpl.getNew(this.bindingRepository, USER, PASSWD, 4);
+        BindingRepository bindingRepository = new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY);
 
-        final ConnectionBundleImpl p2 = ConnectionBundleImpl.getNew(this.bindingRepository,
+        final ConnectionBundleImpl p1 = ConnectionBundleImpl.getNew(bindingRepository, USER, PASSWD, 4, METRIC_REGISTRY);
+
+        final ConnectionBundleImpl p2 = ConnectionBundleImpl.getNew(bindingRepository,
                 ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.dependentPicklist.sfLogin"),
                 ConnectionTestSfUserProps.getPropVal("com.teamlazerbeez.test.crm.sf.conn.dependentPicklist.sfPassword"),
-                4);
+                4, METRIC_REGISTRY);
 
         PartnerBindingCache pbc =
-                (PartnerBindingCache) ReflectionUtil.getField(this.bindingRepository, "partnerBindingCache");
+                (PartnerBindingCache) ReflectionUtil.getField(bindingRepository, "partnerBindingCache");
 
         assertEquals(0, pbc.getCachedBindings().size());
         assertEquals(0, pbc.getExtant().size());

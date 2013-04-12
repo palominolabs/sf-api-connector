@@ -43,6 +43,8 @@
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
     <dep.jackson.version>2.1.4</dep.jackson.version>
 
+    <dep.metrics.version>3.0.0-BETA1</dep.metrics.version>
+
     <plugin.jaxws-maven-plugin.version>1.12</plugin.jaxws-maven-plugin.version>
     <plugin.cobertura-maven-plugin.version>2.5.2</plugin.cobertura-maven-plugin.version>
     <plugin.maven-javadoc-plugin.version>2.9</plugin.maven-javadoc-plugin.version>
@@ -226,6 +228,11 @@
         <version>2.0.1</version>
       </dependency>
 
+      <dependency>
+        <groupId>com.yammer.metrics</groupId>
+        <artifactId>metrics-core</artifactId>
+        <version>${dep.metrics.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 

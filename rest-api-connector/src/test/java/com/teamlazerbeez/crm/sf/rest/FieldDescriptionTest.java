@@ -16,23 +16,17 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.teamlazerbeez.crm.sf.soap.BindingConfig;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPool;
-import com.teamlazerbeez.crm.sf.soap.ConnectionPoolImpl;
 import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.teamlazerbeez.crm.sf.testutil.TestFixtureUtils;
-import org.apache.http.impl.client.DecompressingHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import javax.annotation.CheckForNull;
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
 
+import static com.teamlazerbeez.crm.sf.rest.TestConnections.getRestConnection;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNull;
@@ -50,16 +44,7 @@ public class FieldDescriptionTest {
 
     @BeforeClass
     public static void setUpClass() throws com.teamlazerbeez.crm.sf.soap.ApiException, MalformedURLException {
-
-        ConnectionPool<Integer> repository =
-                new ConnectionPoolImpl<Integer>("testPartnerKey");
-        repository.configureOrg(1, USER, PASSWD, 1);
-
-        BindingConfig bindingConfig = repository.getConnectionBundle(1).getBindingConfig();
-        ObjectMapper objectMapper = new ObjectMapper();
-        conn = new RestConnectionImpl(objectMapper.reader(),
-                new FixedHttpApiClientProvider(new HttpApiClient(new URL(bindingConfig.getPartnerServerUrl()).getHost(),
-                        bindingConfig.getSessionId(), objectMapper, new DecompressingHttpClient(new DefaultHttpClient()))));
+        conn = getRestConnection(USER, PASSWD);
     }
 
     @SuppressWarnings("unchecked")
