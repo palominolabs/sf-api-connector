@@ -22,7 +22,8 @@ import com.teamlazerbeez.crm.sf.soap.ConnectionPool;
 import com.teamlazerbeez.crm.sf.soap.ConnectionPoolImpl;
 import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.teamlazerbeez.crm.sf.testutil.TestFixtureUtils;
-import org.apache.http.impl.client.ContentEncodingHttpClient;
+import org.apache.http.impl.client.DecompressingHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -58,7 +59,7 @@ public class FieldDescriptionTest {
         ObjectMapper objectMapper = new ObjectMapper();
         conn = new RestConnectionImpl(objectMapper.reader(),
                 new FixedHttpApiClientProvider(new HttpApiClient(new URL(bindingConfig.getPartnerServerUrl()).getHost(),
-                        bindingConfig.getSessionId(), objectMapper, new ContentEncodingHttpClient())));
+                        bindingConfig.getSessionId(), objectMapper, new DecompressingHttpClient(new DefaultHttpClient()))));
     }
 
     @SuppressWarnings("unchecked")

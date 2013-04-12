@@ -29,7 +29,8 @@ import com.teamlazerbeez.crm.sf.soap.ConnectionPoolImpl;
 import com.teamlazerbeez.crm.sf.soap.PartnerSObjectImpl;
 import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.teamlazerbeez.testutil.ResourceUtil;
-import org.apache.http.impl.client.ContentEncodingHttpClient;
+import org.apache.http.impl.client.DecompressingHttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -68,7 +69,7 @@ public class HttpApiClientTest {
 
         BindingConfig bindingConfig = repository.getConnectionBundle(1).getBindingConfig();
         String host = new URL(bindingConfig.getPartnerServerUrl()).getHost();
-        client = new HttpApiClient(host, bindingConfig.getSessionId(), MAPPER, new ContentEncodingHttpClient());
+        client = new HttpApiClient(host, bindingConfig.getSessionId(), MAPPER, new DecompressingHttpClient(new DefaultHttpClient()));
     }
 
     @Test
