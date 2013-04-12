@@ -23,7 +23,7 @@ final class TestConnectionUtils {
 
     static ConnectionBundleImpl getConnectionBundle(String username, String password) {
         return ConnectionBundleImpl
-                .getNew(new BindingRepository(TEST_PARTNER_KEY), username, password, 4,
+                .getNew(new BindingRepository(TEST_PARTNER_KEY, METRIC_REGISTRY), username, password, 4,
                         METRIC_REGISTRY);
     }
 

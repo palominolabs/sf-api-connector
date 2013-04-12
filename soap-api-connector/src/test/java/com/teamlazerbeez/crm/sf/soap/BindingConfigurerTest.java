@@ -23,6 +23,7 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.ExceptionCode;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Soap;
 import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
+import com.teamlazerbeez.crm.sf.testutil.TestMetricRegistry;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -51,7 +52,7 @@ public class BindingConfigurerTest {
     @Before
     public void setUp() {
         this.semaphore.setMaxPermits(1);
-        this.configurer = new BindingConfigurer(PartnerConnectionImplTest.TEST_PARTNER_KEY);
+        this.configurer = new BindingConfigurer(PartnerConnectionImplTest.TEST_PARTNER_KEY, TestMetricRegistry.METRIC_REGISTRY);
     }
 
     @Test

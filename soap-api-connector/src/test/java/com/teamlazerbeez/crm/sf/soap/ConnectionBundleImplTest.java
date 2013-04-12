@@ -185,7 +185,7 @@ public class ConnectionBundleImplTest {
     public void testTwoBundlesSharingTheSameReposBothWork()
             throws InvocationTargetException, NoSuchMethodException, IllegalAccessException, ApiException {
 
-        BindingRepository bindingRepository = new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY);
+        BindingRepository bindingRepository = new BindingRepository(PartnerConnectionImplTest.TEST_PARTNER_KEY, METRIC_REGISTRY);
 
         final ConnectionBundleImpl p1 = ConnectionBundleImpl.getNew(bindingRepository, USER, PASSWD, 4, METRIC_REGISTRY);
 

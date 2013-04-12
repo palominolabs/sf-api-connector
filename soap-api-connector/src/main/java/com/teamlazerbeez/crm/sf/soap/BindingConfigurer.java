@@ -38,8 +38,8 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.LoginResultType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.SessionHeader;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Soap;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UnexpectedErrorFault_Exception;
-import org.joda.time.DateTime;
-import org.joda.time.Duration;
+import com.yammer.metrics.MetricRegistry;
+import com.yammer.metrics.Timer;
 import org.slf4j.ext.XLogger;
 import org.slf4j.ext.XLoggerFactory;
 
@@ -85,9 +85,10 @@ final class BindingConfigurer {
     @Nonnull
     private final String partnerKey;
 
-    private static final int EXPECTED_LOGIN_DURATION = 1000;
+    private final Timer loginTimer;
 
-    BindingConfigurer(@Nonnull String partnerKey) {
+    BindingConfigurer(@Nonnull String partnerKey, MetricRegistry metricRegistry) {
+        this.loginTimer = metricRegistry.timer(MetricRegistry.name(BindingConfigurer.class, "login"));
         this.partnerKey = partnerKey;
         try {
             this.partnerJaxbContext = (JAXBRIContext) JAXBContext.newInstance(Soap.class.getPackage().getName());
@@ -186,7 +187,7 @@ final class BindingConfigurer {
                     .getNewWithCause("Interrupted while getting a call token to make the login call", username, e);
         }
 
-        DateTime start = new DateTime();
+        Timer.Context context = loginTimer.time();
 
         LoginResponse response;
         try {
@@ -203,17 +204,7 @@ final class BindingConfigurer {
             throw ApiException.getNewWithCause("Web Service exception", username, e);
         } finally {
             callSemaphore.release();
-
-            DateTime finish = new DateTime();
-            Duration duration = new Duration(start, finish);
-
-            long actualDuration = duration.getMillis();
-            if (actualDuration > EXPECTED_LOGIN_DURATION) {
-                logger.warn("Login took " + actualDuration + "ms, expected to take no more than " +
-                        EXPECTED_LOGIN_DURATION + "ms, user = " + username);
-            } else {
-                logger.trace("Login took " + actualDuration);
-            }
+            context.stop();
         }
 
         LoginResultType loginResult = response.getResult();

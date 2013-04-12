@@ -19,6 +19,7 @@ package com.teamlazerbeez.crm.sf.soap;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.apex.ApexPortType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Soap;
+import com.yammer.metrics.MetricRegistry;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.ThreadSafe;
@@ -38,8 +39,8 @@ final class BindingRepository {
 
     private final BindingConfigurer bindingConfigurer;
 
-    BindingRepository(@Nonnull String partnerKey) {
-        this.bindingConfigurer = new BindingConfigurer(partnerKey);
+    BindingRepository(@Nonnull String partnerKey, MetricRegistry metricsRegistry) {
+        this.bindingConfigurer = new BindingConfigurer(partnerKey, metricsRegistry);
     }
 
     /**

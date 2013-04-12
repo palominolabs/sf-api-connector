@@ -53,7 +53,7 @@ public final class ConnectionPoolImpl<T> implements ConnectionPool<T> {
      */
     public ConnectionPoolImpl(@Nonnull String partnerKey, MetricRegistry metricRegistry) {
         this.metricRegistry = metricRegistry;
-        this.bindingRepository = new BindingRepository(partnerKey);
+        this.bindingRepository = new BindingRepository(partnerKey, metricRegistry);
     }
 
     @Nonnull

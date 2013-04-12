@@ -23,7 +23,6 @@ import com.teamlazerbeez.crm.sf.core.SObject;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.ExceptionCode;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.StatusCodeType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UnexpectedErrorFault_Exception;
-import com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.teamlazerbeez.crm.sf.testutil.SObjectUtil;
 import com.teamlazerbeez.crm.sf.testutil.TestFixtureUtils;
 import org.joda.time.DateTime;
@@ -44,7 +43,6 @@ import java.util.Map;
 import static com.google.common.collect.Lists.newArrayList;
 import static com.teamlazerbeez.crm.sf.soap.TestConnectionUtils.getConnectionBundle;
 import static com.teamlazerbeez.crm.sf.testutil.ConnectionTestSfUserProps.getPropVal;
-import static com.teamlazerbeez.crm.sf.testutil.TestMetricRegistry.METRIC_REGISTRY;
 import static com.teamlazerbeez.testutil.BooleanAssert.assertBooleanEquals;
 import static com.teamlazerbeez.testutil.CollectionAssert.assertSetEquals;
 import static org.junit.Assert.assertEquals;
@@ -65,7 +63,6 @@ public class PartnerConnectionImplTest {
             getPropVal("com.teamlazerbeez.test.crm.sf.conn.org2MainUser.sfPassword");
 
     static final String TEST_PARTNER_KEY = "testPartnerKey";
-    private static final BindingRepository BINDING_REPOSITORY = new BindingRepository(TEST_PARTNER_KEY);
 
     static final int MAX_API_CALLS = 4;
 
