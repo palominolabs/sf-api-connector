@@ -33,8 +33,7 @@ import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.client.utils.URIUtils;
-import org.apache.http.client.utils.URLEncodedUtils;
+import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
@@ -224,7 +223,7 @@ final class HttpApiClient {
     @Nonnull
     private URI getUriForPath(String path) throws IOException {
         try {
-            return URIUtils.createURI("https", this.host, 443, path, null, null);
+            return getUriBuilderForPath(path).build();
         } catch (URISyntaxException e) {
             throw new IOException("Couldn't create URI", e);
         }
@@ -232,11 +231,23 @@ final class HttpApiClient {
 
     @Nonnull
     private URI getUriForPath(String path, List<NameValuePair> params) throws IOException {
+
+        URIBuilder b = getUriBuilderForPath(path);
+
+        for (NameValuePair param : params) {
+            b.addParameter(param.getName(), param.getValue());
+        }
+
         try {
-            return URIUtils.createURI("https", this.host, 443, path, URLEncodedUtils.format(params, "UTF-8"), null);
+            return b.build();
         } catch (URISyntaxException e) {
             throw new IOException("Couldn't create URI", e);
         }
+    }
+
+    @Nonnull
+    private URIBuilder getUriBuilderForPath(String path) {
+        return new URIBuilder().setScheme("https").setHost(host).setPort(443).setPath(path);
     }
 
     @CheckForNull
