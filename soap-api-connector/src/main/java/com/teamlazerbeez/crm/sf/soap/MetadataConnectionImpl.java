@@ -16,6 +16,8 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.Timer;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.Metadata;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
@@ -36,8 +38,12 @@ import java.util.List;
 @ThreadSafe
 final class MetadataConnectionImpl extends AbstractSalesforceConnection implements MetadataConnection {
 
-    MetadataConnectionImpl(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle) {
+    private final MetricRegistry metricRegistry;
+
+    MetadataConnectionImpl(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle,
+            MetricRegistry metricRegistry) {
         super(semaphore, bundle);
+        this.metricRegistry = metricRegistry;
     }
 
 
@@ -192,10 +198,13 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
 
     private abstract class MetadataApiOperation<Tin, Tout> extends ApiOperation<Tin, Tout, MetadataPortType> {
 
+        private final Timer timer = metricRegistry.timer(MetricRegistry.name(getClass(), "request"));
+
         @Nonnull
         @Override
         final Tout executeImpl(@Nonnull ConfiguredBinding<MetadataPortType> binding, @Nonnull Tin param)
                 throws ApiException {
+            Timer.Context context = timer.time();
             try {
                 MetadataConnectionImpl.this.acquireSemaphore();
                 try {
@@ -205,6 +214,8 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
                 }
             } catch (WebServiceException e) {
                 throw getApiExceptionWithCause("Call failed", e);
+            } finally {
+                context.stop();
             }
         }
 

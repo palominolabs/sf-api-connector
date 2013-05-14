@@ -169,7 +169,7 @@ final class ConnectionBundleImpl implements ConnectionBundle {
     @Nonnull
     @Override
     public synchronized MetadataConnection getMetadataConnection() {
-        return new MetadataConnectionImpl(this.callSemaphore, this);
+        return new MetadataConnectionImpl(this.callSemaphore, this, metricRegistry);
     }
 
     @Nonnull
