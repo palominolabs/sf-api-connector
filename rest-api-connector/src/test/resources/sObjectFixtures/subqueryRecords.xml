@@ -1,6 +1,6 @@
 <java.util.Collections_-UnmodifiableRandomAccessList resolves-to="java.util.Collections$UnmodifiableList">
   <c class="list">
-    <com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+    <com.palominolabs.crm.sf.rest.RestSObjectImpl>
       <id>
         <idStr>0035000000km1ov</idStr>
       </id>
@@ -16,8 +16,8 @@
       </fields>
       <relationshipQueryResults/>
       <type>Contact</type>
-    </com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
-    <com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+    </com.palominolabs.crm.sf.rest.RestSObjectImpl>
+    <com.palominolabs.crm.sf.rest.RestSObjectImpl>
       <id>
         <idStr>0035000000km1ow</idStr>
       </id>
@@ -33,7 +33,7 @@
       </fields>
       <relationshipQueryResults/>
       <type>Contact</type>
-    </com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+    </com.palominolabs.crm.sf.rest.RestSObjectImpl>
   </c>
   <list reference="../c"/>
 </java.util.Collections_-UnmodifiableRandomAccessList>

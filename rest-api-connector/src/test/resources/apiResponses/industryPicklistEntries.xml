@@ -1,6 +1,6 @@
 <java.util.Collections_-UnmodifiableRandomAccessList resolves-to="java.util.Collections$UnmodifiableList">
   <c class="list">
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Agriculture</label>
@@ -8,8 +8,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Apparel</label>
@@ -17,8 +17,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Banking</label>
@@ -26,8 +26,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Biotechnology</label>
@@ -35,8 +35,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Chemicals</label>
@@ -44,8 +44,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Communications</label>
@@ -53,8 +53,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Construction</label>
@@ -62,8 +62,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Consulting</label>
@@ -71,8 +71,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Education</label>
@@ -80,8 +80,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Electronics</label>
@@ -89,8 +89,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Energy</label>
@@ -98,8 +98,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Engineering</label>
@@ -107,8 +107,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Entertainment</label>
@@ -116,8 +116,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Environmental</label>
@@ -125,8 +125,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Finance</label>
@@ -134,8 +134,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Food &amp; Beverage</label>
@@ -143,8 +143,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Government</label>
@@ -152,8 +152,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Healthcare</label>
@@ -161,8 +161,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Hospitality</label>
@@ -170,8 +170,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Insurance</label>
@@ -179,8 +179,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Machinery</label>
@@ -188,8 +188,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Manufacturing</label>
@@ -197,8 +197,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Media</label>
@@ -206,8 +206,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Not For Profit</label>
@@ -215,8 +215,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Recreation</label>
@@ -224,8 +224,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Retail</label>
@@ -233,8 +233,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Shipping</label>
@@ -242,8 +242,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Technology</label>
@@ -251,8 +251,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Telecommunications</label>
@@ -260,8 +260,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Transportation</label>
@@ -269,8 +269,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Utilities</label>
@@ -278,8 +278,8 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-    <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
+    <com.palominolabs.crm.sf.rest.PicklistEntry>
       <active>true</active>
       <defaultValue>false</defaultValue>
       <label>Other</label>
@@ -287,7 +287,7 @@
       <validFor>
         <bitSet></bitSet>
       </validFor>
-    </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+    </com.palominolabs.crm.sf.rest.PicklistEntry>
   </c>
   <list reference="../c"/>
 </java.util.Collections_-UnmodifiableRandomAccessList>

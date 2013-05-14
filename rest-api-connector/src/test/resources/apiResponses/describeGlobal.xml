@@ -1,9 +1,9 @@
-<com.teamlazerbeez.crm.sf.rest.DescribeGlobalResult>
+<com.palominolabs.crm.sf.rest.DescribeGlobalResult>
   <encoding>UTF-8</encoding>
   <maxBatchSize>200</maxBatchSize>
   <basicSObjectMetadatas class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
     <elements>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Account</name>
         <label>Account</label>
         <custom>false</custom>
@@ -29,8 +29,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AccountContactRole</name>
         <label>Account Contact Role</label>
         <custom>false</custom>
@@ -56,8 +56,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AccountFeed</name>
         <label>Account Feed</label>
         <custom>false</custom>
@@ -82,8 +82,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AccountHistory</name>
         <label>Account History</label>
         <custom>false</custom>
@@ -108,8 +108,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AccountPartner</name>
         <label>Account Partner</label>
         <custom>false</custom>
@@ -134,8 +134,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AccountShare</name>
         <label>Account Share</label>
         <custom>false</custom>
@@ -161,8 +161,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ActivityHistory</name>
         <label>Activity History</label>
         <custom>false</custom>
@@ -187,8 +187,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AdditionalNumber</name>
         <label>Additional Directory Number</label>
         <custom>false</custom>
@@ -214,8 +214,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AggregateResult</name>
         <label>Aggregate Result</label>
         <custom>false</custom>
@@ -240,8 +240,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexClass</name>
         <label>Apex Class</label>
         <custom>false</custom>
@@ -267,8 +267,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexComponent</name>
         <label>Visualforce Component</label>
         <custom>false</custom>
@@ -294,8 +294,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexLog</name>
         <label>Apex Debug Log</label>
         <custom>false</custom>
@@ -321,8 +321,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexPage</name>
         <label>Visualforce Page</label>
         <custom>false</custom>
@@ -348,8 +348,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexTestQueueItem</name>
         <label>Apex Test Queue Item</label>
         <custom>false</custom>
@@ -375,8 +375,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexTestResult</name>
         <label>Apex Test Result</label>
         <custom>false</custom>
@@ -402,8 +402,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ApexTrigger</name>
         <label>Apex Trigger</label>
         <custom>false</custom>
@@ -429,8 +429,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Approval</name>
         <label>Approval</label>
         <custom>false</custom>
@@ -456,8 +456,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Asset</name>
         <label>Asset</label>
         <custom>false</custom>
@@ -483,8 +483,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AssetFeed</name>
         <label>Asset Feed</label>
         <custom>false</custom>
@@ -509,8 +509,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AssignmentRule</name>
         <label>Assignment Rule</label>
         <custom>false</custom>
@@ -535,8 +535,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>AsyncApexJob</name>
         <label>Apex Job</label>
         <custom>false</custom>
@@ -562,8 +562,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Attachment</name>
         <label>Attachment</label>
         <custom>false</custom>
@@ -589,8 +589,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>BrandTemplate</name>
         <label>Letterhead</label>
         <custom>false</custom>
@@ -616,8 +616,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>BusinessHours</name>
         <label>Business Hours</label>
         <custom>false</custom>
@@ -643,8 +643,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>BusinessProcess</name>
         <label>Business Process</label>
         <custom>false</custom>
@@ -670,8 +670,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CallCenter</name>
         <label>Call Center</label>
         <custom>false</custom>
@@ -697,8 +697,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Campaign</name>
         <label>Campaign</label>
         <custom>false</custom>
@@ -724,8 +724,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CampaignFeed</name>
         <label>Campaign Feed</label>
         <custom>false</custom>
@@ -750,8 +750,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CampaignMember</name>
         <label>Campaign Member</label>
         <custom>false</custom>
@@ -777,8 +777,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CampaignMemberStatus</name>
         <label>Campaign Member Status</label>
         <custom>false</custom>
@@ -804,8 +804,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CampaignShare</name>
         <label>Campaign Share</label>
         <custom>false</custom>
@@ -831,8 +831,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Case</name>
         <label>Case</label>
         <custom>false</custom>
@@ -858,8 +858,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseComment</name>
         <label>Case Comment</label>
         <custom>false</custom>
@@ -885,8 +885,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseContactRole</name>
         <label>Case Contact Role</label>
         <custom>false</custom>
@@ -912,8 +912,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseFeed</name>
         <label>Case Feed</label>
         <custom>false</custom>
@@ -938,8 +938,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseHistory</name>
         <label>Case History</label>
         <custom>false</custom>
@@ -964,8 +964,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseShare</name>
         <label>Case Share</label>
         <custom>false</custom>
@@ -991,8 +991,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseSolution</name>
         <label>Case Solution</label>
         <custom>false</custom>
@@ -1018,8 +1018,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseStatus</name>
         <label>Case Status Value</label>
         <custom>false</custom>
@@ -1044,8 +1044,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseTeamMember</name>
         <label>Case Team Member</label>
         <custom>false</custom>
@@ -1070,8 +1070,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseTeamRole</name>
         <label>Case Team Member Role</label>
         <custom>false</custom>
@@ -1096,8 +1096,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseTeamTemplate</name>
         <label>Predefined Case Team</label>
         <custom>false</custom>
@@ -1122,8 +1122,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseTeamTemplateMember</name>
         <label>Predefined Case Team Member</label>
         <custom>false</custom>
@@ -1148,8 +1148,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CaseTeamTemplateRecord</name>
         <label>Predefined Case Team Record</label>
         <custom>false</custom>
@@ -1174,8 +1174,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CategoryData</name>
         <label>Category Data</label>
         <custom>false</custom>
@@ -1201,8 +1201,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CategoryNode</name>
         <label>Category Node</label>
         <custom>false</custom>
@@ -1228,8 +1228,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ChatterActivity</name>
         <label>Chatter Activity</label>
         <custom>false</custom>
@@ -1255,8 +1255,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroup</name>
         <label>Chatter Group</label>
         <custom>false</custom>
@@ -1282,8 +1282,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupFeed</name>
         <label>Chatter Group Feed</label>
         <custom>false</custom>
@@ -1308,8 +1308,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupMember</name>
         <label>Chatter Group Member</label>
         <custom>false</custom>
@@ -1335,8 +1335,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupMemberRequest</name>
         <label>Chatter Group Member Request</label>
         <custom>false</custom>
@@ -1362,8 +1362,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationInvitation</name>
         <label>Chatter Invitation</label>
         <custom>false</custom>
@@ -1389,8 +1389,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Community</name>
         <label>Community</label>
         <custom>false</custom>
@@ -1416,8 +1416,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Contact</name>
         <label>Contact</label>
         <custom>false</custom>
@@ -1443,8 +1443,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContactFeed</name>
         <label>Contact Feed</label>
         <custom>false</custom>
@@ -1469,8 +1469,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContactHistory</name>
         <label>Contact History</label>
         <custom>false</custom>
@@ -1495,8 +1495,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContactShare</name>
         <label>Contact Share</label>
         <custom>false</custom>
@@ -1522,8 +1522,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContentDocument</name>
         <label>Content</label>
         <custom>false</custom>
@@ -1549,8 +1549,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContentDocumentFeed</name>
         <label>ContentDocument Feed</label>
         <custom>false</custom>
@@ -1575,8 +1575,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContentDocumentHistory</name>
         <label>Content Document History</label>
         <custom>false</custom>
@@ -1601,8 +1601,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContentDocumentLink</name>
         <label>Content Document Link</label>
         <custom>false</custom>
@@ -1628,8 +1628,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContentVersion</name>
         <label>Content</label>
         <custom>false</custom>
@@ -1655,8 +1655,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContentVersionHistory</name>
         <label>Content Version History</label>
         <custom>false</custom>
@@ -1681,8 +1681,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Contract</name>
         <label>Contract</label>
         <custom>false</custom>
@@ -1708,8 +1708,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContractContactRole</name>
         <label>Contract Contact Role</label>
         <custom>false</custom>
@@ -1735,8 +1735,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContractFeed</name>
         <label>Contract Feed</label>
         <custom>false</custom>
@@ -1761,8 +1761,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContractHistory</name>
         <label>Contract History</label>
         <custom>false</custom>
@@ -1787,8 +1787,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ContractStatus</name>
         <label>Contract Status Value</label>
         <custom>false</custom>
@@ -1813,8 +1813,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CronTrigger</name>
         <label>Scheduled Jobs</label>
         <custom>false</custom>
@@ -1840,8 +1840,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CustomConsoleComponent</name>
         <label>Custom Console Component</label>
         <custom>false</custom>
@@ -1867,8 +1867,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Dashboard</name>
         <label>Dashboard</label>
         <custom>false</custom>
@@ -1894,8 +1894,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>DashboardComponent</name>
         <label>Dashboard Component</label>
         <custom>false</custom>
@@ -1921,8 +1921,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>DashboardComponentFeed</name>
         <label>Dashboard Component Feed</label>
         <custom>false</custom>
@@ -1947,8 +1947,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>DashboardFeed</name>
         <label>Dashboard Feed</label>
         <custom>false</custom>
@@ -1973,8 +1973,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Document</name>
         <label>Document</label>
         <custom>false</custom>
@@ -2000,8 +2000,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>DocumentAttachmentMap</name>
         <label>Document Entity Map</label>
         <custom>false</custom>
@@ -2027,8 +2027,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Domain</name>
         <label>Domain</label>
         <custom>false</custom>
@@ -2054,8 +2054,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>DomainSite</name>
         <label>Domain Site</label>
         <custom>false</custom>
@@ -2081,8 +2081,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>EmailServicesAddress</name>
         <label>Email Services Address</label>
         <custom>false</custom>
@@ -2108,8 +2108,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>EmailServicesFunction</name>
         <label>Email Service</label>
         <custom>false</custom>
@@ -2135,8 +2135,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>EmailStatus</name>
         <label>Email Status</label>
         <custom>false</custom>
@@ -2162,8 +2162,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>EmailTemplate</name>
         <label>Email Template</label>
         <custom>false</custom>
@@ -2189,8 +2189,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>EntitySubscription</name>
         <label>Entity Subscription</label>
         <custom>false</custom>
@@ -2216,8 +2216,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Event</name>
         <label>Event</label>
         <custom>false</custom>
@@ -2243,8 +2243,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>EventFeed</name>
         <label>Event Feed</label>
         <custom>false</custom>
@@ -2269,8 +2269,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>EventRelation</name>
         <label>Event Relation</label>
         <custom>false</custom>
@@ -2296,8 +2296,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>FeedComment</name>
         <label>Feed Comment</label>
         <custom>false</custom>
@@ -2323,8 +2323,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>FeedItem</name>
         <label>Feed Item</label>
         <custom>false</custom>
@@ -2350,8 +2350,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>FeedLike</name>
         <label>Feed Like</label>
         <custom>false</custom>
@@ -2377,8 +2377,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>FeedTrackedChange</name>
         <label>Feed Tracked Change</label>
         <custom>false</custom>
@@ -2404,8 +2404,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>FieldPermissions</name>
         <label>Field Permissions</label>
         <custom>false</custom>
@@ -2431,8 +2431,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>FiscalYearSettings</name>
         <label>Fiscal Year Settings</label>
         <custom>false</custom>
@@ -2458,8 +2458,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Folder</name>
         <label>Folder</label>
         <custom>false</custom>
@@ -2485,8 +2485,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ForecastShare</name>
         <label>Forecast Share</label>
         <custom>false</custom>
@@ -2512,8 +2512,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Group</name>
         <label>Group</label>
         <custom>false</custom>
@@ -2539,8 +2539,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>GroupMember</name>
         <label>Group Member</label>
         <custom>false</custom>
@@ -2566,8 +2566,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>HashtagDefinition</name>
         <label>Hashtag Definition</label>
         <custom>false</custom>
@@ -2593,8 +2593,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Holiday</name>
         <label>Holiday</label>
         <custom>false</custom>
@@ -2620,8 +2620,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Idea</name>
         <label>Idea</label>
         <custom>false</custom>
@@ -2647,8 +2647,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>IdeaComment</name>
         <label>Idea Comment</label>
         <custom>false</custom>
@@ -2674,8 +2674,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Lead</name>
         <label>Lead</label>
         <custom>false</custom>
@@ -2701,8 +2701,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>LeadFeed</name>
         <label>Lead Feed</label>
         <custom>false</custom>
@@ -2727,8 +2727,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>LeadHistory</name>
         <label>Lead History</label>
         <custom>false</custom>
@@ -2753,8 +2753,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>LeadShare</name>
         <label>Lead Share</label>
         <custom>false</custom>
@@ -2780,8 +2780,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>LeadStatus</name>
         <label>Lead Status Value</label>
         <custom>false</custom>
@@ -2806,8 +2806,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>LoginHistory</name>
         <label>Login History</label>
         <custom>false</custom>
@@ -2833,8 +2833,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>MailmergeTemplate</name>
         <label>Mail Merge Template</label>
         <custom>false</custom>
@@ -2860,8 +2860,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Name</name>
         <label>Name</label>
         <custom>false</custom>
@@ -2886,8 +2886,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>NewsFeed</name>
         <label>News Feed</label>
         <custom>false</custom>
@@ -2913,8 +2913,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Note</name>
         <label>Note</label>
         <custom>false</custom>
@@ -2940,8 +2940,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>NoteAndAttachment</name>
         <label>Note and Attachment</label>
         <custom>false</custom>
@@ -2966,8 +2966,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ObjectPermissions</name>
         <label>Object Permissions</label>
         <custom>false</custom>
@@ -2993,8 +2993,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpenActivity</name>
         <label>Open Activity</label>
         <custom>false</custom>
@@ -3019,8 +3019,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Opportunity</name>
         <label>Opportunity</label>
         <custom>false</custom>
@@ -3046,8 +3046,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityCompetitor</name>
         <label>Opportunity: Competitor</label>
         <custom>false</custom>
@@ -3073,8 +3073,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityContactRole</name>
         <label>Opportunity Contact Role</label>
         <custom>false</custom>
@@ -3100,8 +3100,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityFeed</name>
         <label>Opportunity Feed</label>
         <custom>false</custom>
@@ -3126,8 +3126,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityFieldHistory</name>
         <label>Opportunity Field History</label>
         <custom>false</custom>
@@ -3152,8 +3152,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityHistory</name>
         <label>Opportunity History</label>
         <custom>false</custom>
@@ -3179,8 +3179,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityLineItem</name>
         <label>Opportunity Product</label>
         <custom>false</custom>
@@ -3206,8 +3206,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityPartner</name>
         <label>Opportunity Partner</label>
         <custom>false</custom>
@@ -3232,8 +3232,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityShare</name>
         <label>Opportunity Share</label>
         <custom>false</custom>
@@ -3259,8 +3259,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OpportunityStage</name>
         <label>Opportunity Stage</label>
         <custom>false</custom>
@@ -3285,8 +3285,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>OrgWideEmailAddress</name>
         <label>Organization-wide From Email Address</label>
         <custom>false</custom>
@@ -3312,8 +3312,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Organization</name>
         <label>Organization</label>
         <custom>false</custom>
@@ -3339,8 +3339,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Partner</name>
         <label>Partner</label>
         <custom>false</custom>
@@ -3366,8 +3366,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>PartnerRole</name>
         <label>Partner Role Value</label>
         <custom>false</custom>
@@ -3392,8 +3392,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Period</name>
         <label>Period</label>
         <custom>false</custom>
@@ -3419,8 +3419,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>PermissionSet</name>
         <label>Permission Set</label>
         <custom>false</custom>
@@ -3446,8 +3446,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>PermissionSetAssignment</name>
         <label>Permission Set Assignment</label>
         <custom>false</custom>
@@ -3473,8 +3473,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Pricebook2</name>
         <label>Price Book</label>
         <custom>false</custom>
@@ -3500,8 +3500,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>PricebookEntry</name>
         <label>Price Book Entry</label>
         <custom>false</custom>
@@ -3527,8 +3527,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ProcessInstance</name>
         <label>Process Instance</label>
         <custom>false</custom>
@@ -3554,8 +3554,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ProcessInstanceHistory</name>
         <label>Process Instance History</label>
         <custom>false</custom>
@@ -3580,8 +3580,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ProcessInstanceStep</name>
         <label>Process Instance Step</label>
         <custom>false</custom>
@@ -3607,8 +3607,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ProcessInstanceWorkitem</name>
         <label>Approval Request</label>
         <custom>false</custom>
@@ -3634,8 +3634,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Product2</name>
         <label>Product</label>
         <custom>false</custom>
@@ -3661,8 +3661,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Product2Feed</name>
         <label>Product Feed</label>
         <custom>false</custom>
@@ -3687,8 +3687,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Profile</name>
         <label>Profile</label>
         <custom>false</custom>
@@ -3714,8 +3714,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>PushTopic</name>
         <label>Push Topic</label>
         <custom>false</custom>
@@ -3741,8 +3741,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>QueueSobject</name>
         <label>Queue Sobject</label>
         <custom>false</custom>
@@ -3768,8 +3768,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>RecordType</name>
         <label>Record Type</label>
         <custom>false</custom>
@@ -3795,8 +3795,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Report</name>
         <label>Report</label>
         <custom>false</custom>
@@ -3822,8 +3822,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>ReportFeed</name>
         <label>Report Feed</label>
         <custom>false</custom>
@@ -3848,8 +3848,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>SelfServiceUser</name>
         <label>CSS User</label>
         <custom>false</custom>
@@ -3876,8 +3876,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>SetupEntityAccess</name>
         <label>Setup Entity Access</label>
         <custom>false</custom>
@@ -3903,8 +3903,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Site</name>
         <label>Site</label>
         <custom>false</custom>
@@ -3930,8 +3930,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>SiteFeed</name>
         <label>Site</label>
         <custom>false</custom>
@@ -3956,8 +3956,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>SiteHistory</name>
         <label>Site History</label>
         <custom>false</custom>
@@ -3982,8 +3982,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Solution</name>
         <label>Solution</label>
         <custom>false</custom>
@@ -4009,8 +4009,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>SolutionFeed</name>
         <label>Solution Feed</label>
         <custom>false</custom>
@@ -4035,8 +4035,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>SolutionHistory</name>
         <label>Solution History</label>
         <custom>false</custom>
@@ -4061,8 +4061,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>SolutionStatus</name>
         <label>Solution Status Value</label>
         <custom>false</custom>
@@ -4087,8 +4087,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>StaticResource</name>
         <label>Static Resource</label>
         <custom>false</custom>
@@ -4114,8 +4114,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Task</name>
         <label>Task</label>
         <custom>false</custom>
@@ -4141,8 +4141,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>TaskFeed</name>
         <label>Task Feed</label>
         <custom>false</custom>
@@ -4167,8 +4167,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>TaskPriority</name>
         <label>Task Priority Value</label>
         <custom>false</custom>
@@ -4193,8 +4193,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>TaskStatus</name>
         <label>Task Status Value</label>
         <custom>false</custom>
@@ -4219,8 +4219,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>User</name>
         <label>User</label>
         <custom>false</custom>
@@ -4247,8 +4247,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>true</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>UserFeed</name>
         <label>User Feed</label>
         <custom>false</custom>
@@ -4273,8 +4273,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>UserLicense</name>
         <label>User License</label>
         <custom>false</custom>
@@ -4300,8 +4300,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>UserPreference</name>
         <label>User Preference</label>
         <custom>false</custom>
@@ -4327,8 +4327,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>UserProfileFeed</name>
         <label>User Profile Feed</label>
         <custom>false</custom>
@@ -4354,8 +4354,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>UserRecordAccess</name>
         <label>User Record Access</label>
         <custom>false</custom>
@@ -4380,8 +4380,8 @@
         <retrieveable>false</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>UserRole</name>
         <label>Role</label>
         <custom>false</custom>
@@ -4407,8 +4407,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Vote</name>
         <label>Vote</label>
         <custom>false</custom>
@@ -4434,8 +4434,8 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
-      <com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>WebLink</name>
         <label>Custom Button or Link</label>
         <custom>false</custom>
@@ -4461,7 +4461,7 @@
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>
-      </com.teamlazerbeez.crm.sf.rest.BasicSObjectMetadata>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
     </elements>
   </basicSObjectMetadatas>
-</com.teamlazerbeez.crm.sf.rest.DescribeGlobalResult>
+</com.palominolabs.crm.sf.rest.DescribeGlobalResult>

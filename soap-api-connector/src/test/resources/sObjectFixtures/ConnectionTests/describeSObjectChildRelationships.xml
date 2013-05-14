@@ -1,131 +1,131 @@
 <java.util.Collections_-UnmodifiableRandomAccessList resolves-to="java.util.Collections$UnmodifiableList">
   <c class="list">
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>ActivityHistory</childSObject>
       <field>WhoId</field>
       <relationshipName>ActivityHistories</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>Attachment</childSObject>
       <field>ParentId</field>
       <relationshipName>Attachments</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>CampaignMember</childSObject>
       <field>LeadId</field>
       <relationshipName>CampaignMembers</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>ContentDocumentLink</childSObject>
       <field>LinkedEntityId</field>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>false</cascadeDelete>
       <childSObject>ContentVersion</childSObject>
       <field>FirstPublishLocationId</field>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>EmailStatus</childSObject>
       <field>WhoId</field>
       <relationshipName>EmailStatuses</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>EntitySubscription</childSObject>
       <field>ParentId</field>
       <relationshipName>FeedSubscriptionsForEntity</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>Event</childSObject>
       <field>WhoId</field>
       <relationshipName>Events</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>EventRelation</childSObject>
       <field>RelationId</field>
       <relationshipName>EventRelations</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>false</cascadeDelete>
       <childSObject>FeedComment</childSObject>
       <field>ParentId</field>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>FeedItem</childSObject>
       <field>ParentId</field>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>LeadFeed</childSObject>
       <field>ParentId</field>
       <relationshipName>Feeds</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>LeadHistory</childSObject>
       <field>LeadId</field>
       <relationshipName>Histories</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>LeadShare</childSObject>
       <field>LeadId</field>
       <relationshipName>Shares</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>NewsFeed</childSObject>
       <field>ParentId</field>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>Note</childSObject>
       <field>ParentId</field>
       <relationshipName>Notes</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>NoteAndAttachment</childSObject>
       <field>ParentId</field>
       <relationshipName>NotesAndAttachments</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>OpenActivity</childSObject>
       <field>WhoId</field>
       <relationshipName>OpenActivities</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>ProcessInstance</childSObject>
       <field>TargetObjectId</field>
       <relationshipName>ProcessInstances</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>false</cascadeDelete>
       <childSObject>ProcessInstanceHistory</childSObject>
       <field>TargetObjectId</field>
       <relationshipName>ProcessSteps</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>Task</childSObject>
       <field>WhoId</field>
       <relationshipName>Tasks</relationshipName>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
-    <com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>UserProfileFeed</childSObject>
       <field>ParentId</field>
-    </com.teamlazerbeez.crm.sf.soap.ChildRelationship>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
   </c>
   <list reference="../c"/>
 </java.util.Collections_-UnmodifiableRandomAccessList>

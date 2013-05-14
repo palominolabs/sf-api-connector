@@ -1,5 +1,5 @@
 <list>
-  <com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+  <com.palominolabs.crm.sf.rest.RestSObjectImpl>
     <id>
       <idStr>0035000000km1ol</idStr>
     </id>
@@ -24,5 +24,5 @@
     <type>Contact</type>
     <relationshipQueryResults/>
     <relationshipSubObjects/>
-  </com.teamlazerbeez.crm.sf.rest.RestSObjectImpl>
+  </com.palominolabs.crm.sf.rest.RestSObjectImpl>
 </list>

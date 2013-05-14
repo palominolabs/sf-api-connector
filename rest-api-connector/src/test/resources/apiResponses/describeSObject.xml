@@ -1,4 +1,4 @@
-<com.teamlazerbeez.crm.sf.rest.SObjectDescription>
+<com.palominolabs.crm.sf.rest.SObjectDescription>
   <name>Account</name>
   <label>Account</label>
   <custom>false</custom>
@@ -18,287 +18,287 @@
   <searchable>true</searchable>
   <childRelationships class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
     <elements>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Account</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>AccountContactRoles</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountContactRole</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Feeds</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountFeed</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Histories</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountHistory</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountFromId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>AccountPartnersFrom</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountPartner</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountToId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>AccountPartnersTo</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountPartner</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Shares</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>AccountShare</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>ActivityHistories</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>ActivityHistory</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Assets</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Asset</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Attachments</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Attachment</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Cases</relationshipName>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Case</childSObject>
         <restrictedDelete>true</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Contacts</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Contact</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>LinkedEntityId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>ContentDocumentLink</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>FirstPublishLocationId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>ContentVersion</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Contracts</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Contract</childSObject>
         <restrictedDelete>true</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>FeedSubscriptionsForEntity</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>EntitySubscription</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Event</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>WhatId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Events</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Event</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>FeedComment</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>FeedItem</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ConvertedAccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Lead</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>NewsFeed</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Notes</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Note</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>NotesAndAttachments</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>NoteAndAttachment</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>OpenActivities</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>OpenActivity</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Opportunities</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Opportunity</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountToId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>OpportunityPartnersTo</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>OpportunityPartner</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountFromId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>PartnersFrom</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Partner</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountToId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>PartnersTo</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Partner</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>TargetObjectId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>ProcessInstances</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>ProcessInstance</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>TargetObjectId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>ProcessSteps</relationshipName>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>ProcessInstanceHistory</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Task</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>WhatId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Tasks</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Task</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>AccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>User</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>UserProfileFeed</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
-      <com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>PortalAccountId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>UserRole</childSObject>
         <restrictedDelete>false</restrictedDelete>
-      </com.teamlazerbeez.crm.sf.rest.ChildRelationship>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
     </elements>
   </childRelationships>
   <fields class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
     <elements>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>18</length>
         <name>Id</name>
         <type>id</type>
@@ -337,8 +337,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>IsDeleted</name>
         <type>boolean</type>
@@ -362,8 +362,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -375,8 +375,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>18</length>
         <name>MasterRecordId</name>
         <type>reference</type>
@@ -400,7 +400,7 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>Account</string>
@@ -418,8 +418,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>Name</name>
         <type>string</type>
@@ -443,8 +443,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -456,8 +456,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>Type</name>
         <type>picklist</type>
@@ -483,7 +483,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Prospect</value>
               <active>true</active>
               <label>Prospect</label>
@@ -491,8 +491,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Customer - Direct</value>
               <active>true</active>
               <label>Customer - Direct</label>
@@ -500,8 +500,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Customer - Channel</value>
               <active>true</active>
               <label>Customer - Channel</label>
@@ -509,8 +509,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Channel Partner / Reseller</value>
               <active>true</active>
               <label>Channel Partner / Reseller</label>
@@ -518,8 +518,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Installation Partner</value>
               <active>true</active>
               <label>Installation Partner</label>
@@ -527,8 +527,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Technology Partner</value>
               <active>true</active>
               <label>Technology Partner</label>
@@ -536,8 +536,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Other</value>
               <active>true</active>
               <label>Other</label>
@@ -545,10 +545,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -560,8 +560,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>18</length>
         <name>ParentId</name>
         <type>reference</type>
@@ -585,7 +585,7 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>Account</string>
@@ -603,8 +603,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>BillingStreet</name>
         <type>textarea</type>
@@ -628,8 +628,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -641,8 +641,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>BillingCity</name>
         <type>string</type>
@@ -666,8 +666,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -679,8 +679,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>80</length>
         <name>BillingState</name>
         <type>string</type>
@@ -704,8 +704,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -717,8 +717,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>20</length>
         <name>BillingPostalCode</name>
         <type>string</type>
@@ -742,8 +742,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -755,8 +755,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>80</length>
         <name>BillingCountry</name>
         <type>string</type>
@@ -780,8 +780,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -793,8 +793,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>ShippingStreet</name>
         <type>textarea</type>
@@ -818,8 +818,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -831,8 +831,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>ShippingCity</name>
         <type>string</type>
@@ -856,8 +856,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -869,8 +869,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>80</length>
         <name>ShippingState</name>
         <type>string</type>
@@ -894,8 +894,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -907,8 +907,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>20</length>
         <name>ShippingPostalCode</name>
         <type>string</type>
@@ -932,8 +932,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -945,8 +945,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>80</length>
         <name>ShippingCountry</name>
         <type>string</type>
@@ -970,8 +970,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -983,8 +983,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>Phone</name>
         <type>phone</type>
@@ -1008,8 +1008,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1021,8 +1021,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>Fax</name>
         <type>phone</type>
@@ -1046,8 +1046,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1059,8 +1059,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>AccountNumber</name>
         <type>string</type>
@@ -1084,8 +1084,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1097,8 +1097,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>Website</name>
         <type>url</type>
@@ -1122,8 +1122,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1135,8 +1135,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>20</length>
         <name>Sic</name>
         <type>string</type>
@@ -1160,8 +1160,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1173,8 +1173,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>Industry</name>
         <type>picklist</type>
@@ -1200,7 +1200,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Agriculture</value>
               <active>true</active>
               <label>Agriculture</label>
@@ -1208,8 +1208,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Apparel</value>
               <active>true</active>
               <label>Apparel</label>
@@ -1217,8 +1217,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Banking</value>
               <active>true</active>
               <label>Banking</label>
@@ -1226,8 +1226,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Biotechnology</value>
               <active>true</active>
               <label>Biotechnology</label>
@@ -1235,8 +1235,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Chemicals</value>
               <active>true</active>
               <label>Chemicals</label>
@@ -1244,8 +1244,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Communications</value>
               <active>true</active>
               <label>Communications</label>
@@ -1253,8 +1253,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Construction</value>
               <active>true</active>
               <label>Construction</label>
@@ -1262,8 +1262,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Consulting</value>
               <active>true</active>
               <label>Consulting</label>
@@ -1271,8 +1271,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Education</value>
               <active>true</active>
               <label>Education</label>
@@ -1280,8 +1280,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Electronics</value>
               <active>true</active>
               <label>Electronics</label>
@@ -1289,8 +1289,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Energy</value>
               <active>true</active>
               <label>Energy</label>
@@ -1298,8 +1298,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Engineering</value>
               <active>true</active>
               <label>Engineering</label>
@@ -1307,8 +1307,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Entertainment</value>
               <active>true</active>
               <label>Entertainment</label>
@@ -1316,8 +1316,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Environmental</value>
               <active>true</active>
               <label>Environmental</label>
@@ -1325,8 +1325,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Finance</value>
               <active>true</active>
               <label>Finance</label>
@@ -1334,8 +1334,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Food &amp; Beverage</value>
               <active>true</active>
               <label>Food &amp; Beverage</label>
@@ -1343,8 +1343,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Government</value>
               <active>true</active>
               <label>Government</label>
@@ -1352,8 +1352,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Healthcare</value>
               <active>true</active>
               <label>Healthcare</label>
@@ -1361,8 +1361,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Hospitality</value>
               <active>true</active>
               <label>Hospitality</label>
@@ -1370,8 +1370,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Insurance</value>
               <active>true</active>
               <label>Insurance</label>
@@ -1379,8 +1379,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Machinery</value>
               <active>true</active>
               <label>Machinery</label>
@@ -1388,8 +1388,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Manufacturing</value>
               <active>true</active>
               <label>Manufacturing</label>
@@ -1397,8 +1397,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Media</value>
               <active>true</active>
               <label>Media</label>
@@ -1406,8 +1406,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Not For Profit</value>
               <active>true</active>
               <label>Not For Profit</label>
@@ -1415,8 +1415,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Recreation</value>
               <active>true</active>
               <label>Recreation</label>
@@ -1424,8 +1424,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Retail</value>
               <active>true</active>
               <label>Retail</label>
@@ -1433,8 +1433,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Shipping</value>
               <active>true</active>
               <label>Shipping</label>
@@ -1442,8 +1442,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Technology</value>
               <active>true</active>
               <label>Technology</label>
@@ -1451,8 +1451,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Telecommunications</value>
               <active>true</active>
               <label>Telecommunications</label>
@@ -1460,8 +1460,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Transportation</value>
               <active>true</active>
               <label>Transportation</label>
@@ -1469,8 +1469,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Utilities</value>
               <active>true</active>
               <label>Utilities</label>
@@ -1478,8 +1478,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Other</value>
               <active>true</active>
               <label>Other</label>
@@ -1487,10 +1487,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1502,8 +1502,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>AnnualRevenue</name>
         <type>currency</type>
@@ -1527,8 +1527,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1540,8 +1540,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>NumberOfEmployees</name>
         <type>int</type>
@@ -1565,8 +1565,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>8</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1578,8 +1578,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>Ownership</name>
         <type>picklist</type>
@@ -1605,7 +1605,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Public</value>
               <active>true</active>
               <label>Public</label>
@@ -1613,8 +1613,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Private</value>
               <active>true</active>
               <label>Private</label>
@@ -1622,8 +1622,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Subsidiary</value>
               <active>true</active>
               <label>Subsidiary</label>
@@ -1631,8 +1631,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Other</value>
               <active>true</active>
               <label>Other</label>
@@ -1640,10 +1640,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1655,8 +1655,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>20</length>
         <name>TickerSymbol</name>
         <type>string</type>
@@ -1680,8 +1680,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1693,8 +1693,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>32000</length>
         <name>Description</name>
         <type>textarea</type>
@@ -1718,8 +1718,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1731,8 +1731,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>Rating</name>
         <type>picklist</type>
@@ -1758,7 +1758,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Hot</value>
               <active>true</active>
               <label>Hot</label>
@@ -1766,8 +1766,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Warm</value>
               <active>true</active>
               <label>Warm</label>
@@ -1775,8 +1775,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Cold</value>
               <active>true</active>
               <label>Cold</label>
@@ -1784,10 +1784,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1799,8 +1799,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>80</length>
         <name>Site</name>
         <type>string</type>
@@ -1824,8 +1824,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1837,8 +1837,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>18</length>
         <name>OwnerId</name>
         <type>reference</type>
@@ -1862,7 +1862,7 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>User</string>
@@ -1880,8 +1880,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>CreatedDate</name>
         <type>datetime</type>
@@ -1905,8 +1905,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1918,8 +1918,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>18</length>
         <name>CreatedById</name>
         <type>reference</type>
@@ -1943,7 +1943,7 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>User</string>
@@ -1961,8 +1961,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>LastModifiedDate</name>
         <type>datetime</type>
@@ -1986,8 +1986,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1999,8 +1999,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>18</length>
         <name>LastModifiedById</name>
         <type>reference</type>
@@ -2024,7 +2024,7 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>User</string>
@@ -2042,8 +2042,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>SystemModstamp</name>
         <type>datetime</type>
@@ -2067,8 +2067,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2080,8 +2080,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>LastActivityDate</name>
         <type>date</type>
@@ -2105,8 +2105,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2118,8 +2118,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>20</length>
         <name>Jigsaw</name>
         <type>string</type>
@@ -2143,8 +2143,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2156,8 +2156,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>20</length>
         <name>JigsawCompanyId</name>
         <type>string</type>
@@ -2181,8 +2181,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <relationshipName>JigsawCompany</relationshipName>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
@@ -2195,8 +2195,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>false</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>40</length>
         <name>AccountSource</name>
         <type>picklist</type>
@@ -2222,7 +2222,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Web</value>
               <active>true</active>
               <label>Web</label>
@@ -2230,8 +2230,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Phone Inquiry</value>
               <active>true</active>
               <label>Phone Inquiry</label>
@@ -2239,8 +2239,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Partner Referral</value>
               <active>true</active>
               <label>Partner Referral</label>
@@ -2248,8 +2248,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Purchased List</value>
               <active>true</active>
               <label>Purchased List</label>
@@ -2257,8 +2257,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Other</value>
               <active>true</active>
               <label>Other</label>
@@ -2266,10 +2266,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2281,8 +2281,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>80</length>
         <name>SicDesc</name>
         <type>string</type>
@@ -2306,8 +2306,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2319,8 +2319,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>CustomerPriority__c</name>
         <type>picklist</type>
@@ -2346,7 +2346,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>High</value>
               <active>true</active>
               <label>High</label>
@@ -2354,8 +2354,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Low</value>
               <active>true</active>
               <label>Low</label>
@@ -2363,8 +2363,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Medium</value>
               <active>true</active>
               <label>Medium</label>
@@ -2372,10 +2372,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2387,8 +2387,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>SLA__c</name>
         <type>picklist</type>
@@ -2414,7 +2414,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Gold</value>
               <active>true</active>
               <label>Gold</label>
@@ -2422,8 +2422,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Silver</value>
               <active>true</active>
               <label>Silver</label>
@@ -2431,8 +2431,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Platinum</value>
               <active>true</active>
               <label>Platinum</label>
@@ -2440,8 +2440,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Bronze</value>
               <active>true</active>
               <label>Bronze</label>
@@ -2449,10 +2449,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2464,8 +2464,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>Active__c</name>
         <type>picklist</type>
@@ -2491,7 +2491,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>No</value>
               <active>true</active>
               <label>No</label>
@@ -2499,8 +2499,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Yes</value>
               <active>true</active>
               <label>Yes</label>
@@ -2508,10 +2508,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2523,8 +2523,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>NumberofLocations__c</name>
         <type>double</type>
@@ -2548,8 +2548,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2561,8 +2561,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>UpsellOpportunity__c</name>
         <type>picklist</type>
@@ -2588,7 +2588,7 @@
         <groupable>true</groupable>
         <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Maybe</value>
               <active>true</active>
               <label>Maybe</label>
@@ -2596,8 +2596,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>No</value>
               <active>true</active>
               <label>No</label>
@@ -2605,8 +2605,8 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
-            <com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
+            <com.palominolabs.crm.sf.rest.PicklistEntry>
               <value>Yes</value>
               <active>true</active>
               <label>Yes</label>
@@ -2614,10 +2614,10 @@
               <validFor>
                 <bitSet></bitSet>
               </validFor>
-            </com.teamlazerbeez.crm.sf.rest.PicklistEntry>
+            </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2629,8 +2629,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>10</length>
         <name>SLASerialNumber__c</name>
         <type>string</type>
@@ -2654,8 +2654,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2667,8 +2667,8 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
-      <com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>0</length>
         <name>SLAExpirationDate__c</name>
         <type>date</type>
@@ -2692,8 +2692,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.teamlazerbeez.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2705,7 +2705,7 @@
         <restrictedDelete>false</restrictedDelete>
         <permissionable>true</permissionable>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-      </com.teamlazerbeez.crm.sf.rest.FieldDescription>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
     </elements>
   </fields>
   <createable>true</createable>
@@ -2717,18 +2717,18 @@
   <queryable>true</queryable>
   <recordTypeInfos class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
     <elements>
-      <com.teamlazerbeez.crm.sf.rest.RecordTypeInfo>
+      <com.palominolabs.crm.sf.rest.RecordTypeInfo>
         <name>Master</name>
         <available>true</available>
         <recordTypeId>
           <idStr>012000000000000</idStr>
         </recordTypeId>
         <defaultRecordTypeMapping>true</defaultRecordTypeMapping>
-      </com.teamlazerbeez.crm.sf.rest.RecordTypeInfo>
+      </com.palominolabs.crm.sf.rest.RecordTypeInfo>
     </elements>
   </recordTypeInfos>
   <replicateable>true</replicateable>
   <retrieveable>true</retrieveable>
   <undeletable>true</undeletable>
   <triggerable>true</triggerable>
-</com.teamlazerbeez.crm.sf.rest.SObjectDescription>
+</com.palominolabs.crm.sf.rest.SObjectDescription>

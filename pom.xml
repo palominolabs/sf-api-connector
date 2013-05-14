@@ -6,7 +6,7 @@
     <artifactId>oss-parent</artifactId>
     <version>7</version>
   </parent>
-  <groupId>com.teamlazerbeez.salesforce</groupId>
+  <groupId>com.palominolabs.salesforce</groupId>
   <artifactId>api-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0.0-SNAPSHOT</version>
@@ -72,42 +72,42 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.teamlazerbeez.salesforce</groupId>
+        <groupId>com.palominolabs.salesforce</groupId>
         <artifactId>test-logging-config</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
       <dependency>
-        <groupId>com.teamlazerbeez.salesforce</groupId>
+        <groupId>com.palominolabs.salesforce</groupId>
         <artifactId>test-util</artifactId>
         <version>${project.version}</version>
         <scope>test</scope>
       </dependency>
 
       <dependency>
-        <groupId>com.teamlazerbeez.salesforce</groupId>
+        <groupId>com.palominolabs.salesforce</groupId>
         <artifactId>metadata-api-binding</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.teamlazerbeez.salesforce</groupId>
+        <groupId>com.palominolabs.salesforce</groupId>
         <artifactId>partner-api-binding</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.teamlazerbeez.salesforce</groupId>
+        <groupId>com.palominolabs.salesforce</groupId>
         <artifactId>apex-api-binding</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>com.teamlazerbeez.salesforce</groupId>
+        <groupId>com.palominolabs.salesforce</groupId>
         <artifactId>soap-api-connector</artifactId>
         <version>${project.version}</version>
       </dependency>
 
       <dependency>
-        <groupId>com.teamlazerbeez.salesforce</groupId>
+        <groupId>com.palominolabs.salesforce</groupId>
         <artifactId>api-core</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -411,9 +411,9 @@
           </formats>
           <instrumentation>
             <ignores>
-              <ignore>com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.*</ignore>
-              <ignore>com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.*</ignore>
-              <ignore>com.teamlazerbeez.crm.sf.soap.jaxwsstub.apex.*</ignore>
+              <ignore>com.palominolabs.crm.sf.soap.jaxwsstub.partner.*</ignore>
+              <ignore>com.palominolabs.crm.sf.soap.jaxwsstub.metadata.*</ignore>
+              <ignore>com.palominolabs.crm.sf.soap.jaxwsstub.apex.*</ignore>
             </ignores>
           </instrumentation>
           <quiet>true</quiet>

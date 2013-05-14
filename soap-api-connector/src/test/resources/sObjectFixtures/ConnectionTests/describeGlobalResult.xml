@@ -1,9 +1,9 @@
-<com.teamlazerbeez.crm.sf.soap.DescribeGlobalResultImpl>
+<com.palominolabs.crm.sf.soap.DescribeGlobalResultImpl>
   <encoding>UTF-8</encoding>
   <maxBatchSize>200</maxBatchSize>
   <types class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
     <c class="list">
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -26,8 +26,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -50,8 +50,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -73,8 +73,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -96,8 +96,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -119,8 +119,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -143,8 +143,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -166,8 +166,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -190,8 +190,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -213,8 +213,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -237,8 +237,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -261,8 +261,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -285,8 +285,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -309,8 +309,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -333,8 +333,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -357,8 +357,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -381,8 +381,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -405,8 +405,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -429,8 +429,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -452,8 +452,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -475,8 +475,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -499,8 +499,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -523,8 +523,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -547,8 +547,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -571,8 +571,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -595,8 +595,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -619,8 +619,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -643,8 +643,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -666,8 +666,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -690,8 +690,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -714,8 +714,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -738,8 +738,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -762,8 +762,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -786,8 +786,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -810,8 +810,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -833,8 +833,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -856,8 +856,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -880,8 +880,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -904,8 +904,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -927,8 +927,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -950,8 +950,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -973,8 +973,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -996,8 +996,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1019,8 +1019,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1042,8 +1042,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1066,8 +1066,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1090,8 +1090,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1114,8 +1114,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1138,8 +1138,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1161,8 +1161,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1185,8 +1185,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1209,8 +1209,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1233,8 +1233,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1257,8 +1257,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1281,8 +1281,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1304,8 +1304,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1327,8 +1327,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1351,8 +1351,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1375,8 +1375,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1398,8 +1398,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1421,8 +1421,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1445,8 +1445,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1469,8 +1469,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1492,8 +1492,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>true</activateable>
           <createable>true</createable>
@@ -1516,8 +1516,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1540,8 +1540,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1563,8 +1563,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1586,8 +1586,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1609,8 +1609,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1633,8 +1633,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1657,8 +1657,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1681,8 +1681,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1705,8 +1705,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1728,8 +1728,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1751,8 +1751,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1775,8 +1775,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1799,8 +1799,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1823,8 +1823,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1847,8 +1847,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1871,8 +1871,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1895,8 +1895,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -1919,8 +1919,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1943,8 +1943,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1967,8 +1967,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -1991,8 +1991,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2014,8 +2014,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2038,8 +2038,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2062,8 +2062,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2086,8 +2086,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2110,8 +2110,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2134,8 +2134,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2158,8 +2158,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2182,8 +2182,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2206,8 +2206,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2230,8 +2230,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2254,8 +2254,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2278,8 +2278,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2302,8 +2302,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2326,8 +2326,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2350,8 +2350,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2374,8 +2374,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2398,8 +2398,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2421,8 +2421,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2444,8 +2444,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2468,8 +2468,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2491,8 +2491,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2515,8 +2515,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2539,8 +2539,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2562,8 +2562,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2586,8 +2586,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2610,8 +2610,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2633,8 +2633,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2657,8 +2657,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2680,8 +2680,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2704,8 +2704,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2728,8 +2728,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2752,8 +2752,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2775,8 +2775,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2798,8 +2798,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2822,8 +2822,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2846,8 +2846,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2869,8 +2869,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2893,8 +2893,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2916,8 +2916,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2940,8 +2940,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -2964,8 +2964,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -2988,8 +2988,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3011,8 +3011,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3035,8 +3035,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3059,8 +3059,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3083,8 +3083,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3107,8 +3107,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3131,8 +3131,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3155,8 +3155,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3178,8 +3178,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3202,8 +3202,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3226,8 +3226,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3250,8 +3250,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3273,8 +3273,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3297,8 +3297,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3321,8 +3321,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3345,8 +3345,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3369,8 +3369,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3393,8 +3393,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3416,8 +3416,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3440,8 +3440,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3464,8 +3464,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3488,8 +3488,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3511,8 +3511,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3534,8 +3534,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3558,8 +3558,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3581,8 +3581,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3604,8 +3604,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3627,8 +3627,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3651,8 +3651,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3675,8 +3675,8 @@
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3698,8 +3698,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3721,8 +3721,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3744,8 +3744,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3768,8 +3768,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3791,8 +3791,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3815,8 +3815,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3839,8 +3839,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3863,8 +3863,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>false</createable>
@@ -3886,8 +3886,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3910,8 +3910,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3934,8 +3934,8 @@
           <undeletable>false</undeletable>
           <updateable>false</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
-      <com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
           <createable>true</createable>
@@ -3958,8 +3958,8 @@
           <undeletable>false</undeletable>
           <updateable>true</updateable>
         </stubResult>
-      </com.teamlazerbeez.crm.sf.soap.GlobalSObjectDescription>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
     </c>
     <list reference="../c"/>
   </types>
-</com.teamlazerbeez.crm.sf.soap.DescribeGlobalResultImpl>
+</com.palominolabs.crm.sf.soap.DescribeGlobalResultImpl>

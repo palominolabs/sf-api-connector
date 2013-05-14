@@ -3,7 +3,7 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <groupId>com.teamlazerbeez.salesforce</groupId>
+    <groupId>com.palominolabs.salesforce</groupId>
     <artifactId>api-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
@@ -12,7 +12,7 @@
   <artifactId>partner-api-binding</artifactId>
 
   <properties>
-    <jaxws.stub.partner-api.package>com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner</jaxws.stub.partner-api.package>
+    <jaxws.stub.partner-api.package>com.palominolabs.crm.sf.soap.jaxwsstub.partner</jaxws.stub.partner-api.package>
   </properties>
 
   <dependencies>

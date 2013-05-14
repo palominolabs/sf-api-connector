@@ -1,7 +1,7 @@
-<com.teamlazerbeez.crm.sf.soap.DescribeMetadataResult>
+<com.palominolabs.crm.sf.soap.DescribeMetadataResult>
   <objectList class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
     <c class="list">
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>CustomLabel</string>
@@ -13,8 +13,8 @@
         <metaFile>false</metaFile>
         <suffix>labels</suffix>
         <xmlName>CustomLabels</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -24,8 +24,8 @@
         <metaFile>true</metaFile>
         <suffix>resource</suffix>
         <xmlName>StaticResource</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -35,8 +35,8 @@
         <metaFile>true</metaFile>
         <suffix>scf</suffix>
         <xmlName>Scontrol</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -46,8 +46,8 @@
         <metaFile>true</metaFile>
         <suffix>component</suffix>
         <xmlName>ApexComponent</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -57,8 +57,8 @@
         <metaFile>true</metaFile>
         <suffix>page</suffix>
         <xmlName>ApexPage</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -68,8 +68,8 @@
         <metaFile>false</metaFile>
         <suffix>queue</suffix>
         <xmlName>Queue</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>CustomField</string>
@@ -90,8 +90,8 @@
         <metaFile>false</metaFile>
         <suffix>object</suffix>
         <xmlName>CustomObject</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -101,8 +101,8 @@
         <metaFile>false</metaFile>
         <suffix>reportType</suffix>
         <xmlName>ReportType</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -112,8 +112,8 @@
         <metaFile>false</metaFile>
         <suffix>report</suffix>
         <xmlName>Report</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -123,8 +123,8 @@
         <metaFile>false</metaFile>
         <suffix>dashboard</suffix>
         <xmlName>Dashboard</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -134,8 +134,8 @@
         <metaFile>false</metaFile>
         <suffix>snapshot</suffix>
         <xmlName>AnalyticSnapshot</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -145,8 +145,8 @@
         <metaFile>false</metaFile>
         <suffix>layout</suffix>
         <xmlName>Layout</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -155,8 +155,8 @@
         <inFolder>true</inFolder>
         <metaFile>true</metaFile>
         <xmlName>Document</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -166,8 +166,8 @@
         <metaFile>false</metaFile>
         <suffix>weblink</suffix>
         <xmlName>CustomPageWebLink</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -177,8 +177,8 @@
         <metaFile>false</metaFile>
         <suffix>tab</suffix>
         <xmlName>CustomTab</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -188,8 +188,8 @@
         <metaFile>false</metaFile>
         <suffix>customApplicationComponent</suffix>
         <xmlName>CustomApplicationComponent</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -199,8 +199,8 @@
         <metaFile>false</metaFile>
         <suffix>app</suffix>
         <xmlName>CustomApplication</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -210,8 +210,8 @@
         <metaFile>false</metaFile>
         <suffix>letter</suffix>
         <xmlName>Letterhead</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -221,8 +221,8 @@
         <metaFile>true</metaFile>
         <suffix>email</suffix>
         <xmlName>EmailTemplate</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>WorkflowFieldUpdate</string>
@@ -241,8 +241,8 @@
         <metaFile>false</metaFile>
         <suffix>workflow</suffix>
         <xmlName>Workflow</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -252,8 +252,8 @@
         <metaFile>false</metaFile>
         <suffix>role</suffix>
         <xmlName>Role</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -263,8 +263,8 @@
         <metaFile>false</metaFile>
         <suffix>group</suffix>
         <xmlName>Group</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -274,8 +274,8 @@
         <metaFile>false</metaFile>
         <suffix>homePageComponent</suffix>
         <xmlName>HomePageComponent</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -285,8 +285,8 @@
         <metaFile>false</metaFile>
         <suffix>homePageLayout</suffix>
         <xmlName>HomePageLayout</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -296,8 +296,8 @@
         <metaFile>false</metaFile>
         <suffix>objectTranslation</suffix>
         <xmlName>CustomObjectTranslation</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -307,8 +307,8 @@
         <metaFile>false</metaFile>
         <suffix>flow</suffix>
         <xmlName>Flow</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -318,8 +318,8 @@
         <metaFile>true</metaFile>
         <suffix>cls</suffix>
         <xmlName>ApexClass</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -329,8 +329,8 @@
         <metaFile>true</metaFile>
         <suffix>trigger</suffix>
         <xmlName>ApexTrigger</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -340,8 +340,8 @@
         <metaFile>false</metaFile>
         <suffix>profile</suffix>
         <xmlName>Profile</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -351,8 +351,8 @@
         <metaFile>false</metaFile>
         <suffix>permissionset</suffix>
         <xmlName>PermissionSet</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -362,8 +362,8 @@
         <metaFile>false</metaFile>
         <suffix>datacategorygroup</suffix>
         <xmlName>DataCategoryGroup</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -373,8 +373,8 @@
         <metaFile>false</metaFile>
         <suffix>remoteSite</suffix>
         <xmlName>RemoteSiteSetting</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list"/>
           <list reference="../c"/>
@@ -384,8 +384,8 @@
         <metaFile>false</metaFile>
         <suffix>site</suffix>
         <xmlName>CustomSite</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>LeadOwnerSharingRule</string>
@@ -398,8 +398,8 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>LeadSharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>CampaignOwnerSharingRule</string>
@@ -412,8 +412,8 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>CampaignSharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>CaseOwnerSharingRule</string>
@@ -426,8 +426,8 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>CaseSharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>ContactOwnerSharingRule</string>
@@ -440,8 +440,8 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>ContactSharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>OpportunityOwnerSharingRule</string>
@@ -454,8 +454,8 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>OpportunitySharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>AccountOwnerSharingRule</string>
@@ -468,8 +468,8 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>AccountSharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
-      <com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>CustomObjectOwnerSharingRule</string>
@@ -482,11 +482,11 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>CustomObjectSharingRules</xmlName>
-      </com.teamlazerbeez.crm.sf.soap.DescribeMetadataObject>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
     </c>
     <list reference="../c"/>
   </objectList>
   <organizationNamespace></organizationNamespace>
   <partialSaveAllowed>true</partialSaveAllowed>
   <testRequired>false</testRequired>
-</com.teamlazerbeez.crm.sf.soap.DescribeMetadataResult>
+</com.palominolabs.crm.sf.soap.DescribeMetadataResult>
