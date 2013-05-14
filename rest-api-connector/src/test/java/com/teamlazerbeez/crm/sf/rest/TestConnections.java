@@ -61,6 +61,6 @@ final class TestConnections {
 
     static RestConnection getRestConnection(String user, String password) {
         return new RestConnectionImpl(MAPPER.reader(),
-                new FixedHttpApiClientProvider(getHttpApiClient(user, password)));
+                new FixedHttpApiClientProvider(getHttpApiClient(user, password)), METRIC_REGISTRY);
     }
 }

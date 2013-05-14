@@ -15,6 +15,8 @@
  */
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.Timer;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectReader;
@@ -32,6 +34,8 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
+import static com.codahale.metrics.MetricRegistry.name;
+
 @ThreadSafe
 final class RestConnectionImpl implements RestConnection {
     private static final String ID_KEY = "Id";
@@ -40,27 +44,67 @@ final class RestConnectionImpl implements RestConnection {
     private final ObjectReader objectReader;
 
     private final HttpApiClientProvider httpApiClientProvider;
+    private final Timer createTimer;
+    private final Timer deleteTimer;
+    private final Timer describeGlobalTimer;
+    private final Timer describeSObjectTimer;
+    private final Timer queryTimer;
+    private final Timer queryMoreTimer;
+    private final Timer retrieveTimer;
+    private final Timer searchTimer;
+    private final Timer updateTimer;
+    private final Timer basicSObjectInfoTimer;
+    private final Timer upsertTimer;
 
-    RestConnectionImpl(ObjectReader objectReader, HttpApiClientProvider httpApiClientProvider) {
+    RestConnectionImpl(ObjectReader objectReader, HttpApiClientProvider httpApiClientProvider,
+            MetricRegistry metricRegistry) {
         this.objectReader = objectReader;
         this.httpApiClientProvider = httpApiClientProvider;
+        createTimer = metricRegistry.timer(name(RestConnectionImpl.class, "create.request"));
+        deleteTimer = metricRegistry.timer(name(RestConnectionImpl.class, "delete.request"));
+        describeGlobalTimer = metricRegistry.timer(name(RestConnectionImpl.class, "describeGlobal.request"));
+        describeSObjectTimer = metricRegistry.timer(name(RestConnectionImpl.class, "describeSObject.request"));
+        basicSObjectInfoTimer = metricRegistry.timer(name(RestConnectionImpl.class, "getBasicSObjectInfo.request"));
+        queryTimer = metricRegistry.timer(name(RestConnectionImpl.class, "query.request"));
+        queryMoreTimer = metricRegistry.timer(name(RestConnectionImpl.class, "queryMore.request"));
+        retrieveTimer = metricRegistry.timer(name(RestConnectionImpl.class, "retrieve.request"));
+        searchTimer = metricRegistry.timer(name(RestConnectionImpl.class, "search.request"));
+        updateTimer = metricRegistry.timer(name(RestConnectionImpl.class, "update.request"));
+        upsertTimer = metricRegistry.timer(name(RestConnectionImpl.class, "upsert.request"));
     }
 
     @Override
     @Nonnull
     public SaveResult create(SObject sObject) throws IOException {
-        return getSaveResult(this.getHttpApiClient().create(sObject));
+        Timer.Context context = createTimer.time();
+
+        try {
+            return getSaveResult(this.getHttpApiClient().create(sObject));
+        } finally {
+            context.stop();
+        }
     }
 
     @Override
     public void delete(String sObjectType, Id id) throws IOException {
-        this.getHttpApiClient().delete(sObjectType, id);
+        Timer.Context context = deleteTimer.time();
+        try {
+            this.getHttpApiClient().delete(sObjectType, id);
+        } finally {
+            context.stop();
+        }
     }
 
     @Override
     @Nonnull
     public DescribeGlobalResult describeGlobal() throws IOException {
-        String describeGlobalJson = this.getHttpApiClient().describeGlobal();
+        Timer.Context context = describeGlobalTimer.time();
+        String describeGlobalJson;
+        try {
+            describeGlobalJson = this.getHttpApiClient().describeGlobal();
+        } finally {
+            context.stop();
+        }
 
         ObjectNode objectNode = this.objectReader.withType(ObjectNode.class).readValue(describeGlobalJson);
         String encoding = objectNode.get("encoding").textValue();
@@ -83,14 +127,26 @@ final class RestConnectionImpl implements RestConnection {
     @Override
     @Nonnull
     public SObjectDescription describeSObject(String sObjectType) throws IOException {
-        String descrJson = this.getHttpApiClient().describeSObject(sObjectType);
+        Timer.Context context = describeSObjectTimer.time();
+        String descrJson;
+        try {
+            descrJson = this.getHttpApiClient().describeSObject(sObjectType);
+        } finally {
+            context.stop();
+        }
         return this.objectReader.withType(SObjectDescription.class).readValue(descrJson);
     }
 
     @Override
     @Nonnull
     public BasicSObjectMetadataResult getBasicObjectInfo(String sObjectType) throws IOException {
-        String jsonStr = this.getHttpApiClient().basicSObjectInfo(sObjectType);
+        Timer.Context context = basicSObjectInfoTimer.time();
+        String jsonStr;
+        try {
+            jsonStr = this.getHttpApiClient().basicSObjectInfo(sObjectType);
+        } finally {
+            context.stop();
+        }
         ObjectNode objectNode = this.objectReader.withType(ObjectNode.class).readValue(jsonStr);
 
         BasicSObjectMetadata metadata =
@@ -106,39 +162,76 @@ final class RestConnectionImpl implements RestConnection {
     @Override
     @Nonnull
     public RestQueryResult query(String soql) throws IOException {
-        return getQueryResult(this.objectReader.readValue(parse(this.getHttpApiClient().query(soql)), JsonNode.class));
+        Timer.Context context = queryTimer.time();
+        String json;
+        try {
+            json = this.getHttpApiClient().query(soql);
+        } finally {
+            context.stop();
+        }
+        return getQueryResult(this.objectReader.readValue(parse(json), JsonNode.class));
     }
 
     @Override
     @Nonnull
     public RestQueryResult queryMore(RestQueryLocator queryLocator) throws IOException {
-        return getQueryResult(
-                this.objectReader.readValue(parse(this.getHttpApiClient().queryMore(queryLocator)), JsonNode.class));
+        Timer.Context context = queryMoreTimer.time();
+        String json;
+        try {
+            json = this.getHttpApiClient().queryMore(queryLocator);
+        } finally {
+            context.stop();
+        }
+        return getQueryResult(this.objectReader.readValue(parse(json), JsonNode.class));
     }
 
     @Override
     @Nonnull
     public SObject retrieve(String sObjectType, Id id, List<String> fields) throws IOException {
-        String json = this.getHttpApiClient().retrieve(sObjectType, id, fields);
+        Timer.Context context = retrieveTimer.time();
+        String json;
+        try {
+            json = this.getHttpApiClient().retrieve(sObjectType, id, fields);
+        } finally {
+            context.stop();
+        }
         return getSObject(this.objectReader.readValue(parse(json), JsonNode.class));
     }
 
     @Override
     @Nonnull
     public List<SObject> search(String sosl) throws IOException {
-        String json = this.getHttpApiClient().search(sosl);
+        Timer.Context context = searchTimer.time();
+        String json;
+        try {
+            json = this.getHttpApiClient().search(sosl);
+        } finally {
+            context.stop();
+        }
         return getSObjects(this.objectReader.readValue(parse(json), ArrayNode.class).elements());
     }
 
     @Override
     public void update(SObject sObject) throws IOException {
-        this.getHttpApiClient().update(sObject);
+        Timer.Context context = updateTimer.time();
+        try {
+            this.getHttpApiClient().update(sObject);
+        } finally {
+            context.stop();
+        }
     }
 
     @Override
     @Nonnull
     public UpsertResult upsert(SObject sObject, String externalIdField) throws IOException {
-        int statusCode = this.getHttpApiClient().upsert(sObject, externalIdField);
+        // TODO write tests for upsert
+        Timer.Context context = upsertTimer.time();
+        int statusCode;
+        try {
+            statusCode = this.getHttpApiClient().upsert(sObject, externalIdField);
+        } finally {
+            context.stop();
+        }
 
         if (statusCode == 204) {
             return UpsertResult.UPDATED;

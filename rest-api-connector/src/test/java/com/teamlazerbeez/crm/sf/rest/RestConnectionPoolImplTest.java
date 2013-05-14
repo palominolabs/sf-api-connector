@@ -29,6 +29,7 @@ import java.util.Arrays;
 import static com.teamlazerbeez.crm.sf.rest.HttpApiClientTest.PASSWORD;
 import static com.teamlazerbeez.crm.sf.rest.HttpApiClientTest.USER;
 import static com.teamlazerbeez.crm.sf.rest.TestConnections.getBindingConfig;
+import static com.teamlazerbeez.crm.sf.testutil.TestMetricRegistry.METRIC_REGISTRY;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
@@ -38,7 +39,7 @@ public class RestConnectionPoolImplTest {
 
     @Before
     public void setUp() {
-        pool = new RestConnectionPoolImpl<Integer>();
+        pool = new RestConnectionPoolImpl<Integer>(METRIC_REGISTRY);
     }
 
     @Test

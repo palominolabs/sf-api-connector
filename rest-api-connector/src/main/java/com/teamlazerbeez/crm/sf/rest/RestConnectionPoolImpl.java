@@ -16,6 +16,7 @@
 
 package com.teamlazerbeez.crm.sf.rest;
 
+import com.codahale.metrics.MetricRegistry;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.DecompressingHttpClient;
@@ -44,20 +45,25 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
     private final Map<T, ConnectionConfig> configMap = new HashMap<T, ConnectionConfig>();
     private final PoolingClientConnectionManager clientConnManager;
 
+    private final MetricRegistry metricRegistry;
+
     /**
      * Create a new pool with the default idle connection timeout.
+     *
+     * @param metricRegistry metric registry
      */
-    public RestConnectionPoolImpl() {
-        this(DEFAULT_IDLE_CONN_TIMEOUT);
+    public RestConnectionPoolImpl(MetricRegistry metricRegistry) {
+        this(metricRegistry, DEFAULT_IDLE_CONN_TIMEOUT);
     }
 
     /**
      * Create a new pool with a specific idle connection timeout.
      *
+     * @param metricRegistry metric registry
      * @param idleConnTimeout how long an unused connection must sit idle before it is eligible for removal from the
-     *                        pool, in seconds
      */
-    public RestConnectionPoolImpl(int idleConnTimeout) {
+    public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout) {
+        this.metricRegistry = metricRegistry;
         // defaults are too low for these out of the box
         clientConnManager = new PoolingClientConnectionManager();
         clientConnManager.setDefaultMaxPerRoute(20);
@@ -70,7 +76,7 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
     @Nonnull
     @Override
     public synchronized RestConnection getRestConnection(@Nonnull T orgId) {
-        return new RestConnectionImpl(objectMapper.reader(), new PoolHttpApiClientProvider(orgId));
+        return new RestConnectionImpl(objectMapper.reader(), new PoolHttpApiClientProvider(orgId), metricRegistry);
     }
 
     @Override
