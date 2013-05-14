@@ -16,10 +16,10 @@
 
 package com.teamlazerbeez.crm.sf.testutil;
 
-import com.yammer.metrics.MetricRegistry;
+import com.codahale.metrics.MetricRegistry;
 
 public final class TestMetricRegistry {
-    public static final MetricRegistry METRIC_REGISTRY = new MetricRegistry("sf-api tests");
+    public static final MetricRegistry METRIC_REGISTRY = new MetricRegistry();
 
     private TestMetricRegistry() {
     }

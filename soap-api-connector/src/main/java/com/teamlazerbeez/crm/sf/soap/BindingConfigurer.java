@@ -16,6 +16,8 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.Timer;
 import com.sun.xml.bind.api.JAXBRIContext;
 import com.sun.xml.ws.api.message.Header;
 import com.sun.xml.ws.api.message.Headers;
@@ -38,8 +40,6 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.LoginResultType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.SessionHeader;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Soap;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UnexpectedErrorFault_Exception;
-import com.yammer.metrics.MetricRegistry;
-import com.yammer.metrics.Timer;
 import org.slf4j.ext.XLogger;
 import org.slf4j.ext.XLoggerFactory;
 

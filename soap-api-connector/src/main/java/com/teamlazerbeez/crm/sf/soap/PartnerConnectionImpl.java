@@ -16,6 +16,8 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.Timer;
 import com.google.common.annotations.VisibleForTesting;
 import com.teamlazerbeez.crm.sf.core.Id;
 import com.teamlazerbeez.crm.sf.core.SObject;
@@ -67,8 +69,6 @@ import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpdateResponse;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Upsert;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResponse;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.UpsertResultType;
-import com.yammer.metrics.MetricRegistry;
-import com.yammer.metrics.Timer;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.slf4j.ext.XLogger;

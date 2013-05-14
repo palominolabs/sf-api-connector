@@ -16,10 +16,10 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.codahale.metrics.MetricRegistry;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.apex.ApexPortType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
 import com.teamlazerbeez.crm.sf.soap.jaxwsstub.partner.Soap;
-import com.yammer.metrics.MetricRegistry;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.ThreadSafe;
