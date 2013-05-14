@@ -175,7 +175,7 @@ final class ConnectionBundleImpl implements ConnectionBundle {
     @Nonnull
     @Override
     public synchronized ApexConnection getApexConnection() {
-        return new ApexConnectionImpl(this.callSemaphore, this);
+        return new ApexConnectionImpl(this.callSemaphore, this, metricRegistry);
     }
 
     @Nonnull

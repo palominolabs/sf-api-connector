@@ -16,6 +16,8 @@
 
 package com.teamlazerbeez.crm.sf.soap;
 
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.Timer;
 import com.sun.xml.ws.api.message.Header;
 import com.sun.xml.ws.api.message.HeaderList;
 import com.sun.xml.ws.developer.JAXWSProperties;
@@ -35,8 +37,13 @@ import javax.xml.ws.WebServiceException;
  */
 @ThreadSafe
 final class ApexConnectionImpl extends AbstractSalesforceConnection implements ApexConnection {
-    ApexConnectionImpl(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle) {
+
+    private final MetricRegistry metricRegistry;
+
+    ApexConnectionImpl(@Nonnull CallSemaphore semaphore, @Nonnull ConnectionBundleImpl bundle,
+            MetricRegistry metricRegistry) {
         super(semaphore, bundle);
+        this.metricRegistry = metricRegistry;
     }
 
     @Override
@@ -46,10 +53,15 @@ final class ApexConnectionImpl extends AbstractSalesforceConnection implements A
 
     private abstract class ApexOperation<Tin, Tout> extends ApiOperation<Tin, Tout, ApexPortType> {
 
+        private final Timer timer = metricRegistry.timer(MetricRegistry.name(getClass(), "request"));
+
         @Nonnull
         @Override
         Tout executeImpl(@Nonnull ConfiguredBinding<ApexPortType> apexPortTypeConfiguredBinding, @Nonnull Tin param)
                 throws ApiException {
+
+            Timer.Context context = timer.time();
+
             try {
                 ApexConnectionImpl.this.acquireSemaphore();
                 try {
@@ -59,6 +71,8 @@ final class ApexConnectionImpl extends AbstractSalesforceConnection implements A
                 }
             } catch (WebServiceException e) {
                 throw getNewExceptionWithCause("Call failed", e);
+            } finally {
+                context.stop();
             }
         }
 
