@@ -16,7 +16,6 @@
 
 package com.palominolabs.crm.sf.soap;
 
-import com.sun.xml.ws.developer.WSBindingProvider;
 import com.palominolabs.crm.sf.core.Id;
 import com.palominolabs.crm.sf.soap.jaxwsstub.apex.ApexPortType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
@@ -24,6 +23,7 @@ import com.palominolabs.crm.sf.soap.jaxwsstub.partner.ExceptionCode;
 import com.palominolabs.crm.sf.soap.jaxwsstub.partner.Soap;
 import com.palominolabs.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.palominolabs.crm.sf.testutil.TestMetricRegistry;
+import com.sun.xml.ws.developer.WSBindingProvider;
 import org.junit.Before;
 import org.junit.Test;
 

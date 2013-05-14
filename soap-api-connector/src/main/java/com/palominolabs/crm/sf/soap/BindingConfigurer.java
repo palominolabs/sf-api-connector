@@ -18,11 +18,6 @@ package com.palominolabs.crm.sf.soap;
 
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
-import com.sun.xml.bind.api.JAXBRIContext;
-import com.sun.xml.ws.api.message.Header;
-import com.sun.xml.ws.api.message.Headers;
-import com.sun.xml.ws.developer.JAXWSProperties;
-import com.sun.xml.ws.developer.WSBindingProvider;
 import com.palominolabs.crm.sf.core.Id;
 import com.palominolabs.crm.sf.soap.jaxwsstub.apex.ApexPortType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.apex.DebuggingHeader;
@@ -40,6 +35,11 @@ import com.palominolabs.crm.sf.soap.jaxwsstub.partner.LoginResultType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.partner.SessionHeader;
 import com.palominolabs.crm.sf.soap.jaxwsstub.partner.Soap;
 import com.palominolabs.crm.sf.soap.jaxwsstub.partner.UnexpectedErrorFault_Exception;
+import com.sun.xml.bind.api.JAXBRIContext;
+import com.sun.xml.ws.api.message.Header;
+import com.sun.xml.ws.api.message.Headers;
+import com.sun.xml.ws.developer.JAXWSProperties;
+import com.sun.xml.ws.developer.WSBindingProvider;
 import org.slf4j.ext.XLogger;
 import org.slf4j.ext.XLoggerFactory;
 

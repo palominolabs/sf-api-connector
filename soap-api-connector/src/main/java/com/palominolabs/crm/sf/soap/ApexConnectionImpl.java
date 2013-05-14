@@ -18,12 +18,12 @@ package com.palominolabs.crm.sf.soap;
 
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
+import com.palominolabs.crm.sf.soap.jaxwsstub.apex.ApexPortType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.apex.ExecuteAnonymousResult;
 import com.sun.xml.ws.api.message.Header;
 import com.sun.xml.ws.api.message.HeaderList;
 import com.sun.xml.ws.developer.JAXWSProperties;
 import com.sun.xml.ws.developer.WSBindingProvider;
-import com.palominolabs.crm.sf.soap.jaxwsstub.apex.ApexPortType;
-import com.palominolabs.crm.sf.soap.jaxwsstub.apex.ExecuteAnonymousResult;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.ThreadSafe;
