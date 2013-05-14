@@ -37,11 +37,11 @@
   <properties>
     <!-- dependency versions -->
     <dep.slf4j.version>1.7.5</dep.slf4j.version>
-    <dep.logback.version>1.0.11</dep.logback.version>
+    <dep.logback.version>1.0.13</dep.logback.version>
     <dep.junit.version>4.11</dep.junit.version>
 
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
-    <dep.jackson.version>2.1.4</dep.jackson.version>
+    <dep.jackson.version>2.2.1</dep.jackson.version>
 
     <dep.metrics.version>3.0.0-BETA3</dep.metrics.version>
 
@@ -248,7 +248,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>2.5.1</version>
+        <version>3.1</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
@@ -282,7 +282,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.12</version>
+        <version>2.14.1</version>
         <configuration>
           <includes>
             <include>**/*Test.java</include>
@@ -293,7 +293,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.3.2</version>
+        <version>2.4.1</version>
         <configuration>
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
@@ -321,7 +321,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>2.1.2</version>
+        <version>2.2.1</version>
         <executions>
           <execution>
             <id>attach-sources</id>
