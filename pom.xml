@@ -12,7 +12,7 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <name>${project.artifactId}</name>
-  <url>https://github.com/teamlazerbeez/sf-api-connector</url>
+  <url>https://github.com/palominolabs/sf-api-connector</url>
   <description>A Java library for Salesforce's SOAP and REST APIs</description>
   <licenses>
     <license>
@@ -22,9 +22,9 @@
     </license>
   </licenses>
   <scm>
-    <connection>scm:git:git@github.com:teamlazerbeez/sf-api-connector.git</connection>
-    <developerConnection>scm:git:git@github.com:teamlazerbeez/sf-api-connector.git</developerConnection>
-    <url>https://github.com/teamlazerbeez/sf-api-connector</url>
+    <connection>scm:git:git@github.com:palominolabs/sf-api-connector.git</connection>
+    <developerConnection>scm:git:git@github.com:palominolabs/sf-api-connector.git</developerConnection>
+    <url>https://github.com/palominolabs/sf-api-connector</url>
   </scm>
   <developers>
     <developer>
