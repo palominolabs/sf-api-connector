@@ -26,8 +26,6 @@ import java.util.List;
 
 /**
  * Convenience methods related to Connections and the calls they support.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 final class ConnectionUtils {

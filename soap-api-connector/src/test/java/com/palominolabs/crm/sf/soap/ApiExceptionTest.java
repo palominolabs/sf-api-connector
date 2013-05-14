@@ -22,9 +22,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public class ApiExceptionTest {
 
     @Test

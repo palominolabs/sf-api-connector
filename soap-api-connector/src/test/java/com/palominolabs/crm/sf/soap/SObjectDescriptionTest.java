@@ -31,9 +31,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public class SObjectDescriptionTest {
 
     private PartnerConnection conn;

@@ -24,9 +24,6 @@ import java.util.List;
 import static org.apache.commons.lang3.StringUtils.join;
 import static org.junit.Assert.assertEquals;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public class ConnectionUtilsTest {
 
     @Test

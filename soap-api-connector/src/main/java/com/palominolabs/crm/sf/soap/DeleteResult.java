@@ -24,8 +24,6 @@ import javax.annotation.concurrent.Immutable;
  * The delete() call returns a list of DeleteResult objects. Each element in the DeleteResult list corresponds to the Id
  * list passed as the ids parameter in the delete() call. For example, the object returned in the first index in the
  * DeleteResult list matches the object specified in the first index of the Id list.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @SuppressWarnings("WeakerAccess")
 @Immutable

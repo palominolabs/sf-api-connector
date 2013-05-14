@@ -23,8 +23,6 @@ import javax.annotation.concurrent.Immutable;
 
 /**
  * Used in SObjectDescription.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @SuppressWarnings("WeakerAccess")
 @Immutable

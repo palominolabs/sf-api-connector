@@ -27,8 +27,6 @@ import java.util.BitSet;
 
 /**
  * Metadata about the possible entries in a picklist. Some documentation lifted from the SF API docs.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 public final class PicklistEntry {

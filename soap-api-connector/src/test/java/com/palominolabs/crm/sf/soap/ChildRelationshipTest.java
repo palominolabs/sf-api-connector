@@ -22,9 +22,6 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 @SuppressWarnings({"ProhibitedExceptionCaught"})
 public class ChildRelationshipTest {
 

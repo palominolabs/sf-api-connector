@@ -21,8 +21,6 @@ import javax.annotation.concurrent.Immutable;
 
 /**
  * Represents an SF record Id. Remember to use .equals(Id otherID) to check equality.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 public final class Id {

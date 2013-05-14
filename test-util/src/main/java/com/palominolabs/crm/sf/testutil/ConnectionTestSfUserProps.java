@@ -20,9 +20,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public class ConnectionTestSfUserProps {
     private ConnectionTestSfUserProps() {
     }

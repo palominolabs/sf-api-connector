@@ -25,9 +25,6 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public class PartnerSObjectTest {
 
     @Test

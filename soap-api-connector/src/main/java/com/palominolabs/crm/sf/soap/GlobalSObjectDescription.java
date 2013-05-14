@@ -22,8 +22,6 @@ import javax.annotation.concurrent.Immutable;
 
 /**
  * A subset of an SObjectDescription included for all types in a DescribeGlobalResult..
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @SuppressWarnings("WeakerAccess")
 @Immutable

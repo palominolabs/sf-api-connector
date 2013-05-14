@@ -37,8 +37,6 @@ import java.util.List;
 
 /**
  * Contains convenience methods for manipulating SObjects.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 final class SObjects {
@@ -457,8 +455,6 @@ final class SObjects {
      * Creating a DocumentBuilderFactory and DocumentBuilder is 2000x slower (really! I benchmarked!) than creating a
      * Document from an existing DocumentBuilder. Thus, we create only one factory and builder by using an instance of
      * this class as a static field in the parent class.
-     *
-     * @author Marshall Pierce <marshall@palominolabs.com>
      */
     @ThreadSafe
     private static final class EmptyDocumentFactory {

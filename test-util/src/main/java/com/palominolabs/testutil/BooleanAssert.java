@@ -19,9 +19,6 @@ package com.palominolabs.testutil;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public final class BooleanAssert {
 
     private BooleanAssert() {

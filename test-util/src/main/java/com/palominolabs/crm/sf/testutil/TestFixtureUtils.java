@@ -21,9 +21,6 @@ import com.thoughtworks.xstream.converters.reflection.Sun14ReflectionProvider;
 
 import java.io.InputStream;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public class TestFixtureUtils {
     private TestFixtureUtils() {
     }

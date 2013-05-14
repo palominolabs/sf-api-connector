@@ -31,8 +31,6 @@ import java.util.List;
  * DescribeSObjectResult.
  *
  * TODO provide a toString()
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 public final class SObjectDescription {

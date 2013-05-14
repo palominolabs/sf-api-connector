@@ -24,8 +24,6 @@ import javax.annotation.concurrent.Immutable;
  * The emptyRecycleBin() call returns a list of EmptyRecycleBinResult objects. Each element in the list corresponds to
  * the ID[] array passed as the parameter in the emptyRecycleBin() call. For example, the object returned in the first
  * index in the DeleteResult array matches the object specified in the first index of the ID[] array.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @SuppressWarnings("WeakerAccess")
 @Immutable

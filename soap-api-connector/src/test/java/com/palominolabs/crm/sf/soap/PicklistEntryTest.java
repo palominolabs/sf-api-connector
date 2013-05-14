@@ -30,9 +30,6 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 @SuppressWarnings({"ProhibitedExceptionCaught"})
 public class PicklistEntryTest {
 

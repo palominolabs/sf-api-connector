@@ -24,8 +24,6 @@ import javax.annotation.concurrent.Immutable;
 
 /**
  * Part of an SObjectDescription. The name of the sObject that has a foreign key to the sObject being described.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @SuppressWarnings("WeakerAccess")
 @Immutable

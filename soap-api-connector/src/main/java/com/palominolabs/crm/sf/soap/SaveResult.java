@@ -27,8 +27,6 @@ import java.util.List;
  * The update() and create() calls return a list of SaveResult objects. Each element in the SaveResult list corresponds
  * to the sObject element in the sObjects parameter in the call. For example, the object returned in the first index in
  * the SaveResult list matches the object specified in the first index of the sObject list.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 public interface SaveResult {

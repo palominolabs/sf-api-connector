@@ -20,8 +20,6 @@ import javax.annotation.concurrent.NotThreadSafe;
 
 /**
  * Thrown when conversion between facade SObjects and stub SObjects fails.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @NotThreadSafe
 final class SObjectConversionException extends Exception {

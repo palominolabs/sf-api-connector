@@ -34,8 +34,6 @@ import java.util.Map;
  * for that object type) and will have field names suffixed with __c, e.g. "HairColor__c".
  *
  * Fields in SalesForce have a type, such as boolean, string, or datetime, but we only have access to them as strings.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @ThreadSafe
 public interface SObject {

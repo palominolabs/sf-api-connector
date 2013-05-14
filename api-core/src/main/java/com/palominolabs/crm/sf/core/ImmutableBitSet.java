@@ -21,8 +21,6 @@ import java.util.BitSet;
 
 /**
  * A simple immutable bit set implementation. Easy constant-time access to a sequence of bits.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 public final class ImmutableBitSet {

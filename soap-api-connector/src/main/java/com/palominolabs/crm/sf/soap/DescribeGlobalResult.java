@@ -24,8 +24,6 @@ import java.util.Set;
 
 /**
  * The result of a describeGlobal call. Contains info about all visible object types and other miscellany.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @ThreadSafe
 public interface DescribeGlobalResult {

@@ -24,8 +24,6 @@ import javax.annotation.concurrent.Immutable;
 
 /**
  * Wrapper around the stub GetUserInfoResultType object. Method comments are from the SF api docs.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 public final class UserInfo {

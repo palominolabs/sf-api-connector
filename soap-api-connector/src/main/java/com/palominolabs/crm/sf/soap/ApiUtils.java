@@ -23,8 +23,6 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * Misc utils for working with stub objects.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 final class ApiUtils {
 

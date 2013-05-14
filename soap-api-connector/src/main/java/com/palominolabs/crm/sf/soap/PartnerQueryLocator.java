@@ -21,8 +21,6 @@ import javax.annotation.concurrent.Immutable;
 
 /**
  * Represents a server-side cursor position of a query. Use this with {@link PartnerConnectionImpl#queryMore(PartnerQueryLocator)}.
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @Immutable
 public final class PartnerQueryLocator {

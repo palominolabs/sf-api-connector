@@ -27,9 +27,6 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 public class ConnectionPoolImplTest {
 
     private static final String USER = ConnectionTestSfUserProps

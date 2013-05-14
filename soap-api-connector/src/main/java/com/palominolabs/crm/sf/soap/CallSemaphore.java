@@ -35,8 +35,6 @@ import java.util.concurrent.Semaphore;
  * the max number of permits allowed.
  *
  * New instances should be configured with setMaxPermits().
- *
- * @author Marshall Pierce <marshall@palominolabs.com>
  */
 @SuppressWarnings("AccessToStaticFieldLockedOnInstance")
 @ThreadSafe
@@ -113,8 +111,6 @@ final class CallSemaphore {
     /**
      * A trivial subclass of Semaphore that exposes the reducePermits call to the parent class. Doug Lea says it's ok...
      * http://osdir.com/ml/java.jsr.166-concurrency/2003-10/msg00042.html
-     *
-     * @author Marshall Pierce <marshall@palominolabs.com>
      */
     private static final class ResizeableSemaphore extends Semaphore {
 

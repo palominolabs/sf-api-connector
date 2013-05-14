@@ -34,9 +34,6 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-/**
- * @author Marshall Pierce <marshall@palominolabs.com>
- */
 @SuppressWarnings({"UnusedCatchParameter"})
 public class CallSemaphoreTest {
 
