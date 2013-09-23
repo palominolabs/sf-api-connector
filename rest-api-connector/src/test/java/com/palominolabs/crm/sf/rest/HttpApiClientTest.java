@@ -222,9 +222,9 @@ public class HttpApiClientTest {
 
         JsonFactory jsonFactory = new JsonFactory();
 
-        JsonParser parser = jsonFactory.createJsonParser(input);
+        JsonParser parser = jsonFactory.createParser(input);
         StringWriter writer = new StringWriter();
-        JsonGenerator generator = jsonFactory.createJsonGenerator(writer);
+        JsonGenerator generator = jsonFactory.createGenerator(writer);
         generator.useDefaultPrettyPrinter();
 
         while (parser.nextToken() != null) {
