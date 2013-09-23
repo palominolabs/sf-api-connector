@@ -4,10 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/apex-api-binding/apex-api-binding.iml" filepath="$PROJECT_DIR$/apex-api-binding/apex-api-binding.iml" />
       <module fileurl="file://$PROJECT_DIR$/api-core/api-core.iml" filepath="$PROJECT_DIR$/api-core/api-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-parent.iml" filepath="$PROJECT_DIR$/api-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/metadata-api-binding/metadata-api-binding.iml" filepath="$PROJECT_DIR$/metadata-api-binding/metadata-api-binding.iml" />
       <module fileurl="file://$PROJECT_DIR$/partner-api-binding/partner-api-binding.iml" filepath="$PROJECT_DIR$/partner-api-binding/partner-api-binding.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-api-connector/rest-api-connector.iml" filepath="$PROJECT_DIR$/rest-api-connector/rest-api-connector.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sf-api-parent.iml" filepath="$PROJECT_DIR$/sf-api-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/soap-api-connector/soap-api-connector.iml" filepath="$PROJECT_DIR$/soap-api-connector/soap-api-connector.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-logging-config/test-logging-config.iml" filepath="$PROJECT_DIR$/test-logging-config/test-logging-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/test-util/test-util.iml" filepath="$PROJECT_DIR$/test-util/test-util.iml" />
