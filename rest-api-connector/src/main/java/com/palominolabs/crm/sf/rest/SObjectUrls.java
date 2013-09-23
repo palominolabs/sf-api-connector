@@ -16,7 +16,6 @@
 
 package com.palominolabs.crm.sf.rest;
 
-
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -41,8 +40,9 @@ public final class SObjectUrls extends AbstractSObjectUrls {
             @Nonnull @JsonProperty("describe") String describeUrlPath,
             @Nonnull @JsonProperty("rowTemplate") String rowTemplateUrlPath,
             @Nonnull @JsonProperty("uiNewRecord") String uiNewRecord,
-            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities) {
-        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath);
+            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities,
+            @Nonnull @JsonProperty("layouts") String layoutsPath) {
+        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath, layoutsPath);
         this.uiEditTemplate = uiEditTemplate;
         this.uiDetailTemplate = uiDetailTemplate;
         this.uiNewRecord = uiNewRecord;

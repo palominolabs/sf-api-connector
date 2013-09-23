@@ -22,12 +22,16 @@ abstract class AbstractSObjectUrls {
     private final String sobjectUrlPath;
     private final String describeUrlPath;
     private final String rowTemplateUrlPath;
+    private final String layoutsPath;
+
 
     AbstractSObjectUrls(
-            @Nonnull String describeUrlPath, @Nonnull String rowTemplateUrlPath, @Nonnull String sobjectUrlPath) {
+            @Nonnull String describeUrlPath, @Nonnull String rowTemplateUrlPath, @Nonnull String sobjectUrlPath,
+            String layoutsPath) {
         this.describeUrlPath = describeUrlPath;
         this.rowTemplateUrlPath = rowTemplateUrlPath;
         this.sobjectUrlPath = sobjectUrlPath;
+        this.layoutsPath = layoutsPath;
     }
 
     @Nonnull
@@ -43,5 +47,10 @@ abstract class AbstractSObjectUrls {
     @Nonnull
     public String getRowTemplateUrlPath() {
         return rowTemplateUrlPath;
+    }
+
+    @Nonnull
+    String getLayoutsPath() {
+        return layoutsPath;
     }
 }

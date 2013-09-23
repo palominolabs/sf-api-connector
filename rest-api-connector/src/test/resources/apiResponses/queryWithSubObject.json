@@ -4,14 +4,14 @@
     "records" : [ {
         "attributes" : {
             "type" : "Account",
-            "url" : "/services/data/v26.0/sobjects/Account/0015000000WWD7bAAH"
+            "url" : "/services/data/v28.0/sobjects/Account/0015000000WWD7bAAH"
         },
         "Id" : "0015000000WWD7bAAH",
         "Name" : "United Oil & Gas, Singapore",
         "Owner" : {
             "attributes" : {
                 "type" : "User",
-                "url" : "/services/data/v26.0/sobjects/User/00550000001gvBOAAY"
+                "url" : "/services/data/v28.0/sobjects/User/00550000001gvBOAAY"
             },
             "Name" : "sftestorg3 mpierce",
             "Id" : "00550000001gvBOAAY"

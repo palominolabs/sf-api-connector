@@ -8,9 +8,10 @@
   <activateable>false</activateable>
   <updateable>true</updateable>
   <sObjectUrls>
-    <sobjectUrlPath>/services/data/v26.0/sobjects/Account</sobjectUrlPath>
-    <describeUrlPath>/services/data/v26.0/sobjects/Account/describe</describeUrlPath>
-    <rowTemplateUrlPath>/services/data/v26.0/sobjects/Account/{ID}</rowTemplateUrlPath>
+    <sobjectUrlPath>/services/data/v28.0/sobjects/Account</sobjectUrlPath>
+    <describeUrlPath>/services/data/v28.0/sobjects/Account/describe</describeUrlPath>
+    <rowTemplateUrlPath>/services/data/v28.0/sobjects/Account/{ID}</rowTemplateUrlPath>
+    <layoutsPath>/services/data/v28.0/sobjects/Account/describe/layouts</layoutsPath>
     <uiEditTemplate>https://na3.salesforce.com/{ID}/e</uiEditTemplate>
     <uiDetailTemplate>https://na3.salesforce.com/{ID}</uiDetailTemplate>
     <uiNewRecord>https://na3.salesforce.com/001/e</uiNewRecord>
@@ -182,13 +183,6 @@
       <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
-        <cascadeDelete>true</cascadeDelete>
-        <childSObject>NewsFeed</childSObject>
-        <restrictedDelete>false</restrictedDelete>
-      </com.palominolabs.crm.sf.rest.ChildRelationship>
-      <com.palominolabs.crm.sf.rest.ChildRelationship>
-        <field>ParentId</field>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
         <relationshipName>Notes</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Note</childSObject>
@@ -278,13 +272,6 @@
         <deprecatedAndHidden>false</deprecatedAndHidden>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>User</childSObject>
-        <restrictedDelete>false</restrictedDelete>
-      </com.palominolabs.crm.sf.rest.ChildRelationship>
-      <com.palominolabs.crm.sf.rest.ChildRelationship>
-        <field>ParentId</field>
-        <deprecatedAndHidden>false</deprecatedAndHidden>
-        <cascadeDelete>true</cascadeDelete>
-        <childSObject>UserProfileFeed</childSObject>
         <restrictedDelete>false</restrictedDelete>
       </com.palominolabs.crm.sf.rest.ChildRelationship>
       <com.palominolabs.crm.sf.rest.ChildRelationship>
@@ -795,6 +782,82 @@
         <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.palominolabs.crm.sf.rest.FieldDescription>
       <com.palominolabs.crm.sf.rest.FieldDescription>
+        <length>0</length>
+        <name>BillingLatitude</name>
+        <type>double</type>
+        <label>Billing Latitude</label>
+        <updateable>true</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>18</precision>
+        <scale>15</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>0</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:double</soapType>
+        <createable>true</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>false</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
+        <length>0</length>
+        <name>BillingLongitude</name>
+        <type>double</type>
+        <label>Billing Longitude</label>
+        <updateable>true</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>18</precision>
+        <scale>15</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>0</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:double</soapType>
+        <createable>true</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>false</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>255</length>
         <name>ShippingStreet</name>
         <type>textarea</type>
@@ -970,6 +1033,82 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
+        <length>0</length>
+        <name>ShippingLatitude</name>
+        <type>double</type>
+        <label>Shipping Latitude</label>
+        <updateable>true</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>18</precision>
+        <scale>15</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>0</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:double</soapType>
+        <createable>true</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>false</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>true</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
+        <length>0</length>
+        <name>ShippingLongitude</name>
+        <type>double</type>
+        <label>Shipping Longitude</label>
+        <updateable>true</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>18</precision>
+        <scale>15</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>0</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:double</soapType>
+        <createable>true</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>false</groupable>
         <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
@@ -2120,6 +2259,82 @@
         <displayLocationInDecimal>false</displayLocationInDecimal>
       </com.palominolabs.crm.sf.rest.FieldDescription>
       <com.palominolabs.crm.sf.rest.FieldDescription>
+        <length>0</length>
+        <name>LastViewedDate</name>
+        <type>datetime</type>
+        <label>Last Viewed Date</label>
+        <updateable>false</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>0</precision>
+        <scale>0</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>0</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:dateTime</soapType>
+        <createable>false</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>false</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
+        <length>0</length>
+        <name>LastReferencedDate</name>
+        <type>datetime</type>
+        <label>Last Referenced Date</label>
+        <updateable>false</updateable>
+        <calculated>false</calculated>
+        <unique>false</unique>
+        <nillable>true</nillable>
+        <precision>0</precision>
+        <scale>0</scale>
+        <caseSensitive>false</caseSensitive>
+        <byteLength>0</byteLength>
+        <nameField>false</nameField>
+        <externalId>false</externalId>
+        <idLookup>false</idLookup>
+        <filterable>true</filterable>
+        <soapType>xsd:dateTime</soapType>
+        <createable>false</createable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <autoNumber>false</autoNumber>
+        <defaultedOnCreate>false</defaultedOnCreate>
+        <digits>0</digits>
+        <groupable>false</groupable>
+        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <restrictedPicklist>false</restrictedPicklist>
+        <namePointing>false</namePointing>
+        <custom>false</custom>
+        <htmlFormatted>false</htmlFormatted>
+        <dependentPicklist>false</dependentPicklist>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+        <sortable>true</sortable>
+        <cascadeDelete>false</cascadeDelete>
+        <restrictedDelete>false</restrictedDelete>
+        <permissionable>false</permissionable>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+      </com.palominolabs.crm.sf.rest.FieldDescription>
+      <com.palominolabs.crm.sf.rest.FieldDescription>
         <length>20</length>
         <name>Jigsaw</name>
         <type>string</type>
@@ -2729,6 +2944,7 @@
   </recordTypeInfos>
   <replicateable>true</replicateable>
   <retrieveable>true</retrieveable>
+  <searchLayoutable>true</searchLayoutable>
   <undeletable>true</undeletable>
   <triggerable>true</triggerable>
 </com.palominolabs.crm.sf.rest.SObjectDescription>

@@ -34,8 +34,8 @@ public final class BasicSObjectUrls extends AbstractSObjectUrls {
     BasicSObjectUrls(@Nonnull @JsonProperty("sobject") String sobjectUrlPath,
             @Nonnull @JsonProperty("describe") String describeUrlPath,
             @Nonnull @JsonProperty("rowTemplate") String rowTemplateUrlPath,
-            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities) {
-        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath);
+            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities, @Nonnull @JsonProperty("layouts")  String layoutsPath) {
+        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath, layoutsPath);
         this.passwordUtilities = passwordUtilities;
     }
 
@@ -48,4 +48,5 @@ public final class BasicSObjectUrls extends AbstractSObjectUrls {
     public String getPasswordUtilities() {
         return passwordUtilities;
     }
+
 }
