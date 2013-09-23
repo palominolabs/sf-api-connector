@@ -93,12 +93,12 @@ public class BindingConfigurerTest {
 
         assertEquals("00D50000000Ixbv", data.getOrgId().toString());
         assertEquals(
-                "https://na3-api.salesforce.com/services/Soap/u/" + ApiVersion.API_VERSION_STRING + "/00D50000000Ixbv",
+                "https://na3.salesforce.com/services/Soap/u/" + ApiVersion.API_VERSION_STRING + "/00D50000000Ixbv",
                 data.getPartnerServerUrl());
         assertEquals(
-                "https://na3-api.salesforce.com/services/Soap/m/" + ApiVersion.API_VERSION_STRING + "/00D50000000Ixbv",
+                "https://na3.salesforce.com/services/Soap/m/" + ApiVersion.API_VERSION_STRING + "/00D50000000Ixbv",
                 data.getMetadataServerUrl());
-        assertEquals("https://na3-api.salesforce.com/services/Soap/s/" + ApiVersion.API_VERSION_STRING,
+        assertEquals("https://na3.salesforce.com/services/Soap/s/" + ApiVersion.API_VERSION_STRING,
                 data.getApexServerUrl());
         assertNotNull(data.getSessionId());
         assertEquals(DEFAULT_USER, data.getUsername());

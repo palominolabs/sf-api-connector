@@ -514,6 +514,7 @@
         <name>AssignmentRule</name>
         <label>Assignment Rule</label>
         <custom>false</custom>
+        <keyPrefix>01Q</keyPrefix>
         <labelPlural>Assignment Rules</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
@@ -1257,6 +1258,33 @@
         <triggerable>false</triggerable>
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+        <name>ClientBrowser</name>
+        <label>Client Browser</label>
+        <custom>false</custom>
+        <keyPrefix>713</keyPrefix>
+        <labelPlural>Client Browser</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v26.0/sobjects/ClientBrowser</sobjectUrlPath>
+          <describeUrlPath>/services/data/v26.0/sobjects/ClientBrowser/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v26.0/sobjects/ClientBrowser/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroup</name>
         <label>Chatter Group</label>
         <custom>false</custom>
@@ -1392,10 +1420,10 @@
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Community</name>
-        <label>Community</label>
+        <label>Zone</label>
         <custom>false</custom>
         <keyPrefix>09a</keyPrefix>
-        <labelPlural>Communities</labelPlural>
+        <labelPlural>Zones</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>false</updateable>
@@ -2057,10 +2085,10 @@
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>DomainSite</name>
-        <label>Domain Site</label>
+        <label>Custom URL</label>
         <custom>false</custom>
         <keyPrefix>0Jf</keyPrefix>
-        <labelPlural>Domain Sites</labelPlural>
+        <labelPlural>Custom URLs</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>false</updateable>
@@ -2673,7 +2701,7 @@
         <replicateable>true</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
-        <triggerable>false</triggerable>
+        <triggerable>true</triggerable>
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>Lead</name>
@@ -2835,6 +2863,33 @@
         <triggerable>false</triggerable>
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+        <name>LoginIp</name>
+        <label>Login IP</label>
+        <custom>false</custom>
+        <keyPrefix>710</keyPrefix>
+        <labelPlural>Login IP</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v26.0/sobjects/LoginIp</sobjectUrlPath>
+          <describeUrlPath>/services/data/v26.0/sobjects/LoginIp/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v26.0/sobjects/LoginIp/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>MailmergeTemplate</name>
         <label>Mail Merge Template</label>
         <custom>false</custom>
@@ -2920,7 +2975,7 @@
         <custom>false</custom>
         <keyPrefix>002</keyPrefix>
         <labelPlural>Notes</labelPlural>
-        <layoutable>false</layoutable>
+        <layoutable>true</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
@@ -3480,7 +3535,7 @@
         <custom>false</custom>
         <keyPrefix>01s</keyPrefix>
         <labelPlural>Price Books</labelPlural>
-        <layoutable>false</layoutable>
+        <layoutable>true</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
         <sObjectUrls>
@@ -3499,6 +3554,32 @@
         <replicateable>true</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>true</undeletable>
+        <triggerable>true</triggerable>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+        <name>Pricebook2History</name>
+        <label>Price Book History</label>
+        <custom>false</custom>
+        <labelPlural>Price Book History</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v26.0/sobjects/Pricebook2History</sobjectUrlPath>
+          <describeUrlPath>/services/data/v26.0/sobjects/Pricebook2History/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v26.0/sobjects/Pricebook2History/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>false</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>true</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
         <triggerable>false</triggerable>
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
@@ -4216,6 +4297,33 @@
         <mergeable>false</mergeable>
         <queryable>true</queryable>
         <replicateable>false</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+        <name>Topic</name>
+        <label>Topic</label>
+        <custom>false</custom>
+        <keyPrefix>0TO</keyPrefix>
+        <labelPlural>Topics</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>false</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v26.0/sobjects/Topic</sobjectUrlPath>
+          <describeUrlPath>/services/data/v26.0/sobjects/Topic/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v26.0/sobjects/Topic/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>true</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>true</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
         <triggerable>false</triggerable>

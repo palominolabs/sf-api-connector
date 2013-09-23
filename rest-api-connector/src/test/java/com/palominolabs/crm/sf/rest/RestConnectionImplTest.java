@@ -67,7 +67,7 @@ public class RestConnectionImplTest {
             conn.create(sObj);
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/",
+            assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
             assertEquals(
@@ -231,7 +231,7 @@ public class RestConnectionImplTest {
             fail();
         } catch (ApiException e) {
             assertEquals(
-                    "https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/0035000000kmzzz?fields=FirstName%2CLastName",
+                    "https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/0035000000kmzzz?fields=FirstName%2CLastName",
                     e.getUrl());
             assertEquals("Not Found", e.getHttpReason());
             assertEquals(
@@ -314,7 +314,7 @@ public class RestConnectionImplTest {
             conn.update(sObj);
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Opportunity/0065000000FgGSn",
+            assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Opportunity/0065000000FgGSn",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
             assertEquals(

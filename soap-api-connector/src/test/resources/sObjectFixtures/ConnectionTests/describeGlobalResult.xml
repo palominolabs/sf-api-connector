@@ -462,6 +462,7 @@
           <deletable>false</deletable>
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
+          <keyPrefix>01Q</keyPrefix>
           <label>Assignment Rule</label>
           <labelPlural>Assignment Rules</labelPlural>
           <layoutable>false</layoutable>
@@ -1118,6 +1119,30 @@
       <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
+          <createable>false</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>true</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <keyPrefix>713</keyPrefix>
+          <label>Client Browser</label>
+          <labelPlural>Client Browser</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>ClientBrowser</name>
+          <queryable>true</queryable>
+          <replicateable>false</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>false</updateable>
+        </stubResult>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
           <createable>true</createable>
           <custom>false</custom>
           <customSetting>false</customSetting>
@@ -1244,8 +1269,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>09a</keyPrefix>
-          <label>Community</label>
-          <labelPlural>Communities</labelPlural>
+          <label>Zone</label>
+          <labelPlural>Zones</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>Community</name>
@@ -1834,8 +1859,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>0Jf</keyPrefix>
-          <label>Domain Site</label>
-          <labelPlural>Domain Sites</labelPlural>
+          <label>Custom URL</label>
+          <labelPlural>Custom URLs</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>DomainSite</name>
@@ -2370,7 +2395,7 @@
           <replicateable>true</replicateable>
           <retrieveable>true</retrieveable>
           <searchable>true</searchable>
-          <triggerable>false</triggerable>
+          <triggerable>true</triggerable>
           <undeletable>true</undeletable>
           <updateable>true</updateable>
         </stubResult>
@@ -2519,6 +2544,30 @@
       <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
         <stubResult>
           <activateable>false</activateable>
+          <createable>false</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>true</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <keyPrefix>710</keyPrefix>
+          <label>Login IP</label>
+          <labelPlural>Login IP</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>LoginIp</name>
+          <queryable>true</queryable>
+          <replicateable>false</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>false</updateable>
+        </stubResult>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
           <createable>true</createable>
           <custom>false</custom>
           <customSetting>false</customSetting>
@@ -2599,7 +2648,7 @@
           <keyPrefix>002</keyPrefix>
           <label>Note</label>
           <labelPlural>Notes</labelPlural>
-          <layoutable>false</layoutable>
+          <layoutable>true</layoutable>
           <mergeable>false</mergeable>
           <name>Note</name>
           <queryable>true</queryable>
@@ -3096,16 +3145,39 @@
           <keyPrefix>01s</keyPrefix>
           <label>Price Book</label>
           <labelPlural>Price Books</labelPlural>
-          <layoutable>false</layoutable>
+          <layoutable>true</layoutable>
           <mergeable>false</mergeable>
           <name>Pricebook2</name>
           <queryable>true</queryable>
           <replicateable>true</replicateable>
           <retrieveable>true</retrieveable>
           <searchable>false</searchable>
-          <triggerable>false</triggerable>
+          <triggerable>true</triggerable>
           <undeletable>true</undeletable>
           <updateable>true</updateable>
+        </stubResult>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
+          <createable>false</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>false</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <label>Price Book History</label>
+          <labelPlural>Price Book History</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>Pricebook2History</name>
+          <queryable>true</queryable>
+          <replicateable>true</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>false</updateable>
         </stubResult>
       </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
       <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
@@ -3740,6 +3812,30 @@
           <replicateable>false</replicateable>
           <retrieveable>true</retrieveable>
           <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>false</updateable>
+        </stubResult>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
+          <createable>false</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>true</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <keyPrefix>0TO</keyPrefix>
+          <label>Topic</label>
+          <labelPlural>Topics</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>Topic</name>
+          <queryable>true</queryable>
+          <replicateable>true</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>true</searchable>
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>
           <updateable>false</updateable>

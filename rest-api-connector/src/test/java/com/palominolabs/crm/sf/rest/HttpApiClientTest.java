@@ -68,7 +68,7 @@ public class HttpApiClientTest {
             client.create(sObj);
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/", e.getUrl());
+            assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/", e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
             assertEquals(
                     "[{\"fields\":[\"LastName\"],\"message\":\"Required fields are missing: [LastName]\"," +
@@ -107,7 +107,7 @@ public class HttpApiClientTest {
             client.delete("Lead", new Id("00Q7zzz000Kj4Jn"));
             fail();
         } catch (ApiException e) {
-            assertEquals("https://na3-api.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Lead/00Q7zzz000Kj4Jn",
+            assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Lead/00Q7zzz000Kj4Jn",
                     e.getUrl());
             assertEquals("Not Found", e.getHttpReason());
             assertEquals(
@@ -178,7 +178,7 @@ public class HttpApiClientTest {
             fail();
         } catch (ApiException e) {
             assertEquals(
-                    "https://na3-api.salesforce.com:443/services/data/v21.0/query/wrong",
+                    "https://na3.salesforce.com:443/services/data/v21.0/query/wrong",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
             assertEquals(
