@@ -36,7 +36,7 @@
           <packageName>${jaxws.stub.partner-api.package}</packageName>
           <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
           <wsdlFiles>
-            <wsdlFile>partner-26.0.wsdl</wsdlFile>
+            <wsdlFile>partner-28.0.wsdl</wsdlFile>
           </wsdlFiles>
           <bindingDirectory>${basedir}/src/main/jaxb</bindingDirectory>
           <bindingFiles>

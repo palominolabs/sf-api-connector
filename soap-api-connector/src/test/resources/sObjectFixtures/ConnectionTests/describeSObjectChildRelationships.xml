@@ -82,11 +82,6 @@
     </com.palominolabs.crm.sf.soap.ChildRelationship>
     <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
-      <childSObject>NewsFeed</childSObject>
-      <field>ParentId</field>
-    </com.palominolabs.crm.sf.soap.ChildRelationship>
-    <com.palominolabs.crm.sf.soap.ChildRelationship>
-      <cascadeDelete>true</cascadeDelete>
       <childSObject>Note</childSObject>
       <field>ParentId</field>
       <relationshipName>Notes</relationshipName>
@@ -120,11 +115,6 @@
       <childSObject>Task</childSObject>
       <field>WhoId</field>
       <relationshipName>Tasks</relationshipName>
-    </com.palominolabs.crm.sf.soap.ChildRelationship>
-    <com.palominolabs.crm.sf.soap.ChildRelationship>
-      <cascadeDelete>true</cascadeDelete>
-      <childSObject>UserProfileFeed</childSObject>
-      <field>ParentId</field>
     </com.palominolabs.crm.sf.soap.ChildRelationship>
   </c>
   <list reference="../c"/>

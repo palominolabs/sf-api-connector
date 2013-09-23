@@ -21,6 +21,7 @@ import com.palominolabs.crm.sf.soap.jaxwsstub.partner.DescribeSObjectResultType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.partner.FieldType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.partner.RecordTypeInfoType;
 
+import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -361,6 +362,7 @@ public final class SObjectDescription {
      *
      * @return triggerable or null
      */
+    @Nullable
     public Boolean isTriggerable() {
         return this.stubResult.isTriggerable();
     }
@@ -382,6 +384,16 @@ public final class SObjectDescription {
     public boolean isUpdateable() {
         return this.stubResult.isUpdateable();
     }
+
+    /**
+     * Indicates whether search layout information can be retrieved via the describeSearchLayouts() call (true) or not (false).
+     * @return search layoutable
+     */
+    @Nullable
+    public Boolean isSearchLayoutable() {
+        return this.stubResult.isSearchLayoutable();
+    }
+
 
     /**
      * @param fieldList list of fields

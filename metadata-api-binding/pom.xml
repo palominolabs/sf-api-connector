@@ -34,7 +34,7 @@
           <packageName>${jaxws.stub.metadata-api.package}</packageName>
           <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
           <wsdlFiles>
-            <wsdlFile>metadata-26.0.wsdl</wsdlFile>
+            <wsdlFile>metadata-28.0.wsdl</wsdlFile>
           </wsdlFiles>
         </configuration>
       </plugin>

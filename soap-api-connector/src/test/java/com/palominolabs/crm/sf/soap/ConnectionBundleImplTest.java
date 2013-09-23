@@ -121,7 +121,8 @@ public class ConnectionBundleImplTest {
 
     @Test
     public void testRealInvalidSessionIdClearsConfigData()
-            throws ApiException, IllegalAccessException, NoSuchFieldException, UnexpectedErrorFault_Exception {
+            throws ApiException, IllegalAccessException, NoSuchFieldException, UnexpectedErrorFault_Exception,
+            InterruptedException {
 
         final PartnerConnection conn = this.bundle.getPartnerConnection();
 
@@ -130,6 +131,8 @@ public class ConnectionBundleImplTest {
         final BindingConfig data1 = this.bundle.getBindingConfig();
 
         PartnerConnectionImplTest.logout(conn);
+
+        Thread.sleep(1000);
 
         conn.getServerTimestamp();
 

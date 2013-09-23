@@ -3,6 +3,17 @@
     <c class="list">
       <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>installedPackages</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>installedPackage</suffix>
+        <xmlName>InstalledPackage</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>CustomLabel</string>
           </c>
@@ -224,13 +235,27 @@
       </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
       <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>quickActions</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>quickAction</suffix>
+        <xmlName>QuickAction</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
           <c class="list">
             <string>WorkflowFieldUpdate</string>
             <string>WorkflowKnowledgePublish</string>
+            <string>WorkflowQuickCreate</string>
             <string>WorkflowTask</string>
+            <string>WorkflowChatterPost</string>
             <string>WorkflowAlert</string>
             <string>WorkflowSend</string>
             <string>WorkflowOutboundMessage</string>
+            <string>WorkflowActionFlow</string>
             <string>WorkflowRule</string>
             <null/>
           </c>
@@ -241,6 +266,45 @@
         <metaFile>false</metaFile>
         <suffix>workflow</suffix>
         <xmlName>Workflow</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>AssignmentRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>assignmentRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>assignmentRules</suffix>
+        <xmlName>AssignmentRules</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>AutoResponseRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>autoResponseRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>autoResponseRules</suffix>
+        <xmlName>AutoResponseRules</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list">
+            <string>EscalationRule</string>
+          </c>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>escalationRules</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>escalationRules</suffix>
+        <xmlName>EscalationRules</xmlName>
       </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
       <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
@@ -263,6 +327,17 @@
         <metaFile>false</metaFile>
         <suffix>group</suffix>
         <xmlName>Group</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>approvalProcesses</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>approvalProcess</suffix>
+        <xmlName>ApprovalProcess</xmlName>
       </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
       <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
@@ -379,6 +454,17 @@
           <c class="list"/>
           <list reference="../c"/>
         </childXmlNames>
+        <directoryName>authproviders</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>authprovider</suffix>
+        <xmlName>AuthProvider</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
         <directoryName>sites</directoryName>
         <inFolder>false</inFolder>
         <metaFile>false</metaFile>
@@ -482,6 +568,39 @@
         <metaFile>false</metaFile>
         <suffix>sharingRules</suffix>
         <xmlName>CustomObjectSharingRules</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>communities</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>community</suffix>
+        <xmlName>Community</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>callCenters</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>callCenter</suffix>
+        <xmlName>CallCenter</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>settings</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>settings</suffix>
+        <xmlName>Settings</xmlName>
       </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
     </c>
     <list reference="../c"/>

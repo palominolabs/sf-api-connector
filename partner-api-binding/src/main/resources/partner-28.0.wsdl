@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
-
 <!--
-Salesforce.com Partner Web Services API Version 26.0
-Generated on 2013-01-17 23:11:20 +0000.
+Salesforce.com Partner Web Services API Version 28.0
+Generated on 2013-09-23 16:01:46 +0000.
 
 Copyright 1999-2013 salesforce.com, inc.
 All Rights Reserved
@@ -185,6 +182,7 @@ All Rights Reserved
                     <enumeration value="CANNOT_DELETE_MANAGED_OBJECT"/>
                     <enumeration value="CANNOT_DISABLE_LAST_ADMIN"/>
                     <enumeration value="CANNOT_ENABLE_IP_RESTRICT_REQUESTS"/>
+                    <enumeration value="CANNOT_EXECUTE_FLOW_TRIGGER"/>
                     <enumeration value="CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY"/>
                     <enumeration value="CANNOT_MODIFY_MANAGED_OBJECT"/>
                     <enumeration value="CANNOT_RENAME_APEX_REFERENCED_FIELD"/>
@@ -197,12 +195,14 @@ All Rights Reserved
                     <enumeration value="CANT_UNSET_CORP_CURRENCY"/>
                     <enumeration value="CHILD_SHARE_FAILS_PARENT"/>
                     <enumeration value="CIRCULAR_DEPENDENCY"/>
+                    <enumeration value="COLLISION_DETECTED"/>
                     <enumeration value="COMMUNITY_NOT_ACCESSIBLE"/>
                     <enumeration value="CUSTOM_CLOB_FIELD_LIMIT_EXCEEDED"/>
                     <enumeration value="CUSTOM_ENTITY_OR_FIELD_LIMIT"/>
                     <enumeration value="CUSTOM_FIELD_INDEX_LIMIT_EXCEEDED"/>
                     <enumeration value="CUSTOM_INDEX_EXISTS"/>
                     <enumeration value="CUSTOM_LINK_LIMIT_EXCEEDED"/>
+                    <enumeration value="CUSTOM_METADATA_LIMIT_EXCEEDED"/>
                     <enumeration value="CUSTOM_TAB_LIMIT_EXCEEDED"/>
                     <enumeration value="DELETE_FAILED"/>
                     <enumeration value="DELETE_OPERATION_TOO_LARGE"/>
@@ -225,6 +225,9 @@ All Rights Reserved
                     <enumeration value="ENTITY_IS_DELETED"/>
                     <enumeration value="ENTITY_IS_LOCKED"/>
                     <enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_CONFLICT"/>
+                    <enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_ERROR_JOINING_HUB"/>
+                    <enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_USER_ALREADY_IN_HUB"/>
+                    <enumeration value="ENVIRONMENT_HUB_MEMBERSHIP_USER_NOT_ORG_ADMIN"/>
                     <enumeration value="ERROR_IN_MAILER"/>
                     <enumeration value="FAILED_ACTIVATION"/>
                     <enumeration value="FIELD_CUSTOM_VALIDATION_EXCEPTION"/>
@@ -262,9 +265,11 @@ All Rights Reserved
                     <enumeration value="INVALID_LINEITEM_CLONE_STATE"/>
                     <enumeration value="INVALID_MASTER_OR_TRANSLATED_SOLUTION"/>
                     <enumeration value="INVALID_MESSAGE_ID_REFERENCE"/>
+                    <enumeration value="INVALID_OAUTH_URL"/>
                     <enumeration value="INVALID_OPERATION"/>
                     <enumeration value="INVALID_OPERATOR"/>
                     <enumeration value="INVALID_OR_NULL_FOR_RESTRICTED_PICKLIST"/>
+                    <enumeration value="INVALID_OWNER"/>
                     <enumeration value="INVALID_PACKAGE_VERSION"/>
                     <enumeration value="INVALID_PARTNER_NETWORK_STATUS"/>
                     <enumeration value="INVALID_PERSON_ACCOUNT_OPERATION"/>
@@ -273,6 +278,7 @@ All Rights Reserved
                     <enumeration value="INVALID_SAVE_AS_ACTIVITY_FLAG"/>
                     <enumeration value="INVALID_SESSION_ID"/>
                     <enumeration value="INVALID_SETUP_OWNER"/>
+                    <enumeration value="INVALID_SIGNUP_COUNTRY"/>
                     <enumeration value="INVALID_STATUS"/>
                     <enumeration value="INVALID_TYPE"/>
                     <enumeration value="INVALID_TYPE_FOR_OPERATION"/>
@@ -307,11 +313,14 @@ All Rights Reserved
                     <enumeration value="NO_ATTACHMENT_PERMISSION"/>
                     <enumeration value="NO_INACTIVE_DIVISION_MEMBERS"/>
                     <enumeration value="NO_MASS_MAIL_PERMISSION"/>
+                    <enumeration value="NO_SUCH_USER_EXISTS"/>
                     <enumeration value="NUMBER_OUTSIDE_VALID_RANGE"/>
                     <enumeration value="NUM_HISTORY_FIELDS_BY_SOBJECT_EXCEEDED"/>
                     <enumeration value="OPTED_OUT_OF_MASS_MAIL"/>
                     <enumeration value="OP_WITH_INVALID_USER_TYPE_EXCEPTION"/>
                     <enumeration value="PACKAGE_LICENSE_REQUIRED"/>
+                    <enumeration value="PACKAGING_API_INSTALL_FAILED"/>
+                    <enumeration value="PACKAGING_API_UNINSTALL_FAILED"/>
                     <enumeration value="PORTAL_NO_ACCESS"/>
                     <enumeration value="PORTAL_USER_ALREADY_EXISTS_FOR_CONTACT"/>
                     <enumeration value="PRIVATE_CONTACT_ON_ASSET"/>
@@ -320,6 +329,7 @@ All Rights Reserved
                     <enumeration value="REQUEST_RUNNING_TOO_LONG"/>
                     <enumeration value="REQUIRED_FEATURE_MISSING"/>
                     <enumeration value="REQUIRED_FIELD_MISSING"/>
+                    <enumeration value="SELF_REFERENCE_FROM_FLOW"/>
                     <enumeration value="SELF_REFERENCE_FROM_TRIGGER"/>
                     <enumeration value="SHARE_NEEDED_FOR_CHILD_OWNER"/>
                     <enumeration value="SINGLE_EMAIL_LIMIT_EXCEEDED"/>
@@ -328,10 +338,12 @@ All Rights Reserved
                     <enumeration value="STRING_TOO_LONG"/>
                     <enumeration value="TABSET_LIMIT_EXCEEDED"/>
                     <enumeration value="TEMPLATE_NOT_ACTIVE"/>
+                    <enumeration value="TEMPLATE_NOT_FOUND"/>
                     <enumeration value="TERRITORY_REALIGN_IN_PROGRESS"/>
                     <enumeration value="TEXT_DATA_OUTSIDE_SUPPORTED_CHARSET"/>
                     <enumeration value="TOO_MANY_APEX_REQUESTS"/>
                     <enumeration value="TOO_MANY_ENUM_VALUE"/>
+                    <enumeration value="TOO_MANY_POSSIBLE_USERS_EXIST"/>
                     <enumeration value="TRANSFER_REQUIRES_READ"/>
                     <enumeration value="UNABLE_TO_LOCK_ROW"/>
                     <enumeration value="UNAVAILABLE_RECORDTYPE_EXCEPTION"/>
@@ -343,6 +355,7 @@ All Rights Reserved
                     <enumeration value="USER_OWNS_PORTAL_ACCOUNT_EXCEPTION"/>
                     <enumeration value="USER_WITH_APEX_SHARES_EXCEPTION"/>
                     <enumeration value="WEBLINK_SIZE_LIMIT_EXCEEDED"/>
+                    <enumeration value="WEBLINK_URL_INVALID"/>
                     <enumeration value="WRONG_CONTROLLER_TYPE"/>
                 </restriction>
             </simpleType>
@@ -381,6 +394,18 @@ All Rights Reserved
                     <element name="success"   type="xsd:boolean"/>
                 </sequence>
             </complexType>
+
+
+            <complexType name="PerformQuickActionResult">
+                <sequence>
+                    <element name="created"  type="xsd:boolean"/>
+                    <element name="errors"    type="tns:Error" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="feedItemIds" type="tns:ID" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+                    <element name="ids"       type="tns:ID" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+                    <element name="success"   type="xsd:boolean"/>
+                </sequence>
+            </complexType>
+
 
             <complexType name="MergeRequest">
                 <sequence>
@@ -426,6 +451,46 @@ All Rights Reserved
                     </extension>
                 </complexContent>
             </complexType>
+
+
+            <complexType name="PerformQuickActionRequest">
+                <sequence>
+                    <element name="parentId"      type="tns:ID" nillable="true"/>
+                    <element name="quickActionName"  type="xsd:string"/>
+                    <element name="records"       type="ens:sObject" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+                </sequence>
+            </complexType>
+
+
+            <complexType name="DescribeAvailableQuickActionResult">
+                <sequence>
+                    <element name="label"        type="xsd:string"/>
+                    <element name="name"         type="xsd:string"/>
+                    <element name="type"         type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+
+            <complexType name="DescribeQuickActionResult">
+                <sequence>
+                    <element name="height"        type="xsd:int" nillable="true"/>
+                    <element name="iconName"      type="xsd:string" nillable="true"/>
+                    <element name="iconUrl"       type="xsd:string" nillable="true"/>
+                    <element name="label"        type="xsd:string"/>
+                    <element name="layout"          type="tns:DescribeLayoutSection" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="miniIconUrl"      type="xsd:string" nillable="true"/>
+                    <element name="name"         type="xsd:string"/>
+                    <element name="sourceSobjectType"    type="xsd:string" nillable="true"/>
+                    <element name="targetParentField"    type="xsd:string" nillable="true"/>
+                    <element name="targetRecordTypeId"   type="tns:ID" nillable="true"/>
+                    <element name="targetSobjectType"    type="xsd:string" nillable="true"/>
+                    <element name="type"         type="xsd:string"/>
+                    <element name="visualforcePageName"    type="xsd:string" nillable="true"/>
+                    <element name="width"         type="xsd:int" nillable="true"/>
+                </sequence>
+            </complexType>
+
+
 
 
 
@@ -515,6 +580,8 @@ All Rights Reserved
                     <element name="recordTypeInfos"     type="tns:RecordTypeInfo" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="replicateable"       type="xsd:boolean"/>
                     <element name="retrieveable"        type="xsd:boolean"/>
+
+                    <element name="searchLayoutable" type="xsd:boolean" minOccurs="0"/>
                     <element name="searchable"          type="xsd:boolean" />
                     <element name="triggerable"         type="xsd:boolean" minOccurs="0"/>
                     <element name="undeletable"         type="xsd:boolean"/>
@@ -763,10 +830,31 @@ All Rights Reserved
                     <element name="buttonLayoutSection"  type="tns:DescribeLayoutButtonSection" minOccurs="0"/>
                     <element name="detailLayoutSections" type="tns:DescribeLayoutSection" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="editLayoutSections"   type="tns:DescribeLayoutSection" minOccurs="0" maxOccurs="unbounded"/>
-                    <element name="id"                   type="tns:ID"/>
+                    <element name="id"                   type="tns:ID" nillable="true"/>
 
+
+
+                    <element name="quickActionList"             type="tns:DescribeQuickActionListResult" minOccurs="0" />
 
                     <element name="relatedLists"                type="tns:RelatedList" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+
+            <complexType name="DescribeQuickActionListResult">
+                <sequence>
+                    <element name="quickActionListItems"       type="tns:DescribeQuickActionListItemResult" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeQuickActionListItemResult">
+                <sequence>
+                    <element name="iconUrl"       type="xsd:string" nillable="true"/>
+                    <element name="label"        type="xsd:string"/>
+                    <element name="miniIconUrl"      type="xsd:string" />
+                    <element name="quickActionName"        type="xsd:string" />
+                    <element name="targetSobjectType"    type="xsd:string" nillable="true"/>
+                    <element name="type"         type="xsd:string"/>
                 </sequence>
             </complexType>
 
@@ -827,6 +915,7 @@ All Rights Reserved
                     <enumeration value="Separator"/>
                     <enumeration value="SControl"/>
                     <enumeration value="EmptySpace"/>
+                    <enumeration value="VisualforcePage"/>
                 </restriction>
             </simpleType>
 
@@ -875,6 +964,7 @@ All Rights Reserved
                     <element name="field"           type="xsd:string" nillable="true"/>
                     <element name="format"          type="xsd:string" nillable="true"/>
                     <element name="label"           type="xsd:string"/>
+                    <element name="lookupId"        type="xsd:string"  nillable="true" minOccurs="0"/>
                     <element name="name"            type="xsd:string"/>
                 </sequence>
             </complexType>
@@ -962,6 +1052,26 @@ All Rights Reserved
             </complexType>
 
 
+
+        
+            <complexType name="DescribeSearchLayoutResult">
+                <sequence>
+                    <element name="label"           type="xsd:string" />
+                    <element name="limitRows"       type="xsd:int"/>
+                    <element name="searchColumns" type="tns:DescribeColumn" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+            
+                <complexType name="DescribeColumn">
+                    <sequence>
+                        <element name="field" type="xsd:string" />
+                        <element name="format" type="xsd:string" nillable="true"/>
+                        <element name="label" type="xsd:string" />
+                        <element name="name" type="xsd:string" />
+                    </sequence>
+                </complexType>
+            
+        
 
 
             <complexType name="DescribeSearchScopeOrderResult">
@@ -1120,6 +1230,23 @@ All Rights Reserved
             </element>
 
 
+
+        
+            <element name="describeSearchLayouts">
+                <complexType>
+                    <sequence>
+                        <element name="sObjectType" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="describeSearchLayoutsResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeSearchLayoutResult" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+        
 
 
             <element name="describeSearchScopeOrder">
@@ -1309,6 +1436,53 @@ All Rights Reserved
                 <complexType>
                     <sequence>
                         <element name="result" type="tns:ProcessResult" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+
+            <!-- Perform Action Message Types -->
+            <element name="performQuickActions">
+                <complexType>
+                    <sequence>
+                        <element name="quickActions" type="tns:PerformQuickActionRequest" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="performQuickActionsResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:PerformQuickActionResult" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="describeQuickActions">
+                <complexType>
+                    <sequence>
+                        <element name="quickActions"       type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="describeQuickActionsResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeQuickActionResult" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+            <element name="describeAvailableQuickActions">
+                <complexType>
+                    <sequence>
+                        <element name="parentType"       type="xsd:string" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="describeAvailableQuickActionsResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeAvailableQuickActionResult" minOccurs="0" maxOccurs="unbounded"/>
                     </sequence>
                 </complexType>
             </element>
@@ -1702,6 +1876,16 @@ All Rights Reserved
                     </sequence>
                 </complexType>
             </element>
+
+        <element name="OwnerChangeOptions">
+            <complexType>
+                <sequence>
+                    <element name="transferAttachments" type="xsd:boolean"/>
+                    <element name="transferOpenActivities" type="xsd:boolean"/>
+                </sequence>
+            </complexType>
+        </element>
+
         </schema>
 
         <schema elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:fault.partner.soap.sforce.com" xmlns:fns="urn:fault.partner.soap.sforce.com">
@@ -1712,6 +1896,7 @@ All Rights Reserved
                     <enumeration value="API_CURRENTLY_DISABLED"/>
                     <enumeration value="API_DISABLED_FOR_ORG"/>
                     <enumeration value="ARGUMENT_OBJECT_PARSE_ERROR"/>
+                    <enumeration value="BATCH_PROCESSING_HALTED"/>
                     <enumeration value="CANNOT_DELETE_OWNER"/>
                     <enumeration value="CANT_ADD_STANDADRD_PORTAL_USER_TO_TERRITORY"/>
                     <enumeration value="CANT_ADD_STANDARD_PORTAL_USER_TO_TERRITORY"/>
@@ -1748,6 +1933,7 @@ All Rights Reserved
                     <enumeration value="INACTIVE_PORTAL"/>
                     <enumeration value="INSUFFICIENT_ACCESS"/>
                     <enumeration value="INVALID_ASSIGNMENT_RULE"/>
+                    <enumeration value="INVALID_BATCH_REQUEST"/>
                     <enumeration value="INVALID_BATCH_SIZE"/>
                     <enumeration value="INVALID_CLIENT"/>
                     <enumeration value="INVALID_CROSS_REFERENCE_KEY"/>
@@ -1776,6 +1962,7 @@ All Rights Reserved
                     <enumeration value="INVALID_SSO_GATEWAY_URL"/>
                     <enumeration value="INVALID_TYPE"/>
                     <enumeration value="INVALID_TYPE_FOR_OPERATION"/>
+                    <enumeration value="JIGSAW_ACTION_DISABLED"/>
                     <enumeration value="JIGSAW_IMPORT_LIMIT_EXCEEDED"/>
                     <enumeration value="JIGSAW_REQUEST_NOT_SUPPORTED"/>
                     <enumeration value="JSON_PARSER_ERROR"/>
@@ -1790,12 +1977,15 @@ All Rights Reserved
                     <enumeration value="MALFORMED_QUERY"/>
                     <enumeration value="MALFORMED_SEARCH"/>
                     <enumeration value="MISSING_ARGUMENT"/>
+                    <enumeration value="MISSING_RECORD"/>
+                    <enumeration value="MUTUAL_AUTHENTICATION_FAILED"/>
                     <enumeration value="NOT_MODIFIED"/>
                     <enumeration value="NO_SOFTPHONE_LAYOUT"/>
                     <enumeration value="NUMBER_OUTSIDE_VALID_RANGE"/>
                     <enumeration value="OPERATION_TOO_LARGE"/>
                     <enumeration value="ORG_IN_MAINTENANCE"/>
                     <enumeration value="ORG_IS_DOT_ORG"/>
+                    <enumeration value="ORG_IS_SIGNING_UP"/>
                     <enumeration value="ORG_LOCKED"/>
                     <enumeration value="ORG_NOT_OWNED_BY_INSTANCE"/>
                     <enumeration value="PASSWORD_LOCKOUT"/>
@@ -1812,7 +2002,9 @@ All Rights Reserved
                     <enumeration value="SSO_SERVICE_DOWN"/>
                     <enumeration value="TOO_MANY_APEX_REQUESTS"/>
                     <enumeration value="TOO_MANY_RECIPIENTS"/>
+                    <enumeration value="TOO_MANY_RECORDS"/>
                     <enumeration value="TRIAL_EXPIRED"/>
+                    <enumeration value="UNABLE_TO_LOCK_ROW"/>
                     <enumeration value="UNKNOWN_ATTACHMENT_EXCEPTION"/>
                     <enumeration value="UNKNOWN_EXCEPTION"/>
                     <enumeration value="UNSUPPORTED_API_VERSION"/>
@@ -1829,6 +2021,7 @@ All Rights Reserved
                     <enumeration value="fns:API_CURRENTLY_DISABLED"/>
                     <enumeration value="fns:API_DISABLED_FOR_ORG"/>
                     <enumeration value="fns:ARGUMENT_OBJECT_PARSE_ERROR"/>
+                    <enumeration value="fns:BATCH_PROCESSING_HALTED"/>
                     <enumeration value="fns:CANNOT_DELETE_OWNER"/>
                     <enumeration value="fns:CANT_ADD_STANDADRD_PORTAL_USER_TO_TERRITORY"/>
                     <enumeration value="fns:CANT_ADD_STANDARD_PORTAL_USER_TO_TERRITORY"/>
@@ -1865,6 +2058,7 @@ All Rights Reserved
                     <enumeration value="fns:INACTIVE_PORTAL"/>
                     <enumeration value="fns:INSUFFICIENT_ACCESS"/>
                     <enumeration value="fns:INVALID_ASSIGNMENT_RULE"/>
+                    <enumeration value="fns:INVALID_BATCH_REQUEST"/>
                     <enumeration value="fns:INVALID_BATCH_SIZE"/>
                     <enumeration value="fns:INVALID_CLIENT"/>
                     <enumeration value="fns:INVALID_CROSS_REFERENCE_KEY"/>
@@ -1893,6 +2087,7 @@ All Rights Reserved
                     <enumeration value="fns:INVALID_SSO_GATEWAY_URL"/>
                     <enumeration value="fns:INVALID_TYPE"/>
                     <enumeration value="fns:INVALID_TYPE_FOR_OPERATION"/>
+                    <enumeration value="fns:JIGSAW_ACTION_DISABLED"/>
                     <enumeration value="fns:JIGSAW_IMPORT_LIMIT_EXCEEDED"/>
                     <enumeration value="fns:JIGSAW_REQUEST_NOT_SUPPORTED"/>
                     <enumeration value="fns:JSON_PARSER_ERROR"/>
@@ -1907,12 +2102,15 @@ All Rights Reserved
                     <enumeration value="fns:MALFORMED_QUERY"/>
                     <enumeration value="fns:MALFORMED_SEARCH"/>
                     <enumeration value="fns:MISSING_ARGUMENT"/>
+                    <enumeration value="fns:MISSING_RECORD"/>
+                    <enumeration value="fns:MUTUAL_AUTHENTICATION_FAILED"/>
                     <enumeration value="fns:NOT_MODIFIED"/>
                     <enumeration value="fns:NO_SOFTPHONE_LAYOUT"/>
                     <enumeration value="fns:NUMBER_OUTSIDE_VALID_RANGE"/>
                     <enumeration value="fns:OPERATION_TOO_LARGE"/>
                     <enumeration value="fns:ORG_IN_MAINTENANCE"/>
                     <enumeration value="fns:ORG_IS_DOT_ORG"/>
+                    <enumeration value="fns:ORG_IS_SIGNING_UP"/>
                     <enumeration value="fns:ORG_LOCKED"/>
                     <enumeration value="fns:ORG_NOT_OWNED_BY_INSTANCE"/>
                     <enumeration value="fns:PASSWORD_LOCKOUT"/>
@@ -1929,7 +2127,9 @@ All Rights Reserved
                     <enumeration value="fns:SSO_SERVICE_DOWN"/>
                     <enumeration value="fns:TOO_MANY_APEX_REQUESTS"/>
                     <enumeration value="fns:TOO_MANY_RECIPIENTS"/>
+                    <enumeration value="fns:TOO_MANY_RECORDS"/>
                     <enumeration value="fns:TRIAL_EXPIRED"/>
+                    <enumeration value="fns:UNABLE_TO_LOCK_ROW"/>
                     <enumeration value="fns:UNKNOWN_ATTACHMENT_EXCEPTION"/>
                     <enumeration value="fns:UNKNOWN_EXCEPTION"/>
                     <enumeration value="fns:UNSUPPORTED_API_VERSION"/>
@@ -2058,6 +2258,9 @@ All Rights Reserved
         <part element="tns:PackageVersionHeader"         name="PackageVersionHeader"/>
         <part element="tns:DebuggingInfo"                name="DebuggingInfo"/>
         <part element="tns:LocaleOptions"                name="LocaleOptions"/>
+
+        <part element="tns:OwnerChangeOptions"           name="OwnerChangeOptions"/>
+
     </message>
 
     <!-- Fault Messages -->
@@ -2150,6 +2353,13 @@ All Rights Reserved
     </message>
     <message name="describeSoftphoneLayoutResponse">
         <part element="tns:describeSoftphoneLayoutResponse" name="parameters"/>
+    </message>
+
+    <message name="describeSearchLayoutsRequest">
+        <part element="tns:describeSearchLayouts" name="parameters"/>
+    </message>
+    <message name="describeSearchLayoutsResponse">
+        <part element="tns:describeSearchLayoutsResponse" name="parameters"/>
     </message>
 
     <message name="describeSearchScopeOrderRequest">
@@ -2334,6 +2544,27 @@ All Rights Reserved
         <part element="tns:sendEmailResponse" name="parameters"/>
     </message>
 
+    <message name="performQuickActionsRequest">
+        <part element="tns:performQuickActions" name="parameters"/>
+    </message>
+    <message name="performQuickActionsResponse">
+        <part element="tns:performQuickActionsResponse" name="parameters"/>
+    </message>
+
+    <message name="describeQuickActionsRequest">
+        <part element="tns:describeQuickActions" name="parameters"/>
+    </message>
+    <message name="describeQuickActionsResponse">
+        <part element="tns:describeQuickActionsResponse" name="parameters"/>
+    </message>
+
+    <message name="describeAvailableQuickActionsRequest">
+        <part element="tns:describeAvailableQuickActions" name="parameters"/>
+    </message>
+    <message name="describeAvailableQuickActionsResponse">
+        <part element="tns:describeAvailableQuickActionsResponse" name="parameters"/>
+    </message>
+
 
 
     <!-- Soap PortType -->
@@ -2387,7 +2618,7 @@ All Rights Reserved
         </operation>
 
         <operation name="describeLayout">
-            <documentation>Describe the layout of an sObject</documentation>
+            <documentation>Describe the layout of the given sObject or the given actionable global page.</documentation>
             <input  message="tns:describeLayoutRequest"/>
             <output message="tns:describeLayoutResponse"/>
             <fault  message="tns:InvalidSObjectFault" name="InvalidSObjectFault"/>
@@ -2399,6 +2630,14 @@ All Rights Reserved
             <documentation>Describe the layout of the SoftPhone</documentation>
             <input  message="tns:describeSoftphoneLayoutRequest"/>
             <output message="tns:describeSoftphoneLayoutResponse"/>
+            <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
+        </operation>
+
+        <operation name="describeSearchLayouts">
+            <documentation>Describe the search view of an sObject</documentation>
+            <input  message="tns:describeSearchLayoutsRequest"/>
+            <output message="tns:describeSearchLayoutsResponse"/>
+            <fault  message="tns:InvalidSObjectFault" name="InvalidSObjectFault"/>
             <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
         </operation>
 
@@ -2621,6 +2860,24 @@ All Rights Reserved
             <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
         </operation>
 
+        <operation name="performQuickActions">
+            <documentation>Perform a series of predefined actions such as quick create or log a task</documentation>
+            <input  message="tns:performQuickActionsRequest"/>
+            <output message="tns:performQuickActionsResponse"/>
+        </operation>
+
+        <operation name="describeQuickActions">
+            <documentation>Describe the details of a series of quick actions</documentation>
+            <input  message="tns:describeQuickActionsRequest"/>
+            <output message="tns:describeQuickActionsResponse"/>
+        </operation>
+
+        <operation name="describeAvailableQuickActions">
+            <documentation>Describe the details of a series of quick actions available for the given parentType</documentation>
+            <input  message="tns:describeAvailableQuickActionsRequest"/>
+            <output message="tns:describeAvailableQuickActionsResponse"/>
+        </operation>
+
     </portType>
 
     <!-- Soap Binding -->
@@ -2773,6 +3030,24 @@ All Rights Reserved
                 <soap:fault name="UnexpectedErrorFault" use="literal"/>
             </fault>
         </operation>
+        <operation name="describeSearchLayouts">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="InvalidSObjectFault">
+                <soap:fault name="InvalidSObjectFault" use="literal"/>
+            </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
         <operation name="describeSearchScopeOrder">
             <soap:operation soapAction=""/>
             <input>
@@ -2847,6 +3122,7 @@ All Rights Reserved
                 <soap:header use="literal" message="tns:Header" part="DebuggingHeader"/>
                 <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
                 <soap:header use="literal" message="tns:Header" part="EmailHeader"/>
+                <soap:header use="literal" message="tns:Header" part="OwnerChangeOptions"/>
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
@@ -2880,6 +3156,7 @@ All Rights Reserved
                 <soap:header use="literal" message="tns:Header" part="DebuggingHeader"/>
                 <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
                 <soap:header use="literal" message="tns:Header" part="EmailHeader"/>
+                <soap:header use="literal" message="tns:Header" part="OwnerChangeOptions"/>
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
@@ -3327,6 +3604,53 @@ All Rights Reserved
                 <soap:fault name="UnexpectedErrorFault" use="literal"/>
             </fault>
         </operation>
+        <operation name="performQuickActions">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="AssignmentRuleHeader"/>
+                <soap:header use="literal" message="tns:Header" part="MruHeader"/>
+                <soap:header use="literal" message="tns:Header" part="AllowFieldTruncationHeader"/>
+                <soap:header use="literal" message="tns:Header" part="DisableFeedTrackingHeader"/>
+                <soap:header use="literal" message="tns:Header" part="StreamingEnabledHeader"/>
+                <soap:header use="literal" message="tns:Header" part="AllOrNoneHeader"/>
+                <soap:header use="literal" message="tns:Header" part="DebuggingHeader"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="EmailHeader"/>
+                <soap:header use="literal" message="tns:Header" part="OwnerChangeOptions"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="describeQuickActions">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="LocaleOptions"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="describeAvailableQuickActions">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="LocaleOptions"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
 
     </binding>
 
@@ -3334,7 +3658,7 @@ All Rights Reserved
     <service name="SforceService">
         <documentation>Sforce SOAP API</documentation>
         <port binding="tns:SoapBinding" name="Soap">
-            <soap:address location="https://login.salesforce.com/services/Soap/u/26.0"/>
+            <soap:address location="https://login.salesforce.com/services/Soap/u/28.0"/>
         </port>
     </service>
 </definitions>
