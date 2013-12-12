@@ -30,6 +30,9 @@ public final class Id {
      */
     @Nonnull
     private final String idStr;
+    
+    @Nonnull
+    private final String fullIdStr;
 
     /**
      * @param id the sf record id to wrap. Must not be null. It can be 15 or 18 characters long, but it will be
@@ -44,12 +47,20 @@ public final class Id {
             throw new IllegalArgumentException(
                     "Salesforce Ids must be either 15 or 18 characters, was <" + id + "> (" + id.length() + ")");
         }
-
+        
+        this.fullIdStr = id;
         this.idStr = id.substring(0, 15);
     }
 
     public String getKeyPrefix() {
         return idStr.substring(0, 3);
+    }
+    
+    /**
+     * @return The "full" non-truncated sf id
+     */
+    public String getFullId(){
+    	return fullIdStr;
     }
 
     /**

@@ -50,6 +50,13 @@ public final class IdTest {
     public void testGetKeyPrefix() {
         assertEquals("003", new Id("0035000000km1ov").getKeyPrefix());
     }
+    
+    @Test
+    public void testGetFullId(){
+    	Id id = new Id("012345678901234567");
+    	assertEquals(id.getFullId(), "012345678901234567");
+    	assertEquals(id.getFullId().length(), 18);
+    }
 
     @SuppressWarnings("SimplifiableJUnitAssertion")
     @Test
