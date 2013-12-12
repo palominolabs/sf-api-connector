@@ -30,9 +30,6 @@ public final class Id {
      */
     @Nonnull
     private final String idStr;
-    
-    @Nonnull
-    private final String fullIdStr;
 
     /**
      * @param id the sf record id to wrap. Must not be null. It can be 15 or 18 characters long, but it will be
@@ -48,8 +45,7 @@ public final class Id {
                     "Salesforce Ids must be either 15 or 18 characters, was <" + id + "> (" + id.length() + ")");
         }
         
-        this.fullIdStr = id;
-        this.idStr = id.substring(0, 15);
+        this.idStr = id;
     }
 
     public String getKeyPrefix() {
@@ -57,10 +53,18 @@ public final class Id {
     }
     
     /**
-     * @return The "full" non-truncated sf id
+     * @return Return the case-insensitive, 18 character id, if this object was constructed with an 18 character id.
+     *          If the object was constructed with a 15 character ID, then this returns the same as getIdStr()
      */
     public String getFullId(){
-    	return fullIdStr;
+    	return this.idStr;
+    }
+
+    /**
+     * @return 15-character, case-sensitive id string
+     */
+    public String getIdStr() {
+        return this.idStr.substring(0, 15);
     }
 
     /**
@@ -69,19 +73,19 @@ public final class Id {
     @Override
     @Nonnull
     public String toString() {
-        return this.idStr;
+        return this.getIdStr();
     }
 
     @Override
     public boolean equals(Object other) {
         if (other instanceof Id) {
-            return this.idStr.equals(((Id) other).idStr);
+            return this.getIdStr().equals(((Id) other).getIdStr());
         }
         return false;
     }
 
     @Override
     public int hashCode() {
-        return this.idStr.hashCode();
+        return this.getIdStr().hashCode();
     }
 }

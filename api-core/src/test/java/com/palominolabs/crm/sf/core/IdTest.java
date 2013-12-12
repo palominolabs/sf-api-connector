@@ -92,5 +92,13 @@ public final class IdTest {
         assertEquals(longId.substring(0, 15), id.toString());
         assertEquals(15, id.toString().length());
     }
+
+    @Test
+    public void testLongIdPreserved() {
+        String longId = "012345678901234567";
+        Id id = new Id(longId);
+        assertEquals(longId, id.getFullId());
+        assertEquals(18, id.getFullId().length());
+    }
 }
 
