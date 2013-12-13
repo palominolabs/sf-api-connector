@@ -183,6 +183,17 @@
           <c class="list"/>
           <list reference="../c"/>
         </childXmlNames>
+        <directoryName>quickActions</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>quickAction</suffix>
+        <xmlName>QuickAction</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
         <directoryName>tabs</directoryName>
         <inFolder>false</inFolder>
         <metaFile>false</metaFile>
@@ -232,17 +243,6 @@
         <metaFile>true</metaFile>
         <suffix>email</suffix>
         <xmlName>EmailTemplate</xmlName>
-      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
-      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
-        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
-          <c class="list"/>
-          <list reference="../c"/>
-        </childXmlNames>
-        <directoryName>quickActions</directoryName>
-        <inFolder>false</inFolder>
-        <metaFile>false</metaFile>
-        <suffix>quickAction</suffix>
-        <xmlName>QuickAction</xmlName>
       </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
       <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
@@ -590,6 +590,17 @@
         <metaFile>false</metaFile>
         <suffix>callCenter</suffix>
         <xmlName>CallCenter</xmlName>
+      </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+      <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
+        <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">
+          <c class="list"/>
+          <list reference="../c"/>
+        </childXmlNames>
+        <directoryName>samlssoconfigs</directoryName>
+        <inFolder>false</inFolder>
+        <metaFile>false</metaFile>
+        <suffix>samlssoconfig</suffix>
+        <xmlName>SamlSsoConfig</xmlName>
       </com.palominolabs.crm.sf.soap.DescribeMetadataObject>
       <com.palominolabs.crm.sf.soap.DescribeMetadataObject>
         <childXmlNames class="java.util.Collections$UnmodifiableRandomAccessList" resolves-to="java.util.Collections$UnmodifiableList">

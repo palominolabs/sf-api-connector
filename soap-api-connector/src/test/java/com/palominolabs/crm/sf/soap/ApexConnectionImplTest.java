@@ -49,7 +49,7 @@ public class ApexConnectionImplTest {
 
         assertFalse(result.isSuccess());
         assertFalse(result.isCompiled());
-        assertEquals("expecting a right parentheses, found 'EOF'", result.getCompileProblem());
+        assertEquals("expecting a right parentheses, found '<EOF>'", result.getCompileProblem());
         assertEquals("", result.getDebugLog());
     }
 }

@@ -469,7 +469,11 @@ public class PartnerConnectionImplTest {
         } catch (ApiException e) {
             assertEquals("Malformed query", e.getMessage());
             assertEquals(ExceptionCode.MALFORMED___QUERY, e.getApiFaultCode());
-            assertEquals("unexpected token: '<EOF>'", e.getApiFaultMessage());
+            assertEquals("\n" +
+                    "SELECT Id FROM Contact WHERE\n" +
+                    "                           ^\n" +
+                    "ERROR at Row:1:Column:28\n" +
+                    "unexpected token: '<EOF>'", e.getApiFaultMessage());
         }
     }
 
