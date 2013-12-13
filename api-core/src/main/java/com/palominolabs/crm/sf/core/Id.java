@@ -19,6 +19,8 @@ package com.palominolabs.crm.sf.core;
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.Immutable;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 /**
  * Represents an SF record Id. Remember to use .equals(Id otherID) to check equality.
  */
@@ -36,18 +38,15 @@ public final class Id {
      *           truncated to 15 characters either way.
      */
     public Id(@Nonnull String id) {
-        if (id == null) {
-            throw new NullPointerException("An Id must have a non-null string");
-        }
+        this.idStr = checkNotNull(id, "An Id must have a non-null string");
 
         if (id.length() != 15 && id.length() != 18) {
             throw new IllegalArgumentException(
                     "Salesforce Ids must be either 15 or 18 characters, was <" + id + "> (" + id.length() + ")");
         }
-        
-        this.idStr = id;
     }
 
+    @Nonnull
     public String getKeyPrefix() {
         return idStr.substring(0, 3);
     }
@@ -56,6 +55,7 @@ public final class Id {
      * @return Return the case-insensitive, 18 character id, if this object was constructed with an 18 character id.
      *          If the object was constructed with a 15 character ID, then this returns the same as getIdStr()
      */
+    @Nonnull
     public String getFullId(){
     	return this.idStr;
     }
@@ -63,6 +63,7 @@ public final class Id {
     /**
      * @return 15-character, case-sensitive id string
      */
+    @Nonnull
     public String getIdStr() {
         return this.idStr.substring(0, 15);
     }
