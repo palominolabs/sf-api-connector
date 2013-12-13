@@ -309,10 +309,10 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
+        <picklistValues class="com.google.common.collect.RegularImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements/>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -349,8 +349,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -387,7 +387,7 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>Account</string>
@@ -430,8 +430,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -535,7 +535,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -572,7 +572,7 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>Account</string>
@@ -615,8 +615,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -653,8 +653,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -691,8 +691,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -729,8 +729,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -767,8 +767,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -805,8 +805,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -843,8 +843,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -881,8 +881,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -919,8 +919,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -957,8 +957,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -995,8 +995,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1033,8 +1033,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1071,8 +1071,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1109,8 +1109,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1147,8 +1147,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1185,8 +1185,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1223,8 +1223,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1261,8 +1261,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1299,8 +1299,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1629,7 +1629,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1666,8 +1666,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1704,8 +1704,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>8</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1782,7 +1782,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1819,8 +1819,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1857,8 +1857,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1926,7 +1926,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -1963,8 +1963,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2001,7 +2001,7 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>User</string>
@@ -2044,8 +2044,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2082,7 +2082,7 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>User</string>
@@ -2125,8 +2125,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2163,7 +2163,7 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <referenceTo class="com.google.common.collect.SingletonImmutableList" resolves-to="com.google.common.collect.ImmutableList$SerializedForm">
           <elements>
             <string>User</string>
@@ -2206,8 +2206,8 @@
         <defaultedOnCreate>true</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2244,8 +2244,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2282,8 +2282,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2320,8 +2320,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2358,8 +2358,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2396,8 +2396,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <relationshipName>JigsawCompany</relationshipName>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
@@ -2484,7 +2484,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2521,8 +2521,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>false</custom>
@@ -2590,7 +2590,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2667,7 +2667,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2726,7 +2726,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2763,8 +2763,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>false</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2832,7 +2832,7 @@
             </com.palominolabs.crm.sf.rest.PicklistEntry>
           </elements>
         </picklistValues>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2869,8 +2869,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2907,8 +2907,8 @@
         <defaultedOnCreate>false</defaultedOnCreate>
         <digits>0</digits>
         <groupable>true</groupable>
-        <picklistValues class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
-        <referenceTo class="com.google.common.collect.EmptyImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <picklistValues class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
+        <referenceTo class="com.google.common.collect.RegularImmutableList" reference="../../com.palominolabs.crm.sf.rest.FieldDescription/picklistValues"/>
         <restrictedPicklist>false</restrictedPicklist>
         <namePointing>false</namePointing>
         <custom>true</custom>
@@ -2936,7 +2936,7 @@
         <name>Master</name>
         <available>true</available>
         <recordTypeId>
-          <idStr>012000000000000</idStr>
+          <idStr>012000000000000AAA</idStr>
         </recordTypeId>
         <defaultRecordTypeMapping>true</defaultRecordTypeMapping>
       </com.palominolabs.crm.sf.rest.RecordTypeInfo>

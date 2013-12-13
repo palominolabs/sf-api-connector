@@ -256,7 +256,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/ApexClass/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/ApexClass/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -283,7 +283,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/ApexComponent/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/ApexComponent/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -337,7 +337,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/ApexPage/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/ApexPage/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -418,7 +418,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/ApexTrigger/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/ApexTrigger/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -1972,7 +1972,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/Dashboard/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/Dashboard/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>false</createable>
         <customSetting>false</customSetting>
         <deletable>false</deletable>
@@ -2618,7 +2618,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/Group/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/Group/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -3530,7 +3530,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/PermissionSet/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/PermissionSet/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -3826,7 +3826,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/Profile/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/Profile/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>false</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
@@ -4380,24 +4380,24 @@
         <labelPlural>Topics</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
-        <updateable>false</updateable>
+        <updateable>true</updateable>
         <sObjectUrls>
           <sobjectUrlPath>/services/data/v28.0/sobjects/Topic</sobjectUrlPath>
           <describeUrlPath>/services/data/v28.0/sobjects/Topic/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/Topic/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>true</searchable>
-        <createable>false</createable>
+        <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
-        <feedEnabled>false</feedEnabled>
+        <feedEnabled>true</feedEnabled>
         <mergeable>false</mergeable>
         <queryable>true</queryable>
         <replicateable>true</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
+        <triggerable>true</triggerable>
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>TopicAssignment</name>
@@ -4414,7 +4414,7 @@
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/TopicAssignment/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
-        <createable>false</createable>
+        <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>
         <deprecatedAndHidden>false</deprecatedAndHidden>
@@ -4424,7 +4424,7 @@
         <replicateable>true</replicateable>
         <retrieveable>true</retrieveable>
         <undeletable>false</undeletable>
-        <triggerable>false</triggerable>
+        <triggerable>true</triggerable>
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>User</name>
@@ -4574,7 +4574,7 @@
           <describeUrlPath>/services/data/v28.0/sobjects/UserRole/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/UserRole/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
-        <searchable>false</searchable>
+        <searchable>true</searchable>
         <createable>true</createable>
         <customSetting>false</customSetting>
         <deletable>true</deletable>

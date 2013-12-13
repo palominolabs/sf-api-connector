@@ -70,7 +70,7 @@ public class HttpApiClientTest {
         } catch (ApiException e) {
             assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/", e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
-            assertEquals(
+            assertJsonStringEquals(
                     "[{\"fields\":[\"LastName\"],\"message\":\"Required fields are missing: [LastName]\"," +
                             "\"errorCode\":\"REQUIRED_FIELD_MISSING\"}]",
                     e.getHttpResponseBody());
@@ -110,7 +110,7 @@ public class HttpApiClientTest {
             assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Lead/00Q7zzz000Kj4Jn",
                     e.getUrl());
             assertEquals("Not Found", e.getHttpReason());
-            assertEquals(
+            assertJsonStringEquals(
                     "[{\"message\":\"Provided external ID field does not exist or is not accessible:" +
                             " 00Q7zzz000Kj4Jn\",\"errorCode\":\"NOT_FOUND\"}]",
                     e.getHttpResponseBody());
@@ -181,7 +181,7 @@ public class HttpApiClientTest {
                     "https://na3.salesforce.com:443/services/data/v21.0/query/wrong",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
-            assertEquals(
+            assertJsonStringEquals(
                     "[{\"message\":\"invalid query locator\",\"errorCode\":\"INVALID_QUERY_LOCATOR\"}]",
                     e.getHttpResponseBody());
             assertEquals(400, e.getHttpResponseCode());

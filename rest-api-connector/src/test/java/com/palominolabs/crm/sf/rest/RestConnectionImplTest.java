@@ -34,6 +34,7 @@ import static com.palominolabs.crm.sf.rest.HttpApiClient.API_VERSION;
 import static com.palominolabs.crm.sf.rest.HttpApiClientTest.PASSWORD;
 import static com.palominolabs.crm.sf.rest.HttpApiClientTest.USER;
 import static com.palominolabs.crm.sf.rest.TestConnections.getRestConnection;
+import static com.palominolabs.testutil.JsonAssert.assertJsonStringEquals;
 import static com.palominolabs.testutil.ResourceUtil.readResource;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -70,7 +71,7 @@ public class RestConnectionImplTest {
             assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
-            assertEquals(
+            assertJsonStringEquals(
                     "[{\"fields\":[\"LastName\"],\"message\":\"Required fields are missing: " +
                             "[LastName]\",\"errorCode\":\"REQUIRED_FIELD_MISSING\"}]",
                     e.getHttpResponseBody());
@@ -215,6 +216,7 @@ public class RestConnectionImplTest {
     public void testRetrieve() throws IOException {
         SObject contact = conn.retrieve("Contact", new Id("0035000000km1oh"), Arrays.asList("FirstName", "LastName"));
 
+        assertNotNull(contact.getId());
         assertEquals("0035000000km1oh", contact.getId().toString());
         assertEquals("Rose", contact.getField("FirstName"));
         assertEquals("Gonzalez", contact.getField("LastName"));
@@ -234,7 +236,7 @@ public class RestConnectionImplTest {
                     "https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Contact/0035000000kmzzz?fields=FirstName%2CLastName",
                     e.getUrl());
             assertEquals("Not Found", e.getHttpReason());
-            assertEquals(
+            assertJsonStringEquals(
                     "[{\"message\":\"The requested resource does not exist\",\"errorCode\":\"NOT_FOUND\"}]",
                     e.getHttpResponseBody());
             assertEquals(404, e.getHttpResponseCode());
@@ -265,6 +267,7 @@ public class RestConnectionImplTest {
         SObject sObj = initialQueryResults.get(0);
 
         Id id = sObj.getId();
+        assertNotNull(id);
 
         // get the LastName of the first id, add xyz to it, then remove it
 
@@ -317,7 +320,7 @@ public class RestConnectionImplTest {
             assertEquals("https://na3.salesforce.com:443/services/data/v" + API_VERSION + "/sobjects/Opportunity/0065000000FgGSn",
                     e.getUrl());
             assertEquals("Bad Request", e.getHttpReason());
-            assertEquals(
+            assertJsonStringEquals(
                     "[{\"fields\":[],\"message\":\"Name can't start with Invalid-\"," +
                             "\"errorCode\":\"FIELD_CUSTOM_VALIDATION_EXCEPTION\"}]",
                     e.getHttpResponseBody());
@@ -341,6 +344,7 @@ public class RestConnectionImplTest {
         String origValue = "350000.0";
 
         assertEquals(origValue, sObj.getField(fname));
+        assertNotNull(sObj.getId());
 
         try {
             // null it
