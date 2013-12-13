@@ -41,9 +41,9 @@
     <dep.junit.version>4.11</dep.junit.version>
 
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
-    <dep.jackson.version>2.2.1</dep.jackson.version>
+    <dep.jackson.version>2.3.0</dep.jackson.version>
 
-    <dep.metrics.version>3.0.0-BETA3</dep.metrics.version>
+    <dep.metrics.version>3.0.1</dep.metrics.version>
 
     <plugin.jaxws-maven-plugin.version>1.12</plugin.jaxws-maven-plugin.version>
     <plugin.cobertura-maven-plugin.version>2.5.2</plugin.cobertura-maven-plugin.version>
@@ -170,14 +170,14 @@
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
         <artifactId>xstream</artifactId>
-        <version>1.4.3</version>
+        <version>1.4.6</version>
         <scope>test</scope>
       </dependency>
 
       <dependency>
         <groupId>joda-time</groupId>
         <artifactId>joda-time</artifactId>
-        <version>2.2</version>
+        <version>2.3</version>
       </dependency>
 
       <dependency>
@@ -201,7 +201,7 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
-        <version>14.0.1</version>
+        <version>15.0</version>
       </dependency>
 
       <dependency>
