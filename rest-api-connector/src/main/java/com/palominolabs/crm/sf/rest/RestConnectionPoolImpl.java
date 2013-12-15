@@ -19,9 +19,8 @@ package com.palominolabs.crm.sf.rest;
 import com.codahale.metrics.MetricRegistry;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.HttpClient;
-import org.apache.http.impl.client.DecompressingHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.impl.conn.PoolingClientConnectionManager;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.GuardedBy;
@@ -43,9 +42,9 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
 
     @GuardedBy("this")
     private final Map<T, ConnectionConfig> configMap = new HashMap<T, ConnectionConfig>();
-    private final PoolingClientConnectionManager clientConnManager;
 
     private final MetricRegistry metricRegistry;
+    private final PoolingHttpClientConnectionManager connectionManager;
 
     /**
      * Create a new pool with the default idle connection timeout.
@@ -64,12 +63,12 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
      */
     public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout) {
         this.metricRegistry = metricRegistry;
-        // defaults are too low for these out of the box
-        clientConnManager = new PoolingClientConnectionManager();
-        clientConnManager.setDefaultMaxPerRoute(20);
-        clientConnManager.setMaxTotal(60);
 
-        this.httpClient = new DecompressingHttpClient(new DefaultHttpClient(clientConnManager, null));
+        connectionManager = new PoolingHttpClientConnectionManager();
+        connectionManager.setDefaultMaxPerRoute(20);
+        connectionManager.setMaxTotal(60);
+
+        this.httpClient = HttpClientBuilder.create().setConnectionManager(connectionManager).build();
         this.idleConnTimeout = idleConnTimeout;
     }
 
@@ -121,8 +120,8 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
 
         @Override
         public void run() {
-            clientConnManager.closeExpiredConnections();
-            clientConnManager.closeIdleConnections(idleConnTimeout, TimeUnit.SECONDS);
+            connectionManager.closeExpiredConnections();
+            connectionManager.closeIdleConnections(idleConnTimeout, TimeUnit.SECONDS);
         }
     }
 }

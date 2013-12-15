@@ -22,8 +22,7 @@ import com.palominolabs.crm.sf.soap.ApiException;
 import com.palominolabs.crm.sf.soap.BindingConfig;
 import com.palominolabs.crm.sf.soap.ConnectionPool;
 import com.palominolabs.crm.sf.soap.ConnectionPoolImpl;
-import org.apache.http.impl.client.DecompressingHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClients;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -42,7 +41,7 @@ final class TestConnections {
             BindingConfig bindingConfig = getBindingConfig(user, password);
             String host = new URL(bindingConfig.getPartnerServerUrl()).getHost();
             return new HttpApiClient(host, bindingConfig.getSessionId(), MAPPER,
-                    new DecompressingHttpClient(new DefaultHttpClient()));
+                    HttpClients.createDefault());
         } catch (ApiException e) {
             throw Throwables.propagate(e);
         } catch (MalformedURLException e) {
