@@ -17,6 +17,7 @@
 package com.palominolabs.crm.sf.rest;
 
 import com.codahale.metrics.MetricRegistry;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -36,7 +37,7 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
 
     private final int idleConnTimeout;
 
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper;
 
     private final HttpClient httpClient;
 
@@ -67,6 +68,9 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
         connectionManager = new PoolingHttpClientConnectionManager();
         connectionManager.setDefaultMaxPerRoute(20);
         connectionManager.setMaxTotal(60);
+
+        objectMapper = new ObjectMapper();
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
         this.httpClient = HttpClientBuilder.create().setConnectionManager(connectionManager).build();
         this.idleConnTimeout = idleConnTimeout;
