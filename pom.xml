@@ -8,7 +8,7 @@
   <groupId>com.palominolabs.salesforce</groupId>
   <artifactId>api-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2</version>
 
   <name>${project.artifactId}</name>
   <url>https://github.com/palominolabs/sf-api-connector</url>
@@ -24,7 +24,7 @@
     <connection>scm:git:git@github.com:palominolabs/sf-api-connector.git</connection>
     <developerConnection>scm:git:git@github.com:palominolabs/sf-api-connector.git</developerConnection>
     <url>https://github.com/palominolabs/sf-api-connector</url>
-    <tag>HEAD</tag>
+    <tag>api-parent-1.0.2</tag>
   </scm>
   <developers>
     <developer>
