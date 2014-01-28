@@ -20,6 +20,7 @@ import com.codahale.metrics.MetricRegistry;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 
@@ -53,7 +54,7 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
      * @param metricRegistry metric registry
      */
     public RestConnectionPoolImpl(MetricRegistry metricRegistry) {
-        this(metricRegistry, DEFAULT_IDLE_CONN_TIMEOUT);
+        this(metricRegistry, DEFAULT_IDLE_CONN_TIMEOUT, null);
     }
 
     /**
@@ -63,17 +64,33 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
      * @param idleConnTimeout how long an unused connection must sit idle before it is eligible for removal from the
      */
     public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout) {
+        this(metricRegistry, idleConnTimeout, null);
+    }
+
+    /**
+     * Create a new pool with a specific idle connection timeout.
+     *
+     * @param metricRegistry metric registry
+     * @param idleConnTimeout how long an unused connection must sit idle before it is eligible for removal from the
+     * @param httpClientBuilder an HttpClientBuilder to use; RestConnectionPoolImpl will call setConnectionManager()
+     *                          before building an HttpClient, so don't bother to set your own
+     */
+    public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout, HttpClientBuilder httpClientBuilder) {
         this.metricRegistry = metricRegistry;
+        this.idleConnTimeout = idleConnTimeout;
+
+        if (httpClientBuilder == null) {
+            httpClientBuilder = HttpClientBuilder.create();
+        }
 
         connectionManager = new PoolingHttpClientConnectionManager();
         connectionManager.setDefaultMaxPerRoute(20);
         connectionManager.setMaxTotal(60);
 
+        this.httpClient = httpClientBuilder.setConnectionManager(connectionManager).build();
+
         objectMapper = new ObjectMapper();
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-
-        this.httpClient = HttpClientBuilder.create().setConnectionManager(connectionManager).build();
-        this.idleConnTimeout = idleConnTimeout;
     }
 
     @Nonnull
@@ -121,7 +138,6 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
     }
 
     private class HttpExpiredConnManager implements Runnable {
-
         @Override
         public void run() {
             connectionManager.closeExpiredConnections();
