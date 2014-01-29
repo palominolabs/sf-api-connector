@@ -20,11 +20,11 @@ import com.codahale.metrics.MetricRegistry;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.http.client.HttpClient;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import javax.annotation.concurrent.GuardedBy;
 import javax.annotation.concurrent.ThreadSafe;
 import java.util.HashMap;
@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
 @ThreadSafe
 public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
 
-    private static final int DEFAULT_IDLE_CONN_TIMEOUT = 30;
+    public static final int DEFAULT_IDLE_CONN_TIMEOUT = 30;
 
     private final int idleConnTimeout;
 
@@ -49,45 +49,71 @@ public class RestConnectionPoolImpl<T> implements RestConnectionPool<T> {
     private final PoolingHttpClientConnectionManager connectionManager;
 
     /**
-     * Create a new pool with the default idle connection timeout.
+     * Create a new pool with default configuration.
      *
      * @param metricRegistry metric registry
+     *
+     * @see #RestConnectionPoolImpl(MetricRegistry, int, HttpClientBuilder, PoolingHttpClientConnectionManager)
      */
     public RestConnectionPoolImpl(MetricRegistry metricRegistry) {
-        this(metricRegistry, DEFAULT_IDLE_CONN_TIMEOUT, null);
+        this(metricRegistry, DEFAULT_IDLE_CONN_TIMEOUT);
     }
 
     /**
-     * Create a new pool with a specific idle connection timeout.
+     * Create a new pool with default http client configuration.
      *
-     * @param metricRegistry metric registry
+     * @param metricRegistry  metric registry
      * @param idleConnTimeout how long an unused connection must sit idle before it is eligible for removal from the
+     *                        connection pool
+     *
+     * @see #RestConnectionPoolImpl(MetricRegistry, int, HttpClientBuilder, PoolingHttpClientConnectionManager)
      */
     public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout) {
         this(metricRegistry, idleConnTimeout, null);
     }
 
     /**
-     * Create a new pool with a specific idle connection timeout.
+     * Create a new pool with a default connection manager.
      *
-     * @param metricRegistry metric registry
-     * @param idleConnTimeout how long an unused connection must sit idle before it is eligible for removal from the
-     * @param httpClientBuilder an HttpClientBuilder to use; RestConnectionPoolImpl will call setConnectionManager()
-     *                          before building an HttpClient, so don't bother to set your own
+     * @param metricRegistry    metric registry
+     * @param idleConnTimeout   how long an unused connection must sit idle before it is eligible for removal from the
+     *                          connection pool
+     * @param httpClientBuilder an HttpClientBuilder to use, or null to use defaults. A default connection manager will
+     *                          be configured.
+     *
+     * @see #RestConnectionPoolImpl(MetricRegistry, int, HttpClientBuilder, PoolingHttpClientConnectionManager)
      */
-    public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout, HttpClientBuilder httpClientBuilder) {
+    public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout,
+            @Nullable HttpClientBuilder httpClientBuilder) {
+        this(metricRegistry, idleConnTimeout, httpClientBuilder, null);
+    }
+
+    /**
+     * Create a new pool.
+     *
+     * @param metricRegistry    metric registry
+     * @param idleConnTimeout   how long an unused connection must sit idle before it is eligible for removal from the
+     *                          connection pool
+     * @param httpClientBuilder an HttpClientBuilder to use, or null to use a default one. A default connection manager
+     *                          will be configured.
+     * @param connectionManager a connection manager to use with httpClientBuilder, or null to use defaults.
+     */
+    public RestConnectionPoolImpl(MetricRegistry metricRegistry, int idleConnTimeout,
+            @Nullable HttpClientBuilder httpClientBuilder,
+            @Nullable PoolingHttpClientConnectionManager connectionManager) {
         this.metricRegistry = metricRegistry;
         this.idleConnTimeout = idleConnTimeout;
 
-        if (httpClientBuilder == null) {
-            httpClientBuilder = HttpClientBuilder.create();
+        if (connectionManager == null) {
+            this.connectionManager = new PoolingHttpClientConnectionManager();
+            this.connectionManager.setDefaultMaxPerRoute(20);
+            this.connectionManager.setMaxTotal(60);
+        } else {
+            this.connectionManager = connectionManager;
         }
 
-        connectionManager = new PoolingHttpClientConnectionManager();
-        connectionManager.setDefaultMaxPerRoute(20);
-        connectionManager.setMaxTotal(60);
-
-        this.httpClient = httpClientBuilder.setConnectionManager(connectionManager).build();
+        HttpClientBuilder builder = httpClientBuilder == null ? HttpClientBuilder.create() : httpClientBuilder;
+        this.httpClient = builder.setConnectionManager(this.connectionManager).build();
 
         objectMapper = new ObjectMapper();
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
