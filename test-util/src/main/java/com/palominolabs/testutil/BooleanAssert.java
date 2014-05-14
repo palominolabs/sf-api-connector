@@ -25,17 +25,21 @@ public final class BooleanAssert {
         // no op
     }
 
+    public static void assertBooleanEquals(boolean expected, boolean actual) {
+        assertBooleanEquals(null, expected, actual);
+    }
+
     /**
      * Either assertTrue or assertFalse based on what expected is.
      *
      * @param expected
      * @param actual
      */
-    public static void assertBooleanEquals(boolean expected, boolean actual) {
+    public static void assertBooleanEquals(String message, boolean expected, boolean actual) {
         if (expected) {
-            assertTrue(actual);
+            assertTrue(message, actual);
         } else {
-            assertFalse(actual);
+            assertFalse(message, actual);
         }
     }
 }

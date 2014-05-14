@@ -209,26 +209,27 @@ public class PartnerConnectionImplTest {
             final GlobalSObjectDescription exType = expected.getSObjectTypes().get(i);
             final GlobalSObjectDescription acType = actual.getSObjectTypes().get(i);
 
-            assertEquals(exType.getKeyPrefix(), acType.getKeyPrefix());
-            assertEquals(exType.getLabel(), acType.getLabel());
-            assertEquals(exType.getLabelPlural(), acType.getLabelPlural());
-            assertEquals(exType.getName(), acType.getName());
-            assertBooleanEquals(exType.isActivateable(), acType.isActivateable());
-            assertBooleanEquals(exType.isCreateable(), acType.isCreateable());
-            assertBooleanEquals(exType.isCustom(), acType.isCustom());
-            assertBooleanEquals(exType.isCustomSetting(), acType.isCustomSetting());
-            assertBooleanEquals(exType.isDeletable(), acType.isDeletable());
-            assertBooleanEquals(exType.isDeprecatedAndHidden(), acType.isDeprecatedAndHidden());
-            assertBooleanEquals(exType.isFeedEnabled(), acType.isFeedEnabled());
-            assertBooleanEquals(exType.isLayoutable(), acType.isLayoutable());
-            assertBooleanEquals(exType.isMergeable(), acType.isMergeable());
-            assertBooleanEquals(exType.isQueryable(), acType.isQueryable());
-            assertBooleanEquals(exType.isReplicateable(), acType.isReplicateable());
-            assertBooleanEquals(exType.isRetrieveable(), acType.isRetrieveable());
-            assertBooleanEquals(exType.isSearchable(), acType.isSearchable());
-            assertBooleanEquals(exType.isTriggerable(), acType.isTriggerable());
-            assertBooleanEquals(exType.isUndeletable(), acType.isUndeletable());
-            assertBooleanEquals(exType.isUpdateable(), acType.isUpdateable());
+            String message = "exType: " + exType.getLabel() + "; acType: " + acType.getLabel();
+            assertEquals(message, exType.getKeyPrefix(), acType.getKeyPrefix());
+            assertEquals(message, exType.getLabel(), acType.getLabel());
+            assertEquals(message, exType.getLabelPlural(), acType.getLabelPlural());
+            assertEquals(message, exType.getName(), acType.getName());
+            assertBooleanEquals(message, exType.isActivateable(), acType.isActivateable());
+            assertBooleanEquals(message, exType.isCreateable(), acType.isCreateable());
+            assertBooleanEquals(message, exType.isCustom(), acType.isCustom());
+            assertBooleanEquals(message, exType.isCustomSetting(), acType.isCustomSetting());
+            assertBooleanEquals(message, exType.isDeletable(), acType.isDeletable());
+            assertBooleanEquals(message, exType.isDeprecatedAndHidden(), acType.isDeprecatedAndHidden());
+            assertBooleanEquals(message, exType.isFeedEnabled(), acType.isFeedEnabled());
+            assertBooleanEquals(message, exType.isLayoutable(), acType.isLayoutable());
+            assertBooleanEquals(message, exType.isMergeable(), acType.isMergeable());
+            assertBooleanEquals(message, exType.isQueryable(), acType.isQueryable());
+            assertBooleanEquals(message, exType.isReplicateable(), acType.isReplicateable());
+            assertBooleanEquals(message, exType.isRetrieveable(), acType.isRetrieveable());
+            assertBooleanEquals(message, exType.isSearchable(), acType.isSearchable());
+            assertBooleanEquals(message, exType.isTriggerable(), acType.isTriggerable());
+            assertBooleanEquals(message, exType.isUndeletable(), acType.isUndeletable());
+            assertBooleanEquals(message, exType.isUpdateable(), acType.isUpdateable());
         }
     }
 
@@ -418,7 +419,7 @@ public class PartnerConnectionImplTest {
                 });
 
         assertEquals(newArrayList("Maintenance guidelines for generator unclear",
-                "Frequent mechanical breakdown", "Electronic panel fitting loose"), newArrayList(subjects));
+                "Electronic panel fitting loose", "Frequent mechanical breakdown"), newArrayList(subjects));
     }
 
     @Test

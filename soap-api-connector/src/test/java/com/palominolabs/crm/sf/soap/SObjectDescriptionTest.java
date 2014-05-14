@@ -66,7 +66,7 @@ public class SObjectDescriptionTest {
         assertEquals("Salutation", sFields.get(40));
         assertEquals("Website", sFields.get(46));
 
-        assertEquals(20, sObjDescr.getChildRelationships().size());
+        assertEquals(21, sObjDescr.getChildRelationships().size());
 
         List<ChildRelationship> childRels = (List<ChildRelationship>) TestFixtureUtils
                 .loadFixtures("/sObjectFixtures/ConnectionTests/describeSObjectChildRelationships.xml");

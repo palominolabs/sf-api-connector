@@ -1198,8 +1198,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>true</feedEnabled>
           <keyPrefix>0F9</keyPrefix>
-          <label>Chatter Group</label>
-          <labelPlural>Chatter Groups</labelPlural>
+          <label>Group</label>
+          <labelPlural>Groups</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>CollaborationGroup</name>
@@ -1221,8 +1221,8 @@
           <deletable>true</deletable>
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
-          <label>Chatter Group Feed</label>
-          <labelPlural>Chatter Group Feed</labelPlural>
+          <label>Group Feed</label>
+          <labelPlural>Group Feed</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>CollaborationGroupFeed</name>
@@ -1245,8 +1245,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>0FB</keyPrefix>
-          <label>Chatter Group Member</label>
-          <labelPlural>Chatter Group Members</labelPlural>
+          <label>Group Member</label>
+          <labelPlural>Group Members</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>CollaborationGroupMember</name>
@@ -1269,8 +1269,8 @@
           <deprecatedAndHidden>false</deprecatedAndHidden>
           <feedEnabled>false</feedEnabled>
           <keyPrefix>0I5</keyPrefix>
-          <label>Chatter Group Member Request</label>
-          <labelPlural>Chatter Group Member Requests</labelPlural>
+          <label>Group Member Request</label>
+          <labelPlural>Group Member Requests</labelPlural>
           <layoutable>false</layoutable>
           <mergeable>false</mergeable>
           <name>CollaborationGroupMemberRequest</name>
@@ -3534,6 +3534,30 @@
           <triggerable>false</triggerable>
           <undeletable>false</undeletable>
           <updateable>false</updateable>
+        </stubResult>
+      </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+      <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
+        <stubResult>
+          <activateable>false</activateable>
+          <createable>false</createable>
+          <custom>false</custom>
+          <customSetting>false</customSetting>
+          <deletable>true</deletable>
+          <deprecatedAndHidden>false</deprecatedAndHidden>
+          <feedEnabled>false</feedEnabled>
+          <keyPrefix>01N</keyPrefix>
+          <label>Custom S-Control</label>
+          <labelPlural>Custom S-Controls</labelPlural>
+          <layoutable>false</layoutable>
+          <mergeable>false</mergeable>
+          <name>Scontrol</name>
+          <queryable>true</queryable>
+          <replicateable>true</replicateable>
+          <retrieveable>true</retrieveable>
+          <searchable>false</searchable>
+          <triggerable>false</triggerable>
+          <undeletable>false</undeletable>
+          <updateable>true</updateable>
         </stubResult>
       </com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
       <com.palominolabs.crm.sf.soap.GlobalSObjectDescription>
