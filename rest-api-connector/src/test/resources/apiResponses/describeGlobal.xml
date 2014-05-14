@@ -1345,10 +1345,10 @@
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroup</name>
-        <label>Chatter Group</label>
+        <label>Group</label>
         <custom>false</custom>
         <keyPrefix>0F9</keyPrefix>
-        <labelPlural>Chatter Groups</labelPlural>
+        <labelPlural>Groups</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
@@ -1372,9 +1372,9 @@
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupFeed</name>
-        <label>Chatter Group Feed</label>
+        <label>Group Feed</label>
         <custom>false</custom>
-        <labelPlural>Chatter Group Feed</labelPlural>
+        <labelPlural>Group Feed</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>false</updateable>
@@ -1398,10 +1398,10 @@
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupMember</name>
-        <label>Chatter Group Member</label>
+        <label>Group Member</label>
         <custom>false</custom>
         <keyPrefix>0FB</keyPrefix>
-        <labelPlural>Chatter Group Members</labelPlural>
+        <labelPlural>Group Members</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
@@ -1425,10 +1425,10 @@
       </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
       <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
         <name>CollaborationGroupMemberRequest</name>
-        <label>Chatter Group Member Request</label>
+        <label>Group Member Request</label>
         <custom>false</custom>
         <keyPrefix>0I5</keyPrefix>
-        <labelPlural>Chatter Group Member Requests</labelPlural>
+        <labelPlural>Group Member Requests</labelPlural>
         <layoutable>false</layoutable>
         <activateable>false</activateable>
         <updateable>true</updateable>
@@ -3985,6 +3985,33 @@
           <sobjectUrlPath>/services/data/v28.0/sobjects/ReportFeed</sobjectUrlPath>
           <describeUrlPath>/services/data/v28.0/sobjects/ReportFeed/describe</describeUrlPath>
           <rowTemplateUrlPath>/services/data/v28.0/sobjects/ReportFeed/{ID}</rowTemplateUrlPath>
+        </sObjectUrls>
+        <searchable>false</searchable>
+        <createable>false</createable>
+        <customSetting>false</customSetting>
+        <deletable>true</deletable>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <feedEnabled>false</feedEnabled>
+        <mergeable>false</mergeable>
+        <queryable>true</queryable>
+        <replicateable>true</replicateable>
+        <retrieveable>true</retrieveable>
+        <undeletable>false</undeletable>
+        <triggerable>false</triggerable>
+      </com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+      <com.palominolabs.crm.sf.rest.BasicSObjectMetadata>
+        <name>Scontrol</name>
+        <label>Custom S-Control</label>
+        <custom>false</custom>
+        <keyPrefix>01N</keyPrefix>
+        <labelPlural>Custom S-Controls</labelPlural>
+        <layoutable>false</layoutable>
+        <activateable>false</activateable>
+        <updateable>true</updateable>
+        <sObjectUrls>
+          <sobjectUrlPath>/services/data/v28.0/sobjects/Scontrol</sobjectUrlPath>
+          <describeUrlPath>/services/data/v28.0/sobjects/Scontrol/describe</describeUrlPath>
+          <rowTemplateUrlPath>/services/data/v28.0/sobjects/Scontrol/{ID}</rowTemplateUrlPath>
         </sObjectUrls>
         <searchable>false</searchable>
         <createable>false</createable>

@@ -15,19 +15,19 @@
             "records" : [ {
                 "attributes" : {
                     "type" : "Contact",
-                    "url" : "/services/data/v28.0/sobjects/Contact/0035000000km1owAAA"
-                },
-                "Id" : "0035000000km1owAAA",
-                "FirstName" : "Liz",
-                "Email" : "ldcruz@uog.com"
-            }, {
-                "attributes" : {
-                    "type" : "Contact",
                     "url" : "/services/data/v28.0/sobjects/Contact/0035000000km1ovAAA"
                 },
                 "Id" : "0035000000km1ovAAA",
                 "FirstName" : "Tom",
                 "Email" : "tripley@uog.com"
+            }, {
+                "attributes" : {
+                    "type" : "Contact",
+                    "url" : "/services/data/v28.0/sobjects/Contact/0035000000km1owAAA"
+                },
+                "Id" : "0035000000km1owAAA",
+                "FirstName" : "Liz",
+                "Email" : "ldcruz@uog.com"
             } ]
         },
         "Tasks" : null

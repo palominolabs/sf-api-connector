@@ -22,6 +22,7 @@
       <com.palominolabs.crm.sf.rest.ChildRelationship>
         <field>ParentId</field>
         <deprecatedAndHidden>false</deprecatedAndHidden>
+        <relationshipName>ChildAccounts</relationshipName>
         <cascadeDelete>false</cascadeDelete>
         <childSObject>Account</childSObject>
         <restrictedDelete>false</restrictedDelete>
@@ -265,6 +266,13 @@
         <relationshipName>Tasks</relationshipName>
         <cascadeDelete>true</cascadeDelete>
         <childSObject>Task</childSObject>
+        <restrictedDelete>false</restrictedDelete>
+      </com.palominolabs.crm.sf.rest.ChildRelationship>
+      <com.palominolabs.crm.sf.rest.ChildRelationship>
+        <field>EntityId</field>
+        <deprecatedAndHidden>false</deprecatedAndHidden>
+        <cascadeDelete>true</cascadeDelete>
+        <childSObject>TopicAssignment</childSObject>
         <restrictedDelete>false</restrictedDelete>
       </com.palominolabs.crm.sf.rest.ChildRelationship>
       <com.palominolabs.crm.sf.rest.ChildRelationship>

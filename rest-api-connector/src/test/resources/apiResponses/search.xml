@@ -5,12 +5,12 @@
     </id>
     <fields>
       <entry>
-        <string>Phone</string>
-        <string>(785) 241-6200</string>
-      </entry>
-      <entry>
         <string>Email</string>
         <string>a_young@dickenson.com</string>
+      </entry>
+      <entry>
+        <string>Phone</string>
+        <string>(785) 241-6200</string>
       </entry>
       <entry>
         <string>FirstName</string>

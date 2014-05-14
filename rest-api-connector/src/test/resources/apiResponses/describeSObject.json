@@ -2721,7 +2721,7 @@
     "deletable" : true,
     "childRelationships" : [ {
         "field" : "ParentId",
-        "relationshipName" : null,
+        "relationshipName" : "ChildAccounts",
         "cascadeDelete" : false,
         "restrictedDelete" : false,
         "childSObject" : "Account",
@@ -2942,6 +2942,13 @@
         "cascadeDelete" : true,
         "restrictedDelete" : false,
         "childSObject" : "Task",
+        "deprecatedAndHidden" : false
+    }, {
+        "field" : "EntityId",
+        "relationshipName" : null,
+        "cascadeDelete" : true,
+        "restrictedDelete" : false,
+        "childSObject" : "TopicAssignment",
         "deprecatedAndHidden" : false
     }, {
         "field" : "AccountId",

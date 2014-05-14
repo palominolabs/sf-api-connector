@@ -1309,7 +1309,7 @@
         "custom" : false,
         "keyPrefix" : "0F9",
         "activateable" : false,
-        "labelPlural" : "Chatter Groups",
+        "labelPlural" : "Groups",
         "layoutable" : false,
         "urls" : {
             "sobject" : "/services/data/v28.0/sobjects/CollaborationGroup",
@@ -1330,12 +1330,12 @@
         "retrieveable" : true,
         "deprecatedAndHidden" : false,
         "name" : "CollaborationGroup",
-        "label" : "Chatter Group"
+        "label" : "Group"
     }, {
         "custom" : false,
         "keyPrefix" : null,
         "activateable" : false,
-        "labelPlural" : "Chatter Group Feed",
+        "labelPlural" : "Group Feed",
         "layoutable" : false,
         "urls" : {
             "sobject" : "/services/data/v28.0/sobjects/CollaborationGroupFeed",
@@ -1356,12 +1356,12 @@
         "retrieveable" : true,
         "deprecatedAndHidden" : false,
         "name" : "CollaborationGroupFeed",
-        "label" : "Chatter Group Feed"
+        "label" : "Group Feed"
     }, {
         "custom" : false,
         "keyPrefix" : "0FB",
         "activateable" : false,
-        "labelPlural" : "Chatter Group Members",
+        "labelPlural" : "Group Members",
         "layoutable" : false,
         "urls" : {
             "sobject" : "/services/data/v28.0/sobjects/CollaborationGroupMember",
@@ -1382,12 +1382,12 @@
         "retrieveable" : true,
         "deprecatedAndHidden" : false,
         "name" : "CollaborationGroupMember",
-        "label" : "Chatter Group Member"
+        "label" : "Group Member"
     }, {
         "custom" : false,
         "keyPrefix" : "0I5",
         "activateable" : false,
-        "labelPlural" : "Chatter Group Member Requests",
+        "labelPlural" : "Group Member Requests",
         "layoutable" : false,
         "urls" : {
             "sobject" : "/services/data/v28.0/sobjects/CollaborationGroupMemberRequest",
@@ -1408,7 +1408,7 @@
         "retrieveable" : true,
         "deprecatedAndHidden" : false,
         "name" : "CollaborationGroupMemberRequest",
-        "label" : "Chatter Group Member Request"
+        "label" : "Group Member Request"
     }, {
         "custom" : false,
         "keyPrefix" : "0H1",
@@ -3890,6 +3890,32 @@
         "deprecatedAndHidden" : false,
         "name" : "ReportFeed",
         "label" : "Report Feed"
+    }, {
+        "custom" : false,
+        "keyPrefix" : "01N",
+        "activateable" : false,
+        "labelPlural" : "Custom S-Controls",
+        "layoutable" : false,
+        "urls" : {
+            "sobject" : "/services/data/v28.0/sobjects/Scontrol",
+            "describe" : "/services/data/v28.0/sobjects/Scontrol/describe",
+            "rowTemplate" : "/services/data/v28.0/sobjects/Scontrol/{ID}"
+        },
+        "searchable" : false,
+        "createable" : false,
+        "updateable" : true,
+        "queryable" : true,
+        "deletable" : true,
+        "customSetting" : false,
+        "undeletable" : false,
+        "mergeable" : false,
+        "replicateable" : true,
+        "triggerable" : false,
+        "feedEnabled" : false,
+        "retrieveable" : true,
+        "deprecatedAndHidden" : false,
+        "name" : "Scontrol",
+        "label" : "Custom S-Control"
     }, {
         "custom" : false,
         "keyPrefix" : "035",
