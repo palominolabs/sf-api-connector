@@ -331,12 +331,13 @@ public class MetadataConnectionImplTest {
             final DescribeMetadataObject expectedObj = expected.getObjectList().get(i);
             final DescribeMetadataObject actualObj = actual.getObjectList().get(i);
 
-            assertEquals("obj " + i, expectedObj.getChildXmlNames(), actualObj.getChildXmlNames());
-            assertEquals("obj " + i, expectedObj.getDirectoryName(), actualObj.getDirectoryName());
-            assertEquals("obj " + i, expectedObj.isInFolder(), actualObj.isInFolder());
-            assertEquals("obj " + i, expectedObj.isMetaFile(), actualObj.isMetaFile());
-            assertEquals("obj " + i, expectedObj.getSuffix(), actualObj.getSuffix());
-            assertEquals("obj " + i, expectedObj.getXmlName(), actualObj.getXmlName());
+            String message = "Expected: " + expectedObj.getXmlName() + "; actual: " + actualObj.getXmlName();
+            assertEquals(message, expectedObj.getChildXmlNames(), actualObj.getChildXmlNames());
+            assertEquals(message, expectedObj.getDirectoryName(), actualObj.getDirectoryName());
+            assertEquals(message, expectedObj.isInFolder(), actualObj.isInFolder());
+            assertEquals(message, expectedObj.isMetaFile(), actualObj.isMetaFile());
+            assertEquals(message, expectedObj.getSuffix(), actualObj.getSuffix());
+            assertEquals(message, expectedObj.getXmlName(), actualObj.getXmlName());
         }
     }
 
