@@ -58,9 +58,9 @@ public final class ListMetadataQuery {
     }
 
     @Nonnull
-    com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQuery getStubObject() {
-        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQuery stub =
-                new com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQuery();
+    com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQueryType getStubObject() {
+        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQueryType stub =
+                new com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQueryType();
         stub.setType(this.type);
         stub.setFolder(this.folder);
 

@@ -16,7 +16,7 @@
 
 package com.palominolabs.crm.sf.soap;
 
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.PackageTypeMembers;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.PackageTypeMembersType;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.Immutable;
@@ -39,8 +39,8 @@ public final class UnpackagedComponent {
     }
 
     @Nonnull
-    PackageTypeMembers getStub() {
-        final PackageTypeMembers stub = new PackageTypeMembers();
+    PackageTypeMembersType getStub() {
+        final PackageTypeMembersType stub = new PackageTypeMembersType();
 
         stub.setName(this.name);
         stub.getMembers().addAll(this.members);

@@ -42,9 +42,9 @@ public final class ProfileObjectPermissions {
     }
 
     @Nonnull
-    com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ProfileObjectPermissions getStub() {
-        final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ProfileObjectPermissions stub =
-                new com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ProfileObjectPermissions();
+    com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ProfileObjectPermissionsType getStub() {
+        final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ProfileObjectPermissionsType stub =
+                new com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ProfileObjectPermissionsType();
 
         stub.setAllowCreate(this.allowCreate);
         stub.setAllowDelete(this.allowDelete);

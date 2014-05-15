@@ -39,13 +39,13 @@ public final class DescribeMetadataResult {
      *
      * @param stub jax ws stub
      */
-    DescribeMetadataResult(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResult stub) {
+    DescribeMetadataResult(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResultType stub) {
         this.organizationNamespace = stub.getOrganizationNamespace();
         this.partialSaveAllowed = stub.isPartialSaveAllowed();
         this.testRequired = stub.isTestRequired();
 
         List<DescribeMetadataObject> objectList = new ArrayList<DescribeMetadataObject>();
-        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataObject objectStub : stub
+        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataObjectType objectStub : stub
                 .getMetadataObjects()) {
             objectList.add(new DescribeMetadataObject(objectStub));
         }

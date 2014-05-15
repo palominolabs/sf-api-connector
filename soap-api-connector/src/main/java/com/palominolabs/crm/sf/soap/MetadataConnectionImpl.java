@@ -19,9 +19,9 @@ package com.palominolabs.crm.sf.soap;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
 import com.palominolabs.crm.sf.core.Id;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.Metadata;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.MetadataType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.MetadataPortType;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.UpdateMetadata;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.UpdateMetadataType;
 import org.joda.time.DateTime;
 import org.joda.time.Duration;
 
@@ -118,19 +118,19 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
 
     @Override
     @Nonnull
-    public synchronized List<AsyncResult> create(@Nonnull List<Metadata> metadataList) throws ApiException {
+    public synchronized List<AsyncResult> create(@Nonnull List<MetadataType> metadataList) throws ApiException {
         return convertStubAsyncResultList(new CreateOp().execute(metadataList));
     }
 
     @Override
     @Nonnull
-    public synchronized List<AsyncResult> delete(@Nonnull List<Metadata> metadataList) throws ApiException {
+    public synchronized List<AsyncResult> delete(@Nonnull List<MetadataType> metadataList) throws ApiException {
         return convertStubAsyncResultList(new DeleteOp().execute(metadataList));
     }
 
     @Override
     @Nonnull
-    public synchronized List<AsyncResult> update(@Nonnull List<UpdateMetadata> metadataList) throws ApiException {
+    public synchronized List<AsyncResult> update(@Nonnull List<UpdateMetadataType> metadataList) throws ApiException {
         return convertStubAsyncResultList(new UpdateOp().execute(metadataList));
     }
 
@@ -139,19 +139,19 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
     public synchronized List<FileProperties> listMetadata(@Nonnull List<ListMetadataQuery> queries)
             throws ApiException {
 
-        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQuery> stubList =
-                new ArrayList<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQuery>();
+        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQueryType> stubList =
+                new ArrayList<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQueryType>();
 
         for (ListMetadataQuery query : queries) {
             stubList.add(query.getStubObject());
         }
 
-        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FileProperties> stubResultList =
+        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilePropertiesType> stubResultList =
                 new ListMetadataOp().execute(stubList);
 
         List<FileProperties> resultList = new ArrayList<FileProperties>(stubResultList.size());
 
-        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FileProperties stub : stubResultList) {
+        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilePropertiesType stub : stubResultList) {
             resultList.add(new FileProperties(stub));
         }
         return resultList;
@@ -180,7 +180,7 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
     @Override
     @Nonnull
     public synchronized DescribeMetadataResult describeMetadata(double apiVersion) throws ApiException {
-        final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResult describeMetadataResult =
+        final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResultType describeMetadataResult =
                 new DescribeMetadataOp().execute(apiVersion);
 
         return new DescribeMetadataResult(describeMetadataResult);
@@ -188,9 +188,9 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
 
     @Nonnull
     private static List<AsyncResult> convertStubAsyncResultList(
-            @Nonnull List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult> stubAsyncResults) {
+            @Nonnull List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType> stubAsyncResults) {
         List<AsyncResult> results = new ArrayList<AsyncResult>();
-        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult stubAsyncResult : stubAsyncResults) {
+        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType stubAsyncResult : stubAsyncResults) {
             results.add(new AsyncResult(stubAsyncResult));
         }
         return results;
@@ -244,76 +244,76 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
 
     private class CheckStatusOp
             extends
-            MetadataApiOperation<List<String>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult>> {
+            MetadataApiOperation<List<String>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType>> {
         @Nonnull
         @Override
-        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult> executeOp(@Nonnull MetadataPortType binding,
+        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType> executeOp(@Nonnull MetadataPortType binding,
                 @Nonnull List<String> param) {
             return binding.checkStatus(param);
         }
     }
 
     private class CreateOp extends
-            MetadataApiOperation<List<Metadata>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult>> {
+            MetadataApiOperation<List<MetadataType>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType>> {
 
         @Nonnull
         @Override
-        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult> executeOp(@Nonnull MetadataPortType binding,
-                @Nonnull List<Metadata> param) {
+        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType> executeOp(@Nonnull MetadataPortType binding,
+                @Nonnull List<MetadataType> param) {
             return binding.create(param);
         }
     }
 
     private class DeleteOp extends
-            MetadataApiOperation<List<Metadata>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult>> {
+            MetadataApiOperation<List<MetadataType>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType>> {
 
         @Nonnull
         @Override
-        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult> executeOp(@Nonnull MetadataPortType binding,
-                @Nonnull List<Metadata> param) {
+        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType> executeOp(@Nonnull MetadataPortType binding,
+                @Nonnull List<MetadataType> param) {
             return binding.delete(param);
         }
     }
 
-    private class UpdateOp extends MetadataApiOperation<List<UpdateMetadata>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult>> {
+    private class UpdateOp extends MetadataApiOperation<List<UpdateMetadataType>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType>> {
 
         @Nonnull
         @Override
-        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult> executeOp(@Nonnull MetadataPortType binding,
-                @Nonnull List<UpdateMetadata> param) {
+        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType> executeOp(@Nonnull MetadataPortType binding,
+                @Nonnull List<UpdateMetadataType> param) {
             return binding.update(param);
         }
     }
 
     private class ListMetadataOp extends
-            MetadataApiOperation<List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQuery>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FileProperties>> {
+            MetadataApiOperation<List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQueryType>, List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilePropertiesType>> {
 
         @Nonnull
         @Override
-        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FileProperties> executeOp(
+        List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilePropertiesType> executeOp(
                 @Nonnull MetadataPortType binding,
-                @Nonnull List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQuery> param) {
+                @Nonnull List<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ListMetadataQueryType> param) {
             return binding.listMetadata(param, ApiVersion.API_VERSION_DOUBLE);
         }
     }
 
     private class RetrieveOp extends
-            MetadataApiOperation<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequest, com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult> {
+            MetadataApiOperation<com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequestType, com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType> {
 
         @Nonnull
         @Override
-        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResult executeOp(@Nonnull MetadataPortType binding,
-                @Nonnull com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequest param) {
+        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncResultType executeOp(@Nonnull MetadataPortType binding,
+                @Nonnull com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequestType param) {
             return binding.retrieve(param);
         }
     }
 
     private class CheckRetrieveStatusOp
-            extends MetadataApiOperation<String, com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveResult> {
+            extends MetadataApiOperation<String, com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveResultType> {
 
         @Nonnull
         @Override
-        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveResult executeOp(@Nonnull MetadataPortType binding,
+        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveResultType executeOp(@Nonnull MetadataPortType binding,
                 @Nonnull String param) {
             return binding.checkRetrieveStatus(param);
         }
@@ -321,11 +321,11 @@ final class MetadataConnectionImpl extends AbstractSalesforceConnection implemen
 
     private class DescribeMetadataOp
             extends
-            MetadataApiOperation<Double, com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResult> {
+            MetadataApiOperation<Double, com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResultType> {
 
         @Nonnull
         @Override
-        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResult executeOp(
+        com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataResultType executeOp(
                 @Nonnull MetadataPortType binding, @Nonnull Double param) {
             return binding.describeMetadata(param);
         }

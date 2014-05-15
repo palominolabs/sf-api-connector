@@ -59,9 +59,9 @@ public final class RetrieveRequest {
         this(packageNames, specificFiles, ApiVersion.API_VERSION_DOUBLE, null);
     }
 
-    com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequest getStub() {
-        final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequest stub =
-                new com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequest();
+    com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequestType getStub() {
+        final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequestType stub =
+                new com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveRequestType();
         stub.setApiVersion(this.apiVersion);
         stub.getPackageNames().addAll(this.packageNames);
         stub.getSpecificFiles().addAll(this.specificFiles);

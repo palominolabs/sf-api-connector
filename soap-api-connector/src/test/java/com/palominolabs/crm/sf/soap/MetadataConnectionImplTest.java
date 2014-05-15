@@ -16,20 +16,22 @@
 
 package com.palominolabs.crm.sf.soap;
 
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncRequestState;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DocumentFolder;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilterItem;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilterOperation;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FolderAccessTypes;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.Metadata;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.StaticResource;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.StaticResourceCacheControl;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.AsyncRequestStateType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DocumentFolderType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilterItemType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilterOperationType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FolderAccessTypesType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.MetadataType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.StaticResourceType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.StaticResourceCacheControlType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.UpdateMetadata;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowActionReference;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.UpdateMetadataType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowActionReferenceType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowActionType;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowOutboundMessage;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowRule;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowTriggerTypes;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowActionTypeType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowOutboundMessageType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowRuleType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.WorkflowTriggerTypesType;
 import com.palominolabs.crm.sf.soap.jaxwsstub.partner.UnexpectedErrorFault_Exception;
 import com.palominolabs.crm.sf.testutil.ConnectionTestSfUserProps;
 import com.palominolabs.crm.sf.testutil.TestFixtureUtils;
@@ -83,10 +85,10 @@ public class MetadataConnectionImplTest {
     public void testCreateAndDeleteWorkflowRule()
             throws ApiException, InterruptedException, InvocationTargetException, NoSuchMethodException,
             InstantiationException, IllegalAccessException {
-        deleteAllOfType("WorkflowOutboundMessage", WorkflowOutboundMessage.class);
-        deleteAllOfType("WorkflowRule", WorkflowRule.class);
+        deleteAllOfType("WorkflowOutboundMessage", WorkflowOutboundMessageType.class);
+        deleteAllOfType("WorkflowRule", WorkflowRuleType.class);
 
-        WorkflowOutboundMessage message = new WorkflowOutboundMessage();
+        WorkflowOutboundMessageType message = new WorkflowOutboundMessageType();
         message.setApiVersion(ApiVersion.API_VERSION_DOUBLE);
         message.setDescription("test-action-desc");
         message.setEndpointUrl("http://foo.com/bar");
@@ -96,22 +98,22 @@ public class MetadataConnectionImplTest {
         message.setIntegrationUser(this.username);
         message.setFullName("Contact.testactionfullname");
 
-        List<Metadata> messageMdList = new ArrayList<Metadata>();
+        List<MetadataType> messageMdList = new ArrayList<MetadataType>();
         messageMdList.add(message);
 
         createMetadata(messageMdList);
 
-        WorkflowRule rule = new WorkflowRule();
-        WorkflowActionReference actionRef = new WorkflowActionReference();
+        WorkflowRuleType rule = new WorkflowRuleType();
+        WorkflowActionReferenceType actionRef = new WorkflowActionReferenceType();
         actionRef.setName("testactionfullname");
-        actionRef.setType(WorkflowActionType.OUTBOUND_MESSAGE);
+        actionRef.setType(WorkflowActionTypeType.OUTBOUND_MESSAGE);
 
         rule.getActions().add(actionRef);
 
-        FilterItem filterItem = new FilterItem();
+        FilterItemType filterItem = new FilterItemType();
         filterItem.setField("Contact.FirstName");
         filterItem.setValue("asdf");
-        filterItem.setOperation(FilterOperation.CONTAINS);
+        filterItem.setOperation(FilterOperationType.CONTAINS);
 
         rule.getCriteriaItems().add(filterItem);
 
@@ -119,9 +121,9 @@ public class MetadataConnectionImplTest {
 
         rule.setDescription("wf desc");
         rule.setFullName("Contact.testwf");
-        rule.setTriggerType(WorkflowTriggerTypes.ON_ALL_CHANGES);
+        rule.setTriggerType(WorkflowTriggerTypesType.ON_ALL_CHANGES);
 
-        List<Metadata> mdList = new ArrayList<Metadata>();
+        List<MetadataType> mdList = new ArrayList<MetadataType>();
         mdList.add(rule);
 
         createMetadata(mdList);
@@ -129,12 +131,12 @@ public class MetadataConnectionImplTest {
 
     @Test
     public void testCreateAndDeleteFolder() throws ApiException, InterruptedException {
-        List<Metadata> mdList = new ArrayList<Metadata>();
-        DocumentFolder folder = new DocumentFolder();
+        List<MetadataType> mdList = new ArrayList<MetadataType>();
+        DocumentFolderType folder = new DocumentFolderType();
         mdList.add(folder);
 
         folder.setFullName("testFolderFullName");
-        folder.setAccessType(FolderAccessTypes.PUBLIC);
+        folder.setAccessType(FolderAccessTypesType.PUBLIC);
         folder.setName("testFolderName");
 
         createAndDeleteMetadata(mdList);
@@ -142,18 +144,18 @@ public class MetadataConnectionImplTest {
 
     @Test
     public void testUpdateAndDeleteFolder() throws ApiException, InterruptedException {
-        List<Metadata> mdList = new ArrayList<Metadata>();
-        DocumentFolder folder = new DocumentFolder();
+        List<MetadataType> mdList = new ArrayList<MetadataType>();
+        DocumentFolderType folder = new DocumentFolderType();
         mdList.add(folder);
 
         folder.setFullName("testFolderFullName");
-        folder.setAccessType(FolderAccessTypes.PUBLIC);
+        folder.setAccessType(FolderAccessTypesType.PUBLIC);
         folder.setName("testFolderName");
 
         try {
             createMetadata(mdList);
 
-            UpdateMetadata updateMetadata = new UpdateMetadata();
+            UpdateMetadataType updateMetadata = new UpdateMetadataType();
             updateMetadata.setMetadata(folder);
             folder.setFullName(folder.getFullName() + "updated");
             updateMetadata.setCurrentName("testFolderFullName");
@@ -173,13 +175,13 @@ public class MetadataConnectionImplTest {
 
     @Test
     public void testCreateAndDeleteStaticResource() throws ApiException, InterruptedException {
-        List<Metadata> mdList = new ArrayList<Metadata>();
-        StaticResource metadata = new StaticResource();
+        List<MetadataType> mdList = new ArrayList<MetadataType>();
+        StaticResourceType metadata = new StaticResourceType();
         mdList.add(metadata);
 
         // have to be able to create folders since this requires a folder name
         metadata.setFullName("testStaticResource");
-        metadata.setCacheControl(StaticResourceCacheControl.PUBLIC);
+        metadata.setCacheControl(StaticResourceCacheControlType.PUBLIC);
         metadata.setContent("Foobar".getBytes());
         metadata.setContentType("text/plain");
 
@@ -254,13 +256,13 @@ public class MetadataConnectionImplTest {
 
         Thread.sleep(1000);
 
-        List<Metadata> mdList = new ArrayList<Metadata>();
-        StaticResource metadata = new StaticResource();
+        List<MetadataType> mdList = new ArrayList<MetadataType>();
+        StaticResourceType metadata = new StaticResourceType();
         mdList.add(metadata);
 
         // have to be able to create folders since this requires a folder name
         metadata.setFullName("testStaticResource");
-        metadata.setCacheControl(StaticResourceCacheControl.PUBLIC);
+        metadata.setCacheControl(StaticResourceCacheControlType.PUBLIC);
         metadata.setContent("Foobar".getBytes());
         metadata.setContentType("text/plain");
 
@@ -355,16 +357,16 @@ public class MetadataConnectionImplTest {
      * @throws InstantiationException
      */
     @SuppressWarnings("JavaDoc")
-    private void deleteAllOfType(String type, Class<? extends Metadata> typeClass)
+    private void deleteAllOfType(String type, Class<? extends MetadataType> typeClass)
             throws ApiException, InterruptedException, NoSuchMethodException, InvocationTargetException,
             IllegalAccessException, InstantiationException {
         List<FileProperties> propertiesList = mdconn.listMetadata(Arrays.asList(new ListMetadataQuery(type)));
-        List<Metadata> toDelete = new ArrayList<Metadata>();
+        List<MetadataType> toDelete = new ArrayList<MetadataType>();
 
-        Constructor<? extends Metadata> ctor = typeClass.getConstructor();
+        Constructor<? extends MetadataType> ctor = typeClass.getConstructor();
 
         for (FileProperties msgProp : propertiesList) {
-            Metadata md = ctor.newInstance();
+            MetadataType md = ctor.newInstance();
 
             if (msgProp.getFullName().contains(".test")) {
                 // only delete test ones
@@ -417,7 +419,7 @@ public class MetadataConnectionImplTest {
         PartnerConnectionImplTest.logout(this.bundle.getPartnerConnection());
     }
 
-    private void createMetadata(List<Metadata> mdList) throws ApiException, InterruptedException {
+    private void createMetadata(List<MetadataType> mdList) throws ApiException, InterruptedException {
         checkResults(mdconn.create(mdList));
     }
 
@@ -431,11 +433,11 @@ public class MetadataConnectionImplTest {
         for (int i = 0; i < asyncResults.size(); i++) {
             AsyncResult result = resultList.get(i);
             assertTrue(result.isDone());
-            assertEquals(result.getMessage(), AsyncRequestState.COMPLETED, result.getState());
+            assertEquals(result.getMessage(), AsyncRequestStateType.COMPLETED, result.getState());
         }
     }
 
-    private void createAndDeleteMetadata(List<Metadata> mdList) throws ApiException, InterruptedException {
+    private void createAndDeleteMetadata(List<MetadataType> mdList) throws ApiException, InterruptedException {
         try {
             createMetadata(mdList);
         } finally {
@@ -443,7 +445,7 @@ public class MetadataConnectionImplTest {
         }
     }
 
-    private void deleteMetadata(List<Metadata> mdList) throws ApiException, InterruptedException {
+    private void deleteMetadata(List<MetadataType> mdList) throws ApiException, InterruptedException {
         checkResults(mdconn.delete(mdList));
     }
 }

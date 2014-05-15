@@ -28,7 +28,7 @@ public final class RetrieveMessage {
      *
      * @param stub the RetrieveMessage from the API
      */
-    RetrieveMessage(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveMessage stub) {
+    RetrieveMessage(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveMessageType stub) {
         this.fileName = stub.getFileName();
         this.problem = stub.getProblem();
     }

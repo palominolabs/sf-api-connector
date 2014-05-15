@@ -54,11 +54,11 @@ public final class RetrieveResult {
      *
      * @param stubResult the stub result.
      */
-    RetrieveResult(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveResult stubResult) {
+    RetrieveResult(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveResultType stubResult) {
 
         final List<FileProperties> list = new ArrayList<FileProperties>();
 
-        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FileProperties stubProperties : stubResult
+        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilePropertiesType stubProperties : stubResult
                 .getFileProperties()) {
             list.add(new FileProperties(stubProperties));
         }
@@ -70,7 +70,7 @@ public final class RetrieveResult {
         this.zipFile = stubResult.getZipFile();
 
         List<RetrieveMessage> rmList = new ArrayList<RetrieveMessage>();
-        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveMessage stubMessage : stubResult.getMessages()) {
+        for (com.palominolabs.crm.sf.soap.jaxwsstub.metadata.RetrieveMessageType stubMessage : stubResult.getMessages()) {
             rmList.add(new RetrieveMessage(stubMessage));
         }
 

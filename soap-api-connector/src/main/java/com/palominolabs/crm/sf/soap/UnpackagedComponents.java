@@ -16,8 +16,9 @@
 
 package com.palominolabs.crm.sf.soap;
 
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.APIAccessLevel;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.Package;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.APIAccessLevelType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.PackageType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ProfileObjectPermissionsType;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -28,7 +29,7 @@ import java.util.List;
 public final class UnpackagedComponents {
 
     @Nullable
-    private final APIAccessLevel apiAccessLevel;
+    private final APIAccessLevelType apiAccessLevel;
 
     @Nullable
     private final String description;
@@ -51,7 +52,7 @@ public final class UnpackagedComponents {
     @Nonnull
     private final String version;
 
-    public UnpackagedComponents(@Nullable APIAccessLevel apiAccessLevel, @Nullable String description,
+    public UnpackagedComponents(@Nullable APIAccessLevelType apiAccessLevel, @Nullable String description,
             @Nullable String fullName, @Nullable String namespacePrefix,
             @Nonnull List<ProfileObjectPermissions> profileObjectPermissions,
             @Nullable String setupWeblink,
@@ -66,8 +67,8 @@ public final class UnpackagedComponents {
         this.version = version;
     }
 
-    Package getStub() {
-        final Package stub = new Package();
+    PackageType getStub() {
+        final PackageType stub = new PackageType();
 
         stub.setApiAccessLevel(this.apiAccessLevel);
         stub.setDescription(this.description);

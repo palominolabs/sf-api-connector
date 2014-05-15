@@ -47,7 +47,7 @@ public final class DescribeMetadataObject {
      *
      * @param stub jax ws stub
      */
-    DescribeMetadataObject(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataObject stub) {
+    DescribeMetadataObject(com.palominolabs.crm.sf.soap.jaxwsstub.metadata.DescribeMetadataObjectType stub) {
         this.childXmlNames = Collections.unmodifiableList(new ArrayList<String>(stub.getChildXmlNames()));
         this.directoryName = stub.getDirectoryName();
         this.inFolder = stub.isInFolder();

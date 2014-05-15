@@ -17,8 +17,8 @@
 package com.palominolabs.crm.sf.soap;
 
 import com.palominolabs.crm.sf.core.Id;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.Metadata;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.UpdateMetadata;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.MetadataType;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.UpdateMetadataType;
 
 import javax.annotation.Nonnull;
 import javax.annotation.concurrent.ThreadSafe;
@@ -47,13 +47,13 @@ public interface MetadataConnection {
     List<AsyncResult> checkStatus(@Nonnull List<Id> idsToCheck) throws ApiException;
 
     @Nonnull
-    List<AsyncResult> create(@Nonnull List<Metadata> metadataList) throws ApiException;
+    List<AsyncResult> create(@Nonnull List<MetadataType> metadataList) throws ApiException;
 
     @Nonnull
-    List<AsyncResult> delete(@Nonnull List<Metadata> metadataList) throws ApiException;
+    List<AsyncResult> delete(@Nonnull List<MetadataType> metadataList) throws ApiException;
 
     @Nonnull
-    List<AsyncResult> update(@Nonnull List<UpdateMetadata> metadataList) throws ApiException;
+    List<AsyncResult> update(@Nonnull List<UpdateMetadataType> metadataList) throws ApiException;
 
     @Nonnull
     List<FileProperties> listMetadata(@Nonnull List<ListMetadataQuery> queries)

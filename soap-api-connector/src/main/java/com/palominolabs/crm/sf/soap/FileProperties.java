@@ -17,7 +17,7 @@
 package com.palominolabs.crm.sf.soap;
 
 import com.palominolabs.crm.sf.core.Id;
-import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ManageableState;
+import com.palominolabs.crm.sf.soap.jaxwsstub.metadata.ManageableStateType;
 import org.joda.time.DateTime;
 
 import javax.annotation.Nonnull;
@@ -30,7 +30,7 @@ import javax.annotation.concurrent.Immutable;
 @Immutable
 public final class FileProperties {
 
-    private final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FileProperties stub;
+    private final com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilePropertiesType stub;
 
     /**
      * The provided stub object MUST NOT BE MODIFIED after it is passed to this constructor. Using it in the constructor
@@ -38,7 +38,7 @@ public final class FileProperties {
      *
      * @param stub the FileProperties from the API
      */
-    public FileProperties(@Nonnull com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FileProperties stub) {
+    public FileProperties(@Nonnull com.palominolabs.crm.sf.soap.jaxwsstub.metadata.FilePropertiesType stub) {
         this.stub = stub;
     }
 
@@ -99,7 +99,7 @@ public final class FileProperties {
     }
 
     @Nullable
-    public ManageableState getManageableState() {
+    public ManageableStateType getManageableState() {
         return stub.getManageableState();
     }
 
