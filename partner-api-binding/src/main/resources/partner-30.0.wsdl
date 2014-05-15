@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Salesforce.com Partner Web Services API Version 28.0
-Generated on 2013-09-23 16:01:46 +0000.
+Salesforce.com Partner Web Services API Version 30.0
+Generated on 2014-05-15 16:33:06 +0000.
 
-Copyright 1999-2013 salesforce.com, inc.
+Copyright 1999-2014 salesforce.com, inc.
 All Rights Reserved
 -->
 
@@ -45,6 +45,32 @@ All Rights Reserved
                 </restriction>
             </simpleType>
 
+            <!-- Compound datatype: Address -->
+            <complexType name="address">
+                <complexContent>
+                    <extension base="tns:location">
+                        <sequence>
+                            <element name="city" type="xsd:string"  nillable="true" />
+                            <element name="country" type="xsd:string"  nillable="true" />
+                            <element name="countryCode" type="xsd:string"  nillable="true" />
+                            <element name="postalCode" type="xsd:string"  nillable="true" />
+                            <element name="state" type="xsd:string"  nillable="true" />
+                            <element name="stateCode" type="xsd:string"  nillable="true" />
+                            <element name="street" type="xsd:string"  nillable="true" />
+                        </sequence>
+                    </extension>
+                </complexContent>
+            </complexType>
+
+            <!-- Compound datatype: Location -->
+            <complexType name="location">
+                <sequence>
+                    <element name="latitude" type="xsd:double"  nillable="true" />
+                    <element name="longitude" type="xsd:double"  nillable="true" />
+                </sequence>
+            </complexType>
+
+            
             <simpleType name="QueryLocator">
                 <restriction base="xsd:string"/>
             </simpleType>
@@ -166,6 +192,7 @@ All Rights Reserved
                 </sequence>
             </complexType>
 
+
             <simpleType name="StatusCode">
                 <restriction base="xsd:string">
                     <enumeration value="ALL_OR_NONE_OPERATION_ROLLED_BACK"/>
@@ -183,8 +210,10 @@ All Rights Reserved
                     <enumeration value="CANNOT_DISABLE_LAST_ADMIN"/>
                     <enumeration value="CANNOT_ENABLE_IP_RESTRICT_REQUESTS"/>
                     <enumeration value="CANNOT_EXECUTE_FLOW_TRIGGER"/>
+                    <enumeration value="CANNOT_FREEZE_SELF"/>
                     <enumeration value="CANNOT_INSERT_UPDATE_ACTIVATE_ENTITY"/>
                     <enumeration value="CANNOT_MODIFY_MANAGED_OBJECT"/>
+                    <enumeration value="CANNOT_PASSWORD_LOCKOUT"/>
                     <enumeration value="CANNOT_RENAME_APEX_REFERENCED_FIELD"/>
                     <enumeration value="CANNOT_RENAME_APEX_REFERENCED_OBJECT"/>
                     <enumeration value="CANNOT_RENAME_REFERENCED_FIELD"/>
@@ -197,6 +226,7 @@ All Rights Reserved
                     <enumeration value="CIRCULAR_DEPENDENCY"/>
                     <enumeration value="COLLISION_DETECTED"/>
                     <enumeration value="COMMUNITY_NOT_ACCESSIBLE"/>
+                    <enumeration value="CUSTOM_APEX_ERROR"/>
                     <enumeration value="CUSTOM_CLOB_FIELD_LIMIT_EXCEEDED"/>
                     <enumeration value="CUSTOM_ENTITY_OR_FIELD_LIMIT"/>
                     <enumeration value="CUSTOM_FIELD_INDEX_LIMIT_EXCEEDED"/>
@@ -208,6 +238,7 @@ All Rights Reserved
                     <enumeration value="DELETE_OPERATION_TOO_LARGE"/>
                     <enumeration value="DELETE_REQUIRED_ON_CASCADE"/>
                     <enumeration value="DEPENDENCY_EXISTS"/>
+                    <enumeration value="DUPLICATES_DETECTED"/>
                     <enumeration value="DUPLICATE_CASE_SOLUTION"/>
                     <enumeration value="DUPLICATE_COMM_NICKNAME"/>
                     <enumeration value="DUPLICATE_CUSTOM_ENTITY_DEFINITION"/>
@@ -279,11 +310,16 @@ All Rights Reserved
                     <enumeration value="INVALID_SESSION_ID"/>
                     <enumeration value="INVALID_SETUP_OWNER"/>
                     <enumeration value="INVALID_SIGNUP_COUNTRY"/>
+                    <enumeration value="INVALID_SITE_DELETE_EXCEPTION"/>
+                    <enumeration value="INVALID_SITE_FILE_IMPORTED_EXCEPTION"/>
+                    <enumeration value="INVALID_SITE_FILE_TYPE_EXCEPTION"/>
                     <enumeration value="INVALID_STATUS"/>
+                    <enumeration value="INVALID_SUBDOMAIN"/>
                     <enumeration value="INVALID_TYPE"/>
                     <enumeration value="INVALID_TYPE_FOR_OPERATION"/>
                     <enumeration value="INVALID_TYPE_ON_FIELD_IN_RECORD"/>
                     <enumeration value="IP_RANGE_LIMIT_EXCEEDED"/>
+                    <enumeration value="JIGSAW_IMPORT_LIMIT_EXCEEDED"/>
                     <enumeration value="LICENSE_LIMIT_EXCEEDED"/>
                     <enumeration value="LIGHT_PORTAL_USER_EXCEPTION"/>
                     <enumeration value="LIMIT_EXCEEDED"/>
@@ -291,6 +327,12 @@ All Rights Reserved
                     <enumeration value="MANAGER_NOT_DEFINED"/>
                     <enumeration value="MASSMAIL_RETRY_LIMIT_EXCEEDED"/>
                     <enumeration value="MASS_MAIL_LIMIT_EXCEEDED"/>
+                    <enumeration value="MATCH_DEFINITION_ERROR"/>
+                    <enumeration value="MATCH_OPERATION_ERROR"/>
+                    <enumeration value="MATCH_OPERATION_INVALID_ENGINE_ERROR"/>
+                    <enumeration value="MATCH_OPERATION_UNKNOWN_ENGINE_ERROR"/>
+                    <enumeration value="MATCH_OPERATION_UNKNOWN_RULE_ERROR"/>
+                    <enumeration value="MATCH_RUNTIME_ERROR"/>
                     <enumeration value="MAXIMUM_CCEMAILS_EXCEEDED"/>
                     <enumeration value="MAXIMUM_DASHBOARD_COMPONENTS_EXCEEDED"/>
                     <enumeration value="MAXIMUM_HIERARCHY_LEVELS_REACHED"/>
@@ -336,6 +378,7 @@ All Rights Reserved
                     <enumeration value="STANDARD_PRICE_NOT_DEFINED"/>
                     <enumeration value="STORAGE_LIMIT_EXCEEDED"/>
                     <enumeration value="STRING_TOO_LONG"/>
+                    <enumeration value="SUBDOMAIN_IN_USE"/>
                     <enumeration value="TABSET_LIMIT_EXCEEDED"/>
                     <enumeration value="TEMPLATE_NOT_ACTIVE"/>
                     <enumeration value="TEMPLATE_NOT_FOUND"/>
@@ -407,6 +450,16 @@ All Rights Reserved
             </complexType>
 
 
+            <complexType name="QuickActionTemplateResult">
+                <sequence>
+                    <element name="defaultValueFormulas"  type="ens:sObject" nillable="true"/>
+                    <element name="defaultValues"         type="ens:sObject" nillable="true"/>
+                    <element name="errors"                type="tns:Error" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="success"               type="xsd:boolean"/>
+                </sequence>
+            </complexType>
+
+
             <complexType name="MergeRequest">
                 <sequence>
                     <element name="masterRecord" type="ens:sObject"/>
@@ -455,8 +508,7 @@ All Rights Reserved
 
             <complexType name="PerformQuickActionRequest">
                 <sequence>
-                    <element name="parentId"      type="tns:ID" nillable="true"/>
-                    <element name="quickActionName"  type="xsd:string"/>
+                    <element name="contextId"      type="tns:ID" nillable="true"/>                    <element name="quickActionName"  type="xsd:string"/>
                     <element name="records"       type="ens:sObject" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
                 </sequence>
             </complexType>
@@ -473,15 +525,20 @@ All Rights Reserved
 
             <complexType name="DescribeQuickActionResult">
                 <sequence>
+                    <element name="accessLevelRequired"    type="tns:ShareAccessLevel" nillable="true"/> 
+                    <element name="canvasApplicationName"    type="xsd:string" nillable="true"/>
+                    <element name="colors" type="tns:DescribeColor" minOccurs="0" maxOccurs="unbounded"/> 
+					<element name="contextSobjectType"    type="xsd:string" nillable="true"/> 
+                    <element name="defaultValues" type="tns:DescribeQuickActionDefaultValue" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="height"        type="xsd:int" nillable="true"/>
                     <element name="iconName"      type="xsd:string" nillable="true"/>
                     <element name="iconUrl"       type="xsd:string" nillable="true"/>
+                    <element name="icons"            type="tns:DescribeIcon" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="label"        type="xsd:string"/>
                     <element name="layout"          type="tns:DescribeLayoutSection" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="miniIconUrl"      type="xsd:string" nillable="true"/>
                     <element name="name"         type="xsd:string"/>
-                    <element name="sourceSobjectType"    type="xsd:string" nillable="true"/>
-                    <element name="targetParentField"    type="xsd:string" nillable="true"/>
+					                    <element name="targetParentField"    type="xsd:string" nillable="true"/>
                     <element name="targetRecordTypeId"   type="tns:ID" nillable="true"/>
                     <element name="targetSobjectType"    type="xsd:string" nillable="true"/>
                     <element name="type"         type="xsd:string"/>
@@ -490,6 +547,22 @@ All Rights Reserved
                 </sequence>
             </complexType>
 
+            <complexType name="DescribeQuickActionDefaultValue">
+                <sequence>
+                    <element name="defaultValue"	type="xsd:string" nillable="true"/>
+                    <element name="field" 		type="xsd:string" nillable="false"/>
+                </sequence>
+            </complexType>
+
+
+
+            <simpleType name="ShareAccessLevel">
+                <restriction base="xsd:string">
+                    <enumeration value="Read"/>
+                    <enumeration value="Edit"/>
+                    <enumeration value="All"/>
+                </restriction>
+            </simpleType>
 
 
 
@@ -563,6 +636,7 @@ All Rights Reserved
                 <sequence>
                     <element name="activateable"        type="xsd:boolean"/>
                     <element name="childRelationships"  type="tns:ChildRelationship" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="compactLayoutable"   type="xsd:boolean"/>
                     <element name="createable"          type="xsd:boolean"/>
                     <element name="custom"              type="xsd:boolean"/>
                     <element name="customSetting"       type="xsd:boolean"/>
@@ -637,7 +711,16 @@ All Rights Reserved
                 </sequence>
             </complexType>
 
-            <simpleType name="fieldType">
+
+            <complexType name="DescribeGlobalTheme">
+                <sequence>
+                    <element name="global"       type="tns:DescribeGlobalResult"/>
+                    <element name="theme"       type="tns:DescribeThemeResult"/>
+                </sequence>
+            </complexType>
+
+
+        <simpleType name="fieldType">
                 <restriction base="xsd:string">
                     <enumeration value="string"/>
                     <enumeration value="picklist"/>
@@ -661,6 +744,7 @@ All Rights Reserved
                     <enumeration value="encryptedstring"/>
                     <enumeration value="datacategorygroupreference"/>
                     <enumeration value="location"/>
+                    <enumeration value="address"/>
                     <enumeration value="anyType"/> <!-- can be string, picklist, reference, boolean, currency, int, double, percent, id, date, datetime, url, email -->
                 </restriction>
             </simpleType>
@@ -676,6 +760,8 @@ All Rights Reserved
                     <enumeration value="xsd:date"/>
                     <enumeration value="xsd:dateTime"/>
                     <enumeration value="xsd:time"/>
+                    <enumeration value="urn:location" />
+                    <enumeration value="urn:address" />
                     <enumeration value="xsd:anyType"/> <!-- can be id, booolean, double, int, string, date, dateTime -->
                 </restriction>
             </simpleType>
@@ -698,6 +784,7 @@ All Rights Reserved
                     <element name="digits"                     type="xsd:int"/>
                     <element name="displayLocationInDecimal"   type="xsd:boolean" minOccurs="0"/>
                     <element name="externalId"                 type="xsd:boolean" minOccurs="0"/>
+                    <element name="extraTypeInfo"              type="xsd:string"  minOccurs="0"/>
                     <element name="filterable"                 type="xsd:boolean"/>
                     <element name="groupable"                  type="xsd:boolean"/>
                     <element name="htmlFormatted"              type="xsd:boolean" minOccurs="0"/>
@@ -705,6 +792,8 @@ All Rights Reserved
                     <element name="inlineHelpText"             type="xsd:string" minOccurs="0"/>
                     <element name="label"                      type="xsd:string"/>
                     <element name="length"                     type="xsd:int"/>
+                    <element name="mask"                       type="xsd:string"  minOccurs="0"/>
+                    <element name="maskType"                   type="xsd:string"  minOccurs="0"/>
                     <element name="name"                       type="xsd:string"/>
                     <element name="nameField"                  type="xsd:boolean"/>
                     <element name="namePointing"               type="xsd:boolean" minOccurs="0"/>
@@ -712,6 +801,7 @@ All Rights Reserved
                     <element name="permissionable"             type="xsd:boolean"/>
                     <element name="picklistValues"             type="tns:PicklistEntry" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="precision"                  type="xsd:int"/>
+                    <element name="queryByDistance"            type="xsd:boolean" />
                     <element name="referenceTo"                type="xsd:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="relationshipName"           type="xsd:string" minOccurs="0"/>
                     <element name="relationshipOrder"          type="xsd:int" minOccurs="0"/>
@@ -772,6 +862,76 @@ All Rights Reserved
                 </sequence>
             </complexType>
 
+
+
+
+            <complexType name="DescribeFlexiPageResult">
+                <sequence>
+                    <element name="id"      		type="tns:ID"/>
+                    <element name="label"            type="xsd:string"/>
+                    <element name="name"            type="xsd:string"/>
+                    <element name="quickActionList"             type="tns:DescribeQuickActionListResult" minOccurs="0" />
+                    <element name="regions"			type="tns:DescribeFlexiPageRegion" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeFlexiPageRegion">
+                <sequence>
+                    <element name="components"  	type="tns:DescribeComponentInstance" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="name"   			type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeComponentInstance">
+                <sequence>
+                    <element name="properties"  	type="tns:DescribeComponentInstanceProperty" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="typeName"   		type="xsd:string"/>
+                    <element name="typeNamespace"   type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeComponentInstanceProperty">
+                <sequence>
+                    <element name="name"   			type="xsd:string"/>
+                    <element name="value"   		type="xsd:string" nillable="true" />
+                </sequence>
+            </complexType>
+
+
+            <complexType name="DescribeAppMenuResult">
+                <sequence>
+                    <element name="appMenuItems"    type="tns:DescribeAppMenuItem" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeAppMenuItem">
+                <sequence>
+                    <element name="colors"           type="tns:DescribeColor" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="content"         type="xsd:string"/>
+                    <element name="icons"           type="tns:DescribeIcon" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="label"           type="xsd:string"/>
+                    <element name="name"            type="xsd:string"/>
+                    <element name="type"            type="xsd:string"/>
+                    <element name="url"             type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+
+
+            <complexType name="DescribeThemeResult">
+                <sequence>
+                    <element name="themeItems"    type="tns:DescribeThemeItem" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeThemeItem">
+                <sequence>
+                    <element name="colors" type="tns:DescribeColor" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="icons" type="tns:DescribeIcon" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="name"            type="xsd:string"/>
+                </sequence>
+            </complexType>
+
             <complexType name="DescribeSoftphoneLayoutResult">
                 <sequence>
                     <element name="callTypes" type="tns:DescribeSoftphoneLayoutCallType" maxOccurs="unbounded"/>
@@ -817,6 +977,54 @@ All Rights Reserved
                 </sequence>
             </complexType>
 
+
+            <complexType name="DescribeCompactLayoutsResult">
+                <sequence>
+                    <element name="compactLayouts" type="tns:DescribeCompactLayout" maxOccurs="unbounded"/>
+                    <element name="defaultCompactLayoutId" type="tns:ID"/>
+                    <element name="recordTypeCompactLayoutMappings" type="tns:RecordTypeCompactLayoutMapping" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeCompactLayout">
+                <sequence>
+                    <element name="actions" type="tns:DescribeLayoutButton" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="fieldItems" type="tns:DescribeLayoutItem" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="id" type="tns:ID"/>
+                    <element name="imageItems" type="tns:DescribeLayoutItem" minOccurs="0" maxOccurs="unbounded"/>
+                    <element name="label" type="xsd:string"/>
+                    <element name="name" type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="RecordTypeCompactLayoutMapping">
+                <sequence>
+                    <element name="available" type="xsd:boolean"/>
+                    <element name="compactLayoutId" type="tns:ID" nillable="true"/>
+                    <element name="compactLayoutName" type="xsd:string"/>
+                    <element name="recordTypeId" type="tns:ID"/>
+                    <element name="recordTypeName" type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+
+
+            <complexType name="DescribeApprovalLayoutResult">
+                <sequence>
+                    <element name="approvalLayouts" type="tns:DescribeApprovalLayout" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeApprovalLayout">
+                <sequence>
+                    <element name="id" type="tns:ID"/>
+                    <element name="label" type="xsd:string"/>
+                    <element name="layoutItems" type="tns:DescribeLayoutItem" maxOccurs="unbounded"/>
+                    <element name="name" type="xsd:string"/>
+                </sequence>
+            </complexType>
+
+
             <complexType name="DescribeLayoutResult">
                 <sequence>
                     <element name="layouts"            type="tns:DescribeLayout" maxOccurs="unbounded"/>
@@ -830,11 +1038,17 @@ All Rights Reserved
                     <element name="buttonLayoutSection"  type="tns:DescribeLayoutButtonSection" minOccurs="0"/>
                     <element name="detailLayoutSections" type="tns:DescribeLayoutSection" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="editLayoutSections"   type="tns:DescribeLayoutSection" minOccurs="0" maxOccurs="unbounded"/>
+
+                    <element name="highlightsPanelLayoutSection"  type="tns:DescribeLayoutSection" minOccurs="0" />
+
                     <element name="id"                   type="tns:ID" nillable="true"/>
 
 
 
                     <element name="quickActionList"             type="tns:DescribeQuickActionListResult" minOccurs="0" />
+
+
+                    <element name="relatedContent"                type="tns:RelatedContent" minOccurs="0" maxOccurs="1"/>
 
                     <element name="relatedLists"                type="tns:RelatedList" minOccurs="0" maxOccurs="unbounded"/>
                 </sequence>
@@ -849,7 +1063,10 @@ All Rights Reserved
 
             <complexType name="DescribeQuickActionListItemResult">
                 <sequence>
+					<element name="accessLevelRequired"    type="tns:ShareAccessLevel" nillable="true"/> 
+                    <element name="colors" type="tns:DescribeColor" minOccurs="0" maxOccurs="unbounded"/> 
                     <element name="iconUrl"       type="xsd:string" nillable="true"/>
+                    <element name="icons" type="tns:DescribeIcon" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="label"        type="xsd:string"/>
                     <element name="miniIconUrl"      type="xsd:string" />
                     <element name="quickActionName"        type="xsd:string" />
@@ -895,6 +1112,7 @@ All Rights Reserved
             <complexType name="DescribeLayoutButton">
                 <sequence>
                     <element name="custom"           type="xsd:boolean"/>
+                    <element name="icons"            type="tns:DescribeIcon" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="label"            type="xsd:string" nillable="true"/>
                     <element name="name"             type="xsd:string" nillable="true"/>
                 </sequence>
@@ -911,11 +1129,41 @@ All Rights Reserved
 
             <simpleType name="layoutComponentType">
                 <restriction base="xsd:string">
+                    <enumeration value="ReportChart"/>
                     <enumeration value="Field"/>
                     <enumeration value="Separator"/>
                     <enumeration value="SControl"/>
                     <enumeration value="EmptySpace"/>
                     <enumeration value="VisualforcePage"/>
+
+                    <enumeration value="ExpandedLookup"/>
+
+
+                    <enumeration value="AuraComponent"/>
+
+                </restriction>
+            </simpleType>
+
+            <complexType name="ReportChartComponent">
+                <complexContent>
+                    <extension base="tns:DescribeLayoutComponent">
+                        <sequence>
+                            <element name="cacheData"              type="xsd:boolean"/>
+                            <element name="contextFilterableField" type="xsd:string"/>
+                            <element name="hideOnError"            type="xsd:boolean"/>
+                            <element name="includeContext"         type="xsd:boolean"/>
+                            <element name="showTitle"              type="xsd:boolean"/>
+                            <element name="size"                   type="tns:ReportChartSize"/>
+                        </sequence>
+                    </extension>
+                </complexContent>
+            </complexType>
+
+            <simpleType name="ReportChartSize">
+                <restriction base="xsd:string">
+                    <enumeration value="SMALL"/>
+                    <enumeration value="MEDIUM"/>
+                    <enumeration value="LARGE"/>
                 </restriction>
             </simpleType>
 
@@ -946,8 +1194,23 @@ All Rights Reserved
                 </sequence>
             </complexType>
 
+
+             <complexType name="RelatedContent">
+                <sequence>
+                    <element name="relatedContentItems"         type="tns:DescribeRelatedContentItem" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+
+            <complexType name="DescribeRelatedContentItem">
+                <sequence>
+                    <element name="describeLayoutItem"         type="tns:DescribeLayoutItem" maxOccurs="1"/>
+                </sequence>
+            </complexType>
+
+
             <complexType name="RelatedList">
                 <sequence>
+                    <element name="accessLevelRequiredForCreate"    type="tns:ShareAccessLevel" nillable="true"/> 
                     <element name="columns"         type="tns:RelatedListColumn" maxOccurs="unbounded"/>
                     <element name="custom"          type="xsd:boolean"/>
                     <element name="field"           type="xsd:string" nillable="true"/>
@@ -1053,25 +1316,31 @@ All Rights Reserved
 
 
 
+
         
             <complexType name="DescribeSearchLayoutResult">
                 <sequence>
-                    <element name="label"           type="xsd:string" />
-                    <element name="limitRows"       type="xsd:int"/>
-                    <element name="searchColumns" type="tns:DescribeColumn" minOccurs="0" maxOccurs="unbounded"/>
+                    
+                    <element name="errorMsg" type="xsd:string" nillable="true"/>
+                    <element name="label" type="xsd:string" nillable="true"/>
+                    <element name="limitRows" type="xsd:int" nillable="true"/>
+                    <element name="objectType" type="xsd:string"/>
+                    <element name="searchColumns" type="tns:DescribeColumn" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
                 </sequence>
             </complexType>
-            
+        
+
                 <complexType name="DescribeColumn">
                     <sequence>
                         <element name="field" type="xsd:string" />
                         <element name="format" type="xsd:string" nillable="true"/>
                         <element name="label" type="xsd:string" />
                         <element name="name" type="xsd:string" />
+                        <element name="sortable" type="xsd:boolean" />
                     </sequence>
                 </complexType>
-            
-        
+
+
 
 
             <complexType name="DescribeSearchScopeOrderResult">
@@ -1094,14 +1363,39 @@ All Rights Reserved
 
             <complexType name="DescribeTab">
                 <sequence>
+                    <element name="colors" type="tns:DescribeColor" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="custom"           type="xsd:boolean" />
                     <element name="iconUrl"          type="xsd:string" />
+                    <element name="icons" type="tns:DescribeIcon" minOccurs="0" maxOccurs="unbounded"/>
                     <element name="label"            type="xsd:string" />
                     <element name="miniIconUrl"      type="xsd:string" />
                     <element name="sobjectName"      type="xsd:string" nillable="true" />
                     <element name="url"              type="xsd:string" />
                 </sequence>
             </complexType>
+
+
+        <complexType name="DescribeColor">
+            <sequence>
+                <element name="color"            type="xsd:string" />
+                <element name="context"          type="xsd:string" />
+                <element name="theme"            type="xsd:string" />
+            </sequence>
+        </complexType>
+
+
+
+        <complexType name="DescribeIcon">
+            <sequence>
+                <element name="contentType"     type="xsd:string" />
+                <element name="height"          type="xsd:int" nillable="true"/>
+                <element name="theme"           type="xsd:string" />
+                <element name="url"             type="xsd:string" />
+                <element name="width"           type="xsd:int" nillable="true" />
+            </sequence>
+        </complexType>
+
+
 
 
 
@@ -1170,7 +1464,39 @@ All Rights Reserved
                 </complexType>
             </element>
 
-            <!-- Describe Data Category Groups Message Types -->
+
+        <!-- Describe Global Theme Types -->
+        <element name="describeGlobalTheme">
+            <complexType>
+                <sequence/>
+            </complexType>
+        </element>
+        <element name="describeGlobalThemeResponse">
+            <complexType>
+                <sequence>
+                    <element name="result" type="tns:DescribeGlobalTheme"/>
+                </sequence>
+            </complexType>
+        </element>
+
+        <!-- Describe Theme Types -->
+        <element name="describeTheme">
+            <complexType>
+                <sequence>
+                    <element name="sobjectType" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                </sequence>
+            </complexType>
+        </element>
+        <element name="describeThemeResponse">
+            <complexType>
+                <sequence>
+                    <element name="result" type="tns:DescribeThemeResult"/>
+                </sequence>
+            </complexType>
+        </element>
+
+
+        <!-- Describe Data Category Groups Message Types -->
             <element name="describeDataCategoryGroups">
                 <complexType>
                     <sequence>
@@ -1200,6 +1526,54 @@ All Rights Reserved
                     </sequence>
                 </complexType>
             </element>
+
+
+
+
+
+            <element name="describeFlexiPages">
+                <complexType>
+                    <sequence>
+                        <element name="flexiPages" type="xsd:string" minOccurs="0" maxOccurs="unbounded" />
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="describeFlexiPagesResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeFlexiPageResult" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+
+
+            <simpleType name="AppMenuType">
+                <restriction base="xsd:string">
+                    <enumeration value="AppSwitcher"/>
+                    <enumeration value="Salesforce1"/>
+                    <enumeration value="NetworkTabs"/>
+                </restriction>
+            </simpleType>
+
+
+            <element name="describeAppMenu">
+                <complexType>
+                    <sequence>
+                        <element name="appMenuType" type="tns:AppMenuType" />
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="describeAppMenuResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeAppMenuResult" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+
+
             <element name="describeLayout">
                 <complexType>
                     <sequence>
@@ -1212,6 +1586,40 @@ All Rights Reserved
                 <complexType>
                     <sequence>
                         <element name="result" type="tns:DescribeLayoutResult" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+
+            <element name="describeCompactLayouts">
+                <complexType>
+                    <sequence>
+                        <element name="sObjectType" type="xsd:string"/>
+                        <element name="recordTypeIds" type="tns:ID" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="describeCompactLayoutsResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeCompactLayoutsResult" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+
+            <element name="describeApprovalLayout">
+                <complexType>
+                    <sequence>
+                        <element name="sObjectType" type="xsd:string"/>
+                        <element name="approvalProcessNames" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="describeApprovalLayoutResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:DescribeApprovalLayoutResult" nillable="true"/>
                     </sequence>
                 </complexType>
             </element>
@@ -1231,7 +1639,7 @@ All Rights Reserved
 
 
 
-        
+
             <element name="describeSearchLayouts">
                 <complexType>
                     <sequence>
@@ -1246,7 +1654,7 @@ All Rights Reserved
                     </sequence>
                 </complexType>
             </element>
-        
+
 
 
             <element name="describeSearchScopeOrder">
@@ -1457,6 +1865,23 @@ All Rights Reserved
                 </complexType>
             </element>
 
+
+            <element name="retrieveQuickActionTemplates">
+                <complexType>
+                    <sequence>
+                        <element name="quickActionNames" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+                        <element name="contextId" type="tns:ID" nillable="true"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="retrieveQuickActionTemplatesResponse">
+                <complexType>
+                    <sequence>
+                        <element name="result" type="tns:QuickActionTemplateResult" minOccurs="0" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+
             <element name="describeQuickActions">
                 <complexType>
                     <sequence>
@@ -1475,7 +1900,7 @@ All Rights Reserved
             <element name="describeAvailableQuickActions">
                 <complexType>
                     <sequence>
-                        <element name="parentType"       type="xsd:string" nillable="true"/>
+                        <element name="contextType"       type="xsd:string" nillable="true"/>
                     </sequence>
                 </complexType>
             </element>
@@ -1830,17 +2255,39 @@ All Rights Reserved
         </element>
 
 
+
+        <complexType name="LimitInfo">
+            <sequence>
+                <element name="current" type="xsd:int"/>
+                <element name="limit" type="xsd:int"/>
+                <element name="type" type="xsd:string"/>
+            </sequence>
+        </complexType>
+
+        <element name="LimitInfoHeader">
+            <complexType>
+                <sequence>
+                    <element name="limitInfo" minOccurs="0" maxOccurs="unbounded" type="tns:LimitInfo"/>
+                </sequence>
+            </complexType>
+        </element>
+
+
+
+
+
+
             <!-- ideally this could of just been elem name="..." type="xsd:boolean"
                  but is required to be nested within a complexType for .NET 1.1 compatibility -->
-            <element name="MruHeader">
+	<element name="MruHeader">
                 <complexType>
                     <sequence>
                         <element name="updateMru" type="xsd:boolean" />
                     </sequence>
                 </complexType>
-            </element>
+	</element>
 
-            <element name="EmailHeader">
+	<element name="EmailHeader">
                 <complexType>
                     <sequence>
                         <element name="triggerAutoResponseEmail"    type="xsd:boolean"/>
@@ -1848,16 +2295,16 @@ All Rights Reserved
                         <element name="triggerUserEmail"            type="xsd:boolean"/>
                     </sequence>
                 </complexType>
-            </element>
+	</element>
 
-            <element name="AssignmentRuleHeader">
+	<element name="AssignmentRuleHeader">
                 <complexType>
                     <sequence>
                         <element name="assignmentRuleId"    type="tns:ID"  nillable="true" />
                         <element name="useDefaultRule"      type="xsd:boolean" nillable="true" />
                     </sequence>
                 </complexType>
-            </element>
+	</element>
 
             <element name="UserTerritoryDeleteHeader">
                 <complexType>
@@ -1903,10 +2350,18 @@ All Rights Reserved
                     <enumeration value="CIRCULAR_OBJECT_GRAPH"/>
                     <enumeration value="CLIENT_NOT_ACCESSIBLE_FOR_USER"/>
                     <enumeration value="CLIENT_REQUIRE_UPDATE_FOR_USER"/>
+                    <enumeration value="CONTENT_HUB_AUTHENTICATION_EXCEPTION"/>
+                    <enumeration value="CONTENT_HUB_FILE_DOWNLOAD_EXCEPTION"/>
+                    <enumeration value="CONTENT_HUB_FILE_NOT_FOUND_EXCEPTION"/>
+                    <enumeration value="CONTENT_HUB_INVALID_OBJECT_TYPE_EXCEPTION"/>
+                    <enumeration value="CONTENT_HUB_SECURITY_EXCEPTION"/>
+                    <enumeration value="CONTENT_HUB_UNEXPECTED_EXCEPTION"/>
                     <enumeration value="CUSTOM_METADATA_LIMIT_EXCEEDED"/>
                     <enumeration value="DATACLOUD_API_CLIENT_EXCEPTION"/>
+                    <enumeration value="DATACLOUD_API_DISABLED_EXCEPTION"/>
                     <enumeration value="DATACLOUD_API_SERVER_BUSY_EXCEPTION"/>
                     <enumeration value="DATACLOUD_API_SERVER_EXCEPTION"/>
+                    <enumeration value="DATACLOUD_API_TIMEOUT_EXCEPTION"/>
                     <enumeration value="DATACLOUD_API_UNAVAILABLE"/>
                     <enumeration value="DUPLICATE_ARGUMENT_VALUE"/>
                     <enumeration value="DUPLICATE_VALUE"/>
@@ -1932,11 +2387,13 @@ All Rights Reserved
                     <enumeration value="INACTIVE_OWNER_OR_USER"/>
                     <enumeration value="INACTIVE_PORTAL"/>
                     <enumeration value="INSUFFICIENT_ACCESS"/>
+                    <enumeration value="INTERNAL_CANVAS_ERROR"/>
                     <enumeration value="INVALID_ASSIGNMENT_RULE"/>
                     <enumeration value="INVALID_BATCH_REQUEST"/>
                     <enumeration value="INVALID_BATCH_SIZE"/>
                     <enumeration value="INVALID_CLIENT"/>
                     <enumeration value="INVALID_CROSS_REFERENCE_KEY"/>
+                    <enumeration value="INVALID_DATE_FORMAT"/>
                     <enumeration value="INVALID_FIELD"/>
                     <enumeration value="INVALID_FILTER_LANGUAGE"/>
                     <enumeration value="INVALID_FILTER_VALUE"/>
@@ -1949,6 +2406,7 @@ All Rights Reserved
                     <enumeration value="INVALID_NEW_PASSWORD"/>
                     <enumeration value="INVALID_OPERATION"/>
                     <enumeration value="INVALID_OPERATION_WITH_EXPIRED_PASSWORD"/>
+                    <enumeration value="INVALID_PACKAGE_VERSION"/>
                     <enumeration value="INVALID_PAGING_OPTION"/>
                     <enumeration value="INVALID_QUERY_FILTER_OPERATOR"/>
                     <enumeration value="INVALID_QUERY_LOCATOR"/>
@@ -1996,6 +2454,7 @@ All Rights Reserved
                     <enumeration value="REQUEST_LIMIT_EXCEEDED"/>
                     <enumeration value="REQUEST_RUNNING_TOO_LONG"/>
                     <enumeration value="SERVER_UNAVAILABLE"/>
+                    <enumeration value="SERVICE_DESK_NOT_ENABLED"/>
                     <enumeration value="SOCIALCRM_FEEDSERVICE_API_CLIENT_EXCEPTION"/>
                     <enumeration value="SOCIALCRM_FEEDSERVICE_API_SERVER_EXCEPTION"/>
                     <enumeration value="SOCIALCRM_FEEDSERVICE_API_UNAVAILABLE"/>
@@ -2028,10 +2487,18 @@ All Rights Reserved
                     <enumeration value="fns:CIRCULAR_OBJECT_GRAPH"/>
                     <enumeration value="fns:CLIENT_NOT_ACCESSIBLE_FOR_USER"/>
                     <enumeration value="fns:CLIENT_REQUIRE_UPDATE_FOR_USER"/>
+                    <enumeration value="fns:CONTENT_HUB_AUTHENTICATION_EXCEPTION"/>
+                    <enumeration value="fns:CONTENT_HUB_FILE_DOWNLOAD_EXCEPTION"/>
+                    <enumeration value="fns:CONTENT_HUB_FILE_NOT_FOUND_EXCEPTION"/>
+                    <enumeration value="fns:CONTENT_HUB_INVALID_OBJECT_TYPE_EXCEPTION"/>
+                    <enumeration value="fns:CONTENT_HUB_SECURITY_EXCEPTION"/>
+                    <enumeration value="fns:CONTENT_HUB_UNEXPECTED_EXCEPTION"/>
                     <enumeration value="fns:CUSTOM_METADATA_LIMIT_EXCEEDED"/>
                     <enumeration value="fns:DATACLOUD_API_CLIENT_EXCEPTION"/>
+                    <enumeration value="fns:DATACLOUD_API_DISABLED_EXCEPTION"/>
                     <enumeration value="fns:DATACLOUD_API_SERVER_BUSY_EXCEPTION"/>
                     <enumeration value="fns:DATACLOUD_API_SERVER_EXCEPTION"/>
+                    <enumeration value="fns:DATACLOUD_API_TIMEOUT_EXCEPTION"/>
                     <enumeration value="fns:DATACLOUD_API_UNAVAILABLE"/>
                     <enumeration value="fns:DUPLICATE_ARGUMENT_VALUE"/>
                     <enumeration value="fns:DUPLICATE_VALUE"/>
@@ -2057,11 +2524,13 @@ All Rights Reserved
                     <enumeration value="fns:INACTIVE_OWNER_OR_USER"/>
                     <enumeration value="fns:INACTIVE_PORTAL"/>
                     <enumeration value="fns:INSUFFICIENT_ACCESS"/>
+                    <enumeration value="fns:INTERNAL_CANVAS_ERROR"/>
                     <enumeration value="fns:INVALID_ASSIGNMENT_RULE"/>
                     <enumeration value="fns:INVALID_BATCH_REQUEST"/>
                     <enumeration value="fns:INVALID_BATCH_SIZE"/>
                     <enumeration value="fns:INVALID_CLIENT"/>
                     <enumeration value="fns:INVALID_CROSS_REFERENCE_KEY"/>
+                    <enumeration value="fns:INVALID_DATE_FORMAT"/>
                     <enumeration value="fns:INVALID_FIELD"/>
                     <enumeration value="fns:INVALID_FILTER_LANGUAGE"/>
                     <enumeration value="fns:INVALID_FILTER_VALUE"/>
@@ -2074,6 +2543,7 @@ All Rights Reserved
                     <enumeration value="fns:INVALID_NEW_PASSWORD"/>
                     <enumeration value="fns:INVALID_OPERATION"/>
                     <enumeration value="fns:INVALID_OPERATION_WITH_EXPIRED_PASSWORD"/>
+                    <enumeration value="fns:INVALID_PACKAGE_VERSION"/>
                     <enumeration value="fns:INVALID_PAGING_OPTION"/>
                     <enumeration value="fns:INVALID_QUERY_FILTER_OPERATOR"/>
                     <enumeration value="fns:INVALID_QUERY_LOCATOR"/>
@@ -2121,6 +2591,7 @@ All Rights Reserved
                     <enumeration value="fns:REQUEST_LIMIT_EXCEEDED"/>
                     <enumeration value="fns:REQUEST_RUNNING_TOO_LONG"/>
                     <enumeration value="fns:SERVER_UNAVAILABLE"/>
+                    <enumeration value="fns:SERVICE_DESK_NOT_ENABLED"/>
                     <enumeration value="fns:SOCIALCRM_FEEDSERVICE_API_CLIENT_EXCEPTION"/>
                     <enumeration value="fns:SOCIALCRM_FEEDSERVICE_API_SERVER_EXCEPTION"/>
                     <enumeration value="fns:SOCIALCRM_FEEDSERVICE_API_UNAVAILABLE"/>
@@ -2257,6 +2728,9 @@ All Rights Reserved
         <part element="tns:DebuggingHeader"              name="DebuggingHeader"/>
         <part element="tns:PackageVersionHeader"         name="PackageVersionHeader"/>
         <part element="tns:DebuggingInfo"                name="DebuggingInfo"/>
+
+        <part element="tns:LimitInfoHeader"              name="LimitInfoHeader"/>
+
         <part element="tns:LocaleOptions"                name="LocaleOptions"/>
 
         <part element="tns:OwnerChangeOptions"           name="OwnerChangeOptions"/>
@@ -2341,6 +2815,34 @@ All Rights Reserved
         <part element="tns:describeDataCategoryGroupStructuresResponse" name="parameters"/>
     </message>
 
+    <message name="describeFlexiPagesRequest">
+        <part element="tns:describeFlexiPages" name="parameters"/>
+    </message>
+    <message name="describeFlexiPagesResponse">
+        <part element="tns:describeFlexiPagesResponse" name="parameters"/>
+    </message>
+
+    <message name="describeAppMenuRequest">
+        <part element="tns:describeAppMenu" name="parameters"/>
+    </message>
+    <message name="describeAppMenuResponse">
+        <part element="tns:describeAppMenuResponse" name="parameters"/>
+    </message>
+
+    <message name="describeGlobalThemeRequest">
+        <part element="tns:describeGlobalTheme" name="parameters"/>
+    </message>
+    <message name="describeGlobalThemeResponse">
+        <part element="tns:describeGlobalThemeResponse" name="parameters"/>
+    </message>
+
+    <message name="describeThemeRequest">
+        <part element="tns:describeTheme" name="parameters"/>
+    </message>
+    <message name="describeThemeResponse">
+        <part element="tns:describeThemeResponse" name="parameters"/>
+    </message>
+
     <message name="describeLayoutRequest">
         <part element="tns:describeLayout" name="parameters"/>
     </message>
@@ -2367,6 +2869,20 @@ All Rights Reserved
     </message>
     <message name="describeSearchScopeOrderResponse">
         <part element="tns:describeSearchScopeOrderResponse" name="parameters"/>
+    </message>
+
+    <message name="describeCompactLayoutsRequest">
+        <part element="tns:describeCompactLayouts" name="parameters"/>
+    </message>
+    <message name="describeCompactLayoutsResponse">
+        <part element="tns:describeCompactLayoutsResponse" name="parameters"/>
+    </message>
+
+    <message name="describeApprovalLayoutRequest">
+        <part element="tns:describeApprovalLayout" name="parameters"/>
+    </message>
+    <message name="describeApprovalLayoutResponse">
+        <part element="tns:describeApprovalLayoutResponse" name="parameters"/>
     </message>
 
     <message name="describeTabsRequest">
@@ -2565,6 +3081,13 @@ All Rights Reserved
         <part element="tns:describeAvailableQuickActionsResponse" name="parameters"/>
     </message>
 
+    <message name="retrieveQuickActionTemplatesRequest">
+        <part element="tns:retrieveQuickActionTemplates" name="parameters"/>
+    </message>
+    <message name="retrieveQuickActionTemplatesResponse">
+        <part element="tns:retrieveQuickActionTemplatesResponse" name="parameters"/>
+    </message>
+
 
 
     <!-- Soap PortType -->
@@ -2617,6 +3140,35 @@ All Rights Reserved
             <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
         </operation>
 
+        <operation name="describeFlexiPages">
+            <documentation>Describe a list of FlexiPage and their contents</documentation>
+            <input  message="tns:describeFlexiPagesRequest"/>
+            <output message="tns:describeFlexiPagesResponse"/>
+            <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
+            <fault  message="tns:InvalidIdFault" name="InvalidIdFault"/>
+        </operation>
+
+        <operation name="describeAppMenu">
+            <documentation>Describe the items in an AppMenu</documentation>
+            <input  message="tns:describeAppMenuRequest"/>
+            <output message="tns:describeAppMenuResponse"/>
+            <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
+        </operation>
+
+        <operation name="describeGlobalTheme">
+            <documentation>Describe Gloal and Themes</documentation>
+            <input  message="tns:describeGlobalThemeRequest"/>
+            <output message="tns:describeGlobalThemeResponse"/>
+            <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
+        </operation>
+
+        <operation name="describeTheme">
+            <documentation>Describe Themes</documentation>
+            <input  message="tns:describeThemeRequest"/>
+            <output message="tns:describeThemeResponse"/>
+            <fault  message="tns:UnexpectedErrorFault" name="UnexpectedErrorFault"/>
+        </operation>
+
         <operation name="describeLayout">
             <documentation>Describe the layout of the given sObject or the given actionable global page.</documentation>
             <input  message="tns:describeLayoutRequest"/>
@@ -2645,6 +3197,18 @@ All Rights Reserved
             <documentation>Describe a list of objects representing the order and scope of objects on a users search result page</documentation>
             <input  message="tns:describeSearchScopeOrderRequest"/>
             <output message="tns:describeSearchScopeOrderResponse"/>
+        </operation>
+
+        <operation name="describeCompactLayouts">
+            <documentation>Describe the compact layouts of the given sObject</documentation>
+            <input  message="tns:describeCompactLayoutsRequest"/>
+            <output message="tns:describeCompactLayoutsResponse"/>
+        </operation>
+
+        <operation name="describeApprovalLayout">
+            <documentation>Describe the approval layouts of the given sObject</documentation>
+            <input  message="tns:describeApprovalLayoutRequest"/>
+            <output message="tns:describeApprovalLayoutResponse"/>
         </operation>
 
         <operation name="describeTabs">
@@ -2873,9 +3437,15 @@ All Rights Reserved
         </operation>
 
         <operation name="describeAvailableQuickActions">
-            <documentation>Describe the details of a series of quick actions available for the given parentType</documentation>
+            <documentation>Describe the details of a series of quick actions available for the given contextType</documentation>
             <input  message="tns:describeAvailableQuickActionsRequest"/>
             <output message="tns:describeAvailableQuickActionsResponse"/>
+        </operation>
+
+        <operation name="retrieveQuickActionTemplates">
+            <documentation>Retreive the template sobjects, if appropriate, for the given quick action names in a given context</documentation>
+            <input  message="tns:retrieveQuickActionTemplatesRequest"/>
+            <output message="tns:retrieveQuickActionTemplatesResponse"/>
         </operation>
 
     </portType>
@@ -2913,6 +3483,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -2932,6 +3503,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -2950,6 +3522,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -2966,6 +3539,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -2985,11 +3559,79 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
                 <soap:fault name="InvalidSObjectFault" use="literal"/>
             </fault>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="describeFlexiPages">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+            <fault name="InvalidIdFault">
+                <soap:fault name="InvalidIdFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="describeAppMenu">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="describeGlobalTheme">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
+                <soap:body use="literal"/>
+            </output>
+            <fault name="UnexpectedErrorFault">
+                <soap:fault name="UnexpectedErrorFault" use="literal"/>
+            </fault>
+        </operation>
+        <operation name="describeTheme">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
+                <soap:body use="literal"/>
+            </output>
             <fault name="UnexpectedErrorFault">
                 <soap:fault name="UnexpectedErrorFault" use="literal"/>
             </fault>
@@ -3003,6 +3645,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3024,6 +3667,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3039,6 +3683,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3057,6 +3702,33 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="describeCompactLayouts">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="describeApprovalLayout">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
         </operation>
@@ -3069,6 +3741,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3093,6 +3766,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3127,6 +3801,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3161,6 +3836,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3193,6 +3869,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3225,6 +3902,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3246,6 +3924,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3260,6 +3939,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3277,6 +3957,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3309,6 +3990,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3332,6 +4014,7 @@ All Rights Reserved
             </input>
             <output>
                 <soap:header use="literal" message="tns:Header" part="DebuggingInfo"/>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3346,6 +4029,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3360,6 +4044,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3374,6 +4059,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3391,6 +4077,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3411,6 +4098,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3441,6 +4129,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3471,6 +4160,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidQueryLocatorFault">
@@ -3495,6 +4185,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidSObjectFault">
@@ -3518,6 +4209,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3532,6 +4224,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidIdFault">
@@ -3553,6 +4246,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="InvalidIdFault">
@@ -3570,6 +4264,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3584,6 +4279,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3598,6 +4294,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
             <fault name="UnexpectedErrorFault">
@@ -3622,6 +4319,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
         </operation>
@@ -3635,6 +4333,7 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
         </operation>
@@ -3648,6 +4347,21 @@ All Rights Reserved
                 <soap:body parts="parameters" use="literal"/>
             </input>
             <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
+                <soap:body use="literal"/>
+            </output>
+        </operation>
+        <operation name="retrieveQuickActionTemplates">
+            <soap:operation soapAction=""/>
+            <input>
+                <soap:header use="literal" message="tns:Header" part="SessionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="CallOptions"/>
+                <soap:header use="literal" message="tns:Header" part="PackageVersionHeader"/>
+                <soap:header use="literal" message="tns:Header" part="LocaleOptions"/>
+                <soap:body parts="parameters" use="literal"/>
+            </input>
+            <output>
+                <soap:header use="literal" message="tns:Header" part="LimitInfoHeader"/>
                 <soap:body use="literal"/>
             </output>
         </operation>
@@ -3658,7 +4372,7 @@ All Rights Reserved
     <service name="SforceService">
         <documentation>Sforce SOAP API</documentation>
         <port binding="tns:SoapBinding" name="Soap">
-            <soap:address location="https://login.salesforce.com/services/Soap/u/28.0"/>
+            <soap:address location="https://login.salesforce.com/services/Soap/u/30.0"/>
         </port>
     </service>
 </definitions>

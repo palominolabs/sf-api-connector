@@ -34,8 +34,13 @@
           <packageName>${jaxws.stub.metadata-api.package}</packageName>
           <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
           <wsdlFiles>
-            <wsdlFile>metadata-28.0.wsdl</wsdlFile>
+            <wsdlFile>metadata-30.0.wsdl</wsdlFile>
           </wsdlFiles>
+          <bindingDirectory>${basedir}/src/main/jaxb</bindingDirectory>
+          <bindingFiles>
+            <bindingFile>sf-wsdl-jaxb-binding.xml
+            </bindingFile>
+          </bindingFiles>
         </configuration>
       </plugin>
 
