@@ -107,7 +107,7 @@ public class BindingConfigurerTest {
     @Test
     public void testConfigureMetadataBindingSetsEndpoint() {
         final MetadataPortType binding = this.metadataBindingCache.getBinding();
-        assertEquals("https://na3.salesforce.com/services/Soap/m/" + ApiVersion.API_VERSION_STRING,
+        assertEquals("https://na10.salesforce.com/services/Soap/m/" + ApiVersion.API_VERSION_STRING,
                 getEndpoint(binding));
 
         final String mdEndpt = "http://metadata.com";
@@ -134,7 +134,7 @@ public class BindingConfigurerTest {
     @Test
     public void testConfigureApexBindingSetsEndpoint() {
         final ApexPortType binding = this.apexBindingCache.getBinding();
-        assertEquals("https://na3.salesforce.com/services/Soap/s/" + ApiVersion.API_VERSION_STRING,
+        assertEquals("https://na10.salesforce.com/services/Soap/s/" + ApiVersion.API_VERSION_STRING,
                 getEndpoint(binding));
 
         this.configurer.configureApexBinding(binding,

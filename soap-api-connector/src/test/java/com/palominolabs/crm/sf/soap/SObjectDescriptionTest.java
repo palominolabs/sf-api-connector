@@ -61,12 +61,13 @@ public class SObjectDescriptionTest {
         assertEquals("CurrentGenerators__c", cFields.get(0));
         assertEquals("SICCode__c", cFields.get(4));
 
-        assertEquals(47, sFields.size());
-        assertEquals("AnnualRevenue", sFields.get(0));
-        assertEquals("Salutation", sFields.get(40));
-        assertEquals("Website", sFields.get(46));
+        assertEquals(49, sFields.size());
+        assertEquals("Address", sFields.get(0));
+        assertEquals("AnnualRevenue", sFields.get(1));
+        assertEquals("Salutation", sFields.get(42));
+        assertEquals("Website", sFields.get(48));
 
-        assertEquals(21, sObjDescr.getChildRelationships().size());
+        assertEquals(26, sObjDescr.getChildRelationships().size());
 
         List<ChildRelationship> childRels = (List<ChildRelationship>) TestFixtureUtils
                 .loadFixtures("/sObjectFixtures/ConnectionTests/describeSObjectChildRelationships.xml");

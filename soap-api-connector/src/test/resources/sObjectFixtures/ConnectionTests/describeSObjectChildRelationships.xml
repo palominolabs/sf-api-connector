@@ -1,10 +1,23 @@
 <java.util.Collections_-UnmodifiableRandomAccessList resolves-to="java.util.Collections$UnmodifiableList">
   <c class="list">
     <com.palominolabs.crm.sf.soap.ChildRelationship>
+      <cascadeDelete>false</cascadeDelete>
+      <restrictedDelete>null</restrictedDelete>
+      <childSObject>AcceptedEventRelation</childSObject>
+      <field>RelationId</field>
+      <relationshipName>AcceptedEventRelations</relationshipName>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
       <childSObject>ActivityHistory</childSObject>
       <field>WhoId</field>
       <relationshipName>ActivityHistories</relationshipName>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
+      <cascadeDelete>true</cascadeDelete>
+      <childSObject>AttachedContentDocument</childSObject>
+      <field>LinkedEntityId</field>
+      <relationshipName>AttachedContentDocuments</relationshipName>
     </com.palominolabs.crm.sf.soap.ChildRelationship>
     <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
@@ -20,6 +33,12 @@
     </com.palominolabs.crm.sf.soap.ChildRelationship>
     <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>
+      <childSObject>CombinedAttachment</childSObject>
+      <relationshipName>CombinedAttachments</relationshipName>
+      <field>ParentId</field>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
+      <cascadeDelete>true</cascadeDelete>
       <childSObject>ContentDocumentLink</childSObject>
       <field>LinkedEntityId</field>
     </com.palominolabs.crm.sf.soap.ChildRelationship>
@@ -27,6 +46,12 @@
       <cascadeDelete>false</cascadeDelete>
       <childSObject>ContentVersion</childSObject>
       <field>FirstPublishLocationId</field>
+    </com.palominolabs.crm.sf.soap.ChildRelationship>
+    <com.palominolabs.crm.sf.soap.ChildRelationship>
+      <cascadeDelete>false</cascadeDelete>
+      <childSObject>DeclinedEventRelation</childSObject>
+      <relationshipName>DeclinedEventRelations</relationshipName>
+      <field>RelationId</field>
     </com.palominolabs.crm.sf.soap.ChildRelationship>
     <com.palominolabs.crm.sf.soap.ChildRelationship>
       <cascadeDelete>true</cascadeDelete>

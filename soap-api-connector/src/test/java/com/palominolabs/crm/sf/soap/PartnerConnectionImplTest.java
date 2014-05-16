@@ -209,7 +209,7 @@ public class PartnerConnectionImplTest {
             final GlobalSObjectDescription exType = expected.getSObjectTypes().get(i);
             final GlobalSObjectDescription acType = actual.getSObjectTypes().get(i);
 
-            String message = "exType: " + exType.getLabel() + "; acType: " + acType.getLabel();
+            String message = "exLabel: " + exType.getLabel() + "; acLabel: " + acType.getLabel();
             assertEquals(message, exType.getKeyPrefix(), acType.getKeyPrefix());
             assertEquals(message, exType.getLabel(), acType.getLabel());
             assertEquals(message, exType.getLabelPlural(), acType.getLabelPlural());
