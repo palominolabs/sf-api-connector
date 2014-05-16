@@ -24,12 +24,14 @@ import javax.annotation.CheckForNull;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.annotation.concurrent.Immutable;
+import java.util.Map;
 
 @Immutable
 public final class RecordTypeInfo {
 
     private final String name;
     private final boolean available;
+    private final Map<String, String> urls;
     @Nullable
     private final Id recordTypeId;
     private final boolean defaultRecordTypeMapping;
@@ -39,9 +41,11 @@ public final class RecordTypeInfo {
             @JsonProperty("name") String name,
             @JsonProperty("available") boolean available,
             @JsonProperty("recordTypeId") String recordTypeId,
-            @JsonProperty("defaultRecordTypeMapping") boolean defaultRecordTypeMapping) {
+            @JsonProperty("defaultRecordTypeMapping") boolean defaultRecordTypeMapping,
+            @JsonProperty("urls") Map<String, String> urls) {
         this.name = name;
         this.available = available;
+        this.urls = urls;
         this.recordTypeId = recordTypeId == null ? null : new Id(recordTypeId);
         this.defaultRecordTypeMapping = defaultRecordTypeMapping;
     }
@@ -58,6 +62,10 @@ public final class RecordTypeInfo {
     @CheckForNull
     public Id getRecordTypeId() {
         return recordTypeId;
+    }
+
+    public Map<String, String> getUrls() {
+        return urls;
     }
 
     public boolean isDefaultRecordTypeMapping() {

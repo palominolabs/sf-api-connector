@@ -31,22 +31,33 @@ public final class SObjectUrls extends AbstractSObjectUrls {
     private final String uiDetailTemplate;
     private final String uiNewRecord;
     private final String passwordUtilities;
+    @Nullable
+    private final String caseArticleSuggestions;
+    @Nullable
+    private final String caseRowArticleSuggestions;
 
     @JsonCreator
     SObjectUrls(
             @Nonnull @JsonProperty("uiEditTemplate") String uiEditTemplate,
             @Nonnull @JsonProperty("sobject") String sobjectUrlPath,
+            @Nonnull @JsonProperty("approvalLayouts") String approvalLayouts,
+            @Nonnull @JsonProperty("quickActions") String quickActions,
             @Nonnull @JsonProperty("uiDetailTemplate") String uiDetailTemplate,
             @Nonnull @JsonProperty("describe") String describeUrlPath,
             @Nonnull @JsonProperty("rowTemplate") String rowTemplateUrlPath,
+            @Nonnull @JsonProperty("layouts") String layoutsPath,
+            @Nonnull @JsonProperty("compactLayouts") String compactLayouts,
             @Nonnull @JsonProperty("uiNewRecord") String uiNewRecord,
             @Nullable @JsonProperty("passwordUtilities") String passwordUtilities,
-            @Nonnull @JsonProperty("layouts") String layoutsPath) {
-        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath, layoutsPath);
+            @Nullable @JsonProperty("caseArticleSuggestions") String caseArticleSuggestions,
+            @Nullable @JsonProperty("caseRowArticleSuggestions") String caseRowArticleSuggestions) {
+        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath, layoutsPath, approvalLayouts, quickActions, compactLayouts);
         this.uiEditTemplate = uiEditTemplate;
         this.uiDetailTemplate = uiDetailTemplate;
         this.uiNewRecord = uiNewRecord;
         this.passwordUtilities = passwordUtilities;
+        this.caseArticleSuggestions = caseArticleSuggestions;
+        this.caseRowArticleSuggestions = caseRowArticleSuggestions;
     }
 
     @Nonnull
@@ -67,5 +78,10 @@ public final class SObjectUrls extends AbstractSObjectUrls {
     @Nullable
     public String getPasswordUtilities() {
         return passwordUtilities;
+    }
+
+    @Nullable
+    public String getCaseArticleSuggestions() {
+        return caseArticleSuggestions;
     }
 }

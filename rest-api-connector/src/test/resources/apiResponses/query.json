@@ -4,7 +4,7 @@
     "records" : [ {
         "attributes" : {
             "type" : "Product2",
-            "url" : "/services/data/v28.0/sobjects/Product2/01t50000001L5cTAAS"
+            "url" : "/services/data/v30.0/sobjects/Product2/01t50000001L5cTAAS"
         },
         "Id" : "01t50000001L5cTAAS",
         "Name" : "GenWatt Diesel 200kW",

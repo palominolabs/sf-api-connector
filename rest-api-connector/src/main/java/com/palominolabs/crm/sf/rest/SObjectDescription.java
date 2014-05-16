@@ -39,6 +39,7 @@ public final class SObjectDescription {
     private final boolean updateable;
     private final SObjectUrls sObjectUrls;
     private final boolean searchable;
+    private final boolean compactLayoutable;
     private final List<ChildRelationship> childRelationships;
     private final List<FieldDescription> fields;
     private final boolean createable;
@@ -71,6 +72,7 @@ public final class SObjectDescription {
             @JsonProperty("searchable") boolean searchable,
             @JsonProperty("childRelationships") ChildRelationshipList childRelationships,
             @JsonProperty("fields") FieldList fields,
+            @JsonProperty("compactLayoutable") boolean compactLayoutable,
             @JsonProperty("createable") boolean createable,
             @JsonProperty("customSetting") boolean customSetting,
             @JsonProperty("deletable") boolean deletable,
@@ -98,6 +100,7 @@ public final class SObjectDescription {
         this.searchable = searchable;
         this.childRelationships = ImmutableList.copyOf(childRelationships);
         this.fields = ImmutableList.copyOf(fields);
+        this.compactLayoutable = compactLayoutable;
         this.createable = createable;
         this.customSetting = customSetting;
         this.deletable = deletable;
@@ -170,6 +173,10 @@ public final class SObjectDescription {
     public List<FieldDescription> getFields() {
         //noinspection ReturnOfCollectionOrArrayField
         return fields;
+    }
+
+    public boolean isCompactLayoutable() {
+        return compactLayoutable;
     }
 
     public boolean isCreateable() {

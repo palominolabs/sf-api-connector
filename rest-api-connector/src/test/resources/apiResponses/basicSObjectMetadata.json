@@ -1,38 +1,44 @@
 {
-    "recentItems" : [ {
-        "attributes" : {
-            "type" : "Account",
-            "url" : "/services/data/v28.0/sobjects/Account/0015000000WWD7bAAH"
-        },
-        "Id" : "0015000000WWD7bAAH",
-        "Name" : "United Oil & Gas, Singapore"
-    } ],
-    "objectDescribe" : {
-        "name" : "Account",
-        "keyPrefix" : "001",
-        "custom" : false,
-        "labelPlural" : "Accounts",
-        "layoutable" : true,
-        "activateable" : false,
-        "urls" : {
-            "sobject" : "/services/data/v28.0/sobjects/Account",
-            "describe" : "/services/data/v28.0/sobjects/Account/describe",
-            "rowTemplate" : "/services/data/v28.0/sobjects/Account/{ID}",
-            "layouts" : "/services/data/v28.0/sobjects/Account/describe/layouts"
-        },
-        "searchable" : true,
-        "deletable" : true,
-        "deprecatedAndHidden" : false,
-        "createable" : true,
-        "updateable" : true,
-        "label" : "Account",
-        "customSetting" : false,
-        "feedEnabled" : true,
-        "mergeable" : true,
-        "queryable" : true,
-        "replicateable" : true,
-        "retrieveable" : true,
-        "undeletable" : true,
-        "triggerable" : true
-    }
+    "objectDescribe": {
+        "activateable": false,
+        "createable": true,
+        "custom": false,
+        "customSetting": false,
+        "deletable": true,
+        "deprecatedAndHidden": false,
+        "feedEnabled": true,
+        "keyPrefix": "001",
+        "label": "Account",
+        "labelPlural": "Accounts",
+        "layoutable": true,
+        "mergeable": true,
+        "name": "Account",
+        "queryable": true,
+        "replicateable": true,
+        "retrieveable": true,
+        "searchable": true,
+        "triggerable": true,
+        "undeletable": true,
+        "updateable": true,
+        "urls": {
+            "sobject": "/services/data/v30.0/sobjects/Account",
+            "approvalLayouts": "/services/data/v30.0/sobjects/Account/describe/approvalLayouts",
+            "quickActions": "/services/data/v30.0/sobjects/Account/quickActions",
+            "describe": "/services/data/v30.0/sobjects/Account/describe",
+            "rowTemplate": "/services/data/v30.0/sobjects/Account/{ID}",
+            "layouts": "/services/data/v30.0/sobjects/Account/describe/layouts",
+            "compactLayouts": "/services/data/v30.0/sobjects/Account/describe/compactLayouts"
+        }
+    },
+    "recentItems": [
+        {
+            "attributes": {
+                "type": "Account",
+                "url": "/services/data/v30.0/sobjects/Account/0015000000WWD7bAAH"
+            },
+            "Id": "0015000000WWD7bAAH",
+            "Name": "United Oil & Gas, Singapore"
+        }
+    ]
 }
+

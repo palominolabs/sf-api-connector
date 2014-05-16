@@ -71,6 +71,10 @@ public final class FieldDescription {
     private final boolean restrictedDelete;
     private final boolean permissionable;
     private final boolean displayLocationInDecimal;
+    private final String extraTypeInfo;
+    private final String mask;
+    private final String maskType;
+    private final boolean queryByDistance;
 
     @JsonCreator
     FieldDescription(
@@ -116,7 +120,11 @@ public final class FieldDescription {
             @JsonProperty("cascadeDelete") boolean cascadeDelete,
             @JsonProperty("restrictedDelete") boolean restrictedDelete,
             @JsonProperty("permissionable") boolean permissionable,
-            @JsonProperty("displayLocationInDecimal") boolean displayLocationInDecimal
+            @JsonProperty("displayLocationInDecimal") boolean displayLocationInDecimal,
+            @JsonProperty("extraTypeInfo") String extraTypeInfo,
+            @JsonProperty("mask") String mask,
+            @JsonProperty("maskType") String maskType,
+            @JsonProperty("queryByDistance") boolean queryByDistance
             ) {
 
         this.length = length;
@@ -162,6 +170,10 @@ public final class FieldDescription {
         this.dependentPicklist = dependentPicklist;
         this.writeRequiresMasterRead = writeRequiresMasterRead;
         this.sortable = sortable;
+        this.extraTypeInfo = extraTypeInfo;
+        this.mask = mask;
+        this.maskType = maskType;
+        this.queryByDistance = queryByDistance;
     }
 
     public int getLength() {
@@ -342,6 +354,22 @@ public final class FieldDescription {
 
     public boolean isDisplayLocationInDecimal() {
         return displayLocationInDecimal;
+    }
+
+    public String getExtraTypeInfo() {
+        return extraTypeInfo;
+    }
+
+    public String getMask() {
+        return mask;
+    }
+
+    public String getMaskType() {
+        return maskType;
+    }
+
+    public boolean isQueryByDistance() {
+        return queryByDistance;
     }
 
     /**

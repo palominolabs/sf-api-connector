@@ -23,15 +23,22 @@ abstract class AbstractSObjectUrls {
     private final String describeUrlPath;
     private final String rowTemplateUrlPath;
     private final String layoutsPath;
-
+    private final String approvalLayouts;
+    private final String quickActions;
+    @Nonnull
+    private final String compactLayouts;
 
     AbstractSObjectUrls(
             @Nonnull String describeUrlPath, @Nonnull String rowTemplateUrlPath, @Nonnull String sobjectUrlPath,
-            String layoutsPath) {
+            @Nonnull String layoutsPath, @Nonnull String approvalLayouts, @Nonnull String quickActions,
+            @Nonnull String compactLayouts) {
         this.describeUrlPath = describeUrlPath;
         this.rowTemplateUrlPath = rowTemplateUrlPath;
         this.sobjectUrlPath = sobjectUrlPath;
         this.layoutsPath = layoutsPath;
+        this.approvalLayouts = approvalLayouts;
+        this.quickActions = quickActions;
+        this.compactLayouts = compactLayouts;
     }
 
     @Nonnull
@@ -52,5 +59,20 @@ abstract class AbstractSObjectUrls {
     @Nonnull
     String getLayoutsPath() {
         return layoutsPath;
+    }
+
+    @Nonnull
+    public String getQuickActions() {
+        return quickActions;
+    }
+
+    @Nonnull
+    public String getApprovalLayouts() {
+        return approvalLayouts;
+    }
+
+    @Nonnull
+    public String getCompactLayouts() {
+        return compactLayouts;
     }
 }

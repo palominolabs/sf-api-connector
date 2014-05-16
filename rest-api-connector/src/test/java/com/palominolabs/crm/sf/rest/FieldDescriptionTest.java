@@ -178,6 +178,10 @@ public class FieldDescriptionTest {
         assertFalse(field.isUnique());
         assertTrue(field.isUpdateable());
         assertFalse(field.isWriteRequiresMasterRead());
+        assertEquals(null, field.getExtraTypeInfo());
+        assertEquals(null, field.getMask());
+        assertEquals(null, field.getMaskType());
+        assertFalse(field.isQueryByDistance());
     }
 
     @CheckForNull

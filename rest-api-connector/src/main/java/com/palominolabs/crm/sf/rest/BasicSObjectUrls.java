@@ -29,14 +29,26 @@ public final class BasicSObjectUrls extends AbstractSObjectUrls {
 
     @Nullable
     private final String passwordUtilities;
+    @Nonnull
+    private final String caseArticleSuggestions;
+    @Nonnull
+    private final String caseRowArticleSuggestions;
 
     @JsonCreator
     BasicSObjectUrls(@Nonnull @JsonProperty("sobject") String sobjectUrlPath,
             @Nonnull @JsonProperty("describe") String describeUrlPath,
             @Nonnull @JsonProperty("rowTemplate") String rowTemplateUrlPath,
-            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities, @Nonnull @JsonProperty("layouts")  String layoutsPath) {
-        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath, layoutsPath);
+            @Nullable @JsonProperty("passwordUtilities") String passwordUtilities,
+            @Nonnull @JsonProperty("layouts")  String layoutsPath,
+            @Nonnull @JsonProperty("approvalLayouts")  String approvalLayouts,
+            @Nonnull @JsonProperty("quickActions") String quickActions,
+            @Nonnull @JsonProperty("compactLayouts") String compactLayouts,
+            @Nonnull @JsonProperty("caseArticleSuggestions") String caseArticleSuggestions,
+            @Nonnull @JsonProperty("caseRowArticleSuggestions") String caseRowArticleSuggestions) {
+        super(describeUrlPath, rowTemplateUrlPath, sobjectUrlPath, layoutsPath, approvalLayouts, quickActions, compactLayouts);
         this.passwordUtilities = passwordUtilities;
+        this.caseArticleSuggestions = caseArticleSuggestions;
+        this.caseRowArticleSuggestions = caseRowArticleSuggestions;
     }
 
     /**
@@ -49,4 +61,13 @@ public final class BasicSObjectUrls extends AbstractSObjectUrls {
         return passwordUtilities;
     }
 
+    @Nonnull
+    public String getCaseRowArticleSuggestions() {
+        return caseRowArticleSuggestions;
+    }
+
+    @Nonnull
+    public String getCaseArticleSuggestions() {
+        return caseArticleSuggestions;
+    }
 }
