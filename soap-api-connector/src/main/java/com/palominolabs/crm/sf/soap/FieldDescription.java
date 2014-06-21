@@ -60,12 +60,12 @@ public final class FieldDescription {
     }
 
     /**
-     * Undocumented. May be null.
+     * Returns the formula specified for this field.
      *
      * @return a String or null
      */
     @CheckForNull
-    String getCalculatedFormula() {
+    public String getCalculatedFormula() {
         return this.stubField.getCalculatedFormula();
     }
 
