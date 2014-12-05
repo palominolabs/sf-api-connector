@@ -319,7 +319,9 @@ final class RestConnectionImpl implements RestConnection {
                 } else if (fieldValueNode.path("records").isArray()) {
                     sObject.setRelationshipQueryResult(fieldName, getQueryResult(fieldValueNode));
                 } else {
-                    throw new ResponseParseException("Could not understand field value node: " + fieldValueNode);
+                    System.out.print("SALESFORCE WARN: Could not understand field value node " + fieldName + ": " + fieldValueNode);
+                    sObject.setField(fieldName, fieldValueNode.asText());
+                    continue;
                 }
 
                 continue;
