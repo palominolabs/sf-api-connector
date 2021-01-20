@@ -41,7 +41,7 @@
     <dep.junit.version>4.11</dep.junit.version>
 
     <dep.jaxws.version>2.1.7</dep.jaxws.version>
-    <dep.jackson.version>2.3.1</dep.jackson.version>
+    <dep.jackson.version>2.12.1</dep.jackson.version>
 
     <dep.metrics.version>3.0.1</dep.metrics.version>
 
